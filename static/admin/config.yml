@@ -7,14 +7,13 @@
 #                  Chromium browser (Chrome/Edge/Brave), click "Work with Local Repository"
 #                  and select this project folder. No auth needed; commit later via Git.
 #                  The repo name below can be arbitrary until you create a remote.
-#   • Production:  PKCE OAuth. Create a GitHub OAuth App (callback = <site_url>/admin/),
-#                 set `app_id` to its Client ID. No Worker, no secret needed.
+#   • Production:  Personal Access Token (PAT). Log in with the "Sign in with Token"
+#                 button on the login screen, pasting a GitHub PAT with the `repo` scope.
+#                 No OAuth App or Worker needed. (PKCE is not supported by Sveltia for GitHub.)
 backend:
   name: github
   repo: rpgseo/frenzycars
   branch: main
-  auth_type: pkce
-  app_id: "Ov23liIxzmOBij8cLw2I"
 
 site_url: https://frenzycars.pages.dev
 media_folder: "static/images/uploads"
