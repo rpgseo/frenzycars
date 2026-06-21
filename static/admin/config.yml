@@ -7,13 +7,16 @@
 #                  Chromium browser (Chrome/Edge/Brave), click "Work with Local Repository"
 #                  and select this project folder. No auth needed; commit later via Git.
 #                  The repo name below can be arbitrary until you create a remote.
-#   • Production:  set `repo` to your real GitHub repo and set up GitHub OAuth
-#                  (e.g. a Cloudflare Worker OAuth provider) to authenticate editors.
+#   • Production:  PKCE OAuth. Create a GitHub OAuth App (callback = <site_url>/admin/),
+#                 set `app_id` to its Client ID. No Worker, no secret needed.
 backend:
   name: github
   repo: rpgseo/frenzycars
+  branch: main
+  auth_type: pkce
+  app_id: "Ov23liIxzmOBij8cLw2I"
 
-site_url: https://frenzycars.example.com
+site_url: https://frenzycars.pages.dev
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 

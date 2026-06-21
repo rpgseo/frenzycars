@@ -1,4 +1,4 @@
-baseURL = "https://frenzycars.example.com/"
+baseURL = "https://frenzycars.pages.dev/"
 locale = "en-us"
 title = "FrenzyCars"
 defaultContentLanguage = "en"
