@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="{{ .Site.BaseURL }}"><span class="brand-fz">FRENZY</span><span class="brand-accent">CARS</span></a>
+      <p class="footer-tag">{{ .Site.Params.description }}</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <h2 class="footer-heading">Sections</h2>
+      <ul>{{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}</ul>
+    </nav>
+    <div class="footer-social">
+      <h2 class="footer-heading">Follow</h2>
+      <ul>
+        {{ with .Site.Params.social.twitter }}<li><a href="{{ . }}" rel="me" target="_blank" rel="noopener">Twitter / X</a></li>{{ end }}
+        {{ with .Site.Params.social.instagram }}<li><a href="{{ . }}" rel="me" target="_blank" rel="noopener">Instagram</a></li>{{ end }}
+        {{ with .Site.Params.social.youtube }}<li><a href="{{ . }}" rel="me" target="_blank" rel="noopener">YouTube</a></li>{{ end }}
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <h2 class="footer-heading">The Frenzy Bulletin</h2>
+      <p>Weekly reviews &amp; news in your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <label class="sr-only" for="nl">Email address</label>
+        <input id="nl" type="email" placeholder="you@email.com" required>
+        <button type="submit">Join</button>
+      </form>
+      <p class="footer-editor"><a href="{{ "/admin/" | relURL }}">Editor (CMS) &rarr;</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+    <p>Drive fast, read slow.</p>
+  </div>
+</footer>

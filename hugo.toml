@@ -1,0 +1,47 @@
+baseURL = "https://frenzycars.example.com/"
+locale = "en-us"
+title = "FrenzyCars"
+defaultContentLanguage = "en"
+paginate = 9
+summaryLength = 25
+enableRobotsTXT = true
+
+[params]
+  description = "FrenzyCars — The pulse of performance. Expert car reviews, breaking auto news, and deep-dive features."
+  tagline = "The pulse of performance"
+  accent = "#F7D720"
+  dateformat = "Jan 2, 2006"
+  mainSections = ["reviews", "news", "features"]
+
+  [params.social]
+    twitter = "https://twitter.com/frenzycars"
+    instagram = "https://instagram.com/frenzycars"
+    youtube = "https://youtube.com/@frenzycars"
+
+  [params.adsense]
+    enabled = false
+    client = ""
+    slot_top = ""
+    slot_infeed = ""
+    slot_inarticle = ""
+    slot_rail = ""
+
+[[menu.main]]
+  name = "Reviews"
+  url = "/reviews/"
+  weight = 10
+
+[[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 20
+
+[[menu.main]]
+  name = "Features"
+  url = "/features/"
+  weight = 30
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40

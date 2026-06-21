@@ -1,0 +1,7 @@
+{{- with .rating -}}
+{{- if $.bar -}}
+<div class="score-bar"><span style="width:{{ mul . 10 }}%"></span><em>{{ printf "%.1f" . }}/10</em></div>
+{{- else -}}
+<span class="score-badge"><b>{{ printf "%.1f" . }}</b><small>/10</small></span>
+{{- end -}}
+{{- end -}}

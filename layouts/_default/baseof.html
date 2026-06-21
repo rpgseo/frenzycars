@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Locale | default "en-us" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text y='82' x='12' font-size='90' font-family='Arial' font-weight='bold' fill='%23F7D720'>F</text></svg>">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ with .Params.cover }}{{ . | absURL }}{{ else }}{{ ("/img/logo-1200x630.png") | absURL }}{{ end }}">
+  <meta name="twitter:card" content="{{ with .Params.cover }}summary_large_image{{ else }}summary_large_image{{ end }}">
+  <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+  <meta name="twitter:image" content="{{ with .Params.cover }}{{ . | absURL }}{{ else }}{{ ("/img/logo-1200x630.png") | absURL }}{{ end }}">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  {{ $css := resources.Get "css/style.css" | default (resources.Get "css/style.css") }}
+  {{ with $css }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ if not $css }}<link rel="stylesheet" href="/css/style.css">{{ end }}
+  {{ partial "ads/head.html" . }}
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+{{ partial "header.html" . }}
+<main id="main" class="site-main">
+  {{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ partial "script.html" . }}
+</body>
+</html>

@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# Sveltia CMS config (Decap-compatible).
+#
+# BACKEND: Sveltia uses a real Git backend (github/gitlab/gitea). It does NOT support
+# Decap's `git-gateway` or `local_backend` options — its local dev mode is built in:
+#   • Local dev:   run `hugo server`, open http://localhost:1313/admin/index.html in a
+#                  Chromium browser (Chrome/Edge/Brave), click "Work with Local Repository"
+#                  and select this project folder. No auth needed; commit later via Git.
+#                  The repo name below can be arbitrary until you create a remote.
+#   • Production:  set `repo` to your real GitHub repo and set up GitHub OAuth
+#                  (e.g. a Cloudflare Worker OAuth provider) to authenticate editors.
+backend:
+  name: github
+  repo: rpgseo/frenzycars
+
+site_url: https://frenzycars.example.com
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "reviews"
+    label: "Reviews"
+    label_singular: "Review"
+    folder: "content/reviews"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{rating}}/10 ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Reviews", "News", "Features"], default: "Reviews" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "summary", widget: "text", hint: "Shown on cards & used as meta description." }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Rating", name: "rating", widget: "number", required: false, min: 0, max: 10, step: 0.1, value_type: "float" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "news"
+    label: "News"
+    label_singular: "News item"
+    folder: "content/news"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Reviews", "News", "Features"], default: "News" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "features"
+    label: "Features"
+    label_singular: "Feature"
+    folder: "content/features"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Reviews", "News", "Features"], default: "Features" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }

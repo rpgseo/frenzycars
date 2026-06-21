@@ -1,0 +1,17 @@
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Sveltia CMS local cache
+.sveltia/
+
+.superpowers/
+
+# Internal design/strategy docs
+docs/superpowers/

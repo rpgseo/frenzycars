@@ -1,0 +1,11 @@
+{{- $cover := .Params.cover | default "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80" -}}
+<a class="lead-card" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
+  <img src="{{ $cover }}" alt="{{ .Title }}" loading="eager" width="1200" height="800">
+  <div class="lead-card-overlay"></div>
+  <div class="lead-card-body">
+    <span class="eyebrow"><span class="dot"></span> {{ .Type | humanize }}{{ with .Params.rating }} · {{ printf "%.1f" . }}/10{{ end }}</span>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Summary | plainify | truncate 150 }}</p>
+    <span class="btn btn-accent">Read story</span>
+  </div>
+</a>

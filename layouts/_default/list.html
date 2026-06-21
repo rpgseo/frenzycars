@@ -1,0 +1,46 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container">
+    <span class="hero-eyebrow"><span class="dot"></span> {{ .Title }}</span>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<section class="container band">
+  <div class="has-rail">
+    <div class="main-col">
+      {{ partial "ads/slot.html" (dict "slot" "top" "format" "leaderboard") }}
+      {{ if gt (len .Pages) 0 }}
+      <div class="grid grid-3">
+        {{- range $i, $p := .Pages -}}
+          {{ partial "article-card.html" . }}
+          {{- if eq (mod (add $i 1) 9) 0 -}}
+            {{ partial "ads/slot.html" (dict "slot" "infeed" "format" "infeed") }}
+          {{- end -}}
+        {{- end -}}
+      </div>
+      {{ else }}
+      <p class="empty">No articles yet. Check back soon.</p>
+      {{ end }}
+      {{ template "_internal/pagination.html" . }}
+    </div>
+    <aside class="rail">
+      <div class="rail-sticky">
+        {{ partial "ads/slot.html" (dict "slot" "rail" "format" "rail") }}
+        {{- $trend := where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5 -}}
+        {{ if $trend }}
+        <div class="rail-block">
+          <h3 class="rail-title">Trending</h3>
+          <div class="mini-rail">
+            {{- range $i, $p := $trend -}}
+            <div class="mini-rank"><span class="num">{{ add $i 1 }}</span><div><div class="mt">{{ $p.Type | humanize }}</div><h4><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h4></div></div>
+            {{- end -}}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </aside>
+  </div>
+</section>
+{{ end }}
