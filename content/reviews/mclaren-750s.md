@@ -6,7 +6,7 @@ demo = true
 category = 'Reviews'
 tags = ['McLaren', 'Supercar', 'V8', 'RWD']
 author = 'Marcus Hale'
-summary = 'Lighter, faster, and more focused than ever. The 750S is McLaren doubling down on the analog supercar before the electric tide arrives.'
+description = 'Lighter, faster, and more focused than ever. The 750S is McLaren doubling down on the analog supercar before the electric tide arrives.'
 cover = 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80'
 rating = 9.4
 verdict = 'The 750S is a high-water mark for the combustion supercar — featherweight, ferociously fast, and beautifully honest to drive.'

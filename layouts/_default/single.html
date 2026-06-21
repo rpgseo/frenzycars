@@ -20,7 +20,7 @@
 {{- with .Params.rating -}}{{- $ld = merge $ld (dict "reviewRating" (dict "@type" "Rating" "ratingValue" . "bestRating" 10 "worstRating" 0)) -}}
 {{- $ld = merge $ld (dict "itemReviewed" (dict "@type" "Product" "name" ($.Title | plainify))) -}}{{- end -}}
 {{- with .Params.tags -}}{{- $ld = merge $ld (dict "keywords" (delimit . ", ")) -}}{{- end -}}
-<script type="application/ld+json">{{ $ld | jsonify (dict "indent" "  ") | safeHTML }}</script>
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $ld | safeJS }}</script>
 {{ end }}
 {{ define "main" }}
 {{- $rel := where (where .Site.RegularPages "Type" .Type) "Permalink" "!=" .Permalink | first 4 -}}

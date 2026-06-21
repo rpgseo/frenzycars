@@ -5,7 +5,7 @@ draft = false
 category = 'News'
 tags = ['Lucid', 'EV', 'Records']
 author = 'FrenzyCars Desk'
-summary = 'A tri-motor Air Sapphire ran the quarter-mile in 8.9 seconds on street-legal tires.'
+description = 'A tri-motor Air Sapphire ran the quarter-mile in 8.9 seconds on street-legal tires.'
 cover = 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1600&q=80'
 +++
 

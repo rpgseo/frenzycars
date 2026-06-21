@@ -5,7 +5,7 @@ draft = false
 category = 'Features'
 tags = ['Manual', 'Culture', 'Long Read']
 author = 'Marco Delgado'
-summary = 'In an automated world, the manual gearbox survives as an act of devotion. We trace its stubborn heartbeat.'
+description = 'In an automated world, the manual gearbox survives as an act of devotion. We trace its stubborn heartbeat.'
 cover = 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80'
 +++
 

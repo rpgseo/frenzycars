@@ -6,7 +6,7 @@ demo = true
 category = 'Features'
 tags = ['EV', 'Data', 'Long Read', 'Range']
 author = 'Priya Nair'
-summary = 'We pulled real-world driving data to answer the question that haunts every EV sceptic: do you really need 500 km of range?'
+description = 'We pulled real-world driving data to answer the question that haunts every EV sceptic: do you really need 500 km of range?'
 cover = 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1600&q=80'
 +++
 

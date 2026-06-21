@@ -5,7 +5,7 @@ draft = false
 category = 'News'
 tags = ['Hyundai', 'EV', 'Awards', 'N']
 author = 'FrenzyCars Desk'
-summary = 'The hot EV with simulated gear shifts and a drift mode takes top honours at the annual performance awards.'
+description = 'The hot EV with simulated gear shifts and a drift mode takes top honours at the annual performance awards.'
 cover = 'https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1600&q=80'
 +++
 

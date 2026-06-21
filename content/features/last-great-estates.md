@@ -5,7 +5,7 @@ draft = false
 category = 'Features'
 tags = ['Wagons', 'Estate', 'Design']
 author = 'Elena Rossi'
-summary = 'SUVs conquered the world, but a stubborn few estates still pack supercar pace and family practicality.'
+description = 'SUVs conquered the world, but a stubborn few estates still pack supercar pace and family practicality.'
 cover = 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1600&q=80'
 +++
 

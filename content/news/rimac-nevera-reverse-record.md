@@ -6,7 +6,7 @@ demo = true
 category = 'News'
 tags = ['Rimac', 'EV', 'Hypercar', 'Record']
 author = 'News Desk'
-summary = 'The 1,914 hp electric hypercar adds another bizarre record to its collection — this time going fast the wrong way.'
+description = 'The 1,914 hp electric hypercar adds another bizarre record to its collection — this time going fast the wrong way.'
 cover = 'https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=1600&q=80'
 +++
 

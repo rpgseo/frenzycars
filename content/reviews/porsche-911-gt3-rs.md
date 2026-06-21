@@ -5,7 +5,7 @@ draft = false
 category = 'Reviews'
 tags = ['Porsche', 'GT3 RS', 'Track', 'Sports Car']
 author = 'Marco Delgado'
-summary = 'The GT3 RS redefines what a road-legal track weapon can be, with a naturally aspirated scream and aerodynamics that bite.'
+description = 'The GT3 RS redefines what a road-legal track weapon can be, with a naturally aspirated scream and aerodynamics that bite.'
 cover = 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80'
 featured = true
 rating = 9.6

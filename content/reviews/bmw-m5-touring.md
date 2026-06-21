@@ -6,7 +6,7 @@ demo = true
 category = 'Reviews'
 tags = ['BMW', 'Wagon', 'Hybrid', 'Performance']
 author = 'Elena Rossi'
-summary = 'A plug-in hybrid V8 estate that hauls the family and humiliates supercars. The M5 Touring is back, and it is enormous fun.'
+description = 'A plug-in hybrid V8 estate that hauls the family and humiliates supercars. The M5 Touring is back, and it is enormous fun.'
 cover = 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1600&q=80'
 rating = 8.8
 verdict = 'The M5 Touring is the ultimate "have your cake and eat it" car: limousine comfort, estate practicality, and genuine supercar pace. The weight is its only real enemy.'

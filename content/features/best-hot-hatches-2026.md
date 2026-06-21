@@ -6,7 +6,7 @@ demo = true
 category = 'Features'
 tags = ['Hot Hatch', 'Buying Guide', 'Performance', 'Value']
 author = 'Marcus Hale'
-summary = 'The hot hatch is not dead — it has evolved. We rank the ten most exciting, affordable performance cars you can buy in 2026.'
+description = 'The hot hatch is not dead — it has evolved. We rank the ten most exciting, affordable performance cars you can buy in 2026.'
 cover = 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80'
 +++
 

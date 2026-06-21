@@ -6,7 +6,7 @@ demo = true
 category = 'Reviews'
 tags = ['Lotus', 'Sports car', 'V6', 'Manual']
 author = 'Marcus Hale'
-summary = 'A final, glorious combustion hurrah from Hethel. The Emira is the accessible mid-engine sports car Lotus always promised to build.'
+description = 'A final, glorious combustion hurrah from Hethel. The Emira is the accessible mid-engine sports car Lotus always promised to build.'
 cover = 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1600&q=80'
 rating = 9.0
 verdict = 'The Emira proves Lotus can build a usable, beautiful, properly quick sports car — a fitting swansong for the combustion era.'

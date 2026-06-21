@@ -5,7 +5,7 @@ draft = false
 category = 'Reviews'
 tags = ['Toyota', 'GR', 'Hot Hatch']
 author = 'Sam Whitaker'
-summary = '300 horsepower, three pedals, and a price that makes sense. The GR Corolla is the people champion.'
+description = '300 horsepower, three pedals, and a price that makes sense. The GR Corolla is the people champion.'
 cover = 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1600&q=80'
 rating = 8.9
 +++

@@ -6,7 +6,7 @@ demo = true
 category = 'News'
 tags = ['Audi', 'RS6', 'Wagon', 'Limited']
 author = 'News Desk'
-summary = 'Audi sends off the C8 RS6 with a 621 HP GT variant, carbon bodywork and a sub-3.5-second 0-100 claim. Only 660 will be built.'
+description = 'Audi sends off the C8 RS6 with a 621 HP GT variant, carbon bodywork and a sub-3.5-second 0-100 claim. Only 660 will be built.'
 cover = 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1600&q=80'
 +++
 

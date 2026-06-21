@@ -6,7 +6,7 @@ demo = true
 category = 'News'
 tags = ['Kia', 'EV', 'Awards', 'SUV']
 author = 'News Desk'
-summary = "Kia's flagship electric SUV takes top honours, signalling a market shift toward family-sized electric vehicles."
+description = "Kia's flagship electric SUV takes top honours, signalling a market shift toward family-sized electric vehicles."
 cover = 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1600&q=80'
 +++
 

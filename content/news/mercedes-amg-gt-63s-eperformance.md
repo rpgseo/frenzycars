@@ -6,7 +6,7 @@ demo = true
 category = 'News'
 tags = ['Mercedes-AMG', 'Hybrid', 'Performance', 'GT']
 author = 'News Desk'
-summary = 'A 4.0-litre biturbo V8 paired with a rear electric motor gives the GT 63 S E Performance a combined 831 horsepower — a new AMG benchmark.'
+description = 'A 4.0-litre biturbo V8 paired with a rear electric motor gives the GT 63 S E Performance a combined 831 horsepower — a new AMG benchmark.'
 cover = 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1600&q=80'
 +++
 

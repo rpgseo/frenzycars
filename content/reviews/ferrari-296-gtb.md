@@ -5,7 +5,7 @@ draft = false
 category = 'Reviews'
 tags = ['Ferrari', 'Hybrid', 'Supercar']
 author = 'Elena Rossi'
-summary = 'A plug-in hybrid V6 that proves electrification and emotion are not mutually exclusive.'
+description = 'A plug-in hybrid V6 that proves electrification and emotion are not mutually exclusive.'
 cover = 'https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1600&q=80'
 rating = 9.2
 +++

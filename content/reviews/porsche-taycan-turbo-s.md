@@ -6,7 +6,7 @@ demo = true
 category = 'Reviews'
 tags = ['Porsche', 'EV', 'Sedan', 'Performance']
 author = 'Elena Rossi'
-summary = 'More range, faster charging, and a refreshed cabin. The Taycan Turbo S remains the EV that petrolheads secretly admire.'
+description = 'More range, faster charging, and a refreshed cabin. The Taycan Turbo S remains the EV that petrolheads secretly admire.'
 cover = 'https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?auto=format&fit=crop&w=1600&q=80'
 rating = 9.1
 verdict = 'The Taycan Turbo S is still the dynamic benchmark among electric sedans — explosive, composed, and genuinely desirable.'

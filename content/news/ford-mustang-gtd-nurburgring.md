@@ -6,7 +6,7 @@ demo = true
 category = 'News'
 tags = ['Ford', 'Mustang', 'Nürburgring', 'Track']
 author = 'News Desk'
-summary = "Ford's supercharged, GT3-derived Mustang is on a record hunt at the Green Hell — and the early sector times look serious."
+description = "Ford's supercharged, GT3-derived Mustang is on a record hunt at the Green Hell — and the early sector times look serious."
 cover = 'https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?auto=format&fit=crop&w=1600&q=80'
 +++
 

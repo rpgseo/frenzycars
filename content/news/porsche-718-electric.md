@@ -5,7 +5,7 @@ draft = false
 category = 'News'
 tags = ['Porsche', 'EV', 'Boxster']
 author = 'FrenzyCars Desk'
-summary = 'The beloved roadster goes electric, promising a true lightweight platform and 800-volt charging.'
+description = 'The beloved roadster goes electric, promising a true lightweight platform and 800-volt charging.'
 cover = 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80'
 +++
 
