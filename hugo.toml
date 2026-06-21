@@ -2,8 +2,10 @@ baseURL = "https://frenzycars.example.com/"
 locale = "en-us"
 title = "FrenzyCars"
 defaultContentLanguage = "en"
-paginate = 9
 summaryLength = 25
+
+[pagination]
+  pagerSize = 9
 enableRobotsTXT = true
 
 [params]
