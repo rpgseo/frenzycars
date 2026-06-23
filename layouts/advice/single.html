@@ -1,3 +1,38 @@
+{{ define "head" }}
+{{- $p := .Params -}}
+{{- $iso := "2006-01-02T15:04:05Z07:00" -}}
+
+{{/* FAQPage: main question + short_answer only */ -}}
+{{- $faqAnswer := dict "@type" "Answer" "text" ($p.short_answer | plainify) -}}
+{{- $faqQ := dict "@type" "Question" "name" ($p.question | plainify) "acceptedAnswer" $faqAnswer -}}
+{{- $faq := dict
+      "@context" "https://schema.org"
+      "@type" "FAQPage"
+      "mainEntity" (slice $faqQ)
+-}}
+
+{{/* HowTo: steps + estimated cost */ -}}
+{{- $howtoSteps := slice -}}
+{{- range $p.steps -}}
+  {{- $howtoSteps = $howtoSteps | append (dict "@type" "HowToStep" "name" (.title | plainify) "text" (.detail | plainify)) -}}
+{{- end -}}
+{{- $howto := dict
+      "@context" "https://schema.org"
+      "@type" "HowTo"
+      "name" ($p.question | plainify)
+      "description" (($p.short_answer | default "") | plainify | truncate 200)
+      "step" $howtoSteps
+-}}
+{{- with $p.typical_cost -}}
+  {{- if and .low .high -}}
+    {{- $cost := dict "@type" "MonetaryAmount" "currency" (.currency | default "USD") "minValue" .low "maxValue" .high -}}
+    {{- $howto = merge $howto (dict "estimatedCost" $cost) -}}
+  {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $faq | safeJS }}</script>
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $howto | safeJS }}</script>
+{{ end }}
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
 {{- $p := .Params -}}
