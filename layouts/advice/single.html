@@ -1,6 +1,5 @@
 {{ define "head" }}
 {{- $p := .Params -}}
-{{- $iso := "2006-01-02T15:04:05Z07:00" -}}
 
 {{/* FAQPage: main question + short_answer only */ -}}
 {{- $faqAnswer := dict "@type" "Answer" "text" ($p.short_answer | plainify) -}}
@@ -31,7 +30,9 @@
 {{- end -}}
 
 <script type="application/ld+json">{{ jsonify (dict "indent" "  ") $faq | safeJS }}</script>
+{{- if gt (len $howtoSteps) 0 -}}
 <script type="application/ld+json">{{ jsonify (dict "indent" "  ") $howto | safeJS }}</script>
+{{- end -}}
 {{ end }}
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
@@ -114,10 +115,10 @@
       </div>
       <aside class="rail">
         <div class="rail-sticky">
-          {{- $rel := where (where .Site.RegularPages "Section" "advice") "Permalink" "!=" .Permalink | first 4 -}}
+          {{- $rel := where (where (where .Site.RegularPages "Section" "advice") "Permalink" "!=" .Permalink) ".Params.category" .Params.category | first 4 -}}
           {{- if $rel -}}
           <div class="rail-block">
-            <h3 class="rail-title">Related</h3>
+            <h3 class="rail-title">More in {{ $p.category | default "Advice" }}</h3>
             <div class="mini-rail">
               {{- range $rel -}}
               <div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">Advice</div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4></div></div>

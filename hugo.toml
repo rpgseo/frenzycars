@@ -4,7 +4,7 @@ title = "FrenzyCars"
 defaultContentLanguage = "en"
 summaryLength = 25
 enableRobotsTXT = true
-buildFuture = true
+buildFuture = true # DEV-ONLY: must be set to false (or removed) when params.noindex flips to false at launch, so publish_date staggering takes effect
 
 [pagination]
   pagerSize = 9
@@ -56,13 +56,3 @@ buildFuture = true
   url = "/about/"
   weight = 40
 
-[related]
-  threshold = 10
-  includeNewer = true
-  toLower = false
-  [[related.indices]]
-    name = "category"
-    weight = 60
-  [[related.indices]]
-    name = "tags"
-    weight = 40
