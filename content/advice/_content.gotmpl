@@ -1,4 +1,4 @@
-{{- range $row := .Site.Data.evergreen.troubleshooting -}}
+{{- range $row := hugo.Data.evergreen.troubleshooting -}}
 {{- /* Anti-thin gate: count real differentiators */ -}}
 {{- $causes := $row.causes | default slice -}}
 {{- $steps := $row.steps | default slice -}}
