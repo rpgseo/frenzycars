@@ -1,0 +1,53 @@
+- id: grinding-noise-when-braking
+  cluster_id: CL-002
+  category: Maintenance
+  question: "Why does my car make a grinding noise when braking?"
+  short_answer: >
+    A grinding noise when braking almost always means the brake pads are worn
+    down to the metal backing plate, which is now scraping directly against the
+    rotor. Continuing to drive in this condition damages the rotors and
+    dangerously increases your stopping distance.
+  is_emergency: true
+  emergency_note: "Stop driving. Metal-on-metal contact can destroy your rotors within a few miles."
+  causes:
+    - "Brake pads worn past the wear indicator down to the metal backing plate"
+    - "A small stone or road debris caught between the pad and the rotor"
+    - "Rust buildup on the rotor surface after the vehicle sat unused, especially in humid weather"
+    - "Worn or missing brake hardware (clips and shims) letting the pad drag on the rotor"
+  steps:
+    - title: "Inspect brake pad thickness"
+      detail: "Remove the wheel and measure the friction material. Pads below 3 mm (1/8 inch) are overdue for replacement and likely the source of the grinding."
+    - title: "Check the rotor surface"
+      detail: "Look for deep grooves or a raised outer lip on the rotor. Light scoring can be machined smooth, but deep grooves mean the rotor must be replaced."
+    - title: "Clear any trapped debris"
+      detail: "Inspect the gap between the pad and rotor for trapped gravel or a small stone and remove it. A lodged pebble can mimic worn-pad grinding."
+  when_to_see_mechanic:
+    - "The brake pedal vibrates or pulses under braking"
+    - "The grinding continues after new pads are installed"
+    - "You notice brake fluid leaking near the wheel or caliper"
+  diy_difficulty: beginner
+  typical_cost:
+    low: 150
+    high: 400
+    currency: USD
+    note: "Front brake pads plus one rotor machining per axle, parts and labor."
+  related_queries:
+    - "grinding noise when braking but pads are good"
+    - "metal grinding sound when braking at low speed"
+    - "how long can you drive with grinding brakes"
+  publish_date: 2026-06-22
+  sources:
+    - "NHTSA braking system defect technical documentation"
+    - "Brake Manufacturers Council friction-material service standards"
+
+# --- thin row: must be SKIPPED by the gate (only 1 differentiator) ---
+- id: test-thin-skip
+  cluster_id: CL-XXX
+  category: Maintenance
+  question: "Placeholder thin content that should never render"
+  short_answer: "This row has fewer than three differentiators and must be skipped."
+  causes:
+    - "Only one cause is not enough"
+  diy_difficulty: beginner
+  publish_date: 2026-06-22
+  sources: []
