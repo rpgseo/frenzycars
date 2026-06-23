@@ -1,0 +1,98 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{- $p := .Params -}}
+<article class="article">
+  <div class="container">
+    <div class="has-rail">
+      <div class="main-col">
+        <header class="article-head">
+          <span class="card-tag">{{ $p.category | default "Advice" }}</span>
+          <h1 class="article-title">{{ .Title }}</h1>
+          <div class="article-meta">
+            <span>Difficulty: {{ $p.diy_difficulty | title }}</span>
+            {{- with $p.typical_cost -}}
+              {{- if and .low .high -}}
+              <span class="meta-dot">&bull;</span>
+              <span>Est. cost: {{ printf "$%d" .low }}–{{ printf "$%d" .high }} {{ .currency | default "USD" }}</span>
+              {{- end -}}
+            {{- end -}}
+          </div>
+        </header>
+        <div class="article-content">
+          <h2>Quick answer</h2>
+          <p>{{ $p.short_answer }}</p>
+
+          {{- if $p.is_emergency -}}
+          <div class="emergency-callout" style="border-left:4px solid #e03131;background:#fff5f5;padding:12px 16px;margin:1em 0;">
+            <strong>&#9888; Important:</strong> {{ $p.emergency_note }}
+          </div>
+          {{- end -}}
+
+          {{- with $p.causes -}}
+          <h2>Common causes</h2>
+          <ul>
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.steps -}}
+          <h2>How to diagnose it</h2>
+          <ol class="howto-steps">
+            {{- range . -}}
+            <li>
+              <strong>{{ .title }}</strong>
+              <p>{{ .detail }}</p>
+            </li>
+            {{- end -}}
+          </ol>
+          {{- end -}}
+
+          {{- with $p.when_to_see_mechanic -}}
+          <h2>When to see a mechanic</h2>
+          <ul>
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.related_queries -}}
+          <h2>Related questions</h2>
+          <details>
+            <summary>Expand related questions</summary>
+            <ul>
+              {{- range . -}}<li>{{ . }}</li>{{- end -}}
+            </ul>
+          </details>
+          {{- end -}}
+
+          {{- with $p.sources -}}
+          <footer class="article-foot">
+            <p><strong>Sources:</strong></p>
+            <ul>
+              {{- range . -}}<li>{{ . }}</li>{{- end -}}
+            </ul>
+          </footer>
+          {{- end -}}
+        </div>
+        <footer class="article-foot">
+          <a class="btn btn-ghost" href="{{ "/advice/" | relURL }}">&larr; Back to Advice</a>
+        </footer>
+      </div>
+      <aside class="rail">
+        <div class="rail-sticky">
+          {{- $rel := where (where .Site.RegularPages "Section" "advice") "Permalink" "!=" .Permalink | first 4 -}}
+          {{- if $rel -}}
+          <div class="rail-block">
+            <h3 class="rail-title">Related</h3>
+            <div class="mini-rail">
+              {{- range $rel -}}
+              <div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">Advice</div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4></div></div>
+              {{- end -}}
+            </div>
+          </div>
+          {{- end -}}
+        </div>
+      </aside>
+    </div>
+  </div>
+</article>
+{{ end }}
