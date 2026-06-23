@@ -40,14 +40,701 @@
     - "NHTSA braking system defect technical documentation"
     - "Brake Manufacturers Council friction-material service standards"
 
-# --- thin row: must be SKIPPED by the gate (only 1 differentiator) ---
-- id: test-thin-skip
-  cluster_id: CL-XXX
+- id: how-long-does-a-car-wrap-last
+  cluster_id: CL-068
   category: Maintenance
-  question: "Placeholder thin content that should never render"
-  short_answer: "This row has fewer than three differentiators and must be skipped."
+  question: "How long does a car wrap last?"
+  short_answer: >
+    A professionally installed vinyl car wrap typically lasts 5 to 7 years,
+    while a partial wrap or lower-quality film may last 3 to 5 years. Lifespan
+    depends heavily on sun exposure, climate, how often the car is garaged, and
+    how well the wrap is cleaned and maintained.
+  is_emergency: false
   causes:
-    - "Only one cause is not enough"
+    - "UV exposure breaks down the vinyl adhesive and fades the pigment over time"
+    - "High heat and humidity accelerate adhesive failure and edge lifting"
+    - "Harsh chemicals or abrasive washing scratch and degrade the laminate"
+    - "Poor initial installation leaves trapped air or lifted edges that peel early"
+  steps:
+    - title: "Check the edges and seams"
+      detail: "Run a finger along door edges, mirror housings, and panel seams. Lifting or peeling edges are the first sign the wrap is nearing end of life."
+    - title: "Inspect for fading and discoloration"
+      detail: "Compare a covered area (under a trim piece) to an exposed panel. Noticeable fading means the UV protective layer is degrading."
+    - title: "Look for bubbling and adhesive residue"
+      detail: "Bubbles under the film indicate adhesive failure. Sticky residue or cracking film means removal and re-wrap are due."
+  when_to_see_mechanic:
+    - "Large sections are peeling or lifting away from the body"
+    - "The wrap is bubbling across whole panels, not just a few spots"
+    - "You want removal done professionally to avoid damaging the paint"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 2000
+    high: 5000
+    currency: USD
+    note: "Full vehicle re-wrap, professional installation, depending on vehicle size."
+  related_queries:
+    - "how long does a vinyl wrap last on a car"
+    - "does car wrap damage paint"
+    - "how to make a car wrap last longer"
+  publish_date: 2026-06-23
+  sources:
+    - "Vinyl film manufacturer technical data sheets (3M, Avery Dennison)"
+
+- id: check-engine-light-blinking-car-shaking
+  cluster_id: CL-006
+  category: Maintenance
+  question: "Why is my check engine light blinking and my car shaking?"
+  short_answer: >
+    A blinking check engine light combined with shaking almost always means an
+    engine misfire — one or more cylinders are not burning fuel correctly. A
+    flashing light signals that unburned fuel is reaching the catalytic
+    converter, which can overheat and fail quickly, so you should stop driving
+    and address it immediately.
+  is_emergency: true
+  emergency_note: "Stop driving. A flashing check engine light with misfire can melt the catalytic converter within minutes."
+  causes:
+    - "Worn or fouled spark plugs failing to ignite the air-fuel mixture"
+    - "A failing ignition coil not sending spark to its cylinder"
+    - "A vacuum leak leaning out the mixture and causing rough idle"
+    - "A clogged or failing fuel injector starving a cylinder of fuel"
+  steps:
+    - title: "Read the diagnostic trouble codes"
+      detail: "Plug in an OBD2 scanner and read the codes. P0300 (random misfire) or P0301-P0312 (cylinder-specific misfire) confirm the cause."
+    - title: "Inspect the spark plugs and coils"
+      detail: "Remove and inspect the spark plugs for wear, fouling, or a cracked insulator. Swap ignition coils between cylinders to see if the misfire follows the coil."
+    - title: "Check for vacuum leaks"
+      detail: "Listen for hissing around the intake manifold and check rubber hoses for cracks. A smoke test can pinpoint hard-to-find leaks."
+  when_to_see_mechanic:
+    - "The misfire persists after replacing spark plugs and coils"
+    - "You smell raw fuel or sulfur from the exhaust"
+    - "The vehicle lacks an OBD2 scanner or you cannot reach the plugs"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 200
+    high: 800
+    currency: USD
+    note: "Spark plugs and ignition coil replacement, parts and labor."
+  related_queries:
+    - "check engine light flashing and car shaking when accelerating"
+    - "can i drive with a blinking check engine light"
+    - "how much to fix engine misfire"
+  publish_date: 2026-06-24
+  sources:
+    - "NHTSA OBD-II diagnostic trouble code definitions"
+    - "SAE J2012 standard for diagnostic trouble codes"
+
+- id: spark-plug-tube-seal-leak
+  cluster_id: CL-046
+  category: Maintenance
+  question: "Why is there oil in my spark plug tube?"
+  short_answer: >
+    Oil in a spark plug tube means the valve cover gasket or the spark plug
+    tube seal underneath it has failed, allowing engine oil to seep down into
+    the tube where the spark plug and ignition coil sit. Left unchecked, the
+    oil fouls the coil and causes misfires.
+  is_emergency: false
+  causes:
+    - "A hardened, cracked, or shrunken valve cover gasket due to age and heat cycles"
+    - "A failed spark plug tube seal (the round seal pressed into the valve cover)"
+    - "An over-tightened or warped valve cover crushing the seal unevenly"
+    - "Excessive crankcase pressure from a clogged PCV valve forcing oil past seals"
+  steps:
+    - title: "Confirm oil is in the tube, not on the threads"
+      detail: "Remove the ignition coil and shine a light into the tube. Oil pooling around the coil boot confirms a tube-seal leak rather than internal engine oil consumption."
+    - title: "Check the PCV system"
+      detail: "Inspect the PCV valve and breather hoses. A clogged PCV raises crankcase pressure and accelerates seal failure, so replace it to prevent recurrence."
+    - title: "Replace the valve cover gasket and tube seals"
+      detail: "Remove the valve cover, clean the mating surfaces, and install a new gasket set with fresh tube seals. Reinstall to the manufacturer's torque sequence."
+  when_to_see_mechanic:
+    - "The misfire returns after the coil is cleaned or replaced"
+    - "Multiple tubes are oil-filled, suggesting widespread seal failure"
+    - "The valve cover bolts are seized or the cover is plastic and brittle"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 150
+    high: 450
+    currency: USD
+    note: "Valve cover gasket and tube seal set, parts and labor."
+  related_queries:
+    - "oil in spark plug well symptoms"
+    - "can oil in spark plug tube cause misfire"
+    - "how to fix oil leaking into spark plug tube"
+  publish_date: 2026-06-25
+  sources:
+    - "ASE engine repair certification reference material"
+    - "Vehicle manufacturer valve cover service procedures"
+
+- id: how-to-bleed-brakes-by-yourself
+  cluster_id: CL-009
+  category: Maintenance
+  question: "How do you bleed brakes by yourself?"
+  short_answer: >
+    Bleeding brakes removes air trapped in the brake lines so the pedal stays
+    firm. The simplest solo method is gravity bleeding — open the bleeder
+    valve on each caliper, let fluid drip out until bubble-free, and keep the
+    master cylinder topped up. A one-person bleeder valve (check valve) kit
+    makes the job faster and cleaner.
+  is_emergency: false
+  causes:
+    - "Air entered the lines when a caliper, hose, or master cylinder was opened"
+    - "The brake fluid is old and has absorbed moisture, lowering its boiling point"
+    - "The pedal feels spongy or sinks after a hydraulic repair"
+    - "The system was run low on fluid, drawing air into the master cylinder"
+  steps:
+    - title: "Top up the master cylinder"
+      detail: "Fill the reservoir with fresh, sealed brake fluid of the correct DOT rating (e.g. DOT 3 or DOT 4). Never let it run dry during the process."
+    - title: "Open the bleeder valve farthest from the master cylinder"
+      detail: "Start at the rear passenger wheel (the longest line). Attach a hose to the bleeder nipple and submerge the other end in a jar of clean fluid."
+    - title: "Let fluid flow until bubble-free"
+      detail: "With gravity bleeding, open the valve and wait for a steady drip with no air bubbles. With a check-valve kit, pump the pedal gently several times, watching for bubbles."
+    - title: "Close and repeat for each wheel"
+      detail: "Close the bleeder before the pedal reaches the floor. Move to the next-farthest wheel and repeat, topping up the master cylinder after each corner."
+  when_to_see_mechanic:
+    - "The pedal stays spongy after bleeding all four wheels"
+    - "The master cylinder ran completely dry during the job"
+    - "A bleeder valve snaps off and is seized in the caliper"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 20
+    high: 50
+    currency: USD
+    note: "One to two bottles of brake fluid plus a cheap one-person bleeder kit."
+  related_queries:
+    - "can you bleed brakes without a partner"
+    - "gravity bleeding brakes how long"
+    - "brake pedal still spongy after bleeding"
+  publish_date: 2026-06-26
+  sources:
+    - "DOT brake fluid performance standards (FMVSS 116)"
+    - "ASE brake system service reference"
+
+- id: why-is-my-car-shaking-at-idle
+  cluster_id: CL-019
+  category: Maintenance
+  question: "Why is my car shaking at idle?"
+  short_answer: >
+    A car that shakes while idling, but smooths out when you accelerate, usually
+    has a problem in the engine's air, fuel, or ignition system — most commonly
+    worn spark plugs, a dirty fuel injector, or a failing ignition coil causing
+    a slight misfire at low rpm.
+  is_emergency: false
+  causes:
+    - "Worn or fouled spark plugs causing a rough idle misfire"
+    - "A dirty or clogged fuel injector delivering uneven fuel spray"
+    - "Worn engine mounts letting normal vibration transfer to the body"
+    - "A dirty throttle body or faulty idle air control valve disrupting airflow"
+  steps:
+    - title: "Note when the shaking happens"
+      detail: "If it appears only at idle but clears above 1000 rpm, focus on ignition and fuel. If it worsens in gear, suspect engine or transmission mounts."
+    - title: "Scan for misfire codes"
+      detail: "Use an OBD2 scanner. Even without a check engine light, pending codes like P0300 point to a specific cylinder or random misfire."
+    - title: "Inspect spark plugs and coils"
+      detail: "Check plug gap and condition, and look for cracks in coil boots. Swap coils between cylinders to see if the misfire moves."
+  when_to_see_mechanic:
+    - "The shaking is accompanied by a check engine light"
+    - "You notice a loss of power or stalling"
+    - "The vibration is clearly from the drivetrain, not the engine"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 100
+    high: 400
+    currency: USD
+    note: "Spark plugs or ignition coil replacement, parts and labor."
+  related_queries:
+    - "car shakes at idle but smooths out while driving"
+    - "rough idle no check engine light"
+    - "car vibrating when stopped at red light"
+  publish_date: 2026-06-27
+  sources:
+    - "ASE engine performance certification reference"
+    - "SAE engine idle stability diagnostics"
+
+- id: how-to-fix-ac-blowing-hot-air
+  cluster_id: CL-016
+  category: Maintenance
+  question: "How do you fix a car AC blowing hot air?"
+  short_answer: >
+    A car AC blowing warm air most often has low refrigerant from a small leak,
+    though a faulty compressor, a clogged expansion valve, or an electrical
+    issue with the cooling fan can also be the cause. Start by checking
+    refrigerant pressure, then inspect the compressor and cooling fans.
+  is_emergency: false
+  causes:
+    - "Low refrigerant due to a slow leak in a hose, fitting, or the condenser"
+    - "A failed AC compressor clutch or internal compressor failure"
+    - "A clogged expansion valve or receiver-drier restricting refrigerant flow"
+    - "An inoperative radiator or condenser cooling fan causing high-side overheating"
+  steps:
+    - title: "Check the AC clutch engagement"
+      detail: "With the engine running and AC on, watch the compressor pulley. The outer clutch plate should spin with the pulley. If it never engages, suspect low pressure or an electrical fault."
+    - title: "Measure refrigerant pressure"
+      detail: "Attach a manifold gauge set to the low and high service ports. Compare readings to the ambient-temperature pressure chart to diagnose low charge, blockage, or compressor failure."
+    - title: "Inspect the condenser and cooling fans"
+      detail: "Look for bent, debris-clogged, or leaking condenser fins. Confirm both radiator fans spin up when the AC is switched on."
+  when_to_see_mechanic:
+    - "Gauge readings indicate a compressor or expansion-valve failure"
+    - "The system is empty and the leak source is not obvious"
+    - "You do not have a gauge set or recovery equipment"
+  diy_difficulty: advanced
+  typical_cost:
+    low: 100
+    high: 1200
+    currency: USD
+    note: "Recharge kit at the low end; compressor replacement at the high end."
+  related_queries:
+    - "car ac not cold but fan works"
+    - "how to tell if car ac compressor is bad"
+    - "car ac blowing hot air suddenly"
+  publish_date: 2026-06-28
+  sources:
+    - "SAE J639 vehicle AC system service standard"
+    - "EPA Section 609 motor vehicle AC refrigerant handling guidance"
+
+- id: single-click-when-trying-to-start-car
+  cluster_id: CL-051
+  category: Maintenance
+  question: "What does a single click mean when trying to start your car?"
+  short_answer: >
+    A single, loud click when you turn the key (with no engine cranking) usually
+    points to the starter motor or its solenoid — the starter gear is not
+    engaging the flywheel. It can also mean a poor connection at the battery or
+    starter, or a fully discharged battery that has enough power to click but
+    not to crank.
+  is_emergency: false
+  causes:
+    - "A failed starter solenoid that clicks but does not extend the starter gear"
+    - "Corroded or loose battery terminals limiting current to the starter"
+    - "A worn or dead starter motor with worn brushes or a failed Bendix drive"
+    - "A deeply discharged battery that cannot deliver cranking amps"
+  steps:
+    - title: "Check the battery and terminals"
+      detail: "Clean any corrosion from the battery posts and tighten the cable clamps. Test battery voltage with a meter — a healthy battery reads above 12.4 V at rest."
+    - title: "Tap the starter while a helper turns the key"
+      detail: "Lightly tap the starter body with a wrench while someone turns the key. If the engine cranks, the starter has a dead spot and needs replacement."
+    - title: "Test voltage at the starter"
+      detail: "With a helper turning the key, measure voltage at the starter's main terminal. Battery voltage present but no cranking confirms a starter failure."
+  when_to_see_mechanic:
+    - "The battery and terminals are good but the starter still only clicks"
+    - "The starter is difficult to reach or requires lifting the vehicle"
+    - "Multiple electrical systems are dead, suggesting a bigger wiring fault"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 200
+    high: 600
+    currency: USD
+    note: "Starter motor replacement, parts and labor."
+  related_queries:
+    - "single click when starting car not battery"
+    - "starter clicking but not engaging"
+    - "car makes one click and wont start"
+  publish_date: 2026-06-29
+  sources:
+    - "ASE electrical and starting system reference"
+    - "Battery Council International starting system diagnostics"
+
+- id: transmission-slipping-quick-fix
+  cluster_id: CL-054
+  category: Maintenance
+  question: "What causes a slipping transmission and is there a quick fix?"
+  short_answer: >
+    A slipping transmission — where the engine revs but the car barely
+    accelerates — is usually caused by low or burnt fluid, though internal
+    clutch wear or a failing solenoid can also be to blame. The only true quick
+    fix is checking and topping up the fluid; persistent slipping points to an
+    internal problem requiring professional repair.
+  is_emergency: false
+  causes:
+    - "Low transmission fluid from a leak or long service interval"
+    - "Burnt or degraded fluid that has lost its hydraulic properties"
+    - "Worn clutch plates or bands inside the transmission"
+    - "A faulty shift solenoid causing incorrect gear engagement"
+  steps:
+    - title: "Check the transmission fluid level and condition"
+      detail: "With the engine warm and running, pull the dipstick (if equipped). Low, dark, or burnt-smelling fluid is the most common cause of slipping."
+    - title: "Top up or service the fluid"
+      detail: "Add the exact fluid specified for your transmission to the full mark. If the fluid is burnt, a fluid and filter service may help, but cannot repair internal wear."
+    - title: "Scan for transmission codes"
+      detail: "Use a scanner that reads transmission codes (not just engine). Solenoid or pressure codes point to an electrical or hydraulic fault rather than mechanical wear."
+  when_to_see_mechanic:
+    - "The fluid is full and clean but the transmission still slips"
+    - "You find metal shavings in the fluid"
+    - "The slipping is accompanied by harsh or delayed shifting"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 50
+    high: 3000
+    currency: USD
+    note: "Fluid top-up at the low end; internal rebuild at the high end."
+  related_queries:
+    - "transmission slipping signs and symptoms"
+    - "can low transmission fluid cause slipping"
+    - "how long can you drive with a slipping transmission"
+  publish_date: 2026-06-30
+  sources:
+    - "ATRA automatic transmission service standards"
+    - "Vehicle manufacturer transmission fluid specifications"
+
+- id: common-mistakes-bleeding-brakes
+  cluster_id: CL-040
+  category: Maintenance
+  question: "What are the most common mistakes when bleeding brakes?"
+  short_answer: >
+    The most common brake-bleeding mistakes are letting the master cylinder run
+    dry, pushing the brake pedal to the floor (which damages the master cylinder
+    seals), and bleeding the wheels in the wrong order. Getting the sequence,
+    fluid level, and pedal travel right is what separates a firm pedal from a
+    spongy one.
+  is_emergency: false
+  causes:
+    - "Letting the master cylinder reservoir run dry and drawing air back into the lines"
+    - "Pushing the pedal fully to the floor, which can flip and tear the secondary seal"
+    - "Bleeding the wheels in the wrong order instead of farthest-from-master first"
+    - "Reusing old or moisture-contaminated brake fluid from an opened bottle"
+  steps:
+    - title: "Keep the reservoir above the MIN line at all times"
+      detail: "Check and top up the master cylinder after every wheel. Running it dry forces you to start the whole process over and may require bleeding the master cylinder itself."
+    - title: "Limit pedal travel during manual bleeding"
+      detail: "When a helper pumps the pedal, place a block under it so it stops about halfway. Never let it hit the floor, which can damage seals designed for normal travel."
+    - title: "Follow the correct wheel sequence"
+      detail: "Bleed in order of hydraulic line length: rear passenger, rear driver, front passenger, front driver. This pushes the longest air columns out first."
+  when_to_see_mechanic:
+    - "The pedal stays spongy after a careful, correct bleed"
+    - "The master cylinder was run dry and now the pedal sinks"
+    - "You suspect ABS module air that requires a scan-tool bleed cycle"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 15
+    high: 40
+    currency: USD
+    note: "One to two bottles of fresh, sealed brake fluid."
+  related_queries:
+    - "why is my brake pedal soft after bleeding"
+    - "do you bleed brakes with cap on or off"
+    - "can bleeding brakes wrong ruin the master cylinder"
+  publish_date: 2026-07-01
+  sources:
+    - "DOT brake fluid performance standards (FMVSS 116)"
+    - "ASE brake system service reference"
+
+- id: car-wont-start-lights-come-on-clicking
+  cluster_id: CL-004
+  category: Maintenance
+  question: "Why won't my car start but the lights come on and there's a clicking noise?"
+  short_answer: >
+    If your lights are bright but the car only clicks and won't crank, the
+    battery has enough charge to power accessories but not enough cold cranking
+    amps to turn the starter — or the starter itself, its solenoid, or the
+    battery cables have a bad connection. Rapid clicking usually means a weak
+    battery; a single loud click points to the starter.
+  is_emergency: false
+  causes:
+    - "A weak battery with enough voltage for lights but not enough to crank"
+    - "Corroded or loose battery terminals and cable ends limiting current"
+    - "A failed starter solenoid that engages but cannot turn the motor"
+    - "A bad ground cable between the battery and chassis or engine"
+  steps:
+    - title: "Check the battery voltage under load"
+      detail: "Measure battery voltage while a helper turns the key. If it drops below 9.6 V during cranking, the battery is too weak to start the car."
+    - title: "Clean and tighten the battery connections"
+      detail: "Remove the cable clamps, clean the posts and clamp interiors with a brush, and retighten. Also check and clean the engine ground strap."
+    - title: "Distinguish single click from rapid clicking"
+      detail: "Rapid clicking indicates a weak battery or poor connection. A single solid click with no cranking points to the starter or its solenoid."
+  when_to_see_mechanic:
+    - "The battery tests good but the car still only clicks"
+    - "The starter is hard to access or requires removing other components"
+    - "There are no lights, dash, or clicking at all, suggesting a main fuse or cable"
   diy_difficulty: beginner
-  publish_date: 2026-06-22
-  sources: []
+  typical_cost:
+    low: 0
+    high: 400
+    currency: USD
+    note: "Terminal cleaning is free; battery or starter replacement at the high end."
+  related_queries:
+    - "car wont start rapid clicking noise"
+    - "lights work but car wont start just clicks"
+    - "how to tell if battery or starter is bad"
+  publish_date: 2026-07-02
+  sources:
+    - "Battery Council International starting system diagnostics"
+    - "ASE electrical system certification reference"
+
+- id: bleed-brakes-without-vacuum-pump
+  cluster_id: CL-035
+  category: Maintenance
+  question: "How do you bleed brakes without a vacuum pump?"
+  short_answer: >
+    You can bleed brakes without a vacuum pump using the gravity method (simply
+    open each bleeder and let fluid drip out) or the manual pump-and-hold method
+    with a helper. A cheap one-person check-valve bleeder hose also works without
+    any pump and lets you do the job alone.
+  is_emergency: false
+  causes:
+    - "Air is in the lines after a caliper, hose, or master cylinder was replaced"
+    - "The brake fluid is due for service and has absorbed moisture"
+    - "The pedal feels spongy or sinks after any hydraulic work"
+    - "A bleeder valve was left open or loosened and drew in air"
+  steps:
+    - title: "Top up and prepare the master cylinder"
+      detail: "Fill the reservoir with fresh, sealed fluid of the correct DOT rating and leave the cap loosely resting on top to allow airflow."
+    - title: "Use gravity or the manual method"
+      detail: "For gravity bleeding, open the farthest bleeder and let it drip until bubble-free. For the manual method, have a helper pump the pedal three times and hold, then open the valve to release fluid and air, closing before the pedal reaches the floor."
+    - title: "Repeat around the car and refill"
+      detail: "Work from the longest line to the shortest (rear passenger last). Refill the reservoir after each wheel so it never runs dry."
+  when_to_see_mechanic:
+    - "The pedal stays soft after a careful manual bleed"
+    - "You suspect air trapped in the ABS module"
+    - "A bleeder valve is rounded off or seized shut"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 15
+    high: 40
+    currency: USD
+    note: "Brake fluid plus an inexpensive one-person check-valve bleeder hose."
+  related_queries:
+    - "gravity bleeding vs manual bleeding"
+    - "one person brake bleeding method"
+    - "best way to bleed brakes alone"
+  publish_date: 2026-07-03
+  sources:
+    - "DOT brake fluid performance standards (FMVSS 116)"
+    - "ASE brake system service reference"
+
+- id: how-long-does-it-take-to-wrap-a-car
+  cluster_id: CL-070
+  category: Maintenance
+  question: "How long does it take to wrap a car?"
+  short_answer: >
+    A full professional vehicle wrap takes 2 to 5 days on average. A simple
+    color change on a small sedan can be done in 2 to 3 days, while complex
+    designs, large vehicles, or wraps that require disassembly of trim and
+    mirrors can take up to a week or more.
+  is_emergency: false
+  causes:
+    - "Vehicle size and complexity determine the bulk of the time required"
+    - "Detailed designs with multiple colors, patterns, or cut graphics add labor"
+    - "Trim, handles, and mirrors must be removed for a clean, tucked wrap"
+    - "Surface preparation, cleaning, and defect correction take a full day or more"
+  steps:
+    - title: "Budget time for preparation"
+      detail: "A thorough wash, clay bar, and paint decontamination take at least half a day. Any scratches or imperfections show through the vinyl and must be corrected first."
+    - title: "Factor in disassembly and reassembly"
+      detail: "Removing door handles, mirrors, trim, and badges so the vinyl can be tucked behind them adds several hours and requires care to avoid breakage."
+    - title: "Plan for curing and inspection"
+      detail: "After application, the wrap needs time to set and the installer performs a final inspection to re-squeegee edges and confirm no lifting before delivery."
+  when_to_see_mechanic:
+    - "You want a warranty-backed, paint-safe professional installation"
+    - "The vehicle has complex curves or a rear window that needs perforated film"
+    - "A previous DIY wrap left adhesive residue that must be removed first"
+  diy_difficulty: advanced
+  typical_cost:
+    low: 2000
+    high: 5000
+    currency: USD
+    note: "Full vehicle wrap, professional installation, design and materials included."
+  related_queries:
+    - "how long does a partial car wrap take"
+    - "can you wrap a car yourself"
+    - "how much does a full car wrap cost"
+  publish_date: 2026-07-04
+  sources:
+    - "Vinyl film manufacturer installation guidelines (3M, Avery Dennison)"
+
+- id: oil-in-spark-plug-well
+  cluster_id: CL-010
+  category: Maintenance
+  question: "Why is there oil in the spark plug well?"
+  short_answer: >
+    Oil pooling in a spark plug well means the valve cover gasket or the spark
+    plug tube seal beneath it has failed, letting engine oil seep down around
+    the plug and coil. Over time the oil degrades the ignition coil boot and
+    causes misfires, so the seals should be replaced promptly.
+  is_emergency: false
+  causes:
+    - "A hardened or cracked valve cover gasket due to heat and age"
+    - "A failed spark plug tube seal pressed into the valve cover"
+    - "An over-tightened valve cover distorting the gasket and seal"
+    - "A clogged PCV valve raising crankcase pressure and forcing oil past seals"
+  steps:
+    - title: "Distinguish oil in the well from oil on the threads"
+      detail: "Oil sitting around the coil boot in the tube indicates a seal leak. Oil only on the threaded end of the plug points to internal engine oil consumption, a different problem."
+    - title: "Inspect the valve cover and PCV"
+      detail: "Look for wetness along the valve cover mating edge and check the PCV valve and breather hoses for blockage that raises pressure."
+    - title: "Replace the gasket set and seals"
+      detail: "Remove the valve cover, clean both mating surfaces, and install a new gasket and tube seal set. Follow the manufacturer's bolt torque sequence."
+  when_to_see_mechanic:
+    - "The ignition coil is oil-soaked and misfiring"
+    - "Multiple wells are oil-filled"
+    - "The valve cover is plastic and cracked or the bolts are seized"
+  diy_difficulty: intermediate
+  typical_cost:
+    low: 150
+    high: 450
+    currency: USD
+    note: "Valve cover gasket and tube seal set, parts and labor."
+  related_queries:
+    - "oil in spark plug well but not on threads"
+    - "can oil in spark plug well cause misfire"
+    - "how much to fix oil in spark plug well"
+  publish_date: 2026-07-05
+  sources:
+    - "ASE engine repair certification reference"
+    - "Vehicle manufacturer valve cover service procedures"
+
+- id: rav4-vs-cr-v-reliability
+  cluster_id: CL-031
+  category: Buying Guides
+  question: "Which is more reliable, the Toyota RAV4 or the Honda CR-V?"
+  short_answer: >
+    Both the Toyota RAV4 and Honda CR-V are among the most reliable compact
+    SUVs you can buy, but the RAV4 consistently edges out the CR-V in long-term
+    reliability ratings and lower average repair costs. The CR-V is praised for
+    ride comfort and interior space, while the RAV4's simpler powertrains tend
+    to need fewer major repairs over time.
+  is_emergency: false
+  causes:
+    - "The RAV4's naturally aspirated engines have a long track record of durability"
+    - "The CR-V's turbocharged engines offer efficiency but add complexity over time"
+    - "Toyota's hybrid system has a strong reliability reputation across its lineup"
+    - "Both benefit from widespread parts availability and inexpensive routine service"
+  steps:
+    - title: "Compare owner-reported problem rates"
+      detail: "Check independent reliability indices and owner survey data for the specific model years you are considering, as results vary by generation."
+    - title: "Review common issues per generation"
+      detail: "The CR-V has had occasional oil-dilution reports on certain turbo engines in cold climates, while the RAV4 has had isolated fuel pump recalls — verify the recall status of any used unit."
+    - title: "Inspect maintenance history"
+      detail: "Whichever you choose, a documented service history is the best predictor of reliability. Demand records and check for completed recalls."
+  when_to_see_mechanic:
+    - "You want a pre-purchase inspection on a used example"
+    - "A vehicle has an active or unresolved recall"
+    - "You notice warning lights or unusual noises on a test drive"
+  diy_difficulty: beginner
+  typical_cost:
+    low: 100
+    high: 200
+    currency: USD
+    note: "Pre-purchase inspection by an independent mechanic."
+  related_queries:
+    - "rav4 vs cr-v which lasts longer"
+    - "toyota rav4 common problems"
+    - "honda cr-v reliability ratings"
+  publish_date: 2026-07-06
+  sources:
+    - "NHTSA recall and complaint database"
+    - "Independent long-term reliability survey data (Consumer Reports)"
+
+- id: is-gap-insurance-worth-it
+  cluster_id: CL-076
+  category: Insurance
+  question: "Is gap insurance worth it?"
+  short_answer: >
+    Gap (guaranteed asset protection) insurance is worth it when you owe more on
+    your loan or lease than the car is currently worth. If the vehicle is
+    totaled or stolen, standard insurance pays only the actual cash value, which
+    can leave you paying off a loan for a car you no longer own — gap covers
+    that difference.
+  is_emergency: false
+  causes:
+    - "You financed with a small or zero down payment, so you owe more than the car's value"
+    - "You have a long loan term (60 to 84 months) and depreciation outpaces payoff"
+    - "You leased the vehicle, where gap coverage is often required"
+    - "You rolled negative equity from a previous loan into the new one"
+  steps:
+    - title: "Compare your loan balance to the car's value"
+      detail: "Check your current payoff amount against the vehicle's actual cash value using valuation guides. If the loan is higher, you are upside down and gap helps."
+    - title: "Check if gap is already included"
+      detail: "Review your loan or lease agreement and auto policy. Many leases include gap coverage, and some lenders bundle it, so you may not need to buy more."
+    - title: "Shop the price, not just the dealer"
+      detail: "Dealers often charge more for gap than your auto insurer or a standalone provider. Get a quote from your existing insurer before buying at the dealership."
+  when_to_see_mechanic: []
+  diy_difficulty: beginner
+  typical_cost:
+    low: 20
+    high: 700
+    currency: USD
+    note: "Gap as a low annual auto-policy add-on, up to a one-time dealer charge."
+  related_queries:
+    - "when should you not get gap insurance"
+    - "how much is gap insurance from dealer vs insurance"
+    - "does gap insurance cover a totaled car"
+  publish_date: 2026-07-07
+  sources:
+    - "III Insurance Information Institute gap insurance guidance"
+    - "State insurance department consumer resources"
+
+- id: how-much-does-it-cost-to-wrap-a-car
+  cluster_id: CL-017
+  category: Maintenance
+  question: "How much does it cost to wrap a car?"
+  short_answer: >
+    A full professional car wrap typically costs between $2,000 and $5,000,
+    depending on vehicle size, the quality of vinyl, and the complexity of the
+    design. A partial wrap or color-change on a small sedan sits at the lower
+    end, while custom graphics, chrome, or large SUVs push the price higher.
+  is_emergency: false
+  causes:
+    - "Larger vehicles require more material and labor hours"
+    - "Premium cast vinyl and specialty finishes (chrome, color-shift) cost far more"
+    - "Complex custom designs and printed graphics add design and installation time"
+    - "Paint preparation and defect correction are required before wrapping"
+  steps:
+    - title: "Get quotes based on your specific vehicle"
+      detail: "Provide the year, make, model, and desired finish to get accurate quotes. Prices vary significantly between sedans, trucks, and SUVs."
+    - title: "Ask what the quote includes"
+      detail: "Confirm whether the price covers surface prep, disassembly of handles and trim, and a warranty. A low quote may skip these steps and deliver a poor result."
+    - title: "Compare vinyl quality"
+      detail: "Cast vinyl (3M, Avery, Orajet) conforms to curves and lasts longer than cheaper calendared film. Ask which material an installer uses and its expected lifespan."
+  when_to_see_mechanic:
+    - "You want a warranty-backed, paint-safe professional installation"
+    - "The vehicle's paint is damaged and needs correction before wrapping"
+    - "You need a complex custom design or full-vehicle printed graphic"
+  diy_difficulty: advanced
+  typical_cost:
+    low: 2000
+    high: 5000
+    currency: USD
+    note: "Full vehicle wrap, professional installation, materials included."
+  related_queries:
+    - "how much does a partial car wrap cost"
+    - "is it cheaper to wrap or paint a car"
+    - "how long does a car wrap last"
+  publish_date: 2026-07-08
+  sources:
+    - "Vinyl film manufacturer pricing and material guidelines (3M, Avery Dennison)"
+
+- id: car-accessories-gift-for-him
+  cluster_id: CL-085
+  category: Accessories
+  question: "What are the best car accessories to gift?"
+  short_answer: >
+    The best car accessories to gift are practical, universal items that almost
+    any driver appreciates: a quality dash cam for safety, a fast magnetic phone
+    mount, a portable jump starter, or a compact wet-dry vacuum for quick
+    interior cleaning. These work across nearly any vehicle and price range.
+  is_emergency: false
+  causes:
+    - "Universal-fit accessories suit almost any vehicle the recipient owns"
+    - "Safety items like dash cams and jump starters have everyday practical value"
+    - "Detailing tools keep a car clean without needing a professional service"
+    - "Tech accessories like chargers and mounts upgrade the driving experience"
+  steps:
+    - title: "Match the gift to how they use the car"
+      detail: "A commuter benefits from a phone mount and fast charger; a road-tripper appreciates a cooler or organizer; a DIYer values a jump starter and detailing kit."
+    - title: "Prioritize quality over novelty"
+      detail: "A single reliable dash cam or a well-reviewed jump starter is more useful than several cheap gadgets that fail quickly."
+    - title: "Check compatibility and power source"
+      detail: "Confirm that chargers and jump starters suit the recipient's vehicle voltage and that mounts fit their phone size and dash layout."
+  when_to_see_mechanic: []
+  diy_difficulty: beginner
+  typical_cost:
+    low: 25
+    high: 200
+    currency: USD
+    note: "Individual accessory price range; gift bundles scale up from there."
+  related_queries:
+    - "best car gifts under 50 dollars"
+    - "practical car accessories everyone needs"
+    - "car gadgets gifts for dad"
+  publish_date: 2026-07-09
+  sources:
+    - "Consumer product safety and review aggregator data"
+
