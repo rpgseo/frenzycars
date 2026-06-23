@@ -15,3 +15,12 @@ Thumbs.db
 
 # Internal design/strategy docs
 docs/superpowers/
+
+# Secrets — never commit credentials
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+!.env.example

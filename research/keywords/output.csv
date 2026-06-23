@@ -1,0 +1,868 @@
+keyword,category,cluster_id,primary_keyword,volume,cpc,kd%,intent,forum_hits,weak_score,is_lowfruit,competitors_ranking,priority,content_type,ai_overview
+most spacious 3rd row suv,Buying Guides,CL-061,most spacious 3rd row suv,2900,4.84,0,Informational,3,80,True,,high,pillar,True
+top 10 cars for 16 year olds,Buying Guides,CL-057,top 10 cars for 16 year olds,1900,2.28,13,Informational,3,78,True,,high,cluster,True
+best 3 row suv for families,Buying Guides,CL-022,best 3 row suv for families,1000,3.55,0,Informational,3,80,True,,high,cluster,True
+cars for teens under 5k,Buying Guides,CL-058,cars for teens under 5k,880,1.69,17,Informational,3,82,True,,high,cluster,True
+cars for teens under 10k,Buying Guides,CL-059,cars for teens under 10k,590,1.76,28,Informational,2,72,True,,medium,cluster,True
+cars that best hold their value,Buying Guides,CL-021,cars that best hold their value,590,2.28,12,Commercial,1,44,False,,low,cluster,True
+cars that hold their value the best,Buying Guides,CL-021,cars that best hold their value,590,2.28,12,Commercial,2,54,True,,high,cluster,False
+cars that hold their value best,Buying Guides,CL-021,cars that best hold their value,590,2.28,9,Informational,3,72,True,,high,cluster,True
+best 3 row suv for the money,Buying Guides,CL-022,best 3 row suv for families,320,3.21,3,Informational,4,94,True,,high,cluster,True
+best 3-row suv for the money,Buying Guides,CL-022,best 3 row suv for families,320,3.21,0,Commercial,2,72,True,,high,cluster,True
+15 of the worst used cars to buy,Buying Guides,CL-060,15 of the worst used cars to buy,260,1.93,9,Informational,4,100,True,,high,cluster,True
+list of gas prices by year,Car Culture & Road Trips,CL-084,list of gas prices by year,6600,3.34,36,Commercial,1,60,False,,low,pillar,True
+cheapest gas prices by state,Car Culture & Road Trips,CL-012,cheapest gas prices by state,1000,9.66,39,Commercial,2,66,True,,high,cluster,True
+cheapest gas price by state,Car Culture & Road Trips,CL-012,cheapest gas prices by state,1000,9.66,36,Informational,3,78,True,,high,cluster,True
+gas prices by state highest to lowest,Car Culture & Road Trips,CL-012,cheapest gas prices by state,1000,2.39,42,Commercial,2,66,True,,high,cluster,True
+what state has the most expensive gas,Car Culture & Road Trips,CL-012,cheapest gas prices by state,720,0.0,29,Informational,2,78,True,,medium,cluster,True
+gas price in usa per litre,Car Culture & Road Trips,CL-012,cheapest gas prices by state,590,6.16,57,Commercial,1,62,False,,low,cluster,True
+cheapest gas by state,Car Culture & Road Trips,CL-012,cheapest gas prices by state,260,3.49,55,Commercial,2,66,True,,low,cluster,False
+car accessories gift for him,Car Culture & Road Trips,CL-085,car accessories gift for him,260,0.77,0,Transactional,4,100,True,,high,cluster,True
+best road trip cars for families,Car Culture & Road Trips,CL-083,best road trip cars for families,210,2.23,2,Commercial,2,70,True,,high,cluster,True
+most reliable luxury suv,Car Reviews & Comparisons,CL-008,most reliable luxury suv,5400,1.72,0,Informational,3,70,True,hotcars.com,high,pillar,True
+luxury suv most reliable,Car Reviews & Comparisons,CL-008,most reliable luxury suv,5400,1.72,0,Commercial,2,60,True,topspeed.com,high,pillar,True
+most reliable suv luxury,Car Reviews & Comparisons,CL-008,most reliable luxury suv,5400,1.72,4,Informational,3,70,True,hotcars.com;topspeed.com,high,pillar,True
+f150 vs ram 1500,Car Reviews & Comparisons,CL-080,f150 vs ram 1500,1000,1.62,0,Commercial,1,50,False,,high,cluster,True
+tesla model 3 vs model y comparison,Car Reviews & Comparisons,CL-079,tesla model 3 vs model y comparison,880,3.29,0,Commercial,2,60,True,,high,cluster,True
+chevy truck vs ford truck,Car Reviews & Comparisons,CL-081,chevy truck vs ford truck,880,0.86,0,Informational,3,96,True,,high,cluster,True
+most reliable luxury midsize suv,Car Reviews & Comparisons,CL-013,most reliable luxury midsize suv,590,3.1,19,Commercial,1,44,False,topspeed.com,medium,cluster,True
+most reliable midsize luxury suv,Car Reviews & Comparisons,CL-013,most reliable luxury midsize suv,590,3.1,7,Commercial,1,52,False,topspeed.com,high,cluster,True
+most reliable luxury suv used,Car Reviews & Comparisons,CL-008,most reliable luxury suv,590,1.01,0,Informational,3,96,True,,high,pillar,True
+most reliable used luxury suv,Car Reviews & Comparisons,CL-008,most reliable luxury suv,590,1.01,0,Commercial,2,86,True,,high,pillar,True
+most reliable luxury mid-size suv,Car Reviews & Comparisons,CL-013,most reliable luxury midsize suv,590,3.1,13,Commercial,1,44,False,topspeed.com,medium,cluster,True
+most reliable mid size luxury suv,Car Reviews & Comparisons,CL-013,most reliable luxury midsize suv,590,3.1,13,Commercial,1,44,False,topspeed.com,medium,cluster,True
+most reliable and affordable luxury suv,Car Reviews & Comparisons,CL-008,most reliable luxury suv,480,4.71,0,Commercial,1,50,False,topspeed.com,high,pillar,True
+which is bigger toyota rav4 or honda cr-v,Car Reviews & Comparisons,CL-032,which is bigger toyota rav4 or honda cr-v,390,0.92,0,Informational,1,50,False,,medium,cluster,True
+rav4 vs cr-v comparison,Car Reviews & Comparisons,CL-032,which is bigger toyota rav4 or honda cr-v,390,0.67,0,Informational,3,72,True,,high,cluster,True
+what is the most reliable luxury suv,Car Reviews & Comparisons,CL-008,most reliable luxury suv,390,1.36,0,Commercial,2,60,True,,high,pillar,True
+most reliable small luxury suv,Car Reviews & Comparisons,CL-025,most reliable small luxury suv,320,2.72,0,Commercial,2,60,True,topspeed.com,high,cluster,True
+most reliable luxury suv 2025,Car Reviews & Comparisons,CL-013,most reliable luxury midsize suv,320,0.94,13,Informational,3,62,True,,high,cluster,True
+most reliable compact luxury suv,Car Reviews & Comparisons,CL-025,most reliable small luxury suv,320,2.72,3,Commercial,1,50,False,topspeed.com,high,cluster,True
+most reliable luxury compact suv,Car Reviews & Comparisons,CL-025,most reliable small luxury suv,320,2.72,1,Commercial,2,60,True,topspeed.com,high,cluster,True
+f150 vs silverado vs ram,Car Reviews & Comparisons,CL-082,f150 vs silverado vs ram,260,1.07,16,Commercial,1,44,False,,low,cluster,True
+rav4 vs cr v reliability,Car Reviews & Comparisons,CL-031,rav4 vs cr v reliability,210,0.78,0,Informational,3,100,True,,high,cluster,True
+rav4 vs cr-v reliability,Car Reviews & Comparisons,CL-031,rav4 vs cr v reliability,210,0.78,0,Informational,3,100,True,,high,cluster,True
+level 2 ev charger installation cost,Electric Vehicles & New Technology,CL-011,level 2 ev charger installation cost,6600,9.65,12,Commercial,2,80,True,,high,pillar,True
+how long do ev car batteries last,Electric Vehicles & New Technology,CL-023,how long do ev car batteries last,2400,1.0,41,Informational,2,40,True,,high,cluster,True
+level 2 charger installation cost,Electric Vehicles & New Technology,CL-011,level 2 ev charger installation cost,2400,9.13,0,Commercial,2,88,True,,high,pillar,True
+how long do ev batteries last,Electric Vehicles & New Technology,CL-023,how long do ev car batteries last,1300,1.03,34,Informational,1,34,False,,low,cluster,True
+cheapest electric car usa,Electric Vehicles & New Technology,CL-063,cheapest electric car usa,880,2.4,6,Informational,3,72,True,,high,cluster,True
+level 2 electric car charger installation cost,Electric Vehicles & New Technology,CL-011,level 2 ev charger installation cost,590,12.83,0,Commercial,2,88,True,,high,pillar,True
+how long does electric car battery last in a day,Electric Vehicles & New Technology,CL-023,how long do ev car batteries last,390,1.32,20,Informational,2,80,True,,high,cluster,True
+level 2 home ev charger installation cost,Electric Vehicles & New Technology,CL-011,level 2 ev charger installation cost,390,0.0,0,Commercial,2,86,True,,high,pillar,False
+level 2 charger installation near me,Electric Vehicles & New Technology,CL-062,level 2 charger installation near me,320,12.37,7,Transactional,1,78,True,,high,cluster,True
+level 2 car charger installation cost,Electric Vehicles & New Technology,CL-011,level 2 ev charger installation cost,260,3.63,0,Commercial,2,88,True,,high,pillar,True
+best used evs under 20k,Electric Vehicles & New Technology,CL-064,best used evs under 20k,260,0.89,0,Informational,4,82,True,,high,cluster,True
+level 2 home charger installation cost,Electric Vehicles & New Technology,CL-011,level 2 ev charger installation cost,210,7.63,3,Commercial,2,86,True,,high,pillar,True
+noco jump starter,"Gear, Accessories & Tools",CL-092,noco jump starter,27100,2.23,18,Informational,4,98,True,,high,cluster,False
+obd2 scanner bluetooth,"Gear, Accessories & Tools",CL-088,obd2 scanner bluetooth,14800,0.73,12,Informational,3,90,True,,high,cluster,True
+best car cell phone mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,11,Commercial,2,52,True,,high,pillar,False
+best car phone mount holder,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,7,Commercial,1,50,False,,high,pillar,True
+best phone car mount holder,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,7,Commercial,1,50,False,,high,pillar,True
+best phone mount car,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,12,Commercial,2,52,True,,high,pillar,False
+best car mount cell phone,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,11,Commercial,1,42,False,,medium,pillar,True
+best car mount phone,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,12,Commercial,2,52,True,,high,pillar,False
+best phone mount in car,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,12,Commercial,2,52,True,slashgear.com,high,pillar,True
+car phone mount best,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,9,Commercial,1,50,False,,high,pillar,False
+best car mount for phone,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,12,Commercial,1,42,False,,medium,pillar,True
+best phone car mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,8,Commercial,2,60,True,,high,pillar,False
+best in car phone mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,12,Commercial,1,42,False,slashgear.com,high,pillar,False
+best phone mount for car,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,12,Commercial,1,42,False,,medium,pillar,True
+car mount for cell phone best,"Gear, Accessories & Tools",CL-001,best car cell phone mount,9900,0.89,11,Commercial,1,42,False,,medium,pillar,True
+best portable car battery jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,8100,1.37,21,Transactional,3,62,True,,high,cluster,True
+best car battery portable jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,8100,1.37,20,Transactional,3,62,True,,high,cluster,False
+portable car battery jumper,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,6600,1.21,6,Transactional,2,64,True,,high,cluster,False
+best car phone mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,4400,0.88,17,Informational,3,62,True,,high,pillar,True
+best portable jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,3600,1.44,21,Transactional,3,62,True,,high,cluster,True
+portable jump starter best,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,3600,1.44,11,Transactional,3,62,True,,high,cluster,True
+best jump starter portable,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,3600,1.44,21,Informational,3,62,True,,high,cluster,True
+best car wax for black cars,"Gear, Accessories & Tools",CL-027,best car wax for black cars,2400,0.62,0,Commercial,2,60,True,,high,cluster,True
+best heavy duty jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1900,1.43,14,Informational,3,62,True,,high,cluster,False
+best professional car diagnostic tool,"Gear, Accessories & Tools",CL-089,best professional car diagnostic tool,1600,2.13,11,Informational,3,94,True,,high,cluster,True
+best portable car jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,21,Commercial,2,52,True,,high,cluster,True
+best portable jump starter car,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,21,Informational,3,62,True,,high,cluster,True
+best car jump starter portable,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,4,Commercial,2,60,True,,high,cluster,True
+best car portable jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,20,Informational,3,62,True,,high,cluster,True
+best portable auto jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,21,Transactional,4,72,True,,high,cluster,True
+best portable jump starter for cars,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,21,Informational,3,62,True,,high,cluster,True
+best portable jump starter for car,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,1300,1.85,20,Transactional,4,72,True,,high,cluster,True
+best obd2 scanner that does everything,"Gear, Accessories & Tools",CL-026,best obd2 scanner that does everything,1000,1.33,8,Informational,3,78,True,,high,cluster,False
+best winter tires for an suv,"Gear, Accessories & Tools",CL-014,best winter tires for an suv,1000,0.64,10,Informational,3,88,True,,high,cluster,True
+best winter tires for suv,"Gear, Accessories & Tools",CL-014,best winter tires for an suv,1000,0.64,10,Informational,3,96,True,,high,cluster,True
+best suv tires for winter,"Gear, Accessories & Tools",CL-014,best winter tires for an suv,1000,0.64,5,Informational,3,72,True,,high,cluster,True
+best tires for suv in winter,"Gear, Accessories & Tools",CL-014,best winter tires for an suv,1000,0.64,6,Informational,3,72,True,,high,cluster,False
+best winter snow tires for suv,"Gear, Accessories & Tools",CL-014,best winter tires for an suv,1000,0.64,5,Informational,3,88,True,,high,cluster,True
+best portable air compressor and jump starter,"Gear, Accessories & Tools",CL-015,best portable air compressor and jump starter,1000,1.72,0,Commercial,2,60,True,,high,cluster,True
+best portable jump starter with air compressor,"Gear, Accessories & Tools",CL-015,best portable air compressor and jump starter,1000,1.72,4,Commercial,2,60,True,,high,cluster,True
+best portable jump starter and air compressor,"Gear, Accessories & Tools",CL-015,best portable air compressor and jump starter,1000,1.72,9,Commercial,1,50,False,,high,cluster,False
+best portable air compressor jump starter,"Gear, Accessories & Tools",CL-015,best portable air compressor and jump starter,1000,1.72,26,Informational,3,62,True,,high,cluster,True
+best professional obd2 scanner,"Gear, Accessories & Tools",CL-026,best obd2 scanner that does everything,880,1.32,5,Informational,3,82,True,,high,cluster,True
+phone car mount best buy,"Gear, Accessories & Tools",CL-018,phone car mount best buy,880,0.23,0,Transactional,2,88,True,,high,cluster,False
+best buy car phone mount,"Gear, Accessories & Tools",CL-018,phone car mount best buy,880,0.23,0,Transactional,1,80,True,,high,cluster,False
+phone mount for car best buy,"Gear, Accessories & Tools",CL-018,phone car mount best buy,880,0.23,0,Transactional,2,88,True,,high,cluster,False
+best buy phone car mount,"Gear, Accessories & Tools",CL-018,phone car mount best buy,880,0.23,0,Transactional,2,88,True,,high,cluster,False
+best car phone holder for android,"Gear, Accessories & Tools",CL-001,best car cell phone mount,880,0.64,20,Transactional,1,44,False,,low,pillar,False
+best 4 in-1 jump starter with air compressor,"Gear, Accessories & Tools",CL-015,best portable air compressor and jump starter,720,1.08,4,Transactional,3,70,True,,high,cluster,False
+meguiar's black wax,"Gear, Accessories & Tools",CL-093,meguiar's black wax,720,0.38,0,Informational,2,86,True,,high,cluster,True
+best car wax consumer reports,"Gear, Accessories & Tools",CL-094,best car wax consumer reports,720,0.49,1,Commercial,1,56,False,,medium,cluster,True
+best all season tires for snow and ice,"Gear, Accessories & Tools",CL-091,best all season tires for snow and ice,590,1.31,0,Informational,3,70,True,,high,cluster,True
+best car phone mount vent,"Gear, Accessories & Tools",CL-001,best car cell phone mount,390,0.63,10,Commercial,1,50,False,,medium,pillar,False
+best car vent phone mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,390,0.63,10,Commercial,1,50,False,,medium,pillar,True
+best phone holder for car dashboard,"Gear, Accessories & Tools",CL-001,best car cell phone mount,390,0.89,25,Transactional,1,44,False,,low,pillar,True
+consumer reports best jump starter,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,320,1.27,14,Commercial,2,54,True,,high,cluster,False
+best car wax for black cars scratches,"Gear, Accessories & Tools",CL-027,best car wax for black cars,320,0.55,0,Informational,3,100,True,,high,cluster,True
+best wax for black cars with scratches,"Gear, Accessories & Tools",CL-027,best car wax for black cars,320,0.55,0,Informational,3,98,True,,high,cluster,True
+best obd2 scanner without subscription,"Gear, Accessories & Tools",CL-026,best obd2 scanner that does everything,260,1.25,3,Informational,4,88,True,,high,cluster,True
+best magnetic phone car mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,260,1.12,0,Transactional,1,68,False,,low,pillar,True
+best cell phone car mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,260,0.89,11,Commercial,1,42,False,,low,pillar,False
+the best phone mount for car,"Gear, Accessories & Tools",CL-001,best car cell phone mount,210,0.83,12,Commercial,1,42,False,,low,pillar,False
+what is the best car phone mount,"Gear, Accessories & Tools",CL-001,best car cell phone mount,210,1.01,24,Transactional,2,52,True,,low,pillar,True
+best car phone mount for thick cases,"Gear, Accessories & Tools",CL-090,best car phone mount for thick cases,210,0.6,1,Commercial,2,80,True,,high,cluster,True
+best portable car battery jump starter nearby,"Gear, Accessories & Tools",CL-003,best portable car battery jump starter,210,0.45,4,Transactional,2,60,True,,high,cluster,False
+car wrap near me,"Insurance, Financing & Cost of Ownership",CL-067,car wrap near me,90500,4.29,2,Transactional,0,74,True,,high,pillar,False
+how much does it cost to vinyl wrap a car,"Insurance, Financing & Cost of Ownership",CL-017,how much does it cost to vinyl wrap a car,12100,2.63,20,Informational,3,64,True,,high,cluster,False
+how much does it cost to wrap a car,"Insurance, Financing & Cost of Ownership",CL-017,how much does it cost to vinyl wrap a car,12100,2.63,8,Informational,3,100,True,,high,cluster,True
+how long does a car wrap last,"Insurance, Financing & Cost of Ownership",CL-068,how long does a car wrap last,6600,0.85,0,Informational,4,100,True,,high,cluster,True
+is the gap insurance worth it,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,5400,5.55,0,Informational,1,76,True,,high,cluster,True
+gap insurance is it worth it,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,5400,5.55,0,Informational,1,76,True,,high,cluster,False
+is gap insurance worth it,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,5400,5.55,0,Informational,2,86,True,,high,cluster,False
+how much does it cost to get a car wrap,"Insurance, Financing & Cost of Ownership",CL-017,how much does it cost to vinyl wrap a car,4400,2.81,8,Informational,3,72,True,,high,cluster,True
+geico gap insurance,"Insurance, Financing & Cost of Ownership",CL-077,geico gap insurance,4400,14.87,6,Informational,2,88,True,,high,cluster,True
+vehicle wrap pricing calculator,"Insurance, Financing & Cost of Ownership",CL-069,vehicle wrap pricing calculator,1300,3.62,0,Informational,2,86,True,,high,cluster,True
+financing a car with 600 credit score,"Insurance, Financing & Cost of Ownership",CL-072,financing a car with 600 credit score,1300,18.51,0,Informational,1,80,True,,high,cluster,True
+most expensive car insurance by state,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,1000,10.51,20,Informational,1,68,False,,medium,cluster,True
+how long does it take to wrap a car,"Insurance, Financing & Cost of Ownership",CL-070,how long does it take to wrap a car,1000,1.82,0,Informational,4,100,True,,high,cluster,True
+average car insurance cost per month by age and state,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,720,18.62,30,Commercial,1,32,False,,low,cluster,True
+home insurance rates by state,"Insurance, Financing & Cost of Ownership",CL-065,home insurance rates by state,720,20.82,29,Informational,1,70,True,,medium,cluster,True
+car wrap cost near me,"Insurance, Financing & Cost of Ownership",CL-017,how much does it cost to vinyl wrap a car,720,3.04,0,Transactional,0,70,True,,high,cluster,False
+car insurance average cost by state,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,590,9.7,28,Commercial,1,72,True,,medium,cluster,True
+average cost of car insurance by state,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,590,9.7,28,Commercial,1,72,True,,medium,cluster,True
+average car insurance cost by state,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,590,9.7,28,Commercial,1,72,True,,medium,cluster,True
+lowest car insurance rates by state,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,590,40.49,35,Informational,0,48,False,,low,cluster,True
+top 10 states with highest car insurance,"Insurance, Financing & Cost of Ownership",CL-007,most expensive car insurance by state,590,14.84,18,Commercial,2,78,True,,high,cluster,True
+full coverage vs comprehensive,"Insurance, Financing & Cost of Ownership",CL-030,full coverage vs comprehensive,480,13.29,15,Commercial,1,72,True,,high,cluster,True
+full coverage vs comprehensive and collision,"Insurance, Financing & Cost of Ownership",CL-030,full coverage vs comprehensive,480,14.98,32,Commercial,0,46,False,,low,cluster,True
+prepayment penalty on car loan,"Insurance, Financing & Cost of Ownership",CL-024,prepayment penalty on car loan,480,0.0,4,Informational,1,78,True,,high,cluster,True
+prepayment penalty car loan,"Insurance, Financing & Cost of Ownership",CL-024,prepayment penalty on car loan,480,0.0,0,Informational,1,78,True,,high,cluster,True
+car loan prepayment penalty,"Insurance, Financing & Cost of Ownership",CL-024,prepayment penalty on car loan,480,0.0,0,Informational,2,86,True,,high,cluster,False
+gap insurance worth it,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,390,2.45,0,Informational,1,76,True,,high,cluster,True
+car wrap cost vs paint,"Insurance, Financing & Cost of Ownership",CL-071,car wrap cost vs paint,320,3.17,0,Commercial,2,92,True,,high,cluster,True
+top 100 cheapest cars to insure,"Insurance, Financing & Cost of Ownership",CL-074,top 100 cheapest cars to insure,320,9.25,30,Commercial,2,66,True,,medium,cluster,False
+is gap insurance worth it for used car,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,True
+is gap insurance worth it on a second hand car,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,True
+used car gap insurance is it worth it,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,2,Informational,1,76,True,,high,cluster,False
+is gap insurance worth it for a used car,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,False
+gap insurance is it worth it for a used car,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,False
+gap insurance on a used car is it worth it,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,True
+is gap insurance worth it on used car,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,True
+is gap insurance worth it on a used car,"Insurance, Financing & Cost of Ownership",CL-005,is the gap insurance worth it,320,5.62,0,Informational,1,76,True,,high,cluster,True
+health insurance cost by state,"Insurance, Financing & Cost of Ownership",CL-066,health insurance cost by state,260,7.44,27,Commercial,1,72,True,,low,cluster,False
+liability vs full coverage cost,"Insurance, Financing & Cost of Ownership",CL-029,liability vs full coverage cost,260,15.12,22,Commercial,1,70,True,,low,cluster,False
+full coverage vs liability cost,"Insurance, Financing & Cost of Ownership",CL-029,liability vs full coverage cost,260,15.12,20,Commercial,1,68,False,,low,cluster,True
+cheapest cars to insure for 17-year-olds,"Insurance, Financing & Cost of Ownership",CL-075,cheapest cars to insure for 17-year-olds,260,18.54,0,Commercial,2,66,True,,high,cluster,True
+what are the cheapest cars to insure for new drivers,"Insurance, Financing & Cost of Ownership",CL-073,what are the cheapest cars to insure for new drivers,210,32.84,3,Commercial,1,50,False,,low,cluster,True
+is gap insurance worth it reddit,"Insurance, Financing & Cost of Ownership",CL-076,is gap insurance worth it reddit,210,0.0,0,Informational,9,100,True,,high,cluster,False
+is gap insurance worth it reddit after:2020,"Insurance, Financing & Cost of Ownership",CL-095,is gap insurance worth it reddit after:2020,210,0.0,0,Informational,0,86,True,,high,cluster,False
+14 states don t allow prepayment penalties on car loans,"Insurance, Financing & Cost of Ownership",CL-078,14 states don t allow prepayment penalties on car loans,210,0.0,0,Informational,1,78,True,,high,cluster,True
+brake bleeder kit,Maintenance & DIY / Troubleshooting,CL-039,brake bleeder kit,33100,0.47,0,Transactional,1,76,True,,high,pillar,False
+grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,8100,6.86,0,Informational,4,100,True,,high,evergreen-support,True
+check engine light is blinking and car is shaking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,3600,1.36,0,Informational,4,100,True,,high,evergreen-support,True
+check engine light blinking car shaking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,3600,1.36,0,Informational,3,96,True,,high,evergreen-support,True
+car shaking check engine light blinking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,3600,1.36,0,Informational,3,96,True,,high,evergreen-support,True
+check engine light blinking and car shaking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,3600,1.36,0,Informational,5,100,True,,high,evergreen-support,True
+blinking check engine light and car shaking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,3600,1.36,0,Informational,3,96,True,,high,evergreen-support,True
+car shaking and check engine light blinking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,3600,1.36,0,Informational,3,96,True,,high,evergreen-support,True
+spark plug tube seal,Maintenance & DIY / Troubleshooting,CL-046,spark plug tube seal,3600,0.32,0,Transactional,4,100,True,,high,evergreen-support,False
+oil in spark plug well,Maintenance & DIY / Troubleshooting,CL-010,oil in spark plug well,1900,0.0,0,Informational,4,100,True,,high,evergreen-support,False
+oil in the spark plug well,Maintenance & DIY / Troubleshooting,CL-010,oil in spark plug well,1900,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+how to bleed your brakes by yourself,Maintenance & DIY / Troubleshooting,CL-009,how to bleed your brakes by yourself,1600,0.23,2,Informational,6,100,True,,high,evergreen-support,True
+how to bleed brakes by yourself,Maintenance & DIY / Troubleshooting,CL-009,how to bleed your brakes by yourself,1600,0.23,2,Informational,6,100,True,,high,evergreen-support,True
+how to bleed the brakes by yourself,Maintenance & DIY / Troubleshooting,CL-009,how to bleed your brakes by yourself,1600,0.23,2,Informational,5,100,True,,high,evergreen-support,True
+why is my car shaking at idle,Maintenance & DIY / Troubleshooting,CL-019,why is my car shaking at idle,1000,0.78,0,Informational,3,100,True,,high,evergreen-support,True
+how to fix ac blowing hot air in car,Maintenance & DIY / Troubleshooting,CL-016,how to fix ac blowing hot air in car,1000,2.2,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when braking but pads are fine,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,1000,1.79,0,Informational,4,100,True,,high,evergreen-support,True
+single click when trying to start car,Maintenance & DIY / Troubleshooting,CL-051,single click when trying to start car,880,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+transmission slipping quick fix,Maintenance & DIY / Troubleshooting,CL-054,transmission slipping quick fix,880,3.18,5,Informational,5,100,True,,high,evergreen-support,True
+common mistakes when bleeding brakes,Maintenance & DIY / Troubleshooting,CL-040,common mistakes when bleeding brakes,720,0.07,0,Informational,3,100,True,,high,evergreen-support,True
+how to fix ac in car blowing hot air,Maintenance & DIY / Troubleshooting,CL-016,how to fix ac blowing hot air in car,720,2.49,0,Informational,4,100,True,,high,evergreen-support,True
+car won't start but lights come on clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,720,26.14,0,Informational,4,100,True,,high,evergreen-support,True
+car won't start clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,720,0.0,0,Informational,3,96,True,,high,evergreen-support,False
+rapid clicking when trying to start car,Maintenance & DIY / Troubleshooting,CL-052,rapid clicking when trying to start car,720,0.14,0,Informational,3,96,True,,high,evergreen-support,True
+car making a grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,390,5.32,0,Informational,4,100,True,,high,evergreen-support,True
+car makes a grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,390,5.32,0,Informational,4,100,True,,high,evergreen-support,True
+when braking car makes grinding noise,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,390,5.32,0,Informational,4,100,True,,high,evergreen-support,True
+check engine light flashing car shaking when accelerating,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,320,0.0,0,Informational,3,96,True,,high,evergreen-support,True
+car won't start and makes clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,320,2.73,0,Informational,4,100,True,,high,evergreen-support,True
+car makes clicking noise won't start,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,320,2.73,0,Informational,4,100,True,,high,evergreen-support,True
+car making clicking noise won't start,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,320,2.73,0,Informational,4,100,True,,high,evergreen-support,False
+car won't start with clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,320,0.14,0,Informational,3,96,True,,high,evergreen-support,True
+clicking noise car won't start,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,320,0.14,1,Informational,4,100,True,,high,evergreen-support,True
+how to bleed brakes by yourself without a vacuum pump,Maintenance & DIY / Troubleshooting,CL-035,how to bleed brakes by yourself without a vacuum pump,260,0.21,0,Informational,5,100,True,,high,evergreen-support,True
+car makes grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,260,11.8,0,Informational,4,100,True,,high,evergreen-support,True
+car making grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,260,11.8,0,Informational,4,100,True,,high,evergreen-support,True
+car shakes when idle and accelerating,Maintenance & DIY / Troubleshooting,CL-033,car shakes when idle and accelerating,210,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+how to bleed brakes 2 person,Maintenance & DIY / Troubleshooting,CL-041,how to bleed brakes 2 person,210,0.31,0,Informational,4,100,True,,high,evergreen-support,True
+car won't start makes clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,210,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+car won't start making clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,210,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+engine light on and car shaking can i drive,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,170,1.11,0,Informational,4,100,True,,high,evergreen-support,True
+how to bleed brakes by yourself no special tools,Maintenance & DIY / Troubleshooting,CL-036,how to bleed brakes by yourself no special tools,170,0.19,1,Informational,8,100,True,,high,evergreen-support,True
+grinding noise at low speeds when braking,Maintenance & DIY / Troubleshooting,CL-020,grinding noise at low speeds when braking,170,0.0,0,Informational,3,96,True,,high,evergreen-support,True
+grinding noise when braking at low speeds,Maintenance & DIY / Troubleshooting,CL-020,grinding noise at low speeds when braking,170,0.0,0,Informational,3,98,True,,high,evergreen-support,True
+grinding noise when braking at low speed,Maintenance & DIY / Troubleshooting,CL-020,grinding noise at low speeds when braking,170,0.0,0,Informational,3,96,True,,high,evergreen-support,True
+grinding noise in rear when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,170,0.07,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when braking but pads are new,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,170,0.0,0,Informational,5,100,True,,high,evergreen-support,True
+oil in spark plug well causing misfire,Maintenance & DIY / Troubleshooting,CL-045,oil in spark plug well causing misfire,140,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+car grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,140,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+transmission slips when warm,Maintenance & DIY / Troubleshooting,CL-053,transmission slips when warm,140,0.72,0,Informational,3,96,True,,high,evergreen-support,True
+why is my check engine light blinking and car shaking,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,110,0.0,0,Informational,3,96,True,,high,evergreen-support,True
+grinding noise when braking and turning,Maintenance & DIY / Troubleshooting,CL-028,grinding noise when braking and turning,110,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when turning and braking,Maintenance & DIY / Troubleshooting,CL-028,grinding noise when braking and turning,110,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+how to bleed drum brakes by yourself,Maintenance & DIY / Troubleshooting,CL-009,how to bleed your brakes by yourself,90,0.47,0,Informational,6,100,True,,high,evergreen-support,True
+my car won't start and makes a clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,90,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+is slight vibration at idle normal,Maintenance & DIY / Troubleshooting,CL-019,why is my car shaking at idle,70,0.0,0,Informational,2,92,True,,high,evergreen-support,True
+check engine light flashing and car shaking how to fix,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,70,0.0,0,Informational,3,96,True,,high,evergreen-support,True
+how much to fix car ac blowing hot air,Maintenance & DIY / Troubleshooting,CL-044,how much to fix car ac blowing hot air,70,4.9,0,Informational,4,100,True,,high,evergreen-support,True
+oil in spark plugs repair cost,Maintenance & DIY / Troubleshooting,CL-047,oil in spark plugs repair cost,70,0.0,1,Informational,4,100,True,,high,evergreen-support,True
+what causes a grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,70,0.09,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when braking and driving,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,70,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+loud grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,70,0.0,0,Informational,5,100,True,,high,evergreen-support,True
+grinding noise when driving and braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,70,0.0,0,Informational,5,100,True,,high,evergreen-support,False
+what causes grinding noise when braking,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,70,0.09,0,Informational,4,100,True,,high,evergreen-support,False
+car won't start no clicking noise but radio works,Maintenance & DIY / Troubleshooting,CL-050,car won't start no clicking noise but radio works,70,0.0,0,Informational,6,100,True,,high,evergreen-support,True
+how to bleed car brakes by yourself,Maintenance & DIY / Troubleshooting,CL-009,how to bleed your brakes by yourself,50,0.04,0,Informational,7,100,True,,high,evergreen-support,True
+how to bleed brakes on a car by yourself,Maintenance & DIY / Troubleshooting,CL-009,how to bleed your brakes by yourself,50,0.04,0,Informational,6,100,True,,high,evergreen-support,True
+how to bleed abs brakes by yourself,Maintenance & DIY / Troubleshooting,CL-037,how to bleed abs brakes by yourself,50,0.0,0,Informational,7,100,True,,high,evergreen-support,True
+how to bleed brakes with abs by yourself,Maintenance & DIY / Troubleshooting,CL-038,how to bleed brakes with abs by yourself,50,0.0,0,Informational,3,98,True,,high,evergreen-support,True
+how to fix car ac blowing hot air,Maintenance & DIY / Troubleshooting,CL-016,how to fix ac blowing hot air in car,50,0.35,0,Informational,4,100,True,,high,evergreen-support,False
+oil in my spark plug well,Maintenance & DIY / Troubleshooting,CL-010,oil in spark plug well,50,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when slowing down without braking,Maintenance & DIY / Troubleshooting,CL-048,grinding noise when slowing down without braking,50,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+car won't start making a clicking noise,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,50,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+how to bleed brakes by yourself with a vacuum pump,Maintenance & DIY / Troubleshooting,CL-042,how to bleed brakes by yourself with a vacuum pump,40,0.05,0,Informational,3,96,True,,high,evergreen-support,True
+car shaking when idle no check engine light,Maintenance & DIY / Troubleshooting,CL-019,why is my car shaking at idle,30,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+bleeding brakes with pressure,Maintenance & DIY / Troubleshooting,CL-043,bleeding brakes with pressure,30,0.23,0,Informational,2,88,True,,high,evergreen-support,True
+can you drive with oil in spark plug well,Maintenance & DIY / Troubleshooting,CL-010,oil in spark plug well,30,0.0,0,Informational,5,100,True,,high,evergreen-support,True
+transmission shifts fine until it warms up,Maintenance & DIY / Troubleshooting,CL-055,transmission shifts fine until it warms up,30,0.0,0,Informational,3,98,True,,high,evergreen-support,True
+check engine light on and car shaking while driving,Maintenance & DIY / Troubleshooting,CL-006,check engine light is blinking and car is shaking,20,0.0,0,Informational,3,96,True,,high,evergreen-support,True
+oil in spark plug well symptoms,Maintenance & DIY / Troubleshooting,CL-010,oil in spark plug well,20,0.0,0,Informational,2,86,True,,high,evergreen-support,True
+how to fix oil in spark plug well,Maintenance & DIY / Troubleshooting,CL-010,oil in spark plug well,20,0.0,0,Informational,5,100,True,,high,evergreen-support,True
+grinding noise when braking on one side,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,20,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when braking but pads and rotors are fine,Maintenance & DIY / Troubleshooting,CL-002,grinding noise when braking,20,0.34,0,Informational,4,100,True,,high,evergreen-support,True
+grinding noise when braking and turning at low speed,Maintenance & DIY / Troubleshooting,CL-049,grinding noise when braking and turning at low speed,20,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+transmission works cold but not hot,Maintenance & DIY / Troubleshooting,CL-056,transmission works cold but not hot,20,24.49,0,Informational,3,96,True,,high,evergreen-support,True
+car vibrates when idle with ac on,Maintenance & DIY / Troubleshooting,CL-034,car vibrates when idle with ac on,10,0.0,0,Informational,5,100,True,,high,evergreen-support,True
+car ac blowing hot air fix,Maintenance & DIY / Troubleshooting,CL-016,how to fix ac blowing hot air in car,10,7.13,0,Informational,3,96,True,,high,evergreen-support,True
+car won t start just clicks but battery is good,Maintenance & DIY / Troubleshooting,CL-004,car won't start but lights come on clicking noise,0,0.0,0,Informational,4,100,True,,high,evergreen-support,True
+Which 7 seater SUV is the cheapest?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What scanner do most mechanics use?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car idle rough with AC on?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does Meguiar's Ultimate Black work?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the best cars for teen drivers under $10k?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which car is best for a family trip?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens to electric cars after 10 years?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I drive $1000 miles with the check engine light on?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the worst car to drive in the snow?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive with grinding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much can a 20 sq ft wrap?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a normal electrician install an EV charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I force a starter to turn over?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I ignore minor vibrations?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What SUV winter tires are best for ice?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car AC blowing hot air all of a sudden?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable used midsize luxury SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is homeowners insurance going down in 2026?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I drive with oil in spark plug wells?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best place to mount a phone in a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What luxury SUV has the highest reliability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the #1 best SUV for reliability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car juddering when I drive and engine light flashing?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much to wrap a durango?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is ceramic coating or wax better for black cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to install a type 2 EV charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive with car AC blowing hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to wrap my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which SUV has the least problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are signs of a failing starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much are spark plugs for Honda Odyssey?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which company's OBD scanner is best?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it cheaper to wrap a car than to paint it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best cell phone holder for the car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive with back brakes grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best quality phone holder for a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car shake at idle but smooths out while driving?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to fix oil in your spark plugs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What states don't allow prepayment penalties?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the difference between an OBD2 reader and an OBD2 scanner?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car making a clicking noise and not starting?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What to do if my car AC is only blowing hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the best phone mount for your car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the disadvantages of the Honda CR-V?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to dry out spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest car to insure for a teenage driver?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to tell if it's a bad starter or alternator?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a vacuum leak cause a misfire?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What brand of tire is best for SUVs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it better to pressure bleed or vacuum bleed brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my transmission make a grinding sound when I slow down?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which state has no car insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car phone holder to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 3 row SUV has the least problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I charge EV every day?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why did my credit score drop 100 points after paying off my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best Bluetooth OBD2 scanner?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is $300 a month bad for insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best EV to buy second hand?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which car is best for long road trips?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 5 states have the highest homeowners insurance costs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best portable car battery jumper?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to tell if you bleed your brakes correctly?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to use meguiars black wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is a good first car for a 14-year-old?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do you really need gap insurance on a used car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car wax on the market?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the average cost to get a full-size truck wrapped?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What OBD2 scanners do mechanics use?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How many times should you pump the brakes when bleeding them?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"How much does a car salesman make on a $30,000 car?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"How much does a $1,000,000 liability insurance policy cost?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the downside of gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive on grinding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"What is the most reliable used car under $20,000?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to tell if transmission is grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it normal for oil to be in a spark plug?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 3rd row SUV holds the most value?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car rattle when I idle with the AC on?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my transmission slip until it warms up?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is F-150 Ram or Silverado more reliable?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the top 10 worst used cars to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I wait until 2026 to buy a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best black wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which is the lowest priced electric car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the highest amp jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Who has the worst gas prices in the US?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is the engine light flashing and the car juddering?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which states don't allow prepayment penalties?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does ABS need to be bled?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Will a brake system eventually bleed itself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive with engine shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is gap insurance worth taking out?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the safest car for a teenage driver?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car to get for the cheapest insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is $5000 for comprehensive and collision worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How urgent is grinding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state is most expensive for health insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How many psi to pressure bleed brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I drive with the check engine light on and the car shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to get air out of drum brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cost of 1 liter of petrol in the USA?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+When would you not need gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a grinding sound while driving and braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car juddering and engine light on?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth getting fully comprehensive car insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is 200 a month for liability a lot?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to get air out of brake lines without bleeding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it okay to drive with grinding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you bleed brakes by yourself with a vacuum bleeder?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is brake grinding an emergency?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car idling rough but no check engine light?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most expensive part of an EV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I turn my AC off if it's blowing hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the disadvantages of full coverage?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most expensive state to buy gas?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do suction phone holders stick to the dashboard?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does installing a level 2 charger increase home value?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I use a NOCO jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which SUV has the least amount of problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which jump starter is best for my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How many times do you pump brakes when bleeding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I drive if my engine is shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What diagnostic tools do mechanics use?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to fix engine light and car shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What gets scratches off a black car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to fix AC not blowing cold air in car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the top 10 most expensive car insurance companies?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best OBD2 scanner that does everything?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable luxury mid-size SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What SUV is ranked 1 for reliability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long does an electric car battery last when fully charged?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are common mistakes when bleeding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What 3 row SUV holds its value best?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car still making grinding noise even after new pads and rotors?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the cheapest price for gas?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the disadvantages of RAV4?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best winter snow tire Consumer Reports?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the $3000 rule for cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most stolen EV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which is the most reliable used car to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long can I drive with oil in my spark plugs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where in California is gas $7 a gallon?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can an engine misfire cause shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you get air out of an ABS module?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a vinyl wrapped car go through a carwash?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"How much would a $30,000 car loan cost a month?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which car is more reliable, Toyota RAV4 or Honda CR-V?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it cheaper to wrap a car or paint?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much has gas gone up in the past year?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What luxury car has the least amount of problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a bad transmission cause shaking at idle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is a car phone mount worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long to bleed brakes with a vacuum pump?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+At what age does car insurance go up for seniors?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is a Bluetooth OBD2 scanner worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which luxury SUV has the best reliability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 7 seater SUV is the most reliable?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best second hand luxury SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the average cost to install a level 2 EV charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which SUV has the most leg room in the back?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What car is cheapest to insure for a new driver?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the number one rated snow tire?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does clicking mean dead battery or alternator?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a diabetic get health insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a portable battery jump start a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does one click mean when starting a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What should I do if my car AC is blowing hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is one click a bad starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does it mean when you turn the key and it just clicks?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is NOCO jump starter any good?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the 5 worst cars to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which states have the highest home insurance rates?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a grinding sound when braking but pads are fine?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the cheapest new car to insure?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my transmission shift hard until it warms up?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best used 3rd row SUV to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should you buy gap insurance on a used vehicle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to stop grinding sound when braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best magnetic vent phone holder for a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it cheaper to wrap a car or paint a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What can cause shaking at the idle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car making a grinding sound when I slow down?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable third row SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it illegal to have a phone mount in your car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to get oil out of a spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best overall luxury SUV for the money?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What car should a high schooler get?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which EV car is best in low budget?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What color car gets stolen the least?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does a bad wheel bearing make a grinding noise when braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What can be mistaken for a blown transmission?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What do bad rotors sound like?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What luxury SUV has the least problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to get air out of brake lines by yourself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens if I pay an extra $100 a month on my car loan?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What scan tool do dealerships use?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"What lasts longer, Ford or Chevy trucks?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does Gap go away once the car is paid off?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the number one car jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does a dragging brake sound like?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best EV under 30k?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"How much commission does a car salesman make on a $30,000 car?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the highest rated midsize SUV for reliability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where in the US is gas $6 a gallon?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the 8% rule when buying a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I fix my car AC myself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive a car that shakes at idle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What not to do when bleeding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to fix brakes making grinding noise?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you bleed drum brakes by yourself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which luxury car has the least problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the weaknesses of the RAV4?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I still drive my car if the engine light is flashing?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to reset transmission shifting?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which brand is best for jump starters?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is the Model 3 more expensive than Model Y?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car vibrating at idle but not while driving?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does it mean when you have oil in your spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the 20 worst cars to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What to gift a boy who loves cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which lasts longer, RAV4 or CR-V?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I purchase gap insurance on a used car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth fixing AC in a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do you bleed ABS brakes with engine running?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does health insurance cover bipolar disorder?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What scanner does not require a subscription?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car shake in idle in cool weather?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive if brakes are grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are spark plug tube seals necessary?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it hard to get a car with a 600 credit score?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car vent phone mount?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive with AC blowing hot?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best starter car for a teenager?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best suction magnetic phone holder for a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What OBD scanner do mechanics use?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it better to have a $500 deductible or $1 000?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the least expensive car to insure for a teenager?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you install spark plug tube seals?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens if you never use gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you pay off a 72 month car loan early?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does a bad wheel bearing sound like when braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where is the safest place to put a phone holder in your car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest car to insure at 17?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to protect a black car from scratches?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What small SUV doesn't have problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my transmission work when cold but not when hot?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What if my boyfriend drives my car and has an accident?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best brake bleeder kit?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are good winter tires for a SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable used luxury SUV to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable luxury car brand 2025?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much more is full coverage vs liability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens if oil leaks into spark plugs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is there a downside to wrapping a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which midsize SUV has the highest reliability rating?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does oil on spark plugs mean blown head gasket?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do Rams or Fords last longer?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What to do if there is oil in the spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to tell if it's a starter or battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth buying a second-hand electric car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive a car with a vibration or shaking engine?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What brand of tires are best for winter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Who has better trucks, Ford or Ram?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable used EV to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car you can get for $5000?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What can I put in my transmission to stop it from slipping?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the most affordable health insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the top 3 most reliable SUVs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Can I get a $25,000 car loan with a 600 credit score?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I keep driving my car if the engine is shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+In what states are prepayment penalties illegal?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What jump starter will start a completely dead battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best Bluetooth OBD2 scanner app?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is gap insurance actually worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth buying your own OBD2 scanner?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What do professional detailers use for wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I diagnose car shaking myself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I just gravity bleed my brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which brand is good for jump starters?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the cons of gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my starter solenoid only click once?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are car phone mounts worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it cheaper to wrap your car or paint it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is the IRS tax credit for EV charger installation?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do black cars need special wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What 3rd row SUV holds its value best?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How many amps is best for a jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What car can I buy for $10k?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What would cause a grinding noise when turning the steering wheel?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 10 states have the highest gas prices?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best way to bleed brakes by yourself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How strong of a portable jump starter do I need?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which vehicles are cheapest to insure?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive my car if the engine is shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How many amps is a good jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Who makes the best jump starter with an air compressor?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it better to have a $500 deductible or $1000?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do I need new rotors if my brakes are grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Will a bad starter just click?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the best SUV for driving in snow?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long will a car wrap last?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is Ram a better truck than F-150?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why do my brake pads make a grinding sound?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What to do if a car is clicking and not starting?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does gap insurance cost?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I still drive if my brakes are grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a noise when I brake and turn?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable SUV second hand?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you fix shaky idle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to replace the battery in an electric car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the cheapest car insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best portable jump starter for your car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most affordable and reliable 3rd row SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What EV charger does Volvo recommend?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"When I'm braking, I hear a grinding noise.?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest state to have auto insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the common problems with jump starters with air compressors?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long does a NOCO jump starter last?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"What is the most reliable car for under $10,000?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are brake bleed kits worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth having gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car for under $5000?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which cell phone car mount is best?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I drive my car if the engine is shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are signs that your engine is blown?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it normal for a car to shake a little when parked?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which states have the worst gas prices?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which small SUV has the best reliability?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my check engine light flashing and my car stuttering?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long do car wraps last?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long will a transmission last after it starts slipping?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How many amps should I get for a jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the best 3rd row SUV to buy used?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do you need full coverage if your car is paid off?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you put a phone holder on the dashboard?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the probable cause of an oily spark plug?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are all-season tires ok for snow and ice?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is the Toyota RAV4 more expensive than the Honda CR-V?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I qualify for a car loan with a 600 credit score?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does it mean if I hear a grinding noise when I brake?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to fix grinding noise when braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you bleed ABS brakes without a scan tool?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is 4x4 or AWD better for snow?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you drive with oil in spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the lowest price for gas?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are portable car jumpers worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive a car that shakes while idling?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What EVs qualify for $7500?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does low brake fluid cause grinding sound?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do you bleed brakes with the motor running or off?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Will Noco Boost jump a completely dead battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What causes a vehicle to shake at idle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How expensive is it to install a level 2 charger at home?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest car to insure for a 16 year old?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable SUV on the market in 2025?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which is better, a SUV Honda or a Toyota?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which car diagnostic scanner is best?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable 3rd row SUV Consumer Reports?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a bad transmission cause vibration at idle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which brand is the best for winter tires?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What to buy a car guy who has everything?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I spray brake cleaner in a spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the cheapest car for a teenager to insure?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I tell if I blew my engine?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car not starting and no clicking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does a professional car diagnostic tool cost?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car juddering while idling?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best electric car on a budget?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you tell if it's your starter or battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What to gift a guy for his car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 3-row SUV has the least problems?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens if oil gets in a spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the 30-60-90 rule for cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I fix my car AC from blowing hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is Tesla Model Y cheaper to insure than Model 3?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What EVs should I stay away from?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"What car can I buy new for $30,000?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to get oil out of spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does a flashing check engine light mean transmission trouble?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is a dashboard phone holder better than a vent phone holder?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the best second hand EV to buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does the car need to be running to bleed ABS brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+In which 3 states is it most expensive to own a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it normal for new brake pads to make scraping noise?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which coating is best for a black car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth it to get gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are used car prices expected to rise or fall?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best code reader for a Mini Cooper?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the symptoms of bad spark plug tube seals?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my engine making a clicking noise and not starting?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best jump starter with air compressor 2026?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can you wrap a Kia K5?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to bleed Hsv brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most popular teenage car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which state has the highest auto insurance cost?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a single click and wont start?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does a bad starter always click?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What brand has the best wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much do level 2 EV chargers cost to install?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which luxury SUV has the highest reliability rating?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is there any penalty for prepayment of a car loan?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a grinding sound when I turn slowly?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What five states have the highest gas tax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which 7 seat SUV has the most space?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best car phone mount holder?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is a Toyota RAV4 bigger than a Honda CR-V?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the 80% rule for EV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth it to have comprehensive and collision insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long will a wrap last on a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the #1 rated luxury SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is gas cheaper in GA or FL?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable jump starter brand?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the #1 best 3-row SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive if my brakes are grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to bypass a bad starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much bigger is a Model Y than Model 3?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which US state has the lowest car insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth it to install a level 2 charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are Noco boosters better than jumper cables?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my AC suddenly blowing hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the cheapest house insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Will a Level 2 charger increase my bill?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What car is best at holding its value?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it better to put a phone mount on the dash or windshield?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens to EV after 8 years?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which lasts longer, the Honda CR-V or the Toyota RAV4?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to tell if it's a dead battery or starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you fix a slipping transmission fast?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Has gas prices dropped in America?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the most reliable jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What size portable jump starter do I need for my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which power pack jump starter is best?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the #1 mid-size luxury SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much is insurance for a Nissan Xterra?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is Ram better than Ford?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do portable jump starters actually work?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the disadvantage of RAV4?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What compact SUV has the highest reliability rating?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a misfire cause a car to shake?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What states have the highest auto insurance costs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to tell if a transmission pump is bad?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long does a car wrap usually last?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my engine light blinking and my car shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car grind when I brake at low speeds?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it cheaper to paint a car or wrap it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why do people prefer Ford over Chevy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is $200 a lot for full coverage insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best polish to remove scratches from a black car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much would it cost to install a level 2 charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the #1 most reliable truck?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which luxury SUV lasts the longest?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which car lasts longer, RAV4 or CR-V?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the most expensive vehicle insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a grinding sound when I slow down?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Could a flashing light cause car shaking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I drive my car with oil in the spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most powerful car jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What year were gas prices at the highest?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the cheapest gas prices?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What can be mistaken for a slipping transmission?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where is the cheapest gas in the world right now?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the purpose of the spark plug tube seal?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest way to insure my 17 year old son?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What state has the lowest insurance rates?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are prepayment penalties legal for auto loans?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the 30 30 30 rule for brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which automotive scan tool has no subscription?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which midsize SUV has the highest reliability score?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the best luxury SUV to buy used?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are some gift ideas for men's accessories?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best portable jump starter with air compressor 2026?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why do I hear a grinding sound when I brake?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do magnetic phone mounts work through cases?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a scraping sound when I drive but not braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much engine vibration is normal?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive with a grinding noise?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest state to insure a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to get scratches out of black cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the disadvantages of gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where in the US is gas $10 a gallon?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which OBD scanner is best for all cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I install a level 2 EV charger myself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does it mean if your car won't start but the radio works?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do I really need fully comprehensive car insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest month to buy a new car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my car AC blowing hot air but not overheating?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable second hand EV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much to wrap a car in GA?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much should a 50 year old pay for car insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is ceramic coating really better than wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why do dealerships push gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to 2 wrap a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a wrapped car go through a carwash?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does it mean if oil is on your spark plug?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+At what point do you drop full coverage on my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the average cost of car insurance by state?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which is the best jump starter with an air compressor?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What 5 states have the highest gas prices?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you activate ABS when bleeding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Will air eventually bleed out of brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+When was the last time gas was $4 a gallon?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my check engine light blinking and stuttering?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Did GEICO ever offer gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can a slipping transmission be saved?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I add gap insurance to GEICO?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+At what point is gap insurance not worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How long does it take to do a full car wrap?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are magnetic car phone holders any good?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the most cheapest car to insure?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you get air out of an ABS module without a scan tool?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the sturdiest phone holder for a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is a 3M wrap worth the money?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why are my brakes grinding but pads are good?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to take oil out of spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I make my AC cold again in my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it bad to drive with oil in spark plugs?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can one person bleed brakes by themselves?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"How much is home insurance on a $400,000 house?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a scraping sound when I brake and drive slowly?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How expensive is it to install a level 2 charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are Ford trucks more reliable than Dodge?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Is $3,000 a year a lot for car insurance?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where is the safest place to put a phone holder in a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where is it most expensive to own a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to fix grinding sound when braking?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my transmission stop working when it gets hot?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best mobile phone mount for a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it safe to drive when brakes are grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most expensive part of a car AC?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much is 1 litre of gas in America?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which luxury SUV has the longest lifespan?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is a clicking noise a dead battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What's the cheapest electric car that you can buy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are portable car jump starters worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are car vent phone mounts good?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to put in a level 2 charger at home?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the least expensive state for auto insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to prevent oil in spark plug wells?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What SUVs are not mom cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do you actually need gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why didn't Gap pay off my car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which kind of tires keep the most accurate turn on the ice: all-season tires, winter tires, summer tires?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Who is the top 5 car insurance company?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which compact SUV has the highest reliability rating?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car make a noise when I turn and brake?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the strongest portable jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you bleed air out of an ABS module?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it worth prepaying a car loan?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the downside of wrapping a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does Dave Ramsey say about gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which wax is best for a black car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it okay to drive with brakes grinding?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the biggest complaint about Tesla Model Y?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I tell if it's my battery or starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do I reset my fuel cap sensor?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which state has the lowest car insurance cost?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which truck is more reliable, Chevy Ram or Ford?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I install my own level 2 charger at home?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What can cause a grinding sound if it isn't your brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest electric car you can buy right now?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What compact SUV has the longest life expectancy?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the top 5 fastest depreciating cars?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is there oil in the spark plug well?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the number 1 rated snow tires?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Does Meguiars make black wax?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How often should car wrap be replaced?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which one is better, Ford F-150 or Chevy Silverado?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Could low oil cause a grinding noise?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to replace grinding brakes?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Could a clicking sound be a bad starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+When should you not buy gap insurance?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the cheapest car insurance for teenage drivers?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable car that holds its value?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is there a penalty if I pay off a car loan early?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to bleed your brakes when you're by yourself?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where is the best place to put a cell phone holder in a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"Which is more expensive, RAV4 or CR-V?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Will a jump pack start a completely dead battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are 265 or 275 tires better for winter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What month is the cheapest to buy a used car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Which luxury SUV is the best overall?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you force start a car with a bad starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do I need gap insurance if I put 20% down?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How much does it cost to replace an EV battery?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is BYD cheaper than Tesla?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What tools do I need to fix oil in spark plug wells?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why is my engine light flashing and car struggling to accelerate?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is it cheaper to paint or wrap a vehicle?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can low oil cause a car to shake?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why does my car vibrate and the engine light is vibrating?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do electric cars lose battery overnight?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Should I wax my black car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is my car making a grinding sound in the back of it but driving fine?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What happens to EV batteries after 8 years?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the lifespan of a Level 2 charger?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the most reliable portable jump starter?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best overall luxury midsize SUV?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What is the best OBD2 scan tool for the money?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why when I driving and when I accelerate my car starts shaking and check engine light starts flashing but drives good in sport mode 2017 Chrysler 300?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Are portable jump starters any good?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How to make a black car shine like glass?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+"What's better, F-150 or Chevy Silverado?",Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What are the first signs of transmission failure?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Is installing a level 2 charger worth it?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does a failing caliper sound like?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Do you bleed brakes with the reservoir cap on or off?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+What does it mean if my car AC only blows hot air?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Can I still drive if my transmission is slipping?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+How do you bleed brakes step by step?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Why are my brakes grinding at slow speeds?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+Where is the safest place to mount a phone in a car?,Maintenance & DIY / Troubleshooting,FAQ,,,,,Informational,,,,,n/a,evergreen-support,False
+will car prices go down in 2026,News & Industry Trends,CL-086,will car prices go down in 2026,590,7.72,9,Informational,4,80,True,,high,pillar,True
+are used car prices going down,News & Industry Trends,CL-087,are used car prices going down,390,1.75,14,Informational,3,64,True,,high,cluster,True
