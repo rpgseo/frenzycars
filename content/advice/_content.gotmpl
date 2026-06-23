@@ -1,0 +1,43 @@
+{{- range $row := .Site.Data.evergreen.troubleshooting -}}
+{{- /* Anti-thin gate: count real differentiators */ -}}
+{{- $causes := $row.causes | default slice -}}
+{{- $steps := $row.steps | default slice -}}
+{{- $wtm := $row.when_to_see_mechanic | default slice -}}
+{{- $diff := 0 -}}
+{{- if ge (len $causes) 2 }}{{- $diff = add $diff 1 }}{{- end -}}
+{{- if ge (len $steps) 2 }}{{- $diff = add $diff 1 }}{{- end -}}
+{{- if ge (len $wtm) 2 }}{{- $diff = add $diff 1 }}{{- end -}}
+{{- if $row.typical_cost }}{{- $diff = add $diff 1 }}{{- end -}}
+{{- if $row.is_emergency }}{{- $diff = add $diff 1 }}{{- end -}}
+
+{{- if lt $diff 3 -}}
+  {{- warnf "ANTI-THIN: skipping %s (only %d differentiators)" $row.id $diff -}}
+{{- else -}}
+  {{- $content := dict "mediaType" "text/markdown" "value" ($row.short_answer | default "") -}}
+  {{- $dates := dict "date" (time.AsTime ($row.publish_date | default "2026-06-22")) "publishDate" (time.AsTime ($row.publish_date | default "2026-06-22")) -}}
+  {{- $params := dict
+      "question" $row.question
+      "cluster_id" ($row.cluster_id | default "")
+      "category" ($row.category | default "Maintenance")
+      "short_answer" ($row.short_answer | default "")
+      "is_emergency" ($row.is_emergency | default false)
+      "emergency_note" ($row.emergency_note | default "")
+      "causes" ($row.causes | default slice)
+      "steps" ($row.steps | default slice)
+      "when_to_see_mechanic" ($row.when_to_see_mechanic | default slice)
+      "diy_difficulty" ($row.diy_difficulty | default "beginner")
+      "typical_cost" ($row.typical_cost | default dict)
+      "related_queries" ($row.related_queries | default slice)
+      "sources" ($row.sources | default slice)
+  -}}
+  {{- $page := dict
+      "content" $content
+      "dates" $dates
+      "kind" "page"
+      "params" $params
+      "path" $row.id
+      "title" $row.question
+  -}}
+  {{- $.AddPage $page -}}
+{{- end -}}
+{{- end -}}
