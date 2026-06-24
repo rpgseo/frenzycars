@@ -1,8 +1,7 @@
-+++
+﻿+++
 title = 'Wagons of War: The Last Great Estate Cars Still Standing'
 date = 2026-05-22T09:00:00+02:00
 draft = false
-category = 'Features'
 tags = ['Wagons', 'Estate', 'Design']
 author = 'Elena Rossi'
 description = 'SUVs conquered the world, but a stubborn few estates still pack supercar pace and family practicality.'
@@ -17,6 +16,6 @@ From the 1,000-horsepower Porsche Panamera Sport Turismo to the Audi RS6 Avant, 
 
 ## Form follows function
 
-A wagon sits lower than an SUV, which means better aerodynamics, a lower centre of gravity, and — crucially — a drive that still feels like a car.
+A wagon sits lower than an SUV, which means better aerodynamics, a lower centre of gravity, and â€” crucially â€” a drive that still feels like a car.
 
 The market may be small, but it is fierce. These are the last true all-rounders.

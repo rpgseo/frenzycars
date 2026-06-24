@@ -1,8 +1,7 @@
-+++
+﻿+++
 title = 'Ferrari 296 GTB Review: Hybrid Heart, Prancing Horse Soul'
 date = 2026-06-10T09:00:00+02:00
 draft = false
-category = 'Reviews'
 tags = ['Ferrari', 'Hybrid', 'Supercar']
 author = 'Elena Rossi'
 description = 'A plug-in hybrid V6 that proves electrification and emotion are not mutually exclusive.'
@@ -18,6 +17,6 @@ Under the glass engine cover sits a 2.9-litre twin-turbo V6 paired with an elect
 
 ## Thrill without the guilt
 
-Pure electric mode lets you slip out of the neighbourhood in silence. A button press unleashes the full hybrid fury — 0 to 100 km/h in 2.9 seconds.
+Pure electric mode lets you slip out of the neighbourhood in silence. A button press unleashes the full hybrid fury â€” 0 to 100 km/h in 2.9 seconds.
 
 The steering is alive with feedback, the brakes progressive despite the regen blending. This is the future done right.

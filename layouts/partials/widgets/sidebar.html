@@ -2,7 +2,7 @@
       Used by the home page and the article rail so both stay in sync. */}}
 {{- $all := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
 {{- $reviews := where $all "Type" "reviews" -}}
-{{- $features := where $all "Type" "features" -}}
+{{- $culture := where $all "Type" "culture" -}}
 
 {{/* Newsletter widget */}}
 <div class="rail-block newsletter-widget">
@@ -37,7 +37,7 @@
 <div class="rail-block">
   <h3 class="rail-title">Must Read</h3>
   <ul class="rail-list">
-    {{ range first 2 $features }}
+    {{ range first 2 $culture }}
     <li class="mini-item">
       <a href="{{ .RelPermalink }}" class="mini-thumb">
         <img src="{{ .Params.cover }}" alt="" loading="lazy" width="100" height="75">

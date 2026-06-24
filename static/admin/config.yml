@@ -20,6 +20,10 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  # NOTE: section folder = category. The folder name is the single-word slug
+  # shown on cards and in URLs. Do not add a per-page "category" field.
+  # `maintenance` is intentionally absent: those pages are generated from
+  # data/evergreen/*.yaml via content/maintenance/_content.gotmpl.
   - name: "reviews"
     label: "Reviews"
     label_singular: "Review"
@@ -31,7 +35,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Category", name: "category", widget: "select", options: ["Reviews", "News", "Features"], default: "Reviews" }
       - { label: "Tags", name: "tags", widget: "list", default: [] }
       - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
       - { label: "Summary", name: "description", widget: "text", hint: "Shown on cards & used as meta description." }
@@ -51,7 +54,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Category", name: "category", widget: "select", options: ["Reviews", "News", "Features"], default: "News" }
       - { label: "Tags", name: "tags", widget: "list", default: [] }
       - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
       - { label: "Summary", name: "description", widget: "text" }
@@ -59,10 +61,10 @@ collections:
       - { label: "Featured", name: "featured", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "features"
-    label: "Features"
-    label_singular: "Feature"
-    folder: "content/features"
+  - name: "guides"
+    label: "Buying Guides"
+    label_singular: "Buying guide"
+    folder: "content/guides"
     create: true
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
@@ -70,7 +72,78 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Category", name: "category", widget: "select", options: ["Reviews", "News", "Features"], default: "Features" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "electric"
+    label: "Electric & New Tech"
+    label_singular: "Electric article"
+    folder: "content/electric"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "insurance"
+    label: "Insurance & Costs"
+    label_singular: "Insurance article"
+    folder: "content/insurance"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "culture"
+    label: "Culture & Road Trips"
+    label_singular: "Culture article"
+    folder: "content/culture"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "gear"
+    label: "Gear, Accessories & Tools"
+    label_singular: "Gear article"
+    folder: "content/gear"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Tags", name: "tags", widget: "list", default: [] }
       - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
       - { label: "Summary", name: "description", widget: "text" }

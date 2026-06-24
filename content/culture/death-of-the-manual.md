@@ -1,8 +1,7 @@
-+++
+﻿+++
 title = 'The Death of the Manual: Why We Still Fight for Three Pedals'
 date = 2026-06-01T09:00:00+02:00
 draft = false
-category = 'Features'
 tags = ['Manual', 'Culture', 'Long Read']
 author = 'Marco Delgado'
 description = 'In an automated world, the manual gearbox survives as an act of devotion. We trace its stubborn heartbeat.'
@@ -17,6 +16,6 @@ And yet, in 2026, the manual gearbox refuses to die. Honda sells the Civic Type 
 
 ## Why it matters
 
-The manual is not about speed. A dual-clutch will always shift quicker. The manual is about *involvement* — the satisfaction of a perfectly timed heel-and-toe, the rhythm of driving as a physical conversation.
+The manual is not about speed. A dual-clutch will always shift quicker. The manual is about *involvement* â€” the satisfaction of a perfectly timed heel-and-toe, the rhythm of driving as a physical conversation.
 
 For enthusiasts, every saved gearbox is a small victory against the frictionless future.

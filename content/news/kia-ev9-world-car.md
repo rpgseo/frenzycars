@@ -3,7 +3,6 @@ title = 'Kia EV9 Wins World Car of the Year as Three-Row EVs Dominate Shortlist'
 date = 2026-06-19T07:00:00+02:00
 draft = false
 demo = true
-category = 'News'
 tags = ['Kia', 'EV', 'Awards', 'SUV']
 author = 'News Desk'
 description = "Kia's flagship electric SUV takes top honours, signalling a market shift toward family-sized electric vehicles."

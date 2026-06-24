@@ -3,7 +3,6 @@ title = 'The EV Range-Anxiety Myth: How Far People Actually Drive (Data)'
 date = 2026-06-10T08:00:00+02:00
 draft = false
 demo = true
-category = 'Features'
 tags = ['EV', 'Data', 'Long Read', 'Range']
 author = 'Priya Nair'
 description = 'We pulled real-world driving data to answer the question that haunts every EV sceptic: do you really need 500 km of range?'

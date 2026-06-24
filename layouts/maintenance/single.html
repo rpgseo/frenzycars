@@ -71,7 +71,7 @@
     <div class="has-rail">
       <div class="main-col">
         <header class="article-head">
-          <span class="card-tag">{{ $p.category | default "Advice" }}</span>
+          <span class="card-tag">{{ .Type | humanize }}</span>
           <h1 class="article-title">{{ .Title }}</h1>
           {{- $hasDiff := eq ($p.page_type | default "troubleshooting") "troubleshooting" -}}
           {{- $hasCost := false -}}
@@ -344,18 +344,18 @@
 
         </div>
         <footer class="article-foot">
-          <a class="btn btn-ghost" href="{{ "/advice/" | relURL }}">&larr; Back to Advice</a>
+          <a class="btn btn-ghost" href="{{ "/maintenance/" | relURL }}">&larr; Back to Maintenance</a>
         </footer>
       </div>
-      {{- $rel := where (where (where .Site.RegularPages "Section" "advice") "Permalink" "!=" .Permalink) ".Params.category" .Params.category | first 4 -}}
+      {{- $rel := where (where .Site.RegularPages "Type" .Type) "Permalink" "!=" .Permalink | first 4 -}}
       {{- if $rel -}}
       <aside class="rail">
         <div class="rail-sticky">
           <div class="rail-block">
-            <h3 class="rail-title">More in {{ $p.category | default "Advice" }}</h3>
+            <h3 class="rail-title">More in {{ .Type | humanize }}</h3>
             <div class="mini-rail">
               {{- range $rel -}}
-              <div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">Advice</div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4></div></div>
+              <div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">{{ $.Type | humanize }}</div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4></div></div>
               {{- end -}}
             </div>
           </div>

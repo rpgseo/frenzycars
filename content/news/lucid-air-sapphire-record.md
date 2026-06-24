@@ -1,8 +1,7 @@
-+++
+﻿+++
 title = 'Lucid Air Sapphire Crowned Fastest Production Sedan Ever Tested'
 date = 2026-06-16T08:30:00+02:00
 draft = false
-category = 'News'
 tags = ['Lucid', 'EV', 'Records']
 author = 'FrenzyCars Desk'
 description = 'A tri-motor Air Sapphire ran the quarter-mile in 8.9 seconds on street-legal tires.'

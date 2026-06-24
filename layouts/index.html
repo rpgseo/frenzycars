@@ -7,7 +7,7 @@
 {{- $rest := complement $featured $all -}}
 {{- $reviews := where $all "Type" "reviews" -}}
 {{- $news := where $all "Type" "news" -}}
-{{- $features := where $all "Type" "features" -}}
+{{- $culture := where $all "Type" "culture" -}}
 
 <div class="container">
 
@@ -74,14 +74,14 @@
     </div>
   </section>
 
-  {{/* ===== FEATURES ===== */}}
+  {{/* ===== CULTURE ===== */}}
   <section class="zone">
     <div class="zone-head">
-      <h2 class="zone-title"><span class="title-marker">//</span> Long Reads</h2>
-      <a class="zone-link" href="{{ "/features/" | relURL }}">All features &rarr;</a>
+      <h2 class="zone-title"><span class="title-marker">//</span> Culture</h2>
+      <a class="zone-link" href="{{ "/culture/" | relURL }}">All culture &rarr;</a>
     </div>
     <div class="grid grid-2">
-      {{ range first 2 $features }}{{ partial "article-card.html" . }}{{ end }}
+      {{ range first 2 $culture }}{{ partial "article-card.html" . }}{{ end }}
     </div>
   </section>
 </div>

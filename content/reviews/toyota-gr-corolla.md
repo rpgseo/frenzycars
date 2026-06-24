@@ -1,8 +1,7 @@
-+++
+﻿+++
 title = 'Toyota GR Corolla Review: Hot Hatch Honesty'
 date = 2026-06-05T09:00:00+02:00
 draft = false
-category = 'Reviews'
 tags = ['Toyota', 'GR', 'Hot Hatch']
 author = 'Sam Whitaker'
 description = '300 horsepower, three pedals, and a price that makes sense. The GR Corolla is the people champion.'

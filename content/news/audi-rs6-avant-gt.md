@@ -1,9 +1,8 @@
-+++
+﻿+++
 title = 'Audi Reveals Final-Edition RS6 Avant GT, Limited to 660 Units'
 date = 2026-06-17T10:15:00+02:00
 draft = false
 demo = true
-category = 'News'
 tags = ['Audi', 'RS6', 'Wagon', 'Limited']
 author = 'News Desk'
 description = 'Audi sends off the C8 RS6 with a 621 HP GT variant, carbon bodywork and a sub-3.5-second 0-100 claim. Only 660 will be built.'

@@ -3,7 +3,6 @@ title = 'BMW M5 Touring Review: The 727 HP Super-Wagon Reborn'
 date = 2026-06-18T08:30:00+02:00
 draft = false
 demo = true
-category = 'Reviews'
 tags = ['BMW', 'Wagon', 'Hybrid', 'Performance']
 author = 'Elena Rossi'
 description = 'A plug-in hybrid V8 estate that hauls the family and humiliates supercars. The M5 Touring is back, and it is enormous fun.'
