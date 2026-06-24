@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="{{ .Site.Language.Lang | default "en" }}">
 <head>
+  {{/* Resolve social/OG image: prefer processed page resource, then front-matter URL, then logo */}}
+  {{- $coverRes := .Resources.GetMatch "cover.*" -}}
+  {{- $ogImage := (("/img/logo-1200x630.png") | absURL) -}}
+  {{- with $coverRes -}}{{- $ogImage = (.Resize "1200x q82 jpg").Permalink -}}{{- else -}}{{- with .Params.cover -}}{{- $ogImage = (. | absURL) -}}{{- end -}}{{- end -}}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
@@ -13,11 +17,11 @@
   <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ with .Params.cover }}{{ . | absURL }}{{ else }}{{ ("/img/logo-1200x630.png") | absURL }}{{ end }}">
-  <meta name="twitter:card" content="{{ with .Params.cover }}summary_large_image{{ else }}summary_large_image{{ end }}">
+  <meta property="og:image" content="{{ $ogImage }}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
-  <meta name="twitter:image" content="{{ with .Params.cover }}{{ . | absURL }}{{ else }}{{ ("/img/logo-1200x630.png") | absURL }}{{ end }}">
+  <meta name="twitter:image" content="{{ $ogImage }}">
   <link rel="preconnect" href="https://images.unsplash.com">
   {{ $css := resources.Get "css/style.css" | default (resources.Get "css/style.css") }}
   {{ with $css }}<link rel="stylesheet" href="{{ .RelPermalink }}?v=2">{{ end }}

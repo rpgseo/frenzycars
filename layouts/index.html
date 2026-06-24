@@ -18,7 +18,7 @@
       <div class="lead-secondary">
         {{ range first 2 (after 1 $all) }}
         <a class="lead-sec" href="{{ .RelPermalink }}">
-          <img src="{{ .Params.cover | default "/images/default-cover.jpg" }}" alt="{{ .Title }}" loading="lazy" width="600" height="400">
+          {{ partial "cover.html" (dict "page" . "w" 600 "class" "lead-sec-img") }}
           <div class="lead-sec-overlay"></div>
           <div class="lead-sec-body">
             <span class="eyebrow">{{ .Type | humanize }}</span>

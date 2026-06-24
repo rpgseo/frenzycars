@@ -1,6 +1,8 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "head" }}
-{{- $img := .Params.cover | default "" -}}
+{{- $coverRes := .Resources.GetMatch "cover.*" -}}
+{{- $img := "" -}}
+{{- with $coverRes -}}{{- $img = (.Resize "1200x q82 jpg").Permalink -}}{{- else -}}{{- with .Params.cover -}}{{- $img = (. | absURL) -}}{{- end -}}{{- end -}}
 {{- $author := (.Params.author | default .Site.Title) | plainify -}}
 {{- $type := "Article" -}}
 {{- with .Params.rating -}}{{- $type = "Review" -}}{{- end -}}
@@ -25,9 +27,9 @@
 {{ define "main" }}
 {{- $rel := where (where .Site.RegularPages "Type" .Type) "Permalink" "!=" .Permalink | first 4 -}}
 <article class="article">
-  {{ with .Params.cover }}
+  {{ if or (.Resources.GetMatch "cover.*") .Params.cover }}
   <div class="article-hero">
-    <img src="{{ . }}" alt="{{ $.Title }}">
+    {{ partial "cover.html" (dict "page" . "w" 1600 "class" "hero-img" "eager" true) }}
     <div class="article-hero-overlay"></div>
   </div>
   {{ end }}

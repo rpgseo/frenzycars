@@ -1,6 +1,5 @@
-{{- $cover := .Params.cover | default "/images/default-cover.jpg" -}}
 <a class="lead-card" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-  <img src="{{ $cover }}" alt="{{ .Title }}" loading="eager" width="1200" height="800">
+  {{ partial "cover.html" (dict "page" . "w" 1200 "class" "lead-img" "eager" true) }}
   <div class="lead-card-overlay"></div>
   <div class="lead-card-body">
     <span class="eyebrow"><span class="dot"></span> {{ .Type | humanize }}{{ with .Params.rating }} · {{ printf "%.1f" . }}/10{{ end }}</span>

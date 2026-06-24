@@ -1,8 +1,7 @@
-{{- $cover := .Params.cover | default "/images/default-cover.jpg" -}}
 {{- $section := .Type | humanize -}}
 <article class="card">
   <a class="card-media" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
-    <img src="{{ $cover }}" alt="{{ .Title }}" loading="lazy" width="600" height="400">
+    {{ partial "cover.html" (dict "page" . "w" 600 "class" "card-img") }}
     <span class="card-tag">{{ $section }}</span>
     {{ with .Params.rating }}<span class="card-rating">{{ printf "%.1f" . }}<small>/10</small></span>{{ end }}
   </a>

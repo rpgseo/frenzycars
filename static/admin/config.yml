@@ -29,6 +29,9 @@ collections:
     label_singular: "Review"
     folder: "content/reviews"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} — {{rating}}/10 ({{date}})"
     fields:
@@ -48,6 +51,9 @@ collections:
     label_singular: "News item"
     folder: "content/news"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
@@ -66,6 +72,9 @@ collections:
     label_singular: "Buying guide"
     folder: "content/guides"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
@@ -84,6 +93,9 @@ collections:
     label_singular: "Electric article"
     folder: "content/electric"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
@@ -102,6 +114,9 @@ collections:
     label_singular: "Insurance article"
     folder: "content/insurance"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
@@ -120,6 +135,9 @@ collections:
     label_singular: "Culture article"
     folder: "content/culture"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
@@ -138,6 +156,9 @@ collections:
     label_singular: "Gear article"
     folder: "content/gear"
     create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     slug: "{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
