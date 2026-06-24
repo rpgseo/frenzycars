@@ -23,6 +23,11 @@
 {{- $ld = merge $ld (dict "itemReviewed" (dict "@type" "Product" "name" ($.Title | plainify))) -}}{{- end -}}
 {{- with .Params.tags -}}{{- $ld = merge $ld (dict "keywords" (delimit . ", ")) -}}{{- end -}}
 <script type="application/ld+json">{{ jsonify (dict "indent" "  ") $ld | safeJS }}</script>
+{{- with .Params.faq -}}
+{{- $entities := slice -}}
+{{- range . -}}{{- $entities = $entities | append (dict "@type" "Question" "name" (.q | plainify) "acceptedAnswer" (dict "@type" "Answer" "text" (.a | plainify))) -}}{{- end -}}
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") (dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $entities) | safeJS }}</script>
+{{- end }}
 {{ end }}
 {{ define "main" }}
 {{- $rel := where (where .Site.RegularPages "Type" .Type) "Permalink" "!=" .Permalink | first 4 -}}

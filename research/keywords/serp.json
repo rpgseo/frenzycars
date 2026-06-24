@@ -21070,5 +21070,125 @@
       "Clicking sound when starting car cold"
     ],
     "intent_serp": "Informational"
+  },
+  "ev range in cold weather real world": {
+    "comp_ranking": [],
+    "major_dominant": false,
+    "top10": [
+      "https://www.reddit.com/r/electricvehicles/comments/1qqajq4/has_anyone_actually_tracked_their_ev_range_loss/",
+      "https://www.recurrentauto.com/research/winter-ev-range-loss",
+      "https://www.consumerreports.org/cars/hybrids-evs/how-much-do-cold-temperatures-affect-an-evs-driving-range-a5751769461/",
+      "https://www.facebook.com/groups/rivianev/posts/1667502537340354/",
+      "https://www.efficiencyvermont.com/blog/how-to/fact-or-fiction-electric-vehicles-are-not-cut-out-for-winter-driving",
+      "https://ekoenergetyka.com/blog/does-cold-weather-affect-the-performance-of-your-electric-vehicle-ev/",
+      "https://www.energy.gov/sites/default/files/2024-10/impact_of_cold_ambient_temperature_on_bev_performance_v15_techeditfinal_12sep2024__0.pdf"
+    ],
+    "domains": [
+      "reddit.com",
+      "recurrentauto.com",
+      "consumerreports.org",
+      "facebook.com",
+      "efficiencyvermont.com",
+      "ekoenergetyka.com",
+      "energy.gov"
+    ],
+    "titles": [
+      "Has anyone actually tracked their EV range loss in cold ...",
+      "Best EV for Winter & Cold Weather Range",
+      "Cold Temperatures Affect an Electric Vehicle's Driving Range",
+      "What is real world cold weather range drop. Like Chicago ...",
+      "Fact or Fiction: EVs are not cut out for winter driving",
+      "Does Cold Weather Affect the Performance of your Electric ...",
+      "Impact of Cold Ambient Temperatures and Extreme ..."
+    ],
+    "page_types": [
+      "forum_ugc",
+      "oem_dealer",
+      "aggregator",
+      "forum_ugc",
+      "other",
+      "other",
+      "other"
+    ],
+    "forum_hits": 2,
+    "title_match_ratio": 0.86,
+    "major_in_top5": false,
+    "major_in_top3": false,
+    "ai_overview": true,
+    "paa": [
+      "Does a Tesla actually do 300 miles in winter?",
+      "Are EV cars reliable in cold weather?",
+      "What is the 80% rule for EV?",
+      "How cold is too cold for an electric car?"
+    ],
+    "related": [
+      "Ev range in cold weather real world reddit",
+      "Tesla ev range in cold weather real world",
+      "Best ev range in cold weather real world",
+      "New test reveals electric cars are practically unusable in winter",
+      "Best EV for winter range",
+      "Ev winter range test",
+      "Does cold weather damage ev batteries",
+      "Equinox EV range in winter"
+    ],
+    "intent_serp": "Informational"
+  },
+  "are car prices coming down": {
+    "comp_ranking": [],
+    "major_dominant": false,
+    "top10": [
+      "https://www.reddit.com/r/carbuying/comments/1qlsx8z/car_prices_will_drop/",
+      "https://www.kbb.com/car-advice/when-will-car-prices-drop/",
+      "https://www.nerdwallet.com/auto-loans/learn/car-market-prices",
+      "https://autos.yahoo.com/deals-and-buying-guides/articles/car-prices-finally-coming-down-223340666.html",
+      "https://www.youtube.com/watch?v=r00nifklcgc",
+      "https://news.dealershipguy.com/p/used-car-prices-are-falling-fast-here-s-what-it-means-for-inventory-and-appraisals-2025-11-25"
+    ],
+    "domains": [
+      "reddit.com",
+      "kbb.com",
+      "nerdwallet.com",
+      "autos.yahoo.com",
+      "youtube.com",
+      "news.dealershipguy.com"
+    ],
+    "titles": [
+      "Car prices will drop : r/carbuying",
+      "When Will New Car Prices Drop?",
+      "Are Car Prices Going Up or Down?",
+      "New Car Prices Are Finally Coming Down",
+      "Why Are Car Prices Not Going Down?",
+      "Used-car prices are falling fast\u2014here's what it means for ..."
+    ],
+    "page_types": [
+      "forum_ugc",
+      "aggregator",
+      "other",
+      "other",
+      "forum_ugc",
+      "oem_dealer"
+    ],
+    "forum_hits": 2,
+    "title_match_ratio": 1.0,
+    "major_in_top5": true,
+    "major_in_top3": true,
+    "ai_overview": true,
+    "paa": [
+      "How much does a car salesman make on a $30,000 car?",
+      "Is it better to buy a new car now or wait until 2026?",
+      "What is the $3000 rule for cars?",
+      "Should I buy a $40,000 car if I make $60,000 a year?"
+    ],
+    "related": [
+      "Are car prices coming down reddit",
+      "Will car prices go down in 2026",
+      "Are used car prices going down",
+      "Will car prices go down in 2027",
+      "Will used car prices go down in 2027",
+      "Are used car prices going up or down right now",
+      "Will truck prices go down in 2026",
+      "Are car prices going up or down"
+    ],
+    "intent_serp": "Informational"
   }
 }

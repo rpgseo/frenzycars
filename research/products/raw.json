@@ -6690,7 +6690,7 @@
       "labels": null
     }
   ],
-  "_fetched_at": 1782324971.1106076,
+  "_fetched_at": 1782342770.7513738,
   "car-accessories-gift-for-him::tire-inflator": [
     {
       "type": "amazon_serp",
@@ -43994,6 +43994,3444 @@
         "rating_type": "Max5",
         "value": 4.3,
         "votes_count": 703,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    }
+  ],
+  "best-car-cell-phone-mount::iottie-easy-one-touch-5": [
+    {
+      "type": "amazon_serp",
+      "rank_group": 1,
+      "rank_absolute": 1,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[3]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Signature Dashboard & Windshield Universal Car Mount Phone Holder Desk Stand with Suction Cup Base and Telescopic Arm for iPhone, Samsung, Google, More Smartphones",
+      "url": "https://www.amazon.com/iOttie-Dashboard-Windshield-Samsung-Smartphones/dp/B0875RKTQF/ref=sr_1_1?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-1",
+      "image_url": "https://m.media-amazon.com/images/I/71JFXKNuUmL._AC_UY218_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 17.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0875RKTQF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 48700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 2,
+      "rank_absolute": 2,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[5]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Advanced Universal Car Mount Dashboard & Windshield Suction Cup Phone Holder for iPhone, Samsung, Google, All Smartphones",
+      "url": "https://www.amazon.com/iOttie-Universal-Dashboard-Windshield-Smartphones/dp/B0C1HP8N5D/ref=sr_1_2?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-2",
+      "image_url": "https://m.media-amazon.com/images/I/612zyhPZCOL._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 16.13,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0C1HP8N5D",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 3800,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 3,
+      "rank_absolute": 3,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[1]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "iOttie Easy One Touch Signature Dashboard & Windshield Universal Car Mount Phone Holder Desk Stand with Suction Cup Base and Telescopic Arm for iPhone, Samsung, Google, More Smartphones",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDY4MTY3MzEwMTk2NTI6MTc4MjM0MjcwMTpzcF9zZWFyY2hfdGhlbWF0aWM6MzAwMDY5MTg0MTAyOTAyOjowOjo&url=%2FiOttie-Dashboard-Windshield-Samsung-Smartphones%2Fdp%2FB0875RKTQF%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%253Aamzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%26crid%3DN9FU3M0CL68T%26cv_ct_cx%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26keywords%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0875RKTQF%26pd_rd_r%3Dd983ffb0-cdcb-4f69-94d8-531f8ed2ce2b%26pd_rd_w%3DRoHs2%26pd_rd_wg%3DyffKv%26pf_rd_p%3D20370b4c-979a-4a65-bc84-8b168f3df5c5%26pf_rd_r%3D7VNSCDMQ859YQZ6K8HJ6%26qid%3D1782342701%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DiOttie%252BEasy%252BOne%252BTouch%252B5%252Bcar%252Bphone%252Bmount%252Caps%252C205%26sr%3D1-1-543a432c-671c-4a3a-a15e-c8d9b2229043-spons%26aref%3DHCYvnMmDHB%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=HCYvnMmDHB",
+      "image_url": "https://m.media-amazon.com/images/I/71JFXKNuUmL._AC_UL320_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 17.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0875RKTQF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 48700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 4,
+      "rank_absolute": 4,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[2]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "Wireless Car Charger, 15W Fast Charging Auto Clamping Phone Holders for Your Car Phone Mount fit for iPhone 17 16 15 14 13 12 Pro Max 11 XR XS, for Samsung Galaxy S25 Ultra S24 S23, Black",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDY4MTY3MzEwMTk2NTI6MTc4MjM0MjcwMTpzcF9zZWFyY2hfdGhlbWF0aWM6MzAxMzE3NzM1OTAzMjAyOjoxOjo&url=%2FWireless-CHGeek-Charging-Windshield-Dashboard%2Fdp%2FB08D5XJTJS%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%253Aamzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%26crid%3DN9FU3M0CL68T%26cv_ct_cx%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26keywords%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB08D5XJTJS%26pd_rd_r%3Dd983ffb0-cdcb-4f69-94d8-531f8ed2ce2b%26pd_rd_w%3DRoHs2%26pd_rd_wg%3DyffKv%26pf_rd_p%3D20370b4c-979a-4a65-bc84-8b168f3df5c5%26pf_rd_r%3D7VNSCDMQ859YQZ6K8HJ6%26qid%3D1782342701%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DiOttie%252BEasy%252BOne%252BTouch%252B5%252Bcar%252Bphone%252Bmount%252Caps%252C205%26sr%3D1-2-543a432c-671c-4a3a-a15e-c8d9b2229043-spons%26aref%3DQQlWKITPZB%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=QQlWKITPZB",
+      "image_url": "https://m.media-amazon.com/images/I/71kWKDNbFAL._AC_UL320_.jpg",
+      "bought_past_month": 3000,
+      "price_from": 20.79,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B08D5XJTJS",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 15800,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 5,
+      "rank_absolute": 5,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[3]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "snanlen 2026 Upgraded Car Phone Holder for Magsafe [108LBS Strongest Suction] 360\u00b0 Adjustable Vacuum Magnetic Phone Holders, Cell Phone car Mount for iPhone 17 Pro Max 16 15 14 13 12 Air Plus",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDY4MTY3MzEwMTk2NTI6MTc4MjM0MjcwMTpzcF9zZWFyY2hfdGhlbWF0aWM6MzAxMjA3ODUwNTQwMTAyOjoyOjo&url=%2Fsnanlen-Upgraded-Strongest-Adjustable-Magnetic%2Fdp%2FB0G3PDL83N%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%253Aamzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%26crid%3DN9FU3M0CL68T%26cv_ct_cx%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26keywords%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0G3PDL83N%26pd_rd_r%3Dd983ffb0-cdcb-4f69-94d8-531f8ed2ce2b%26pd_rd_w%3DRoHs2%26pd_rd_wg%3DyffKv%26pf_rd_p%3D20370b4c-979a-4a65-bc84-8b168f3df5c5%26pf_rd_r%3D7VNSCDMQ859YQZ6K8HJ6%26qid%3D1782342701%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DiOttie%252BEasy%252BOne%252BTouch%252B5%252Bcar%252Bphone%252Bmount%252Caps%252C205%26sr%3D1-3-543a432c-671c-4a3a-a15e-c8d9b2229043-spons%26aref%3D5NtwyskIdq%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=5NtwyskIdq",
+      "image_url": "https://m.media-amazon.com/images/I/91uw2hA4VxL._AC_UL320_.jpg",
+      "bought_past_month": 500,
+      "price_from": 19.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0G3PDL83N",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 286,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 6,
+      "rank_absolute": 6,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[4]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "[Military-Grade Anti-Shake & 360\u00b0 Rotatable Suction] 2026 Upgraded Car Phone Holder Mount\u301090+LBS Safest Strongest & Patent Certs\u3011Dashboard Windshield Vent for iPhone 17 16 Pro Max Samsung,Matt Black",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDY4MTY3MzEwMTk2NTI6MTc4MjM0MjcwMTpzcF9zZWFyY2hfdGhlbWF0aWM6MzAxMTUwNDE3NjUzMjAyOjozOjo&url=%2FMilitary-Grade-Anti-Shake-Rotatable-Certs%25E3%2580%2591Dashboard-Windshield%2Fdp%2FB0FQCMQJVZ%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%253Aamzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%26crid%3DN9FU3M0CL68T%26cv_ct_cx%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26keywords%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB0FQCMQJVZ%26pd_rd_r%3Dd983ffb0-cdcb-4f69-94d8-531f8ed2ce2b%26pd_rd_w%3DRoHs2%26pd_rd_wg%3DyffKv%26pf_rd_p%3D20370b4c-979a-4a65-bc84-8b168f3df5c5%26pf_rd_r%3D7VNSCDMQ859YQZ6K8HJ6%26qid%3D1782342701%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DiOttie%252BEasy%252BOne%252BTouch%252B5%252Bcar%252Bphone%252Bmount%252Caps%252C205%26sr%3D1-4-543a432c-671c-4a3a-a15e-c8d9b2229043-spons%26aref%3DvwLWDJY4YZ%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=vwLWDJY4YZ",
+      "image_url": "https://m.media-amazon.com/images/I/815Wlgx1K1L._AC_UL320_.jpg",
+      "bought_past_month": 100,
+      "price_from": 23.74,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0FQCMQJVZ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 1500,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 7,
+      "rank_absolute": 7,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[5]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "YRU True Military-Grade [360\u00b0 Rotation Suction] 2026 Ultimate Car Phone Holder Mount\u301090+LBS Safest Strongest & Patent Certs\u3011 Dash Windshield Vent for iPhone 17 16 Pro Max with Dash Accent,Gloss Black",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDY4MTY3MzEwMTk2NTI6MTc4MjM0MjcwMTpzcF9zZWFyY2hfdGhlbWF0aWM6MzAxMjIzOTYzODMzNzAyOjo0Ojo&url=%2FYRU-Strongest-Military-Grade%25E3%2580%2591-Dashboard-Windshield%2Fdp%2FB093B893LP%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%253Aamzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%26crid%3DN9FU3M0CL68T%26cv_ct_cx%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26keywords%3DiOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%26nsdOptOutParam%3Dtrue%26pd_rd_i%3DB093B893LP%26pd_rd_r%3Dd983ffb0-cdcb-4f69-94d8-531f8ed2ce2b%26pd_rd_w%3DRoHs2%26pd_rd_wg%3DyffKv%26pf_rd_p%3D20370b4c-979a-4a65-bc84-8b168f3df5c5%26pf_rd_r%3D7VNSCDMQ859YQZ6K8HJ6%26qid%3D1782342701%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DiOttie%252BEasy%252BOne%252BTouch%252B5%252Bcar%252Bphone%252Bmount%252Caps%252C205%26sr%3D1-5-543a432c-671c-4a3a-a15e-c8d9b2229043-spons%26aref%3DulrPPabf6P%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ulrPPabf6P",
+      "image_url": "https://m.media-amazon.com/images/I/71bzg7dQTGL._AC_UL320_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 24.64,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B093B893LP",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 4700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 8,
+      "rank_absolute": 8,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[8]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Signature Air Vent & Flush Mount Combo - Universal Car Mount Phone Holder for iPhone, Google, Samsung, Moto, LG, and all other Smartphones",
+      "url": "https://www.amazon.com/iOttie-Holder-iPhone-Samsung-Smartphones/dp/B088G1ZLN4/ref=sr_1_3?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-3",
+      "image_url": "https://m.media-amazon.com/images/I/61R4VioAEgL._AC_UY218_.jpg",
+      "bought_past_month": 300,
+      "price_from": 17.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B088G1ZLN4",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.1,
+        "votes_count": 2600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": true,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 9,
+      "rank_absolute": 9,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Wireless 3 Dash & Windshield Car Mount, 15W Qi Fast Charging Phone Holder, One-Handed Auto Clamp, Adjustable Smartphone Mount for iPhone 17 Pro Max, iPhone 12-17, Samsung, Pixel",
+      "url": "https://www.amazon.com/iOttie-Windshield-One-Handed-Adjustable-Smartphone/dp/B0GTC9LGR8/ref=sr_1_4?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-4",
+      "image_url": "https://m.media-amazon.com/images/I/61EP+QxRjcL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 34.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0GTC9LGR8",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 20,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 10,
+      "rank_absolute": 10,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[10]",
+      "domain": "www.amazon.com",
+      "title": "Car Charger Easy One Touch Wireless 2 Qi Charging CD Slot + Air Vent Combo Phone Mount for iPhone, Samsung Galaxy, Huawei, LG, Smartphones, Black",
+      "url": "https://www.amazon.com/iOttie-Wireless-Charger-Charging-Smartphones/dp/B07X52DJ66/ref=sr_1_5?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-5",
+      "image_url": "https://m.media-amazon.com/images/I/61iulebAiYL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 39.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07X52DJ66",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.1,
+        "votes_count": 2100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 11,
+      "rank_absolute": 11,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[11]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Mini Air Vent Car Mount Holder Cradle for iPhone Xs Max R 8 Plus 7 Samsung Galaxy S10 E S9 S8 Plus Edge, Note 9 & Other Smartphone, 2.2 x 4.8 x 5.7 inches",
+      "url": "https://www.amazon.com/iOttie-Holder-Cradle-Samsung-Smartphone/dp/B017HME9DC/ref=sr_1_6?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-6",
+      "image_url": "https://m.media-amazon.com/images/I/713toTJHkiL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 9.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B017HME9DC",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4,
+        "votes_count": 2400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 12,
+      "rank_absolute": 12,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[12]",
+      "domain": "www.amazon.com",
+      "title": "Velox MagSafe Compatible Air Vent Car Phone Holder. Unversal Magnetic Car Phone Mount for iPhone 12/13/14/15/16/17 Series & Android Phones via Included Magnetic Ring Adapter",
+      "url": "https://www.amazon.com/iOttie-Magnetic-Holder-Compatible-Including/dp/B09F7M5NTK/ref=sr_1_7?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-7",
+      "image_url": "https://m.media-amazon.com/images/I/61o5oHt0-1L._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 18.04,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B09F7M5NTK",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 1400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 13,
+      "rank_absolute": 13,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[13]",
+      "domain": "www.amazon.com",
+      "title": "Auto Sense Qi Wireless Car Charger - Automatic Clamping Dashboard Phone Mount with Wireless Charging for iPhone, Samsung Galaxy, Google Pixel, Huawei, LG, and Other Smartphones",
+      "url": "https://www.amazon.com/iOttie-Automatic-Clamping-Dashboard-Smartphones/dp/B07RBC21Z6/ref=sr_1_8?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-8",
+      "image_url": "https://m.media-amazon.com/images/I/816jn2Wtx8L._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 29.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07RBC21Z6",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 4200,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 14,
+      "rank_absolute": 14,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[14]",
+      "domain": "www.amazon.com",
+      "title": "Car Charger Easy One Touch Wireless 2 Qi Charging Dashboard Phone Mount for iPhone, Samsung Galaxy, Huawei, LG, Smartphones",
+      "url": "https://www.amazon.com/iOttie-Wireless-Charging-Dashboard-Smartphones/dp/B07X4YDKTF/ref=sr_1_9?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-9",
+      "image_url": "https://m.media-amazon.com/images/I/617WJ8hppTL._AC_UY218_.jpg",
+      "bought_past_month": 400,
+      "price_from": 30.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07X4YDKTF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 4000,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 15,
+      "rank_absolute": 15,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[15]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch 5 Cup Holder Mount - Universal Car Mount Phone Holder for iPhone, Google, Samsung, Moto, Huawei, Nokia, LG, and all other Smartphones",
+      "url": "https://www.amazon.com/iOttie-Holder-iPhone-Samsung-Smartphones/dp/B089J28SHP/ref=sr_1_10?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-10",
+      "image_url": "https://m.media-amazon.com/images/I/61IKwuO5jpL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 29.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B089J28SHP",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 463,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 16,
+      "rank_absolute": 16,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[16]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Mini Dash & Windshield Car Mount Phone Holder || iPhone Xs Max R 8 Plus 7 Samsung Galaxy S10 E S9 S8 Plus Edge, Note 9 & Other Smartphones",
+      "url": "https://www.amazon.com/iOttie-Windshield-Holder-Samsung-Smartphones/dp/B07C8ZVDBH/ref=sr_1_11?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-11",
+      "image_url": "https://m.media-amazon.com/images/I/71fmM4mBnWL._AC_UY218_.jpg",
+      "bought_past_month": 50,
+      "price_from": 15.42,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B07C8ZVDBH",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 1300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 1,
+      "rank_absolute": 17,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[17]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "LISEN Suction Phone Mount for Car, [Ultra Suction & 95% Cases Friendly] Car Phone Holder Mount Vacuum Dashboard Phone Holder, Car Cell Phone Holder for iPhone 17 16 15 14 Pro Max Air Galaxy S26 S25",
+      "url": "https://www.amazon.com/LISEN-Suction-Friendly-Holder-Dashboard/dp/B0GK1G8RVK/ref=sxin_29_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/71vOR8AAuJL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 18.98,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GK1G8RVK",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 1400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 17,
+      "rank_absolute": 18,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[20]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Connect Pro (New) - Gen 2 - Hands Free Alexa in Your Car - Car Mount Phone Holder with Alexa Built in for iOS & Android, MFi Certified, Universal",
+      "url": "https://www.amazon.com/iOttie-Easy-One-Touch-Connect/dp/B08FJGT216/ref=sr_1_12?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-12",
+      "image_url": "https://m.media-amazon.com/images/I/61l98xjBuKL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 59.95,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B08FJGT216",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4,
+        "votes_count": 515,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 18,
+      "rank_absolute": 19,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[21]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Wireless 3 Air Vent Car Mount, Qi Fast Charging Phone Holder, One-Handed Auto Clamp, Secure Vent Clip, Adjustable Viewing for iPhone 12-17, Galaxy & Smartphones",
+      "url": "https://www.amazon.com/iOttie-Wireless-One-Handed-Adjustable-Smartphones/dp/B0GTC3KL2B/ref=sr_1_13?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-13",
+      "image_url": "https://m.media-amazon.com/images/I/614kXIms3fL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 34.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0GTC3KL2B",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 21,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 19,
+      "rank_absolute": 20,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[22]",
+      "domain": "www.amazon.com",
+      "title": "Velox Qi2 Mini 15W Wireless Charger Car Mount - Dash & Windshield Car Phone Holder - MagSafe Compatible iPhone Mount for Qi2 Smartphones (iPhone12 13 14 15 16 and 17) - Car Charger Included",
+      "url": "https://www.amazon.com/iOttie-Velox-Wireless-Charger-Mount/dp/B0D54Y5THX/ref=sr_1_14?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-14",
+      "image_url": "https://m.media-amazon.com/images/I/61jHDsqERBL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 31.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0D54Y5THX",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4,
+        "votes_count": 518,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 20,
+      "rank_absolute": 21,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[23]",
+      "domain": "www.amazon.com",
+      "title": "Velox Magnetic Flush Car Mount - Compatible with MagSafe iPhones, Including iPhone 12, 13, 14, and 15 Series",
+      "url": "https://www.amazon.com/iOttie-Magnetic-Holder-Compatible-Including/dp/B09XJHD88W/ref=sr_1_15?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-15",
+      "image_url": "https://m.media-amazon.com/images/I/615Pc4latJL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 18.04,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B09XJHD88W",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 3.9,
+        "votes_count": 273,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 21,
+      "rank_absolute": 22,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[24]",
+      "domain": "www.amazon.com",
+      "title": "Treker Travel Essentials Magnetic Travel Phone Holder with 360\u00b0 Rotation Swivel Head and Magnetic Ring Adapter for Universal Compatibility with MagSafe, Qi2, iPhone, and Android Smartphones",
+      "url": "https://www.amazon.com/iOttie-Essentials-Universal-Compatibility-Smartphones/dp/B0G23DC8J9/ref=sr_1_16?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-16",
+      "image_url": "https://m.media-amazon.com/images/I/51bAU1-GeRL._AC_UY218_.jpg",
+      "bought_past_month": 50,
+      "price_from": 27.95,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0G23DC8J9",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 230,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 2,
+      "rank_absolute": 23,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[25]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "Jononser Suction Phone Mount for Car Dashboard/Windshield - 360\u00b0Adjustable Magnetic Phone Holder for Car, Foldable Car Phone Holder for iPhone 17/16/15/14/13/12 Series (Carbon Fiber & Aluminum Alloy)",
+      "url": "https://www.amazon.com/Jononser-Suction-Phone-Dashboard-Windshield/dp/B0FCDW3R4C/ref=sxbs_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/71RuvsHpvNL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 500,
+      "price_from": 22.79,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0FCDW3R4C",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 966,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    }
+  ],
+  "best-car-cell-phone-mount::esr-halolock-magsafe": [
+    {
+      "type": "amazon_serp",
+      "rank_group": 1,
+      "rank_absolute": 1,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[3]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger,15W Magnetic Wireless Car Charger, for MagSafe Car Charging, Air Vent Dashboard Phone Holder Mount for iPhone Air 17 Pro Max 16 15 14 13 12, Galaxy S25, Fast Charging",
+      "url": "https://www.amazon.com/ESR-HaloLock-Magnetic-Attachment-Alignment/dp/B08HNBHSQV/ref=sr_1_1?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-1",
+      "image_url": "https://m.media-amazon.com/images/I/61+HUksN4kL._AC_UY218_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 16.93,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B08HNBHSQV",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 24600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 2,
+      "rank_absolute": 2,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[5]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, Magnetic Phone Holder for Car Air Vent, Car Phone Holder Mount for iPhone 17e/17/16/16e/15/14/13/12/Samsung, All Smartphones(2 Metal Rings Included),Charging Not Supported",
+      "url": "https://www.amazon.com/ESR-HaloLock-Magnetic-Compatible-Charging/dp/B0B38P9TF8/ref=sr_1_2?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-2",
+      "image_url": "https://m.media-amazon.com/images/I/61Ja7CBTCbL._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 12.72,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0B38P9TF8",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 7700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 3,
+      "rank_absolute": 3,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[7]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, Vacuum Dashboard Magnetic Car Phone Holder for Car, Suction Cup Car Phone Mount for iPhone 17-12, Smaung Galaxy, Car Accessories, Charging Not Supported, Metallic Grey",
+      "url": "https://www.amazon.com/ESR-Dashboard-Windshield-Accessories-Supported/dp/B0BMG5NJ47/ref=sr_1_3?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-3",
+      "image_url": "https://m.media-amazon.com/images/I/71vBTAJEZjL._AC_UY218_.jpg",
+      "bought_past_month": 300,
+      "price_from": 19.79,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0BMG5NJ47",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 2900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 4,
+      "rank_absolute": 4,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[8]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, Magnetic Car Phone Holder Mount, Air Vent/Dashboard Magnetic Phone Mount for iPhone 17/16/15/14/13/12, Galaxy S25, Pixel 10, Strong Magnets, Charging Not Supported",
+      "url": "https://www.amazon.com/ESR-HaloLock-Magnetic-Dashboard-Supported/dp/B0CM3DNH4B/ref=sr_1_4?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-4",
+      "image_url": "https://m.media-amazon.com/images/I/71HUpjEJr-L._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 15.11,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CM3DNH4B",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 7700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": true,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 5,
+      "rank_absolute": 5,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount - [20 Super Magnets] Magnetic Phone Holders for Your Car, Air Vent Phone Holder Car, HandsFree Cell Phone Holder Mount Accessories for Women Men fit iPhone 17 16 Pro Max",
+      "url": "https://www.amazon.com/Lamicall-Fits-MagSafe-Car-Mount/dp/B0BQRJ6Y5P/ref=sr_1_5?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-5",
+      "image_url": "https://m.media-amazon.com/images/I/61Oi6IyXdhL._AC_UY218_.jpg",
+      "bought_past_month": 8000,
+      "price_from": 8.53,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0BQRJ6Y5P",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 16100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 6,
+      "rank_absolute": 6,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[10]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Phone Mount - Strong Magnets Magnetic Phone Holders for Your Car 2-in-1 Vent Dashboard Magnet Cell Phones Holder Mounts Car Accessories Gitfs for Men Women fit iPhone, Black",
+      "url": "https://www.amazon.com/LISEN-MagSafe-Rotation-Magnetic-Accessories/dp/B0CQPJKXVD/ref=sr_1_6?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-6",
+      "image_url": "https://m.media-amazon.com/images/I/71pI7kbBxXL._AC_UY218_.jpg",
+      "bought_past_month": 8000,
+      "price_from": 8.52,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CQPJKXVD",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 2600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 7,
+      "rank_absolute": 7,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[11]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount for iPhone 17 Pro Max [24 Strong Magnets] Classic Magnetic Phone Holder for Car Dashboard Magnet Phone Mount Car Cell Phone Holder for iPhone 17 Pro Max Air 16 15 14 13 12",
+      "url": "https://www.amazon.com/LISEN-MagSafe-Strong-Magnet-Magnetic/dp/B0CGHNQ53C/ref=sr_1_7?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-7",
+      "image_url": "https://m.media-amazon.com/images/I/71s1it7xrhL._AC_UY218_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 11.71,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CGHNQ53C",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 18300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 8,
+      "rank_absolute": 8,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[12]",
+      "domain": "www.amazon.com",
+      "title": "for Magsafe Car Mount, Cell Phone Holders for Your Car, Magnetic Car Accessories for Women Men Jeep Truck, Vacuum Gifts for iPhone 17 Pro Max 16 15 14 13 12, Samsung S25, Pearl White",
+      "url": "https://www.amazon.com/LISEN-Magsafe-Magnetic-Accessories-SuctionPro/dp/B0FHPZQ1BQ/ref=sr_1_8?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-8",
+      "image_url": "https://m.media-amazon.com/images/I/71H+pGf6ktL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 20.89,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0FHPZQ1BQ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 3600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 9,
+      "rank_absolute": 9,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[13]",
+      "domain": "www.amazon.com",
+      "title": "for 15W MagSafe Car Mount Charger, for MagSafe Car Charger, Suction Cup Magnetic Wireless Car Charging, Dashboard Car Phone Mount for iPhone 17e/17/16/15/14/13/12, S26/S25, Pixel 10, Fast Charging",
+      "url": "https://www.amazon.com/ESR-Qi2-Certified-Dashboard-Windshield-Magnetic/dp/B0CZ4BFNCF/ref=sr_1_9?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-9",
+      "image_url": "https://m.media-amazon.com/images/I/715iTfrQt+L._AC_UY218_.jpg",
+      "bought_past_month": 400,
+      "price_from": 31.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0CZ4BFNCF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 496,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 10,
+      "rank_absolute": 10,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[14]",
+      "domain": "www.amazon.com",
+      "title": "for 15W MagSafe Car Mount Charger, MagSafe Car Charger, Air Vent/Dashboard Magnetic Wireless Phone Holder Mount for iPhone 17e/17/16/15/14/13/12, Galaxy S26/S25, Pixel 10, Fast Charging",
+      "url": "https://www.amazon.com/ESR-Qi2-Certified-Dashboard-Magnetic-Wireless/dp/B0CM3DCWQY/ref=sr_1_10?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-10",
+      "image_url": "https://m.media-amazon.com/images/I/71idRFzf20L._AC_UY218_.jpg",
+      "bought_past_month": 400,
+      "price_from": 15.19,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CM3DCWQY",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.1,
+        "votes_count": 2400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 11,
+      "rank_absolute": 11,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[15]",
+      "domain": "www.amazon.com",
+      "title": "OmniLock Qi2.2 Certified 25W MagSafe Car Mount Charger with CryoBoost, Phone Cooling MagSafe Car Charger, 360\u00b0 Rotatable, Air Vent Magnetic Car Phone Holder for iPhone 17/16 with iOS 26, S26 Ultra",
+      "url": "https://www.amazon.com/ESR-OmniLock-Certified-CryoBoost-Rotatable/dp/B0F6CPCZWJ/ref=sr_1_11?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-11",
+      "image_url": "https://m.media-amazon.com/images/I/71PBfagAr9L._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 47.49,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0F6CPCZWJ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 276,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 1,
+      "rank_absolute": 12,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[16]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "LISEN Suction Phone Mount for Vacuum [All-Metal & Nano Gel 98+LBS Suction] 360 Adjustable Vacuum Magnetic Phone Holder for Car, for Magsafe Car Mount for iPhone 17 Pro Max 16 15 14 13 12 | Car Mount for iPhone [All Aero Metal] Phone Mount for Car",
+      "url": "https://www.amazon.com/LISEN-Suction-All-Metal-Adjustable-Magnetic/dp/B0GVDCFQT2/ref=sxin_29_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/711ounnPV2L._AC_UL640_QL65_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 26.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0GVDCFQT2",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 1500,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 12,
+      "rank_absolute": 13,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[19]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger with CryoBoost, Phone Cooling MagSafe Car Charger, Magnetic Wireless Car Charging, Air Vent/Dashboard Car Phone Holder for iPhone 17e/17-12, S26/S25, Fast Charging",
+      "url": "https://www.amazon.com/ESR-HaloLock-Wireless-CryoBoost-Compatible/dp/B09T9JLYZF/ref=sr_1_12?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-12",
+      "image_url": "https://m.media-amazon.com/images/I/61PiCYIjYyL._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 29.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B09T9JLYZF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 5400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 13,
+      "rank_absolute": 14,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[20]",
+      "domain": "www.amazon.com",
+      "title": "for 15W MagSafe Car Mount Charger with CryoBoost, Phone Cooling MagSafe Car Charger, Air Vent/Dashboard Wireless Charging for iPhone 17e/17/16/15/14/13/12, S26/S25 Series, Pixel 10, Fast Charger",
+      "url": "https://www.amazon.com/ESR-CryoBoost-Dashboard-Wireless-Charging/dp/B0DHYXZ31J/ref=sr_1_13?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-13",
+      "image_url": "https://m.media-amazon.com/images/I/71FE4IRkTLL._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 31.32,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0DHYXZ31J",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 718,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 14,
+      "rank_absolute": 15,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[21]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger, 15W Magnetic Wireless Car Charger, for MagSafe Phone Charging, Air Vent Phone Holder for iPhone 17e/17-12, Samsung Galaxy S26/S25, with 36W QC 3.0 Fast Charging",
+      "url": "https://www.amazon.com/ESR-HaloLock-Magnetic-Wireless-Compatible/dp/B094QR2BQL/ref=sr_1_14?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-14",
+      "image_url": "https://m.media-amazon.com/images/I/71giTrjrh7L._AC_UY218_.jpg",
+      "bought_past_month": 50,
+      "price_from": 35.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B094QR2BQL",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 3600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 15,
+      "rank_absolute": 16,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[22]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, Magnetic Car Mount,Dashboard/Tesla Touchscreen Phone Holder, Magnetic Phone Holder for Car, for iPhone 17-12, Samsung S26/S25,Charging Not Supported(2 Metal Rings Included)",
+      "url": "https://www.amazon.com/ESR-Dashboard-Compatible-Touchscreen-Supported/dp/B0CB5XH9J5/ref=sr_1_15?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-15",
+      "image_url": "https://m.media-amazon.com/images/I/71ANGSioT6L._AC_UY218_.jpg",
+      "bought_past_month": 300,
+      "price_from": 24.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0CB5XH9J5",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 3.9,
+        "votes_count": 1600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 16,
+      "rank_absolute": 17,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[23]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, Upgraded Dashboard Magnetic Phone Holder for Car, 360\u00b0 Rotation, Car Phone Holder Mount for iPhone 17/16/16e/15/14/13/12, S25, Pixel 10, Strong Magnets(with 2 Metal Rings)",
+      "url": "https://www.amazon.com/ESR-Upgraded-Dashboard-Magnetic-Accessories/dp/B0DSNXXLM2/ref=sr_1_16?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-16",
+      "image_url": "https://m.media-amazon.com/images/I/81eDvk-i9wL._AC_UY218_.jpg",
+      "bought_past_month": 50,
+      "price_from": 15.19,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0DSNXXLM2",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.1,
+        "votes_count": 134,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 2,
+      "rank_absolute": 18,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[24]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger, 15W Fast Charging Magnetic Wireless Car Charger, Vacuum Magnetic Phone Holder [120LBS Ultra Suction Cup & 3000gf Magnet ] 780\u00b0 Dashboard Car Bracket for iPhone & Android",
+      "url": "https://www.amazon.com/MagSafe-Charging-Magnetic-Wireless-Dashboard/dp/B0FLYFFR66/ref=sxbs_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/613Tk6zbqBL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 6000,
+      "price_from": 26.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0FLYFFR66",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 814,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    }
+  ],
+  "best-car-cell-phone-mount::syncwire-vent-mount": [
+    {
+      "type": "amazon_serp",
+      "rank_group": 1,
+      "rank_absolute": 1,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[4]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Phone Holder for Car, 360\u00b0 Rotatable Super Strong Magnets Air Vent Cell Phone Car Mount Compatible with iPhone, Android, Samsung",
+      "url": "https://www.amazon.com/Magnetic-Holder-Syncwire-Universal-Tablets/dp/B07Q9LZHR8/ref=sr_1_1?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-1",
+      "image_url": "https://m.media-amazon.com/images/I/61fpNZZ6klL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 11.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07Q9LZHR8",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 13800,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 2,
+      "rank_absolute": 2,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]",
+      "domain": "www.amazon.com",
+      "title": "Mobile Phone Holder Car for MagSafe Car Holder Universal Magnetic Mobile Phone Holder Car Ventilation Car Mobile Phone Holder for iPhone 17 16 15 14 13 12 Pro Max Magsafe Case Smartphone",
+      "url": "https://www.amazon.com/SYNCWIRE-Flexible-Rotation-Compatible-Accessories/dp/B0CHDXS5C6/ref=sr_1_2?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-2",
+      "image_url": "https://m.media-amazon.com/images/I/71rupeoDeKL._AC_UY218_.jpg",
+      "bought_past_month": 300,
+      "price_from": 16.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CHDXS5C6",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 2900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 3,
+      "rank_absolute": 3,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[8]",
+      "domain": "www.amazon.com",
+      "title": "Car Phone Holder for Universal Dashboard [Super Stable] Car Phone Mount Foldable Aluminum Alloy Arm for iPhone 17 16 15 14 13 12 Series & All Phones",
+      "url": "https://www.amazon.com/Syncwire-Universal-Dashboard-Foldable-Aluminum/dp/B0CP4VBGX1/ref=sr_1_3?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-3",
+      "image_url": "https://m.media-amazon.com/images/I/61yZx84aPhL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 15.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CP4VBGX1",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 1500,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 4,
+      "rank_absolute": 4,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, Flexible Rotation Magnetic Phone Holder for Car Vent, Hands Free Car Air Vent Phone Holder Clip Universal Compatible with iPhone 17 16 15 14 13 12 Pro Max Plus",
+      "url": "https://www.amazon.com/SYNCWIRE-MagSafe-Magnetic-Compatible-Accessories/dp/B0CHDSBTVF/ref=sr_1_4?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-4",
+      "image_url": "https://m.media-amazon.com/images/I/71ZY8NZC7UL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 18.69,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CHDSBTVF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 2900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": true,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 5,
+      "rank_absolute": 5,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[10]",
+      "domain": "www.amazon.com",
+      "title": "Phone Holders for Your Car with Metal Hook Clip, Air Vent Cell Phone Stand Car Mount, Universal Automobile Cradle for Garmin GPS Fit iPhone Android and All Smartphones, Dark Black",
+      "url": "https://www.amazon.com/Miracase-Holders-Universal-Automobile-Smartphones/dp/B0CHYBKQPM/ref=sr_1_5?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-5",
+      "image_url": "https://m.media-amazon.com/images/I/81ERIxogALL._AC_UY218_.jpg",
+      "bought_past_month": 10000,
+      "price_from": 12.34,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CHYBKQPM",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 42800,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 6,
+      "rank_absolute": 6,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[11]",
+      "domain": "www.amazon.com",
+      "title": "2026 Wider Clamp & Metal Hook Car Phone Holder Vent [Thick Cases Friendly] Phone Holders for Your Car Mount Gfts Automobile Hands Free Accessories for Women Men for iPhone 16 15 14 13 Pro Max",
+      "url": "https://www.amazon.com/Lamicall-Friendly-Holder-Cradle-Smartphone/dp/B0BHNYJGRF/ref=sr_1_6?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-6",
+      "image_url": "https://m.media-amazon.com/images/I/71yYA071I3L._AC_UY218_.jpg",
+      "bought_past_month": 10000,
+      "price_from": 8.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0BHNYJGRF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 15200,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 7,
+      "rank_absolute": 7,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[12]",
+      "domain": "www.amazon.com",
+      "title": "2026 Upgrade Ultra Stable Car Phone Holder Mount [Never Fall Off & Won't Break] Universal Air Vent Phone Mount for Car Easy Clamp Phone Holders for Your Car for iPhone 17 Pro Max 16 15 14 13",
+      "url": "https://www.amazon.com/VICSEED-Upgrade-Stable-Universal-Holder/dp/B084ZFK84T/ref=sr_1_7?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-7",
+      "image_url": "https://m.media-amazon.com/images/I/81zG+lJXh0L._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 19.97,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B084ZFK84T",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 10900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Tue, Jun 30 on $35 of items shipped by Amazon",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 8,
+      "rank_absolute": 8,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[13]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount - [20 Super Magnets] Magnetic Phone Holders for Your Car, Air Vent Phone Holder Car, HandsFree Cell Phone Holder Mount Accessories for Women Men fit iPhone 17 16 Pro Max",
+      "url": "https://www.amazon.com/Lamicall-Fits-MagSafe-Car-Mount/dp/B0BQRJ6Y5P/ref=sr_1_8?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-8",
+      "image_url": "https://m.media-amazon.com/images/I/61Oi6IyXdhL._AC_UY218_.jpg",
+      "bought_past_month": 8000,
+      "price_from": 8.53,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0BQRJ6Y5P",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 16100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 9,
+      "rank_absolute": 9,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[14]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Holder\u3010Ring Ventilation\u3011\u3010 360\u00b0 Rotatable\u3011\u3010N55 Magnetic\u3011 Phone Mount for Air Vent, Car Cell Phone Holder Mount Compatible iPhone 17/16 Pro Max 15 14 13 12, Carbon Fiber Style",
+      "url": "https://www.amazon.com/SYNCWIRE-Ventilation-Rotation-Magnetic-Compatible/dp/B0D4M6W6VC/ref=sr_1_9?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-9",
+      "image_url": "https://m.media-amazon.com/images/I/81ay81gLEEL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 18.87,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0D4M6W6VC",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 455,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 10,
+      "rank_absolute": 10,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[15]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Car Phone Holder for Dashboard, 360\u00b0 Adjustable Strong Magnets Cell Phone Car Mount Compatible with iPhone, Samsung, Android etc.",
+      "url": "https://www.amazon.com/Syncwire-Universal-Dashboard-Adjustable-Compatible/dp/B07Q9L47H7/ref=sr_1_10?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-10",
+      "image_url": "https://m.media-amazon.com/images/I/61GPGoLkXAL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 11.89,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07Q9L47H7",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 41200,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 11,
+      "rank_absolute": 11,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[16]",
+      "domain": "www.amazon.com",
+      "title": "Universal Phone Holders for Your Car, [Never Fall Off] Car Vent Cell Phone Mount [Big Phone Friendly] Gifts Accessories for Women Men fit iPhone 17 16 15 14 13 12 All Smartphones, Black | Wider Clamp & Metal Hook Air Vent Phone Mount for Car Holds Your Phone Securely Even on Bumpy Road",
+      "url": "https://www.amazon.com/LISEN-Phone-Car-Universal-Holder/dp/B0CJ98F427/ref=sr_1_11?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-11",
+      "image_url": "https://m.media-amazon.com/images/I/71IEv4QYhqL._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 11.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CJ98F427",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 4100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 1,
+      "rank_absolute": 12,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[17]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "APPS2Car for MagSafe Vent Mount Magnetic Phone Holder for Car Easy Removal Reusable Air Vent Phone Mount Compatible with iPhone 17 16 15 14 13 12 Pro Max Gifts for Women Men",
+      "url": "https://www.amazon.com/APPS2Car-MagSafe-Magnetic-Reusable-Compatible/dp/B0GSYZ5GXZ/ref=sxin_29_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/81k60GPLJvL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 300,
+      "price_from": 9.49,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GSYZ5GXZ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.8,
+        "votes_count": 32,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 12,
+      "rank_absolute": 13,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[20]",
+      "domain": "www.amazon.com",
+      "title": "Car Vent Phone Mount - Air Vent Clip Holder, Universal Stand Hands Free Cradle Compatible with Cell Phone 16 15 14 13 12 Mini 11 Pro Xs Max Xr X 8 7 6 6s Plus SE Smartphones Black",
+      "url": "https://www.amazon.com/Phone-Mount-Lamicall-Vent-Holder/dp/B07GQMM65Q/ref=sr_1_12?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-12",
+      "image_url": "https://m.media-amazon.com/images/I/51EyxBfk8RL._AC_UY218_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 8.53,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07GQMM65Q",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 28000,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 13,
+      "rank_absolute": 14,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[21]",
+      "domain": "www.amazon.com",
+      "title": "2 Pack Magnetic Phone Holder for Your Car Magnet for Phone Car Mount Vent 6 Military Magnets Vent Cell Phone Holder Mount for Car Plate Fit All, Gifts for Women Men, Car Accessories",
+      "url": "https://www.amazon.com/LISEN-Magnetic-Military-Magnets-Android/dp/B085ZXC2HS/ref=sr_1_13?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-13",
+      "image_url": "https://m.media-amazon.com/images/I/71WAa1BqPXL._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 13.96,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B085ZXC2HS",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 18700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 14,
+      "rank_absolute": 15,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[22]",
+      "domain": "www.amazon.com",
+      "title": "Easy One Touch Advanced Air Vent Car Phone Mount - Universal Cell Phone Holder for iPhone, Google, Samsung, Moto, LG, and All Other Smartphones",
+      "url": "https://www.amazon.com/iOttie-Easy-Touch-Phone-Mount/dp/B0C7LJTXRJ/ref=sr_1_14?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-14",
+      "image_url": "https://m.media-amazon.com/images/I/71IXTi9pZyL._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 17.05,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0C7LJTXRJ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 536,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 15,
+      "rank_absolute": 16,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[23]",
+      "domain": "www.amazon.com",
+      "title": "Universal Car Vent Mount for Smartphones \u2013 Secure Adjustable Grip Holder for iPhone, Samsung, Pixel, LG, Rotates 180\u00b0 for Portrait & Landscape, Cable Management Clip, Black, With Cleaning Cloth",
+      "url": "https://www.amazon.com/Belkin-Universal-Vent-Mount-Smartphones/dp/B0FK719FV9/ref=sr_1_15?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-15",
+      "image_url": "https://m.media-amazon.com/images/I/511aGhUnEgL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 20.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0FK719FV9",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": 1,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 16,
+      "rank_absolute": 17,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[24]",
+      "domain": "www.amazon.com",
+      "title": "Car Vent Mount, Black and Silver, Phone Stand for iPhones, Samsungs, LGs & Most Smartphones, Adjustable to Fit 5.5-Inch Screens",
+      "url": "https://www.amazon.com/Belkin-F7U017bt-Universal-Samsung-Smartphones/dp/B01N7VARIG/ref=sr_1_16?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-16",
+      "image_url": "https://m.media-amazon.com/images/I/61AZFL6TCLL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 24.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B01N7VARIG",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 5400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 2,
+      "rank_absolute": 18,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[25]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "eSamcore Car Vent Phone Mount, Car Phone Holder Mount with Swing Arm Air Vent Clip Car Mount Cell Phone Holder Car for iPhone 17/16/ 15/14/ 13 Pro Max & All 4.7\" - 6.9\" Android Smartphone",
+      "url": "https://www.amazon.com/Phone-Mount-eSamcore-Holder-iPhone/dp/B09W9DVGH7/ref=sxbs_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/71mbFRlhPHL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 400,
+      "price_from": 14.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B09W9DVGH7",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 2300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    }
+  ],
+  "best-car-cell-phone-mount::wixgear-vent-clip": [
+    {
+      "type": "amazon_serp",
+      "rank_group": 1,
+      "rank_absolute": 1,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[4]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Phone Holder for Car, WixGear [2 Pack] Universal Air Vent Magnetic Phone Mount for Car, Car Phone Holder Mount for Cell Phones and Mini Tablets with 4 Metal Plates",
+      "url": "https://www.amazon.com/Magnetic-Holder-WixGear-Phones-Tablets/dp/B01G0X56YU/ref=sr_1_1?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-1",
+      "image_url": "https://m.media-amazon.com/images/I/61TA7W+T8+L._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 12.74,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B01G0X56YU",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 58300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 2,
+      "rank_absolute": 2,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Phone Holder for Car, Twist-Lock Air Vent Car Phone Holder with Swift-Snap Technology, Secure Grip Car Phone Mount, Compatible with All Smartphones, Strong Magnets",
+      "url": "https://www.amazon.com/Magnetic-Twist-Lock-Swift-Snap-Technology-Smartphones/dp/B077MTNV41/ref=sr_1_2?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-2",
+      "image_url": "https://m.media-amazon.com/images/I/71bWjCbcO+L._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 14.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B077MTNV41",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 9400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": true,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 3,
+      "rank_absolute": 3,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[7]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[1]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Phone Holder for Car, WixGear [2 Pack] Universal Air Vent Magnetic Phone Mount for Car, Car Phone Holder Mount for Cell Phones and Mini Tablets with 4 Metal Plates",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4NDkyNTQwODM0NjUzMzg0OjE3ODIzNDI3MzY6c3Bfc2VhcmNoX3RoZW1hdGljOjo6MDpCMDFHMFg1NllVOnNlYXJjaA&url=%2FMagnetic-Holder-WixGear-Phones-Tablets%2Fdp%2FB01G0X56YU%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%253Aamzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%26crid%3DN2AIXWWXZIC9%26cv_ct_cx%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26keywords%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26pd_rd_i%3DB01G0X56YU%26pd_rd_r%3D93325261-82c2-40ce-9a32-55fc8f54c6c6%26pd_rd_w%3Dj0Ne0%26pd_rd_wg%3D5xjVY%26pf_rd_p%3D8a93f19a-a37a-4a14-bb5d-f771a217992c%26pf_rd_r%3D7FR96XZP8KKH71197N73%26qid%3D1782342736%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DWixGear%252Buniversal%252Bphone%252Bholder%252Bcar%252Bvent%252Caps%252C264%26sr%3D1-1-151c2d8c-9dd7-48c8-8db3-431f30cc593a-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/61TA7W+T8+L._AC_UL320_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 12.74,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B01G0X56YU",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 58300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 4,
+      "rank_absolute": 4,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[7]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[2]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "WixGear (2 Pack Universal Stick On Dashboard Magnetic Phone Car Mount, for Cell Phones and Mini Tablets with Fast Swift-snap Technology, (Newer Bigger Model)",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4NDkyNTQwODM0NjUzMzg0OjE3ODIzNDI3MzY6c3Bfc2VhcmNoX3RoZW1hdGljOjo6MTpCMDlIUktCVDRXOnNlYXJjaA&url=%2FWixGear-Universal-Dashboard-Swift-snap-Technology%2Fdp%2FB09HRKBT4W%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%253Aamzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%26crid%3DN2AIXWWXZIC9%26cv_ct_cx%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26keywords%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26pd_rd_i%3DB09HRKBT4W%26pd_rd_r%3D93325261-82c2-40ce-9a32-55fc8f54c6c6%26pd_rd_w%3Dj0Ne0%26pd_rd_wg%3D5xjVY%26pf_rd_p%3D8a93f19a-a37a-4a14-bb5d-f771a217992c%26pf_rd_r%3D7FR96XZP8KKH71197N73%26qid%3D1782342736%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DWixGear%252Buniversal%252Bphone%252Bholder%252Bcar%252Bvent%252Caps%252C264%26sr%3D1-2-151c2d8c-9dd7-48c8-8db3-431f30cc593a-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/61qM81uFzBL._AC_UL320_.jpg",
+      "bought_past_month": 200,
+      "price_from": 15.29,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B09HRKBT4W",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 533,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 5,
+      "rank_absolute": 5,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[7]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[3]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "LISEN 2 Pack Magnetic Phone Holder for Your Car Magnet for Phone Car Mount Vent 6 Military Magnets Vent Cell Phone Holder Mount for Car Plate Fit All, Gifts for Women Men, Car Accessories",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4NDkyNTQwODM0NjUzMzg0OjE3ODIzNDI3MzY6c3Bfc2VhcmNoX3RoZW1hdGljOjo6MjpCMDg1WlhDMkhTOnNlYXJjaA&url=%2FLISEN-Magnetic-Military-Magnets-Android%2Fdp%2FB085ZXC2HS%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%253Aamzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%26crid%3DN2AIXWWXZIC9%26cv_ct_cx%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26keywords%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26pd_rd_i%3DB085ZXC2HS%26pd_rd_r%3D93325261-82c2-40ce-9a32-55fc8f54c6c6%26pd_rd_w%3Dj0Ne0%26pd_rd_wg%3D5xjVY%26pf_rd_p%3D8a93f19a-a37a-4a14-bb5d-f771a217992c%26pf_rd_r%3D7FR96XZP8KKH71197N73%26qid%3D1782342736%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DWixGear%252Buniversal%252Bphone%252Bholder%252Bcar%252Bvent%252Caps%252C264%26sr%3D1-3-151c2d8c-9dd7-48c8-8db3-431f30cc593a-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/71WAa1BqPXL._AC_UL320_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 13.96,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B085ZXC2HS",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 18700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 6,
+      "rank_absolute": 6,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[7]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[4]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "Blukar Car Phone Holder Mount, Super Stable Air Vent Cell Phone Car Mount with 2025 Metal Hook Clip, 360\u00b0 Rotation,One Button Release for iPhone, Galaxy, Google, and All Other Smartphones",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4NDkyNTQwODM0NjUzMzg0OjE3ODIzNDI3MzY6c3Bfc2VhcmNoX3RoZW1hdGljOjo6MzpCMEMxTks3OUZLOnNlYXJjaA&url=%2FBlukar-Holder-Cradle-Rotation-Upgraded%2Fdp%2FB0C1NK79FK%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%253Aamzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%26crid%3DN2AIXWWXZIC9%26cv_ct_cx%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26keywords%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26pd_rd_i%3DB0C1NK79FK%26pd_rd_r%3D93325261-82c2-40ce-9a32-55fc8f54c6c6%26pd_rd_w%3Dj0Ne0%26pd_rd_wg%3D5xjVY%26pf_rd_p%3D8a93f19a-a37a-4a14-bb5d-f771a217992c%26pf_rd_r%3D7FR96XZP8KKH71197N73%26qid%3D1782342736%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DWixGear%252Buniversal%252Bphone%252Bholder%252Bcar%252Bvent%252Caps%252C264%26sr%3D1-4-151c2d8c-9dd7-48c8-8db3-431f30cc593a-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/71FDDOYxJKL._AC_UL320_.jpg",
+      "bought_past_month": 6000,
+      "price_from": 6.63,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0C1NK79FK",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 25700,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 7,
+      "rank_absolute": 7,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[7]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[5]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "Lamicall Car Vent Phone Mount - Air Vent Clip Holder, Universal Stand Hands Free Cradle Compatible with Cell Phone 16 15 14 13 12 Mini 11 Pro Xs Max Xr X 8 7 6 6s Plus SE Smartphones Black",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4NDkyNTQwODM0NjUzMzg0OjE3ODIzNDI3MzY6c3Bfc2VhcmNoX3RoZW1hdGljOjo6NDpCMDdHUU1NNjVROnNlYXJjaA&url=%2FPhone-Mount-Lamicall-Vent-Holder%2Fdp%2FB07GQMM65Q%2Fref%3Dsxin_16_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%253Aamzn1.sym.8a93f19a-a37a-4a14-bb5d-f771a217992c%26crid%3DN2AIXWWXZIC9%26cv_ct_cx%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26keywords%3DWixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%26pd_rd_i%3DB07GQMM65Q%26pd_rd_r%3D93325261-82c2-40ce-9a32-55fc8f54c6c6%26pd_rd_w%3Dj0Ne0%26pd_rd_wg%3D5xjVY%26pf_rd_p%3D8a93f19a-a37a-4a14-bb5d-f771a217992c%26pf_rd_r%3D7FR96XZP8KKH71197N73%26qid%3D1782342736%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DWixGear%252Buniversal%252Bphone%252Bholder%252Bcar%252Bvent%252Caps%252C264%26sr%3D1-5-151c2d8c-9dd7-48c8-8db3-431f30cc593a-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/51EyxBfk8RL._AC_UL320_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 8.53,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B07GQMM65Q",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 28000,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 8,
+      "rank_absolute": 8,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Phone Holder for Car [2 Pack], Universal Air Vent Magnetic Phone Mount, Compatible with MagSafe Phones Using Adapter Ring or Plate, Includes 2 Metal Plates",
+      "url": "https://www.amazon.com/WixGear-Magnetic-Universal-Compatible-MagSafe/dp/B0GKJM35RX/ref=sr_1_3?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-3",
+      "image_url": "https://m.media-amazon.com/images/I/81tCFYlMF5L._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 13.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GKJM35RX",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 33,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 9,
+      "rank_absolute": 9,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[10]",
+      "domain": "www.amazon.com",
+      "title": "Phone Holders for Your Car with Metal Hook Clip, Air Vent Cell Phone Stand Car Mount, Universal Automobile Cradle for Garmin GPS Fit iPhone Android and All Smartphones, Dark Black",
+      "url": "https://www.amazon.com/Miracase-Holders-Universal-Automobile-Smartphones/dp/B0CHYBKQPM/ref=sr_1_4?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-4",
+      "image_url": "https://m.media-amazon.com/images/I/81ERIxogALL._AC_UY218_.jpg",
+      "bought_past_month": 10000,
+      "price_from": 12.34,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CHYBKQPM",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 42800,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 10,
+      "rank_absolute": 10,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[11]",
+      "domain": "www.amazon.com",
+      "title": "2026 Wider Clamp & Metal Hook Car Phone Holder Vent [Thick Cases Friendly] Phone Holders for Your Car Mount Gfts Automobile Hands Free Accessories for Women Men for iPhone 16 15 14 13 Pro Max",
+      "url": "https://www.amazon.com/Lamicall-Friendly-Holder-Cradle-Smartphone/dp/B0BHNYJGRF/ref=sr_1_5?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-5",
+      "image_url": "https://m.media-amazon.com/images/I/71yYA071I3L._AC_UY218_.jpg",
+      "bought_past_month": 10000,
+      "price_from": 8.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0BHNYJGRF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 15200,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 11,
+      "rank_absolute": 11,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[12]",
+      "domain": "www.amazon.com",
+      "title": "2026 Upgraded Car Phone Holder Mount for Vent, Military Sturdy Metal Clip Air Vent Phone Holder for Your Car Easy Used Cell Phone Car Mount for iPhone 17 Pro Max 15 14 13 Samsung S26 S25",
+      "url": "https://www.amazon.com/Andobil-Upgraded-Ultimate-Cellphone-Compatible/dp/B08CV91MJQ/ref=sr_1_6?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-6",
+      "image_url": "https://m.media-amazon.com/images/I/7131tXk7ORL._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 21.59,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B08CV91MJQ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 7400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 12,
+      "rank_absolute": 12,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[13]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount [Upgraded Strongest Magnet Power] Magnetic Phone Holder for Car Vent 360 Adjustable Magnetic Car Phone Holder Mount for iPhone 17 Pro Max 16 15 14 13 12 Plus Mini",
+      "url": "https://www.amazon.com/VICSEED-Magnet-Magnetic-Rotation-MagSafe/dp/B08YJ9YYFR/ref=sr_1_7?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-7",
+      "image_url": "https://m.media-amazon.com/images/I/71uqg2a5zqL._AC_UY218_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 22.91,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B08YJ9YYFR",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 7200,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 13,
+      "rank_absolute": 13,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[14]",
+      "domain": "www.amazon.com",
+      "title": "2026 Upgraded Car Phone Holder Mount, Military-Grade Phone Holders for Your Car Vent Ultra-Stable Metal Clip Universal 360\u00b0 Cell Phone Car Mount for iPhone 17 Pro Max 16/15/14/13/12/ Samsung",
+      "url": "https://www.amazon.com/andobil-Upgraded-Solidest-Holders-Compatible/dp/B07SN3DKSV/ref=sr_1_8?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-8",
+      "image_url": "https://m.media-amazon.com/images/I/71EJlqWK3JL._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 21.59,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B07SN3DKSV",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 23300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 14,
+      "rank_absolute": 14,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[15]",
+      "domain": "www.amazon.com",
+      "title": "[2 Pack Universal Air Vent Magnetic Phone Holder for Car, Phone Mount for Car for Cell Phones and Mini Tablets (New Upgraded Vent Locks)",
+      "url": "https://www.amazon.com/WixGear-Magnetic-Phone-Holder-Car/dp/B09J1GVWJR/ref=sr_1_9?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-9",
+      "image_url": "https://m.media-amazon.com/images/I/61aEPfTmEhL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 13.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B09J1GVWJR",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 268,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 15,
+      "rank_absolute": 15,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[16]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Car Mount [2-Pack] - Universal Stick-On Dashboard Magnetic Phone Holder for Car, Strong Magnet Mount for Cell Phones & Mini Tablets with Swift-Snap Technology",
+      "url": "https://www.amazon.com/WixGear-Magnetic-Mount-2-Pack-Stick/dp/B0773F8S74/ref=sr_1_10?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-10",
+      "image_url": "https://m.media-amazon.com/images/I/61efKXixMFL._AC_UY218_.jpg",
+      "bought_past_month": 1000,
+      "price_from": 14.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0773F8S74",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 35300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 16,
+      "rank_absolute": 16,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[17]",
+      "domain": "www.amazon.com",
+      "title": "Universal Twist-Lock Air Vent Magnetic Car Mount Holder for Cell Phones with Fast Swift-snap Technology \u2013 Supports Devices up to 14oz",
+      "url": "https://www.amazon.com/WizGear-Twist-Lock-Swift-snap-Technology-Lock/dp/B01B6K2GDQ/ref=sr_1_11?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-11",
+      "image_url": "https://m.media-amazon.com/images/I/61t0m0qhzSL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 13.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B01B6K2GDQ",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4,
+        "votes_count": 4100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Tue, Jun 30 on $35 of items shipped by Amazon",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 1,
+      "rank_absolute": 17,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[18]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "Jononser Suction Phone Mount for Car Dashboard/Windshield - 360\u00b0Adjustable Magnetic Phone Holder for Car, Foldable Car Phone Holder for iPhone 17/16/15/14/13/12 Series (Carbon Fiber & Aluminum Alloy)",
+      "url": "https://www.amazon.com/Jononser-Suction-Phone-Dashboard-Windshield/dp/B0FCDW3R4C/ref=sxin_29_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/71RuvsHpvNL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 500,
+      "price_from": 22.79,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0FCDW3R4C",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 966,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 17,
+      "rank_absolute": 18,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[21]",
+      "domain": "www.amazon.com",
+      "title": "Universal Air Vent Magnetic Phone Car Mount Holder with Fast Swift-Snap Technology for Smartphones and Mini Tablets, Black 1 Pack",
+      "url": "https://www.amazon.com/WizGear-Universal-Swift-Snap-Technology-Smartphones/dp/B00PGJWYJ0/ref=sr_1_12?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-12",
+      "image_url": "https://m.media-amazon.com/images/I/71I-Ymz42XL._AC_UY218_.jpg",
+      "bought_past_month": 50,
+      "price_from": 11.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B00PGJWYJ0",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 34000,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 18,
+      "rank_absolute": 19,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[22]",
+      "domain": "www.amazon.com",
+      "title": "Magnetic Mount, Universal Air Vent Twist Hole Magnetic Phone Holder for Car, for All Cell Phones with Fast Swift-Snap Technology, Will Not Block Air Vent Flow - for Horizontal Vent",
+      "url": "https://www.amazon.com/WizGear-Universal-Phone-Swift-Snap-Technology/dp/B07KCJ9876/ref=sr_1_13?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-13",
+      "image_url": "https://m.media-amazon.com/images/I/61+yru1Y3nL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 9.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B07KCJ9876",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.1,
+        "votes_count": 475,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 19,
+      "rank_absolute": 20,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[23]",
+      "domain": "www.amazon.com",
+      "title": "WixGear Universal Air Vent Car Mount Holder Cell Phone Car Mount with Air Vent Secure Bite Lock",
+      "url": "https://www.amazon.com/Phone-Holder-WizGear-Universal-Secure/dp/B0719JPNLP/ref=sr_1_14?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-14",
+      "image_url": "https://m.media-amazon.com/images/I/71HA07iX58L._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 7.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0719JPNLP",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 3.5,
+        "votes_count": 136,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 20,
+      "rank_absolute": 21,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[24]",
+      "domain": "www.amazon.com",
+      "title": "Universal Car Vent Mount for Smartphones \u2013 Secure Adjustable Grip Holder for iPhone, Samsung, Pixel, LG, Rotates 180\u00b0 for Portrait & Landscape, Cable Management Clip, Black, With Cleaning Cloth",
+      "url": "https://www.amazon.com/Belkin-Universal-Vent-Mount-Smartphones/dp/B0FK719FV9/ref=sr_1_15?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-15",
+      "image_url": "https://m.media-amazon.com/images/I/511aGhUnEgL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 20.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0FK719FV9",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": 1,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 21,
+      "rank_absolute": 22,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[25]",
+      "domain": "www.amazon.com",
+      "title": "Car Vent Mount, Black and Silver, Phone Stand for iPhones, Samsungs, LGs & Most Smartphones, Adjustable to Fit 5.5-Inch Screens",
+      "url": "https://www.amazon.com/Belkin-F7U017bt-Universal-Samsung-Smartphones/dp/B01N7VARIG/ref=sr_1_16?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-16",
+      "image_url": "https://m.media-amazon.com/images/I/61AZFL6TCLL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 24.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B01N7VARIG",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 5400,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 2,
+      "rank_absolute": 23,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[26]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "RayLink Phone Holders for Your Car 2026 Ultimate Phone Mount Military-Grade Windshield Dashboard Vent\u3010Newest Best Strongest\u3011 Cell Phone Car Mount for iPhone 17 Pro Max 16 Samsung Android",
+      "url": "https://www.amazon.com/RayLink-Military-Grade-Windshield-Vent%E3%80%90Newest-Strongest%E3%80%91/dp/B0GD87KT8Y/ref=sxbs_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/71W0fLtuJ8L._AC_UL640_QL65_.jpg",
+      "bought_past_month": null,
+      "price_from": 22.37,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GD87KT8Y",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 15,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    }
+  ],
+  "best-car-cell-phone-mount::joyroom-magnetic-mount": [
+    {
+      "type": "amazon_serp",
+      "rank_group": 1,
+      "rank_absolute": 1,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[4]",
+      "domain": "www.amazon.com",
+      "title": "All-Metal MagSafe Car Mount Charger, 15W Mini Magsafe Car Charger for Dashboard, Wireless Car Charger for iPhone 17 Pro Max Plus/iPhone 16 15 14 13 12 Pro Max Plus, Black",
+      "url": "https://www.amazon.com/JOYROOM-Car-Mount-All-Metal-Dashboard/dp/B0D6YWKW8Y/ref=sr_1_1?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-1",
+      "image_url": "https://m.media-amazon.com/images/I/81xRTDAFnGL._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 21.24,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0D6YWKW8Y",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 927,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 2,
+      "rank_absolute": 2,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger with Rotatable Charging Panel, 15W Fast Charging Metal Magnetic Phone Holder, Dashboard Wireless Charger for iPhone Car Mount for iPhone 17/16/15/14/13/12",
+      "url": "https://www.amazon.com/JOYROOM-Car-Mount-Rotatable-Dashboard/dp/B0F8MT6WXH/ref=sr_1_2?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-2",
+      "image_url": "https://m.media-amazon.com/images/I/81x+JxhQtYL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 14.24,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0F8MT6WXH",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 217,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 3,
+      "rank_absolute": 3,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[8]",
+      "domain": "www.amazon.com",
+      "title": "Fits MagSafe Car Mount, [All-Metal] Magnetic Phone Holder for Car with Strong Magnets, 360\u00b0 Adjustable iPhone Car Mount, Car Accessories for Women Men, for iPhone 17 Pro Max 16 15 14 13 12",
+      "url": "https://www.amazon.com/JOYROOM-Magsafe-Rotation-All-Metal-Magnetic/dp/B0CPF9FR9P/ref=sr_1_3?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-3",
+      "image_url": "https://m.media-amazon.com/images/I/714AJ5rYgoL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 15.19,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CPF9FR9P",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 1100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 4,
+      "rank_absolute": 4,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[9]",
+      "domain": "www.amazon.com",
+      "title": "Magsafe Car Mount, Car Mount for iPhone with Strong Magnet, 360\u00b0 Metal Strut Vacuum Suction Cup Phone Mount for iPhone 17 Air Pro Max/16 15 14 13 12 Series& Android Magsafe Case, Dark Blue",
+      "url": "https://www.amazon.com/JOYROOM-Magsafe-Suction-Magnetic-Android/dp/B0DZX4KPBF/ref=sr_1_4?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-4",
+      "image_url": "https://m.media-amazon.com/images/I/81LaaV458aL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 12.34,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0DZX4KPBF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 666,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 5,
+      "rank_absolute": 5,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[10]",
+      "domain": "www.amazon.com",
+      "title": "15W Magsafe Car Mount Charger, iPhone Faster Charging Wireless Car Charger, 80+LBS Strong Suction Magnetic Phone Holder for Car, Stable Metal Support Arm for iPhone 17 Pro Max 16 15 14 13",
+      "url": "https://www.amazon.com/JOYROOM-Magsafe-Charging-Wireless-Strongest/dp/B0FNCR8V3H/ref=sr_1_5?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-5",
+      "image_url": "https://m.media-amazon.com/images/I/81bGNsg31bL._AC_UY218_.jpg",
+      "bought_past_month": 100,
+      "price_from": 18.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0FNCR8V3H",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 157,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 6,
+      "rank_absolute": 6,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[11]",
+      "domain": "www.amazon.com",
+      "title": "Car Phone Holder Mount, 360\u00b0 Adjustable & Avoid Sun Glare Phone Holder for Car, Slip Free Spring Snap Design Dashboard Phone Stand, Compatible with Smartphones, GPS Devices",
+      "url": "https://www.amazon.com/JOYROOM-Adjustable-Dashboard-Compatible-Smartphones/dp/B0F5Q5FYWF/ref=sr_1_6?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-6",
+      "image_url": "https://m.media-amazon.com/images/I/71PD-u4lfML._AC_UY218_.jpg",
+      "bought_past_month": 500,
+      "price_from": 16.98,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0F5Q5FYWF",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 1800,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 1,
+      "rank_absolute": 7,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[13]",
+      "domain": "www.amazon.com",
+      "title": "for Magsafe Car Phone Mount, Magnetic Car Phone Holder Mount,\u30102026 Upgraded\u3011 360\u00b0 Reinforced 78Lbs Ultra Suction Phone Mount for iPhone Wireless Phone Holder for Car Dashboard Windshield",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MDQzNDMzODAzOTEyMzc0OjE3ODIzNDI3Njc6c3BfbXRmOjMwMTM0MTI2ODk0NjEwMjo6MDo6&url=%2FBovemanx-Upgraded%25E3%2580%2591-Reinforced-Dashboard-Windshield%2Fdp%2FB0G5X44GMX%2Fref%3Dsr_1_7_sspa%3Fcrid%3DF8ZYU69P7K6J%26dib%3DeyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E%26dib_tag%3Dse%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26qid%3D1782342767%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D8-7-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/71VcbqG8ihL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 12.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0G5X44GMX",
+      "rating": null,
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 7,
+      "rank_absolute": 8,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[14]",
+      "domain": "www.amazon.com",
+      "title": "Car Phone Holder for Magsafe [78+LBS Strongest Suction & 2400gf Magnetic] 360\u00b0 Adjustable Car Phone Mount, Phone Holders for Your Car for iPhone 17-12 Pro Max Plus Air, Carbon Fiber",
+      "url": "https://www.amazon.com/Magsafe-Strongest-Suction-Magnetic-Adjustable/dp/B0DN1S1YLV/ref=sr_1_8?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-8",
+      "image_url": "https://m.media-amazon.com/images/I/71I64kA4p2L._AC_UY218_.jpg",
+      "bought_past_month": 10000,
+      "price_from": 24.3,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0DN1S1YLV",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 22000,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 8,
+      "rank_absolute": 9,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[15]",
+      "domain": "www.amazon.com",
+      "title": "for Magsafe Car Mount, Magnetic Phone Holders for Your Car Vacuum, Phone Mount for Car Accessories for Women Men Jeep BMW, Suction Phone Holder Gifts Kits, for iPhone 17 Pro Max 16 15 14 13 12",
+      "url": "https://www.amazon.com/LISEN-Magsafe-Magnetic-Accessories-SuctionPro/dp/B0F6D28F7R/ref=sr_1_9?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-9",
+      "image_url": "https://m.media-amazon.com/images/I/71qHi2sirmL._AC_UY218_.jpg",
+      "bought_past_month": 10000,
+      "price_from": 16.08,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0F6D28F7R",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 3600,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 2,
+      "rank_absolute": 10,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[16]/div[1]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+      "domain": "www.amazon.com",
+      "title": "LISEN 2 Pack for Magsafe Car Mount, Magnetic Phone Holder for Car, Strong Magnetic Car Phone Mount, 89 LBS Suction Cup Phone Mount Vacuum, Gifts Phone Holders for Your Car Mount for iPhone 17 Pro Max",
+      "url": "https://www.amazon.com/LISEN-Magsafe-Magnetic-Suction-Holders/dp/B0GK61RW8K/ref=sxin_31_sbv_search_btf",
+      "image_url": "https://m.media-amazon.com/images/I/71Z1KyKuJfL._AC_UL640_QL65_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 25.63,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0GK61RW8K",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 1900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 9,
+      "rank_absolute": 11,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[19]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount, All-Metal Magnetic Phone Holder for Car, [Stronger Magnet] Car Magnet Phone Mount for Dash, Fit for iPhone 16 15 14 13 12",
+      "url": "https://www.amazon.com/JOYROOM-MagSafe-Adhesive-Magnetic-All-Metal/dp/B0C1SZQRVL/ref=sr_1_10?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-10",
+      "image_url": "https://m.media-amazon.com/images/I/71hNmlq0edL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 9.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0C1SZQRVL",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 438,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 10,
+      "rank_absolute": 12,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[20]",
+      "domain": "www.amazon.com",
+      "title": "Vacuum Magnetic Phone Holder for Car, Strongest Suction Cup Phone Mount, 360\u00b0 Adjustable Magsafe Car Mount, Foldable Car Phone Holder for iPhone 17 Pro Max 16 15 14 13 12 Plus/Android",
+      "url": "https://www.amazon.com/JOYROOM-Magnetic-Strongest-Adjustable-Foldable/dp/B0F4MXZL7Q/ref=sr_1_11?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-11",
+      "image_url": "https://m.media-amazon.com/images/I/810v4HsBGLL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 11.89,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0F4MXZL7Q",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 124,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 3,
+      "rank_absolute": 13,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[21]",
+      "domain": "www.amazon.com",
+      "title": "2 Pack for Magsafe Car Mount, Magnetic Phone Holder for Car, Strong Magnetic Car Phone Mount, 89 LBS Suction Cup Phone Mount Vacuum, Gifts Phone Holders for Your Car Mount for iPhone 17 Pro Max",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MDQzNDMzODAzOTEyMzc0OjE3ODIzNDI3Njc6c3BfbXRmOjMwMTIzNTg4ODcyMjYwMjo6MDo6&url=%2FLISEN-Magsafe-Magnetic-Suction-Holders%2Fdp%2FB0GK61RW8K%2Fref%3Dsr_1_12_sspa%3Fcrid%3DF8ZYU69P7K6J%26dib%3DeyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E%26dib_tag%3Dse%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26qid%3D1782342767%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/71Z1KyKuJfL._AC_UY218_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 25.63,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0GK61RW8K",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 1900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 11,
+      "rank_absolute": 14,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[22]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger with Rotatable Charging Panel, Metal Magnetic Phone Holder, Wireless Charger for iPhone 16/15/14/13/12",
+      "url": "https://www.amazon.com/JOYROOM-Rotatable-Charging-Magnetic-Wireless/dp/B0F8HFW5M3/ref=sr_1_13?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-13",
+      "image_url": "https://m.media-amazon.com/images/I/81qKVnZyEkL._AC_UY218_.jpg",
+      "bought_past_month": 50,
+      "price_from": 11.29,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0F8HFW5M3",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 217,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 12,
+      "rank_absolute": 15,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[23]",
+      "domain": "www.amazon.com",
+      "title": "Car Phone Holder, [Tri-Fold] MagSafe Car Mount for Car, [Suction Pro+Gel Base] 360\u00b0 Rotation Car Phone Mount for iPhone 17 16 15 14 13 12 and Other Series, MSV3",
+      "url": "https://www.amazon.com/JOYROOM-Tri-Fold-MagSafe-Suction-Rotation/dp/B0GF8GKG6K/ref=sr_1_14?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-14",
+      "image_url": "https://m.media-amazon.com/images/I/81+tG7b5EPL._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 8.49,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GF8GKG6K",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 9,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 13,
+      "rank_absolute": 16,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[24]",
+      "domain": "www.amazon.com",
+      "title": "Car Phone Holder Mount, [360\u00b0 Rotation+Thick Case Friendly] Cell Phone Car Mount with Adjustable Spring Clip, Universal Dashboard Phone Holder Anti-Slip Silicone for iPhone (Black)",
+      "url": "https://www.amazon.com/JOYROOM-Adjustable-Universal-Dashboard-Anti-Slip/dp/B0G1XJM1KG/ref=sr_1_15?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-15",
+      "image_url": "https://m.media-amazon.com/images/I/71BIGeeB6IL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 13.72,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0G1XJM1KG",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 91,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 14,
+      "rank_absolute": 17,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[25]",
+      "domain": "www.amazon.com",
+      "title": "Car Mount for iPhone, [Tri-Fold] MagSafe iPhone Car Mount, [Suction Pro+Gel Base] 360\u00b0 Rotation iPhone Car Holder, Strong Magnet for iPhone 17 Pro Max and Other Series[Not for Charging]",
+      "url": "https://www.amazon.com/JOYROOM-Tri-Fold-MagSafe-Rotation-Charging/dp/B0G2S275FX/ref=sr_1_16?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-16",
+      "image_url": "https://m.media-amazon.com/images/I/81oFslx6URL._AC_UY218_.jpg",
+      "bought_past_month": 200,
+      "price_from": 19.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0G2S275FX",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.1,
+        "votes_count": 55,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 4,
+      "rank_absolute": 18,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[26]",
+      "domain": "www.amazon.com",
+      "title": "MagSafe Car Mount, Magnetic Phone Holder for Car Dashboard, Vacuum Suction Cup Base, 360\u00b0 Rotation Foldable Arm, Compatible with iPhone 16 15 14 13 12, Black",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MDQzNDMzODAzOTEyMzc0OjE3ODIzNDI3Njc6c3BfbXRmOjMwMTMwNDY3OTI5NzYwMjo6MDo6&url=%2FSpeed-volt-Magnetic-Dashboard-Compatible%2Fdp%2FB0GVRRHFCB%2Fref%3Dsr_1_17_sspa%3Fcrid%3DF8ZYU69P7K6J%26dib%3DeyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E%26dib_tag%3Dse%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26qid%3D1782342767%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D8-17-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/61jFomLU47L._AC_UY218_.jpg",
+      "bought_past_month": null,
+      "price_from": 22.92,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Save 20%  with coupon"
+      ],
+      "data_asin": "B0GVRRHFCB",
+      "rating": null,
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 15,
+      "rank_absolute": 19,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[27]",
+      "domain": "www.amazon.com",
+      "title": "MAGDMB MagicMount Magnetic Phone Mount for Car, Dashboard Cell Phone Holder with 360\u00b0 Adjustable Magnet Head, Universal Phone Stand for Car Compatible with iPhone, Samsung, and All Devices",
+      "url": "https://www.amazon.com/MAGDMB-MagicMount-Universal-Frustration-Packaging/dp/B00I608BJ8/ref=sr_1_18?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-18",
+      "image_url": "https://m.media-amazon.com/images/I/51Ybp5nJHbL._AC_UY218_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 8.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B00I608BJ8",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 41100,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 16,
+      "rank_absolute": 20,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[28]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount for iPhone 17 Pro Max [24 Strong Magnets] Classic Magnetic Phone Holder for Car Dashboard Magnet Phone Mount Car Cell Phone Holder for iPhone 17 Pro Max Air 16 15 14 13 12",
+      "url": "https://www.amazon.com/LISEN-MagSafe-Strong-Magnet-Magnetic/dp/B0CGHNQ53C/ref=sr_1_19?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-19",
+      "image_url": "https://m.media-amazon.com/images/I/71s1it7xrhL._AC_UY218_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 11.71,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0CGHNQ53C",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 18300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 5,
+      "rank_absolute": 21,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[29]",
+      "domain": "www.amazon.com",
+      "title": "2026 Upgraded for iPhone MagSafe Car Mount Charger,15W Fast Charging Wireless Car Charger with Stronger Magnetic & Suction, Hands-Free Phone Holder for iPhone 17/16/15/14/13/12 Pro Max",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MDQzNDMzODAzOTEyMzc0OjE3ODIzNDI3Njc6c3BfYnRmOjMwMTMzMDIzOTIwNDMwMjo6MDo6&url=%2FMRGLAS-Upgraded-Charging-Wireless-Hands-Free%2Fdp%2FB0GFJ49Y36%2Fref%3Dsr_1_20_sspa%3Fcrid%3DF8ZYU69P7K6J%26dib%3DeyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E%26dib_tag%3Dse%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26qid%3D1782342767%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D8-20-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/7176qRxdlsL._AC_UY218_.jpg",
+      "bought_past_month": 400,
+      "price_from": 28.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GFJ49Y36",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.5,
+        "votes_count": 1300,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_paid",
+      "rank_group": 6,
+      "rank_absolute": 22,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[30]",
+      "domain": "www.amazon.com",
+      "title": "for MagSafe Car Mount Charger, 15W Fast Charging Magnetic Wireless Car Charger, Vacuum Magnetic Phone Holder [120LBS Ultra Suction Cup & 3000gf Magnet ] 780\u00b0 Dashboard Car Bracket for iPhone & Android",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MDQzNDMzODAzOTEyMzc0OjE3ODIzNDI3Njc6c3BfYnRmOjMwMTMxNTQ5MzI2NTAwMjo6MDo6&url=%2FMagSafe-Charging-Magnetic-Wireless-Dashboard%2Fdp%2FB0FLYFFR66%2Fref%3Dsr_1_21_sspa%3Fcrid%3DF8ZYU69P7K6J%26dib%3DeyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E%26dib_tag%3Dse%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26qid%3D1782342767%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1",
+      "image_url": "https://m.media-amazon.com/images/I/613Tk6zbqBL._AC_UY218_.jpg",
+      "bought_past_month": 6000,
+      "price_from": 26.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0FLYFFR66",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.3,
+        "votes_count": 814,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": {
+        "delivery_message": "FREE delivery Mon, Jun 29 on $35 of items shipped by Amazon Or fastest delivery Sun, Jun 28",
+        "delivery_price": null
+      },
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 17,
+      "rank_absolute": 23,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[31]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[1]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "JOYROOM All-Metal MagSafe Car Mount Charger, 15W Mini Magsafe Car Charger for Dashboard, Wireless Car Charger for iPhone 17 Pro Max Plus/iPhone 16 15 14 13 12 Pro Max Plus, Black",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2MzcxODczMzU1NTU1NzMxOjE3ODIzNDI3Njc6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDEzMjI1OTUxMjM5MDI6OjA6Og&url=%2FJOYROOM-Car-Mount-All-Metal-Dashboard%2Fdp%2FB0D6YWKW8Y%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%253Aamzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%26crid%3DF8ZYU69P7K6J%26cv_ct_cx%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26pd_rd_i%3DB0D6YWKW8Y%26pd_rd_r%3D72c7d9f8-c849-4fe5-b4d5-5f61abc7fa8e%26pd_rd_w%3Dwf8Dd%26pd_rd_wg%3DRsFFj%26pf_rd_p%3D938755d4-905c-4d3a-9186-07c2969703ad%26pf_rd_r%3DRAK3Y944Q5JQ226FYK11%26qid%3D1782342767%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D1-1-1e114754-c915-4d2f-b1a0-922677a57f2c-spons%26aref%3DIGsSIkUXrz%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=IGsSIkUXrz",
+      "image_url": "https://m.media-amazon.com/images/I/81xRTDAFnGL._AC_UL320_.jpg",
+      "bought_past_month": 500,
+      "price_from": 21.24,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0D6YWKW8Y",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 927,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 18,
+      "rank_absolute": 24,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[31]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[2]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "LISEN 2 Pack for Magsafe Car Mount, Magnetic Phone Holder for Car, Strong Magnetic Car Phone Mount, 89 LBS Suction Cup Phone Mount Vacuum, Gifts Phone Holders for Your Car Mount for iPhone 17 Pro Max",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2MzcxODczMzU1NTU1NzMxOjE3ODIzNDI3Njc6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDEyMzU4ODg3MjI2MDI6OjE6Og&url=%2FLISEN-Magsafe-Magnetic-Suction-Holders%2Fdp%2FB0GK61RW8K%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%253Aamzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%26crid%3DF8ZYU69P7K6J%26cv_ct_cx%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26pd_rd_i%3DB0GK61RW8K%26pd_rd_r%3D72c7d9f8-c849-4fe5-b4d5-5f61abc7fa8e%26pd_rd_w%3Dwf8Dd%26pd_rd_wg%3DRsFFj%26pf_rd_p%3D938755d4-905c-4d3a-9186-07c2969703ad%26pf_rd_r%3DRAK3Y944Q5JQ226FYK11%26qid%3D1782342767%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D1-2-1e114754-c915-4d2f-b1a0-922677a57f2c-spons%26aref%3Db4dop1PRr2%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=b4dop1PRr2",
+      "image_url": "https://m.media-amazon.com/images/I/71Z1KyKuJfL._AC_UL320_.jpg",
+      "bought_past_month": 2000,
+      "price_from": 25.63,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": [
+        "Exclusive Prime price"
+      ],
+      "data_asin": "B0GK61RW8K",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.6,
+        "votes_count": 1900,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 19,
+      "rank_absolute": 25,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[31]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[3]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "Vacuum Magnetic Phone Holder for Car,2800gf Strong Magnetic Phone Mount,360\u00b0 Adjustable & Reinforced Suction Cup for Dashboard/Mirror,Car Phone Holder Compatible with iPhone Androi",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2MzcxODczMzU1NTU1NzMxOjE3ODIzNDI3Njc6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDEyODQyNjExODkxMDI6OjI6Og&url=%2FMagnetic-Adjustable-Reinforced-Dashboard-Compatible%2Fdp%2FB0GM6L6FMD%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%253Aamzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%26crid%3DF8ZYU69P7K6J%26cv_ct_cx%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26pd_rd_i%3DB0GM6L6FMD%26pd_rd_r%3D72c7d9f8-c849-4fe5-b4d5-5f61abc7fa8e%26pd_rd_w%3Dwf8Dd%26pd_rd_wg%3DRsFFj%26pf_rd_p%3D938755d4-905c-4d3a-9186-07c2969703ad%26pf_rd_r%3DRAK3Y944Q5JQ226FYK11%26qid%3D1782342767%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D1-3-1e114754-c915-4d2f-b1a0-922677a57f2c-spons%26aref%3DXuY7Riz1i7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=XuY7Riz1i7",
+      "image_url": "https://m.media-amazon.com/images/I/715Ryx9BVGL._AC_UL320_.jpg",
+      "bought_past_month": 200,
+      "price_from": 16.99,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B0GM6L6FMD",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.2,
+        "votes_count": 19,
+        "rating_max": 5
+      },
+      "is_amazon_choice": false,
+      "is_best_seller": false,
+      "delivery_info": null,
+      "labels": null
+    },
+    {
+      "type": "amazon_serp",
+      "rank_group": 20,
+      "rank_absolute": 26,
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[31]/div[1]/div[1]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ol[1]/li[4]/div[1]",
+      "domain": "www.amazon.com",
+      "title": "\u30102-Pack\u3011 Magnetic Phone Holder for Car Dash\u3010Strong Magnet\u3011 Magnetic Car Phone Holder Mount \u30104 Plate\u3011 Phone Holders for Your Car Phone Mount for Car Dashboard Cell Phone Car Mount for iPhone Samsung",
+      "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2MzcxODczMzU1NTU1NzMxOjE3ODIzNDI3Njc6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDA4NzY0NDk0MTE3MDI6OjM6Og&url=%2F%25E3%2580%25902-Pack%25E3%2580%2591-Magnetic-Car%25E3%2580%2590Upgrade-Universal-Dashboard%2Fdp%2FB09ZH48Z3T%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%253Aamzn1.sym.938755d4-905c-4d3a-9186-07c2969703ad%26crid%3DF8ZYU69P7K6J%26cv_ct_cx%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26keywords%3DJoyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%26pd_rd_i%3DB09ZH48Z3T%26pd_rd_r%3D72c7d9f8-c849-4fe5-b4d5-5f61abc7fa8e%26pd_rd_w%3Dwf8Dd%26pd_rd_wg%3DRsFFj%26pf_rd_p%3D938755d4-905c-4d3a-9186-07c2969703ad%26pf_rd_r%3DRAK3Y944Q5JQ226FYK11%26qid%3D1782342767%26sbo%3D9ZOMT9Jm0JH%252Ft%252BWi68iDSA%253D%253D%26sprefix%3DJoyroom%252Bmagnetic%252Bphone%252Bholder%252Bcar%252Bdashboard%252Caps%252C202%26sr%3D1-4-1e114754-c915-4d2f-b1a0-922677a57f2c-spons%26aref%3Dp8bZXJgFTD%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=p8bZXJgFTD",
+      "image_url": "https://m.media-amazon.com/images/I/61+YSXETJGL._AC_UL320_.jpg",
+      "bought_past_month": 4000,
+      "price_from": 14.23,
+      "price_to": null,
+      "currency": "USD",
+      "special_offers": null,
+      "data_asin": "B09ZH48Z3T",
+      "rating": {
+        "type": "rating_element",
+        "position": "left",
+        "rating_type": "Max5",
+        "value": 4.4,
+        "votes_count": 6000,
         "rating_max": 5
       },
       "is_amazon_choice": false,

@@ -212,20 +212,6 @@ best-winter-tires-for-suv:
     - Amazon's Choice
     url: https://www.amazon.com/Sumitomo-Edge-Studable-Winter-Radial-Tire/dp/B06ZYR3KGR/ref=sr_1_12?crid=D9HKFGSASD5Y&dib=eyJ2IjoiMSJ9.kU5CrpbAelFQVYE6840jSZuvCB0zykoQ0ajcb60tAXaHWx484qYtlPriVsSDOsUv_RJgitVx99JQ6fTF1aqpwn3O7dUJh1l7gm4VCfRNRabBOE3T1_RotGOvZkNX_L57CAoo__SlXU0SNXZrbvDx57X-XYxCuvupHDSodwXnKP-rVqO6GLCg656wpiSHtA5fkMOJNsoR2B51xaIM7dq7WYbsmg9QXjgDVBika9eHlbM.Y21zeiPSaOLgQdp3gVgo4n8CC6MoGlMflzAsDPk8me0&dib_tag=se&keywords=Goodyear+Ultra+Grip+Ice+SUV+tire&qid=1782324788&sprefix=Goodyear%2BUltra%2BGrip%2BIce%2BSUV%2Btire%2Caps%2C179&sr=8-12
 best-car-wax-for-black-cars:
-  chemical-guys-black-wax:
-    asin: B0DMTSD3KM
-    title: Blazin' Banana Spray Wax, Natural Carnauba Gloss, Safe for Cars, Trucks,
-      SUVs, RVs & More, Extra Large 32 fl oz
-    image_url: https://m.media-amazon.com/images/I/71Vkrdm9qwL._AC_UL320_.jpg
-    price_from: 17.99
-    price_to: null
-    currency: USD
-    rating: 4.6
-    reviews: 43
-    bought_past_month: 200
-    badges:
-    - Amazon's Choice
-    url: https://www.amazon.com/Chemical-Guys-Blazin-Natural-Carnauba/dp/B0DMTSD3KM/ref=sr_1_4?crid=SX47XGSQQRJF&dib=eyJ2IjoiMSJ9.DoR18oERHhyaSzKbh28ttZBHhlfeZDTBrmkaDBqMXVwg4-MdTUE4RXmOGlzTV5n4R0onWyfO9AYyGRvtvNGV0gC0cLKDSgFurqwqCUQjtb3CYeNIpZVWbdn9P8BHW4QKoTj3z5W0Qia1DLGgJ83BqufPicce_TQqDI64frNGE-YFtgQE4BrOoJZUiLJi85iShrWxOiX4PqJHoMvpjqP8xx2dgWXhQBbWeODiCtX__xPrOkRwADRwVhbo4eX6N6MLWqJP4_RyjirbD8IlFMJkgNtCMdvJtnLL6EBYpMgE76c.oWMKP-NZBKNvJoBFNn3FZ2rAnAysvzPDWAnqJ6zVUdw&dib_tag=se&keywords=Chemical+Guys+TVD_113+Black+Light+wax&qid=1782324797&sprefix=Chemical%2BGuys%2BTVD113%2BBlack%2BLight%2Bwax%2Caps%2C228&sr=8-4
   meguiars-ultimate-liquid-wax:
     asin: B07RB2ZYMS
     title: Ultimate Wash and Wax, Car Wash and Wax Cleans and Shines in One Step,
@@ -241,6 +227,20 @@ best-car-wax-for-black-cars:
     badges:
     - Amazon's Choice
     url: https://www.amazon.com/MEGUIARS-G17701-Ultimate-Wash-gallons/dp/B07RB2ZYMS/ref=sr_1_5?crid=MV0PROEYV213&dib=eyJ2IjoiMSJ9.4RiJDmy1aH0RaIKyWYVEBLUlm5fBj0e-0PYaiPRVXfjZneHRa6QIEu9db4-aZwPqrHcUh6GA9xuPkbup2Lve8bxMn6X3nX-slUIyBCYFhjsUYsEG_xCC_CoeFjBrBoLCaK7eHKBaIb-MaVbotLTmaYA_SDH7jTIQ6oAzHYXTKNWaNfcPg0QUiZvORIewC537OYnpMyasOAbybXIIgXEjdHbXWkPVxBKaPeSeo9yRxwvUXiP5kOr7RGr9Ads5fNOdq5lv_k3KUwT8UC1Cw4_GfijAVHGfqpnmc-5DK7JiqN8.OoGD4XSmpScYXE31JWIyI2TS7rGgALKa0_ZrgPgS5es&dib_tag=se&keywords=Meguiar%27s+G18216+Ultimate+Liquid+Wax&qid=1782324807&sprefix=Meguiars%2BG18216%2BUltimate%2BLiquid%2BWax%2Caps%2C140&sr=8-5
+  chemical-guys-black-wax:
+    asin: B0DMTSD3KM
+    title: Blazin' Banana Spray Wax, Natural Carnauba Gloss, Safe for Cars, Trucks,
+      SUVs, RVs & More, Extra Large 32 fl oz
+    image_url: https://m.media-amazon.com/images/I/71Vkrdm9qwL._AC_UL320_.jpg
+    price_from: 17.99
+    price_to: null
+    currency: USD
+    rating: 4.6
+    reviews: 43
+    bought_past_month: 200
+    badges:
+    - Amazon's Choice
+    url: https://www.amazon.com/Chemical-Guys-Blazin-Natural-Carnauba/dp/B0DMTSD3KM/ref=sr_1_4?crid=SX47XGSQQRJF&dib=eyJ2IjoiMSJ9.DoR18oERHhyaSzKbh28ttZBHhlfeZDTBrmkaDBqMXVwg4-MdTUE4RXmOGlzTV5n4R0onWyfO9AYyGRvtvNGV0gC0cLKDSgFurqwqCUQjtb3CYeNIpZVWbdn9P8BHW4QKoTj3z5W0Qia1DLGgJ83BqufPicce_TQqDI64frNGE-YFtgQE4BrOoJZUiLJi85iShrWxOiX4PqJHoMvpjqP8xx2dgWXhQBbWeODiCtX__xPrOkRwADRwVhbo4eX6N6MLWqJP4_RyjirbD8IlFMJkgNtCMdvJtnLL6EBYpMgE76c.oWMKP-NZBKNvJoBFNn3FZ2rAnAysvzPDWAnqJ6zVUdw&dib_tag=se&keywords=Chemical+Guys+TVD_113+Black+Light+wax&qid=1782324797&sprefix=Chemical%2BGuys%2BTVD113%2BBlack%2BLight%2Bwax%2Caps%2C228&sr=8-4
   collinite-915-marque:
     asin: B00T70RDN6
     title: Marque D'Elegance Auto Wax 12oz 915 2 Pack
@@ -439,6 +439,80 @@ best-obd2-scanner-bluetooth:
     badges:
     - Amazon's Choice
     url: https://www.amazon.com/Panlong-Scanner-Bluetooth-Android-Diagnostic/dp/B0C1GDJ9ZJ/ref=sr_1_6?crid=7D0O1QS8O2PY&dib=eyJ2IjoiMSJ9.lVMenz-s1KbY2T34BL9R80Gu98NXp8QgWY0rI-U0YVmgJzbFtniIaLu5fNill-ZGacDzKufXT9xJF0f4apVXtgr8tX2-JEB603_DVQ_hc8_RZH7_0-z-gieVOyXmhdmA5B19UlydHIWdtP33UJlAVGGBDJ4hDZGY0euOGd9edyyyEbQ4-MW_VW4ux4yUg1h9cnr3Sa27f_QMLorXXJ7YLe65IgAW5RI5gp2PF1vS2pRITHnV0INJFOTIAFKCv8eZpbBXVwaXDXfy5nAN_2xgSKTZcsSBNKYRtW6h9dAJ05M.lgE_ld6EFlnH166OpreVcAh-eax1XClkWAutwMSMl54&dib_tag=se&keywords=PanLong+Bluetooth+OBD2+scanner+adapter&qid=1782324967&sprefix=PanLong%2BBluetooth%2BOBD2%2Bscanner%2Badapter%2Caps%2C142&sr=8-6
+best-car-cell-phone-mount:
+  iottie-easy-one-touch-5:
+    asin: B088G1ZLN4
+    title: Easy One Touch Signature Air Vent & Flush Mount Combo - Universal Car Mount
+      Phone Holder for iPhone, Google, Samsung, Moto, LG, and all other Smartphones
+    image_url: https://m.media-amazon.com/images/I/61R4VioAEgL._AC_UY218_.jpg
+    price_from: 17.99
+    price_to: null
+    currency: USD
+    rating: 4.1
+    reviews: 2600
+    bought_past_month: 300
+    badges:
+    - Amazon's Choice
+    url: https://www.amazon.com/iOttie-Holder-iPhone-Samsung-Smartphones/dp/B088G1ZLN4/ref=sr_1_3?crid=N9FU3M0CL68T&dib=eyJ2IjoiMSJ9.lm5wY-NkZgWrbvQXqCAIBRymV2-9mdczjfWVWbvrBo0fADEhSyKuMKbpL94qKwYNpHSv7Sk16qha3-vXf5NcdLI79hS7g_y4M-rve55hzXiQXnUU5RtlwZONyfqzD4BE-D6tGQrhdinWdzE4IkVSqVlPINkOrFD-8ZBVlf_sKu_nidf-HnCulTBx9zTD5kMEsWX3L8PhVtjt_6ouC3xBA0z8JLspN4-uAx6H7l4782M.DwsOKdUgNt73oHHye51B1M4G8zBYXSnpEYlEX3MU-B0&dib_tag=se&keywords=iOttie+Easy+One+Touch+5+car+phone+mount&nsdOptOutParam=true&qid=1782342701&sprefix=iOttie%2BEasy%2BOne%2BTouch%2B5%2Bcar%2Bphone%2Bmount%2Caps%2C205&sr=8-3
+  esr-halolock-magsafe:
+    asin: B0CM3DNH4B
+    title: for MagSafe Car Mount, Magnetic Car Phone Holder Mount, Air Vent/Dashboard
+      Magnetic Phone Mount for iPhone 17/16/15/14/13/12, Galaxy S25, Pixel 10, Strong
+      Magnets, Charging Not Supported
+    image_url: https://m.media-amazon.com/images/I/71HUpjEJr-L._AC_UY218_.jpg
+    price_from: 15.11
+    price_to: null
+    currency: USD
+    rating: 4.5
+    reviews: 7700
+    bought_past_month: 100
+    badges:
+    - Amazon's Choice
+    url: https://www.amazon.com/ESR-HaloLock-Magnetic-Dashboard-Supported/dp/B0CM3DNH4B/ref=sr_1_4?crid=G1ZH43UTBU96&dib=eyJ2IjoiMSJ9.-FYHWCIsPpOJp4M_c-SwQYV8C6HjXXqAKokCRf60J7rb3mrQu_vNXYZW7sVBcjtBqD8MZMXipspnMltA-WumgYne0zoXd2MnN5BYuUVgLAmn2V-KZTvBcXjWoxiFZbtuBnI-tkp72g2p4sRTBtaY8d17yDlbKUY9DH1GhMNzeKZH55M7W3fiqedWD3dqxm4Tcpy_H2XX5W7ycqfrQQ-Zi_-5HxI2F9nFbzMkkC6snaY.XpZVSXJhSWosU68MMsDj_YbOlZkeaY3egk7FrytAfuM&dib_tag=se&keywords=ESR+HaloLock+MagSafe+car+phone+mount&qid=1782342708&sprefix=ESR%2BHaloLock%2BMagSafe%2Bcar%2Bphone%2Bmount%2Caps%2C120&sr=8-4
+  syncwire-vent-mount:
+    asin: B0CHDSBTVF
+    title: for MagSafe Car Mount, Flexible Rotation Magnetic Phone Holder for Car
+      Vent, Hands Free Car Air Vent Phone Holder Clip Universal Compatible with iPhone
+      17 16 15 14 13 12 Pro Max Plus
+    image_url: https://m.media-amazon.com/images/I/71ZY8NZC7UL._AC_UY218_.jpg
+    price_from: 18.69
+    price_to: null
+    currency: USD
+    rating: 4.6
+    reviews: 2900
+    bought_past_month: 100
+    badges:
+    - Amazon's Choice
+    url: https://www.amazon.com/SYNCWIRE-MagSafe-Magnetic-Compatible-Accessories/dp/B0CHDSBTVF/ref=sr_1_4?crid=QR3Y5VKE5RPT&dib=eyJ2IjoiMSJ9.TeLwUfu7pwAbOQr3SGDfSGha34IMWPKD9cGNkdUY37RO3coLAtmjnUvrUhTQ6--LtSM8rkIZ3h5O0x7OWO7r4kgZdoprycIXM944XBdPFMh1Jh6xrgO0aLgibiJDcIqUY3N4kDoYR0hoPs3D1nb0G7HANkfJDQY3jFxj7eIrXQZ-d6XzY8vXaKX-Jmf6OtDZJ1wgdMwVSJ_DU28JWQhvP3eNEc2DquhdoIZno0C5Wjo.xYc14VOBsgohCTvkkAQfXg5DPoQZNFT-QdoslQvocME&dib_tag=se&keywords=Syncwire+universal+car+phone+holder+vent&qid=1782342717&sprefix=Syncwire%2Buniversal%2Bcar%2Bphone%2Bholder%2Bvent%2Caps%2C238&sr=8-4
+  wixgear-vent-clip:
+    asin: B077MTNV41
+    title: Magnetic Phone Holder for Car, Twist-Lock Air Vent Car Phone Holder with
+      Swift-Snap Technology, Secure Grip Car Phone Mount, Compatible with All Smartphones,
+      Strong Magnets
+    image_url: https://m.media-amazon.com/images/I/71bWjCbcO+L._AC_UY218_.jpg
+    price_from: 14.99
+    price_to: null
+    currency: USD
+    rating: 4.4
+    reviews: 9400
+    bought_past_month: 100
+    badges:
+    - Amazon's Choice
+    url: https://www.amazon.com/Magnetic-Twist-Lock-Swift-Snap-Technology-Smartphones/dp/B077MTNV41/ref=sr_1_2?crid=N2AIXWWXZIC9&dib=eyJ2IjoiMSJ9.XIM7ECvIP0RT2DIK-K4tY8nKRw0HH5Z2zbiqvqbZG97_KsWNq-MdbPJYhZjlbmSDLHpOJ4lDJ8FHWzczXMPX7WuiQGiH7LLob8S42JEcNlZPyRcFLHbHRqg3akEBI6aGTHc1vK-iuvc6H-PLO_ayc6zPmWvdVpwq7y9FlWzYV9oULUP2-ygvvji2FdqoaPp5Qe_ljRiNIr80OuJpI99txXeNEc2DquhdoIZno0C5Wjo.PyCWa5J4sX8cysowNvZsDoG84yQN1gGvj5vfuI8_jeM&dib_tag=se&keywords=WixGear+universal+phone+holder+car+vent&qid=1782342736&sprefix=WixGear%2Buniversal%2Bphone%2Bholder%2Bcar%2Bvent%2Caps%2C264&sr=8-2
+  joyroom-magnetic-mount:
+    asin: B0DN1S1YLV
+    title: "Car Phone Holder for Magsafe [78+LBS Strongest Suction & 2400gf Magnetic]\
+      \ 360\xB0 Adjustable Car Phone Mount, Phone Holders for Your Car for iPhone\
+      \ 17-12 Pro Max Plus Air, Carbon Fiber"
+    image_url: https://m.media-amazon.com/images/I/71I64kA4p2L._AC_UY218_.jpg
+    price_from: 24.3
+    price_to: null
+    currency: USD
+    rating: 4.4
+    reviews: 22000
+    bought_past_month: 10000
+    badges: []
+    url: https://www.amazon.com/Magsafe-Strongest-Suction-Magnetic-Adjustable/dp/B0DN1S1YLV/ref=sr_1_8?crid=F8ZYU69P7K6J&dib=eyJ2IjoiMSJ9.5xnp-Dyl4-Ij9_LnIA-_n310eCQtlTvuDLBNwoXGQU0TqVjccgqYNK-Q3vsqLmzlaLH4_NqLMn2FRSWKjxIUf0CFnVDUM_hfW7hLlMlakgbdWJO6Cu0nxFbjts9YZ06Y1tOVicLhsoi5BEmDJe2jwvPRCjVloCs6u880I_Bv2dvucqEEsmF6JWy22nl5cET9sedn6cE0BK60HS5EhhQLzgV8kCgXn0J4iTODohTeges.kvK7Szf-OCLiK4i1shPifWgRSrtKzDFnfTF6Crh2q3E&dib_tag=se&keywords=Joyroom+magnetic+phone+holder+car+dashboard&qid=1782342767&sprefix=Joyroom%2Bmagnetic%2Bphone%2Bholder%2Bcar%2Bdashboard%2Caps%2C202&sr=8-8
 _meta:
-  updated: '2026-06-24T18:16:11Z'
+  updated: '2026-06-24T23:12:50Z'
   source: dataforseo merchant/amazon products live
