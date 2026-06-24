@@ -97,11 +97,11 @@ def log(msg: str) -> None:
 # Dataset reading
 # --------------------------------------------------------------------------- #
 def load_gift_products() -> list[dict]:
-    """Return [{page_id, product_id, keyword}] for every gift-guide product."""
+    """Return [{page_id, product_id, keyword}] for every gift/buying-guide product."""
     data = yaml.safe_load(DATASET.read_text(encoding="utf-8")) or []
     slots: list[dict] = []
     for row in data:
-        if (row.get("page_type") or "") != "gift-guide":
+        if (row.get("page_type") or "") not in ("gift-guide", "buying-guide"):
             continue
         page_id = row["id"]
         for prod in row.get("products") or []:
@@ -243,6 +243,11 @@ def fetch_live(slots: list[dict], no_cache: bool = False) -> dict:
             for r in (t.get("result") or []):
                 items.extend(r.get("items") or [])
         cache[key] = items
+        # incremental flush so an interruption never loses progress
+        cache["_fetched_at"] = time.time()
+        _tmp = RAW_JSON.with_suffix(".tmp")
+        _tmp.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+        os.replace(_tmp, RAW_JSON)
         best = select_best(items)
         if best:
             enriched[key] = to_enriched(best)
@@ -251,7 +256,7 @@ def fetch_live(slots: list[dict], no_cache: bool = False) -> dict:
         else:
             log(f"  [warn] no organic product for '{sl['keyword']}'")
         time.sleep(1)  # gentle pacing
-    # persist raw for audit + offline reuse
+    # persist raw for audit + offline reuse (final stamp already kept current incrementally)
     cache["_fetched_at"] = time.time()
     tmp = RAW_JSON.with_suffix(".tmp")
     tmp.write_text(json.dumps(cache, indent=2), encoding="utf-8")

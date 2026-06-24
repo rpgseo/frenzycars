@@ -4,12 +4,18 @@
 {{- $causes := $row.causes | default slice -}}
 {{- $steps := $row.steps | default slice -}}
 {{- $wtm := $row.when_to_see_mechanic | default slice -}}
+{{- $picks := $row.picks | default slice -}}
+{{- $contenders := $row.contenders | default dict -}}
+{{- $prods := $row.products | default slice -}}
 {{- $diff := 0 -}}
 {{- if ge (len $causes) 2 }}{{- $diff = add $diff 1 }}{{- end -}}
 {{- if ge (len $steps) 2 }}{{- $diff = add $diff 1 }}{{- end -}}
 {{- if ge (len $wtm) 2 }}{{- $diff = add $diff 1 }}{{- end -}}
 {{- if $row.typical_cost }}{{- $diff = add $diff 1 }}{{- end -}}
 {{- if $row.is_emergency }}{{- $diff = add $diff 1 }}{{- end -}}
+{{- if ge (len $picks) 3 }}{{- $diff = add $diff 2 }}{{- end -}}
+{{- if $contenders }}{{- $diff = add $diff 3 }}{{- end -}}
+{{- if ge (len $prods) 3 }}{{- $diff = add $diff 2 }}{{- end -}}
 
 {{- if lt $diff 3 -}}
   {{- warnf "ANTI-THIN: skipping %s (only %d differentiators)" $row.id $diff -}}
@@ -59,6 +65,10 @@
       "how_we_chose" ($row.how_we_chose | default dict)
       "buying_tips" ($row.buying_tips | default slice)
       "gift_intro" ($row.gift_intro | default "")
+      "picks" ($row.picks | default slice)
+      "picks_title" ($row.picks_title | default "")
+      "contenders" ($row.contenders | default dict)
+      "intro" ($row.intro | default "")
   -}}
   {{- $page := dict
       "content" $content
