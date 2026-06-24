@@ -43,35 +43,59 @@
 - id: how-long-does-a-car-wrap-last
   cluster_id: CL-068
   category: Maintenance
+  cover: "/images/advice/how-long-does-a-car-wrap-last-hero.jpg"
   question: "How long does a car wrap last?"
   short_answer: >
-    A professionally installed vinyl car wrap typically lasts 5 to 7 years,
-    while a partial wrap or lower-quality film may last 3 to 5 years. Lifespan
-    depends heavily on sun exposure, climate, how often the car is garaged, and
-    how well the wrap is cleaned and maintained.
+    A professionally installed vinyl car wrap using premium cast film lasts
+    about 5 to 7 years on average, with top-tier films warrantied for up to
+    roughly 8 years on vertical surfaces. A partial wrap, a budget calendared
+    film, or a vehicle parked outdoors in a hot, sunny climate will often reach
+    only 3 to 5 years before fading or peeling. Horizontal panels such as the
+    roof, hood, and trunk fail first because they take the most sun and heat,
+    and overall lifespan depends heavily on climate, how often the car is
+    garaged, and how carefully the wrap is washed and maintained.
   is_emergency: false
+  section_labels:
+    causes: "What affects the timeframe"
+    steps: "What the process involves"
+    when_to_see_mechanic: "When to hire a professional"
   causes:
-    - "UV exposure breaks down the vinyl adhesive and fades the pigment over time"
-    - "High heat and humidity accelerate adhesive failure and edge lifting"
-    - "Harsh chemicals or abrasive washing scratch and degrade the laminate"
-    - "Poor initial installation leaves trapped air or lifted edges that peel early"
+    - "UV exposure breaks down the vinyl adhesive and fades the pigment; the roof, hood, and trunk usually fail first because they face the most sun"
+    - "High heat and humidity — especially in Sun Belt climates — accelerate adhesive failure, edge lifting, and shrinking"
+    - "Harsh chemicals, automatic car washes with brushes, and abrasive scrubbing scratch the laminate and let moisture creep under the film"
+    - "Poor initial installation leaves trapped air, dust, or lifted edges that peel years before a clean wrap would"
+    - "Lower-grade calendared vinyl and discount films lack the conformability and UV stability of cast films like 3M and Avery"
   steps:
     - title: "Check the edges and seams"
-      detail: "Run a finger along door edges, mirror housings, and panel seams. Lifting or peeling edges are the first sign the wrap is nearing end of life."
+      detail: "Run a finger along door edges, mirror housings, and panel seams. Lifting, peeling, or rough edges are the first sign the wrap is nearing the end of its service life — this typically starts after 4 to 6 years on outdoor vehicles."
     - title: "Inspect for fading and discoloration"
-      detail: "Compare a covered area (under a trim piece) to an exposed panel. Noticeable fading means the UV protective layer is degrading."
+      detail: "Lift a trim piece or weatherstrip and compare a covered area to an exposed panel. Noticeable fading or chalkiness means the UV protective layer is degrading and replacement is usually due within a year or two."
     - title: "Look for bubbling and adhesive residue"
-      detail: "Bubbles under the film indicate adhesive failure. Sticky residue or cracking film means removal and re-wrap are due."
+      detail: "Bubbles under the film indicate adhesive failure, while sticky residue or cracking film means the wrap is done. Widespread bubbling across whole panels signals it is time for removal and a re-wrap."
+    - title: "Extend the life with proper care"
+      detail: "Hand-wash with wrap-safe soap, keep pressure washers at least about 3 feet away, garage or shade the car when possible, and re-seal with a wrap-safe wax or ceramic coating to add roughly 1 to 2 years of service life."
   when_to_see_mechanic:
     - "Large sections are peeling or lifting away from the body"
     - "The wrap is bubbling across whole panels, not just a few spots"
-    - "You want removal done professionally to avoid damaging the paint"
+    - "You want removal done professionally to avoid damaging the paint underneath"
+    - "Baked-on adhesive residue will not release with standard removal methods"
   diy_difficulty: intermediate
   typical_cost:
     low: 2000
     high: 5000
     currency: USD
     note: "Full vehicle re-wrap, professional installation, depending on vehicle size."
+  faq:
+    - question: "How long does a car wrap last?"
+      answer: "A professionally installed wrap using premium cast vinyl typically lasts 5 to 7 years, and can stretch to about 8 years on a well-cared-for vehicle. Cheaper film, or a car parked outdoors in a hot climate, usually lasts only 3 to 5 years."
+    - question: "Does a car wrap last longer than paint?"
+      answer: "No. A quality paint job can last 10 to 15 years or more, while a wrap is a shorter-term finish of roughly 5 to 7 years. Wraps are chosen for color change, advertising, or paint protection, not for maximum longevity."
+    - question: "How can I make my car wrap last longer?"
+      answer: "Keep the car garaged or shaded, hand-wash with wrap-safe products, avoid brush car washes and high-pressure spraying near edges, and apply a wrap-safe sealant. Good care can add 1 to 2 years to the wrap's life."
+    - question: "Does a car wrap damage the paint?"
+      answer: "A wrap applied over factory paint in good condition and removed within its service life generally does not damage the paint. Problems arise with fresh repainting, low-quality film left on too long, or aggressive removal."
+    - question: "How much does it cost to re-wrap a car?"
+      answer: "Removing an old wrap and applying a new one typically runs about $2,000 to $5,000 for a full vehicle, with removal adding roughly $500 to $1,000 depending on the condition of the old film and adhesive."
   related_queries:
     - "how long does a vinyl wrap last on a car"
     - "does car wrap damage paint"
@@ -502,35 +526,58 @@
 - id: how-long-does-it-take-to-wrap-a-car
   cluster_id: CL-070
   category: Maintenance
+  cover: "/images/advice/how-long-does-it-take-to-wrap-a-car-hero.jpg"
   question: "How long does it take to wrap a car?"
   short_answer: >
-    A full professional vehicle wrap takes 2 to 5 days on average. A simple
-    color change on a small sedan can be done in 2 to 3 days, while complex
-    designs, large vehicles, or wraps that require disassembly of trim and
-    mirrors can take up to a week or more.
+    A full professional vehicle wrap takes about 2 to 5 days on average. A
+    simple color change on a small sedan can be finished in 2 to 3 days, while
+    a complex custom design, a large SUV or truck, or a wrap that requires
+    disassembling trim, handles, and mirrors can stretch to a week or more. Of
+    that time, roughly half a day to a full day goes to cleaning and paint
+    preparation, several hours to disassembly, and the remainder to applying the
+    film, tucking edges, and a final inspection before delivery.
   is_emergency: false
+  section_labels:
+    causes: "What affects the timeframe"
+    steps: "What the process involves"
+    when_to_see_mechanic: "When to hire a professional"
   causes:
-    - "Vehicle size and complexity determine the bulk of the time required"
-    - "Detailed designs with multiple colors, patterns, or cut graphics add labor"
-    - "Trim, handles, and mirrors must be removed for a clean, tucked wrap"
-    - "Surface preparation, cleaning, and defect correction take a full day or more"
+    - "Vehicle size and panel count drive most of the labor time; a large SUV or truck takes far longer than a compact sedan"
+    - "Detailed designs with multiple colors, printed graphics, or cut patterns add design time and precise alignment work"
+    - "Trim, door handles, mirrors, and badges must be removed for a clean, tucked wrap, adding several hours of careful labor"
+    - "Surface preparation — washing, clay bar, decontamination, and defect correction — can take half a day to a full day on its own"
+    - "Premium cast film conforms faster and more reliably than cheap calendared film, which fights the installer and slows the job"
   steps:
     - title: "Budget time for preparation"
-      detail: "A thorough wash, clay bar, and paint decontamination take at least half a day. Any scratches or imperfections show through the vinyl and must be corrected first."
+      detail: "A thorough wash, clay bar, and paint decontamination take at least half a day. Any scratches, swirl marks, or imperfections show through the vinyl and must be corrected first, which can add a full day on older paint."
     - title: "Factor in disassembly and reassembly"
-      detail: "Removing door handles, mirrors, trim, and badges so the vinyl can be tucked behind them adds several hours and requires care to avoid breakage."
-    - title: "Plan for curing and inspection"
-      detail: "After application, the wrap needs time to set and the installer performs a final inspection to re-squeegee edges and confirm no lifting before delivery."
+      detail: "Removing door handles, mirrors, trim, badges, and sometimes bumpers so the vinyl can be tucked behind them adds several hours and requires care to avoid broken clips. The same parts must go back on cleanly after the wrap cures."
+    - title: "Plan for application by panel"
+      detail: "The installer applies film panel by panel, working around curves, recesses, and contours. A full wrap on an average car takes 2 to 4 days of hands-on application; large vehicles or intricate designs push this to 5 days or more."
+    - title: "Allow for curing and final inspection"
+      detail: "After application the wrap needs time to set, and the installer performs a final inspection to re-squeegee edges, confirm there is no lifting, and trim any excess before the car is delivered — usually another half day."
   when_to_see_mechanic:
     - "You want a warranty-backed, paint-safe professional installation"
     - "The vehicle has complex curves or a rear window that needs perforated film"
     - "A previous DIY wrap left adhesive residue that must be removed first"
+    - "The paint is damaged and needs correction before the wrap will sit flat"
   diy_difficulty: advanced
   typical_cost:
     low: 2000
     high: 5000
     currency: USD
     note: "Full vehicle wrap, professional installation, design and materials included."
+  faq:
+    - question: "How long does it take to wrap a car?"
+      answer: "A full professional wrap takes about 2 to 5 days. A simple color change on a small sedan can be done in 2 to 3 days, while large vehicles, complex designs, or wraps needing disassembly can take up to a week or more."
+    - question: "How long does a partial car wrap take?"
+      answer: "A partial wrap — such as the roof, hood, or mirrors — usually takes 1 to 2 days, since it covers fewer panels and needs less disassembly and material than a full wrap."
+    - question: "Can you wrap a car in one day?"
+      answer: "Only for very small jobs like a racing stripe, a roof, or a few panels. A proper full-vehicle wrap that is cleaned, disassembled, applied, and inspected realistically needs 2 to 5 days to be done correctly."
+    - question: "Why does wrapping a car take so long?"
+      answer: "Most of the time goes to preparation and detail work: cleaning and decontaminating the paint, removing trim and handles so edges can be tucked, applying film panel by panel around curves, and a final inspection for lifted edges."
+    - question: "Should I leave my car at the shop during a wrap?"
+      answer: "Yes. The car needs to stay clean, dry, and at a stable temperature during the job, and the installer works panel by panel over several days, so plan to leave it for the full estimated timeframe."
   related_queries:
     - "how long does a partial car wrap take"
     - "can you wrap a car yourself"
@@ -583,36 +630,60 @@
 - id: rav4-vs-cr-v-reliability
   cluster_id: CL-031
   category: Buying Guides
+  cover: "/images/advice/rav4-vs-cr-v-reliability-hero.jpg"
   question: "Which is more reliable, the Toyota RAV4 or the Honda CR-V?"
   short_answer: >
     Both the Toyota RAV4 and Honda CR-V are among the most reliable compact
-    SUVs you can buy, but the RAV4 consistently edges out the CR-V in long-term
-    reliability ratings and lower average repair costs. The CR-V is praised for
-    ride comfort and interior space, while the RAV4's simpler powertrains tend
-    to need fewer major repairs over time.
+    SUVs you can buy, and either can exceed 200,000 miles with regular
+    maintenance. The RAV4 generally holds a slight edge in long-term
+    reliability and lower average repair costs thanks to proven, simpler
+    powertrains and Toyota's strong hybrid reputation, while the CR-V is
+    praised for ride comfort, handling, and interior space. Specific
+    generations matter: the CR-V's 1.5L turbo has had cold-climate oil-dilution
+    reports, and certain RAV4 years were part of a fuel-pump recall, so always
+    verify recalls and service history on any used unit.
   is_emergency: false
+  section_labels:
+    causes: "Key differences"
+    steps: "Reliability comparison"
+    when_to_see_mechanic: "Which one should you buy"
   causes:
-    - "The RAV4's naturally aspirated engines have a long track record of durability"
-    - "The CR-V's turbocharged engines offer efficiency but add complexity over time"
-    - "Toyota's hybrid system has a strong reliability reputation across its lineup"
-    - "Both benefit from widespread parts availability and inexpensive routine service"
+    - "The RAV4's naturally aspirated and hybrid powertrains have a long track record of durability with fewer forced-induction parts"
+    - "The CR-V's turbocharged engines deliver strong fuel economy and torque but add complexity that can raise repair costs over time"
+    - "Toyota's hybrid system, used in the RAV4 Hybrid, is widely regarded as one of the most dependable on the market"
+    - "Both benefit from massive parts availability, inexpensive routine service, and large service networks"
+    - "Reliability varies more by generation and maintenance history than by brand, so a well-served CR-V can outlast a neglected RAV4"
   steps:
     - title: "Compare owner-reported problem rates"
-      detail: "Check independent reliability indices and owner survey data for the specific model years you are considering, as results vary by generation."
+      detail: "Check independent reliability indices and owner survey data for the specific model years you are considering. Both score above average for the class, but results shift by generation, so compare the exact years on your shortlist."
     - title: "Review common issues per generation"
-      detail: "The CR-V has had occasional oil-dilution reports on certain turbo engines in cold climates, while the RAV4 has had isolated fuel pump recalls — verify the recall status of any used unit."
-    - title: "Inspect maintenance history"
-      detail: "Whichever you choose, a documented service history is the best predictor of reliability. Demand records and check for completed recalls."
+      detail: "The CR-V has had cold-climate oil-dilution reports on some 1.5L turbo engines (notably around 2017 to 2019), while certain RAV4 years were covered by a fuel-pump recall. Verify the recall status and repair history of any used unit."
+    - title: "Weigh cost to own and parts availability"
+      detail: "Routine maintenance is inexpensive and widely available for both, and their high-volume parts keep long-term ownership costs low. Hybrids add battery longevity to the equation, with both brands' packs typically lasting well past 150,000 miles."
+    - title: "Inspect the maintenance history"
+      detail: "Whichever you choose, a documented service history is the single best predictor of reliability. Demand records, confirm completed recalls, and arrange a pre-purchase inspection before buying."
   when_to_see_mechanic:
-    - "You want a pre-purchase inspection on a used example"
-    - "A vehicle has an active or unresolved recall"
-    - "You notice warning lights or unusual noises on a test drive"
+    - "Get a pre-purchase inspection on any used RAV4 or CR-V before you buy"
+    - "A vehicle has an active or unresolved recall — confirm fuel-pump (RAV4) or any open campaign status"
+    - "You notice warning lights, oil smells, or unusual noises on a test drive"
+    - "You are choosing between specific used units and want a mechanic to flag hidden problems"
   diy_difficulty: beginner
   typical_cost:
     low: 100
     high: 200
     currency: USD
     note: "Pre-purchase inspection by an independent mechanic."
+  faq:
+    - question: "Which is more reliable, the Toyota RAV4 or Honda CR-V?"
+      answer: "Both are among the most reliable compact SUVs and can exceed 200,000 miles with care. The RAV4 generally edges out the CR-V slightly on long-term reliability and lower repair costs, but reliability varies more by generation and maintenance than by brand."
+    - question: "What are the most common problems with the Toyota RAV4?"
+      answer: "Common complaints vary by year and include infotainment and minor interior issues; certain models were part of a fuel-pump recall. Older 2.4L engines had some oil-consumption reports. Verify recalls and service history on any used unit."
+    - question: "What are the most common problems with the Honda CR-V?"
+      answer: "The 1.5L turbo engine has had cold-climate oil-dilution reports on some models, and there have been occasional A/C compressor and infotainment complaints. Regular oil changes and a clean service history reduce most risks."
+    - question: "Which lasts longer, the RAV4 or CR-V?"
+      answer: "Either can reach well past 200,000 miles with regular maintenance. The deciding factor is almost always how well the specific vehicle was serviced rather than which badge is on the hood."
+    - question: "Is the RAV4 Hybrid more reliable than the CR-V Hybrid?"
+      answer: "Toyota's hybrid system has a very strong long-term reliability reputation, and the RAV4 Hybrid is widely rated among the most dependable in its class. The CR-V Hybrid is also rated well, so a clean service history matters more than the hybrid badge."
   related_queries:
     - "rav4 vs cr-v which lasts longer"
     - "toyota rav4 common problems"
@@ -625,33 +696,59 @@
 - id: is-gap-insurance-worth-it
   cluster_id: CL-076
   category: Insurance
+  cover: "/images/advice/is-gap-insurance-worth-it-hero.jpg"
   question: "Is gap insurance worth it?"
   short_answer: >
-    Gap (guaranteed asset protection) insurance is worth it when you owe more on
-    your loan or lease than the car is currently worth. If the vehicle is
-    totaled or stolen, standard insurance pays only the actual cash value, which
-    can leave you paying off a loan for a car you no longer own — gap covers
-    that difference.
+    Gap (guaranteed asset protection) insurance is worth it when you owe more
+    on your loan or lease than the car is currently worth. If the vehicle is
+    totaled or stolen, standard auto insurance pays only the actual cash value,
+    which on a newer car can fall thousands of dollars below the loan balance —
+    and gap covers that difference. It usually costs about $20 to $60 per year
+    when added to your auto policy, versus a one-time $500 to $700 dealer
+    charge, and it tends to pay off most during the first few years of a long
+    loan, before depreciation slows.
   is_emergency: false
+  section_labels:
+    causes: "How gap insurance works"
+    steps: "How to decide if you need it"
+    when_to_see_mechanic: "When gap insurance is NOT worth it"
   causes:
-    - "You financed with a small or zero down payment, so you owe more than the car's value"
-    - "You have a long loan term (60 to 84 months) and depreciation outpaces payoff"
-    - "You leased the vehicle, where gap coverage is often required"
-    - "You rolled negative equity from a previous loan into the new one"
+    - "A new car can lose roughly 20% of its value in the first year and 40% or more over five years, so the loan can outrun the car's value"
+    - "You financed with a small or zero down payment, so you started the loan already owing more than the car is worth"
+    - "You have a long loan term of 60 to 84 months, and early depreciation outpaces your payoff"
+    - "You leased the vehicle, where gap coverage is often required or automatically included"
+    - "You rolled negative equity from a previous loan into the new one, deepening the gap from day one"
   steps:
     - title: "Compare your loan balance to the car's value"
-      detail: "Check your current payoff amount against the vehicle's actual cash value using valuation guides. If the loan is higher, you are upside down and gap helps."
+      detail: "Check your current payoff amount against the vehicle's actual cash value using valuation guides. If the loan is higher, you are upside down and gap makes sense until you cross back above water."
     - title: "Check if gap is already included"
-      detail: "Review your loan or lease agreement and auto policy. Many leases include gap coverage, and some lenders bundle it, so you may not need to buy more."
+      detail: "Review your loan or lease agreement and your auto policy. Many leases include gap coverage automatically, and some lenders bundle it into the loan, so you may not need to buy more."
     - title: "Shop the price, not just the dealer"
-      detail: "Dealers often charge more for gap than your auto insurer or a standalone provider. Get a quote from your existing insurer before buying at the dealership."
-  when_to_see_mechanic: []
+      detail: "Dealers often charge a one-time $500 to $700 for gap, while adding it to your existing auto policy typically costs about $20 to $60 per year. Get a quote from your insurer before buying at the dealership."
+    - title: "Cancel it once you are no longer upside down"
+      detail: "As you pay the loan down and the car's value stabilizes, the gap shrinks. Once your loan balance is at or below the car's market value, you can cancel gap coverage and often receive a prorated refund."
+  when_to_see_mechanic:
+    - "Your loan balance is already below the car's actual cash value, so there is no gap to cover"
+    - "You made a large down payment (20% or more) or have a short loan term of 36 months or less"
+    - "Your loan is nearly paid off and the remaining balance is well under the car's value"
+    - "Gap is already included in your lease or financed into your loan, so buying more duplicates coverage you already have"
   diy_difficulty: beginner
   typical_cost:
     low: 20
     high: 700
     currency: USD
-    note: "Gap as a low annual auto-policy add-on, up to a one-time dealer charge."
+    note: "About $20 to $60 per year as an auto-policy add-on, up to a one-time $500 to $700 dealer charge."
+  faq:
+    - question: "Is gap insurance worth it?"
+      answer: "It is worth it when you owe more than the car is worth — usually with a small down payment, a long loan term, or a lease. It typically costs about $20 to $60 per year on your auto policy and can save you thousands if the car is totaled."
+    - question: "How much is gap insurance?"
+      answer: "Added to your auto policy it usually costs about $20 to $60 per year. Dealers often charge a one-time $500 to $700 folded into the loan, so an insurer quote is almost always cheaper."
+    - question: "Does gap insurance cover a totaled car?"
+      answer: "It covers the difference between what you owe on the loan and what primary insurance pays for the car's actual cash value after a total loss or theft. It does not pay your deductible or replace the vehicle outright."
+    - question: "When should you not get gap insurance?"
+      answer: "Skip it if your loan balance is already below the car's value, you made a large down payment, your loan term is short (36 months or less), or gap is already included in your lease or loan."
+    - question: "Can I cancel gap insurance?"
+      answer: "Yes. Once your loan balance falls to or below the car's market value, you can cancel the coverage. Whether added through a dealer or insurer, you can often receive a prorated refund for the unused portion."
   related_queries:
     - "when should you not get gap insurance"
     - "how much is gap insurance from dealer vs insurance"
