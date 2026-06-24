@@ -58,7 +58,7 @@
     <div class="article-hero-overlay"></div>
   </div>
   {{- end -}}
-  <div class="container">
+  <div class="container article-container">
     <div class="has-rail">
       <div class="main-col">
         <header class="article-head">
@@ -75,8 +75,10 @@
           </div>
         </header>
         <div class="article-content">
-          <h2>Quick answer</h2>
-          <p>{{ $p.short_answer }}</p>
+          <div class="quick-answer">
+            <span class="quick-answer-label">Quick answer</span>
+            <p>{{ $p.short_answer }}</p>
+          </div>
 
           {{- if $p.is_emergency -}}
           <div class="emergency-callout" style="border-left:4px solid #e03131;background:#fff5f5;padding:12px 16px;margin:1em 0;">

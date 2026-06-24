@@ -769,17 +769,46 @@
     high: 700
     currency: USD
     note: About $20 to $60 per year as an auto-policy add-on, up to a one-time $500 to $700 dealer charge.
+  cost_analysis:
+    title: 'Where to buy gap insurance — and what it really costs'
+    methodology: 'Estimated costs over a typical 60-month loan. The auto-policy add-on is billed annually and can be cancelled; dealer gap is a one-time charge usually financed into the loan principal.'
+    rows:
+    - option: 'Add to your auto policy'
+      upfront: '$20–$60 / year'
+      lifespan: 'Active while you pay premiums'
+      cost_per_year: '$20–$60'
+      reversible: 'Yes'
+      verdict: 'Cheapest and most flexible — cancel anytime as equity builds back above water'
+    - option: 'Buy from the dealership'
+      upfront: '$500–$700 one-time'
+      lifespan: 'Life of the loan'
+      cost_per_year: '~$100–$140 (over 5 yrs)'
+      reversible: 'Yes (prorated refund)'
+      verdict: 'Convenient but typically 5–10x more expensive than an insurer quote'
+    - option: 'Already included (lease / loan)'
+      upfront: '$0 extra'
+      lifespan: 'Per lease / loan terms'
+      cost_per_year: 'Built in'
+      reversible: 'N/A'
+      verdict: 'Read the agreement — many leases include it, so buying more duplicates coverage'
+    - option: 'Skip it entirely'
+      upfront: '$0'
+      lifespan: 'N/A'
+      cost_per_year: '$0'
+      reversible: 'N/A'
+      verdict: 'Smart only if the loan balance is already at or below the market value of the car'
+    verdict: 'For most buyers who owe more than the car is worth, adding gap to an existing auto policy is the clear winner — it costs a few dollars a month and can wipe out thousands in negative equity after a total loss. Only skip it once you are back above water.'
   faq:
-  - question: Is gap insurance worth it?
-    answer: It is worth it when you owe more than the car is worth — usually with a small down payment, a long loan term, or a lease. It typically costs about $20 to $60 per year on your auto policy and can save you thousands if the car is totaled.
-  - question: How much is gap insurance?
-    answer: Added to your auto policy it usually costs about $20 to $60 per year. Dealers often charge a one-time $500 to $700 folded into the loan, so an insurer quote is almost always cheaper.
-  - question: Does gap insurance cover a totaled car?
-    answer: It covers the difference between what you owe on the loan and what primary insurance pays for the car's actual cash value after a total loss or theft. It does not pay your deductible or replace the vehicle outright.
-  - question: When should you not get gap insurance?
-    answer: Skip it if your loan balance is already below the car's value, you made a large down payment, your loan term is short (36 months or less), or gap is already included in your lease or loan.
-  - question: Can I cancel gap insurance?
-    answer: Yes. Once your loan balance falls to or below the car's market value, you can cancel the coverage. Whether added through a dealer or insurer, you can often receive a prorated refund for the unused portion.
+  - q: Is gap insurance worth it?
+    a: It is worth it when you owe more than the car is worth — usually with a small down payment, a long loan term, or a lease. It typically costs about $20 to $60 per year on your auto policy and can save you thousands if the car is totaled.
+  - q: How much is gap insurance?
+    a: Added to your auto policy it usually costs about $20 to $60 per year. Dealers often charge a one-time $500 to $700 folded into the loan, so an insurer quote is almost always cheaper.
+  - q: Does gap insurance cover a totaled car?
+    a: It covers the difference between what you owe on the loan and what primary insurance pays for the car's actual cash value after a total loss or theft. It does not pay your deductible or replace the vehicle outright.
+  - q: When should you not get gap insurance?
+    a: Skip it if your loan balance is already below the car's value, you made a large down payment, your loan term is short (36 months or less), or gap is already included in your lease or loan.
+  - q: Can I cancel gap insurance?
+    a: Yes. Once your loan balance falls to or below the car's market value, you can cancel the coverage. Whether added through a dealer or insurer, you can often receive a prorated refund for the unused portion.
   related_queries:
   - when should you not get gap insurance
   - how much is gap insurance from dealer vs insurance
