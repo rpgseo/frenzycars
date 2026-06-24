@@ -32,17 +32,12 @@
   </div>
   {{ end }}
   <div class="container">
+    <header class="article-head">
+      <span class="card-tag">{{ with .Params.category }}{{ . }}{{ else }}{{ .Type | humanize }}{{ end }}</span>
+      <h1 class="article-title">{{ .Title }}</h1>
+    </header>
     <div class="has-rail">
       <div class="main-col">
-        <header class="article-head">
-          <span class="card-tag">{{ with .Params.category }}{{ . }}{{ else }}{{ .Type | humanize }}{{ end }}</span>
-          <h1 class="article-title">{{ .Title }}</h1>
-          <div class="article-meta">
-            {{ with .Params.author }}<span>{{ . }}</span><span class="meta-dot">&bull;</span>{{ end }}
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-            {{ with .Params.rating }}<span class="meta-dot">&bull;</span>{{ partial "score.html" (dict "rating" .) }}{{ end }}
-          </div>
-        </header>
         <div class="article-content">
           {{ .Content }}
         </div>
@@ -69,6 +64,7 @@
             </div>
           </div>
           {{ end }}
+          {{ partial "widgets/sidebar.html" . }}
         </div>
       </aside>
     </div>

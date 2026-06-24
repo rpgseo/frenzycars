@@ -23,4 +23,16 @@ docs/superpowers/
 # Python cache
 __pycache__/
 *.pyc
+
+# Node dependencies
+node_modules/
+
+# Kilo / Playwright temp files
+.kilo/
+.playwright-mcp/
+
+# Temp scripts and screenshots
+download_images.js
+gift-guide-*.png
+
 !.env.example

@@ -1,0 +1,25 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<article class="article">
+  <div class="container">
+    <div class="main-col" style="max-width:760px;margin-inline:auto">
+      <header class="article-head">
+        <span class="card-tag">About</span>
+        <h1 class="article-title">{{ .Title }}</h1>
+      </header>
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+      <div class="rail-block newsletter-widget" style="margin-top:3rem">
+        <h3 class="rail-title">Newsletter</h3>
+        <p class="nw-pitch">Reviews, news &amp; features &mdash; weekly, in your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <label class="sr-only" for="nw-email">Email address</label>
+          <input id="nw-email" type="email" placeholder="you@email.com" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

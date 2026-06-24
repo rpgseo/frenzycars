@@ -1,13 +1,18 @@
 {{ define "head" }}
 {{- $p := .Params -}}
 
-{{/* FAQPage: main question + short_answer only */ -}}
+{{/* FAQPage: main question + short_answer, plus any FAQ pairs */ -}}
+{{- $faqEntities := slice -}}
 {{- $faqAnswer := dict "@type" "Answer" "text" ($p.short_answer | plainify) -}}
-{{- $faqQ := dict "@type" "Question" "name" ($p.question | plainify) "acceptedAnswer" $faqAnswer -}}
+{{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" ($p.question | plainify) "acceptedAnswer" $faqAnswer) -}}
+{{- range $p.faq -}}
+  {{- $a := dict "@type" "Answer" "text" (.a | plainify) -}}
+  {{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" (.q | plainify) "acceptedAnswer" $a) -}}
+{{- end -}}
 {{- $faq := dict
       "@context" "https://schema.org"
       "@type" "FAQPage"
-      "mainEntity" (slice $faqQ)
+      "mainEntity" $faqEntities
 -}}
 
 {{/* HowTo: steps + estimated cost */ -}}
@@ -37,7 +42,22 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
 {{- $p := .Params -}}
+{{- $sl := $p.section_labels -}}
+{{- $hCauses := "Common causes" -}}
+{{- $hSteps := "How to diagnose it" -}}
+{{- $hMechanic := "When to see a mechanic" -}}
+{{- with $sl -}}
+  {{- with .causes }}{{- $hCauses = . -}}{{- end }}
+  {{- with .steps }}{{- $hSteps = . -}}{{- end }}
+  {{- with .when_to_see_mechanic }}{{- $hMechanic = . -}}{{- end }}
+{{- end -}}
 <article class="article">
+  {{- with $p.cover -}}
+  <div class="article-hero">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+    <div class="article-hero-overlay"></div>
+  </div>
+  {{- end -}}
   <div class="container">
     <div class="has-rail">
       <div class="main-col">
@@ -65,14 +85,14 @@
           {{- end -}}
 
           {{- with $p.causes -}}
-          <h2>Common causes</h2>
+          <h2>{{ $hCauses }}</h2>
           <ul>
             {{- range . -}}<li>{{ . }}</li>{{- end -}}
           </ul>
           {{- end -}}
 
           {{- with $p.steps -}}
-          <h2>How to diagnose it</h2>
+          <h2>{{ $hSteps }}</h2>
           <ol class="howto-steps">
             {{- range . -}}
             <li>
@@ -84,10 +104,154 @@
           {{- end -}}
 
           {{- with $p.when_to_see_mechanic -}}
-          <h2>When to see a mechanic</h2>
+          <h2>{{ $hMechanic }}</h2>
           <ul>
             {{- range . -}}<li>{{ . }}</li>{{- end -}}
           </ul>
+          {{- end -}}
+
+          {{- with $p.gift_intro -}}
+          <p class="gift-intro">{{ . }}</p>
+          {{- end -}}
+
+          {{- with $p.products -}}
+          <h2>Top-rated picks</h2>
+          <div class="product-grid">
+            {{- range $i, $prod := . -}}
+            {{- if $prod.title -}}
+            <div class="product-card">
+              {{- with .image_url -}}<img src="{{ . }}" alt="{{ $prod.title | default "" }}" loading="lazy">{{- end -}}
+              <div class="product-body">
+                <h3>{{ $prod.title | default (printf "Product %d" (add $i 1)) }}</h3>
+                {{- with $prod.price_from -}}<p class="product-price">${{ printf "%.0f" . }}{{- with $prod.currency -}} {{ . }}{{- end -}}</p>{{- end -}}
+                {{- with $prod.rating -}}
+                <p class="product-rating">{{ printf "%.1f" . }} stars{{- with $prod.reviews -}} ({{ . }} reviews){{- end -}}</p>
+                {{- end -}}
+                {{- with $prod.gift_reason -}}<p class="gift-reason">{{ . }}</p>{{- end -}}
+                {{- with $prod.url -}}<a href="{{ partial "advice/product-url.html" (dict "product" $prod "tag" $.Site.Params.amazonAssocTag) }}" target="_blank" rel="nofollow sponsored noopener" class="btn btn-primary btn-sm">Check price</a>{{- end -}}
+              </div>
+            </div>
+            {{- end -}}
+            {{- end -}}
+          </div>
+          {{- end -}}
+
+          {{- with $p.how_we_chose -}}
+          <h2>{{ .title | default "How we chose" }}</h2>
+          <ul class="criteria-list">
+            {{- range .criteria -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.cost_table -}}
+          <h2>Cost by vehicle type</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Vehicle type</th><th>Vinyl needed</th><th>Price range</th></tr></thead>
+              <tbody>
+                {{- range . -}}<tr><td>{{ .vehicle }}</td><td>{{ .vinyl_sqft }} sq ft</td><td>{{ .price_range }}</td></tr>{{- end -}}
+              </tbody>
+            </table>
+          </div>
+          {{- end -}}
+
+          {{- with $p.finish_costs -}}
+          <h2>How finish type affects price</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Finish</th><th>Cost premium</th><th>Notes</th></tr></thead>
+              <tbody>
+                {{- range . -}}<tr><td><strong>{{ .finish }}</strong></td><td>{{ .cost_premium }}</td><td>{{ .notes }}</td></tr>{{- end -}}
+              </tbody>
+            </table>
+          </div>
+          {{- end -}}
+
+          {{- with $p.additional_costs -}}
+          <h2>Additional costs to budget for</h2>
+          <ul>
+            {{- range . -}}<li><strong>{{ .item }}</strong> ({{ .cost }}) — {{ .detail }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.case_studies -}}
+          <h2>Real-world cost examples</h2>
+          <div class="case-studies">
+            {{- range . -}}
+            <div class="case-card">
+              <h3>{{ .vehicle }}</h3>
+              <p class="case-meta">{{ .vinyl }}</p>
+              <p class="case-cost">Estimated cost: <strong>{{ .estimated_cost }}</strong></p>
+              <p class="case-detail">{{ .rationale }}</p>
+            </div>
+            {{- end -}}
+          </div>
+          {{- end -}}
+
+          {{- with $p.cost_analysis -}}
+          <h2>{{ .title | default "Total cost comparison" }}</h2>
+          {{- with .methodology -}}<p class="table-note">{{ . }}</p>{{- end -}}
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Option</th><th>Upfront</th><th>Lifespan</th><th>Per year</th><th>Reversible</th><th>Verdict</th></tr></thead>
+              <tbody>
+                {{- range .rows -}}<tr><td><strong>{{ .option }}</strong></td><td>{{ .upfront }}</td><td>{{ .lifespan }}</td><td>{{ .cost_per_year }}</td><td>{{ .reversible }}</td><td>{{ .verdict }}</td></tr>{{- end -}}
+              </tbody>
+            </table>
+          </div>
+          {{- end -}}
+
+          {{- with $p.alternatives_comparison -}}
+          <h2>{{ .title | default "Alternatives compared" }}</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Option</th><th>Best for</th><th>Cost</th><th>Durability</th><th>Reversible</th><th>Finish</th></tr></thead>
+              <tbody>
+                {{- range .rows -}}<tr><td><strong>{{ .option }}</strong></td><td>{{ .best_for }}</td><td>{{ .cost }}</td><td>{{ .durability }}</td><td>{{ .reversible }}</td><td>{{ .finish_quality }}</td></tr>{{- end -}}
+              </tbody>
+            </table>
+          </div>
+          {{- with .verdict -}}<p class="table-verdict">{{ . }}</p>{{- end -}}
+          {{- end -}}
+
+          {{- with $p.regional_pricing -}}
+          <h2>How pricing varies by region</h2>
+          <ul>
+            {{- range . -}}<li><strong>{{ .tier }}</strong> — {{ .adjustment }}. {{ .context }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.red_flags -}}
+          <h2>Red flags when choosing a wrap shop</h2>
+          <ul class="red-flags">
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.maintenance_tips -}}
+          <h2>Maintaining your car wrap</h2>
+          <ul>
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.buying_tips -}}
+          <h2>Buying tips</h2>
+          <ul>
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.faq -}}
+          <h2>Frequently asked questions</h2>
+          <div class="faq">
+            {{- range . -}}
+            <details class="faq-item">
+              <summary>{{ .q }}</summary>
+              <p>{{ .a }}</p>
+            </details>
+            {{- end -}}
+          </div>
           {{- end -}}
 
           {{- with $p.related_queries -}}

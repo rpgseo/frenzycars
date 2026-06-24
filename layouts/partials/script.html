@@ -9,44 +9,5 @@
       m.classList.toggle('is-open', !open);
     });
   }
-
-  /* Floating sidebar (WordPress-style sticky, no inner scrollbar) */
-  function initStickyRail(){
-    var rail = document.querySelector('.has-rail > .rail');
-    var sticky = rail ? rail.querySelector('.rail-sticky') : null;
-    if(!rail || !sticky) return;
-    var OFFSET = 92;            /* clear sticky header + ticker */
-    var BP = 980;               /* below this: single column, no sticky */
-    var ticking = false;
-    function update(){
-      ticking = false;
-      if(window.innerWidth <= BP){ sticky.style.transform = ''; return; }
-      var sH = sticky.offsetHeight;
-      var vh = window.innerHeight;
-      var docTop = window.pageYOffset || document.documentElement.scrollTop;
-      var railTop = rail.getBoundingClientRect().top + docTop;
-      var railH = rail.offsetHeight;
-      var avail = railH - sH;            /* max downward travel */
-      var ty;
-      if(sH + OFFSET <= vh){
-        /* sidebar fits in viewport: pin its top to the header offset */
-        ty = docTop - railTop + OFFSET;
-      } else {
-        /* sidebar taller than viewport: pin its bottom to viewport bottom */
-        ty = docTop + vh - sH - railTop;
-      }
-      if(ty < 0) ty = 0;
-      if(avail < 0) avail = 0;
-      if(ty > avail) ty = avail;
-      sticky.style.transform = 'translateY(' + ty + 'px)';
-    }
-    function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
-    window.addEventListener('scroll', onScroll, {passive:true});
-    window.addEventListener('resize', onScroll);
-    window.addEventListener('load', update);
-    update();
-  }
-  if(document.readyState !== 'loading') initStickyRail();
-  else document.addEventListener('DOMContentLoaded', initStickyRail);
 })();
 </script>

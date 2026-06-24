@@ -18,7 +18,7 @@
       <div class="lead-secondary">
         {{ range first 2 (after 1 $all) }}
         <a class="lead-sec" href="{{ .RelPermalink }}">
-          <img src="{{ .Params.cover | default "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" }}" alt="{{ .Title }}" loading="lazy" width="600" height="400">
+          <img src="{{ .Params.cover | default "/images/default-cover.jpg" }}" alt="{{ .Title }}" loading="lazy" width="600" height="400">
           <div class="lead-sec-overlay"></div>
           <div class="lead-sec-body">
             <span class="eyebrow">{{ .Type | humanize }}</span>
@@ -68,75 +68,7 @@
       {{/* ===== SIDEBAR WIDGETS ===== */}}
       <aside class="rail" aria-label="Sidebar">
         <div class="rail-sticky">
-
-          {{/* Newsletter widget */}}
-          <div class="rail-block newsletter-widget">
-            <h3 class="rail-title">Newsletter</h3>
-            <p class="nw-pitch">Reviews, news &amp; features &mdash; weekly, in your inbox.</p>
-            <form class="newsletter-form" onsubmit="return false;">
-              <label class="sr-only" for="nw-email">Email address</label>
-              <input id="nw-email" type="email" placeholder="you@email.com" required>
-              <button type="submit">Join</button>
-            </form>
-          </div>
-
-          {{/* Car Reviews widget */}}
-          <div class="rail-block">
-            <h3 class="rail-title">Car Reviews</h3>
-            <ul class="rail-list">
-              {{ range first 3 $reviews }}
-              <li class="mini-item">
-                <a href="{{ .RelPermalink }}" class="mini-thumb">
-                  <img src="{{ .Params.cover }}" alt="" loading="lazy" width="100" height="75">
-                </a>
-                <div class="mini-text">
-                  {{ with .Params.rating }}<span class="mini-score">{{ printf "%.1f" . }}/10</span>{{ end }}
-                  <h4><a href="{{ .RelPermalink }}">{{ .Title | truncate 44 }}</a></h4>
-                </div>
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-
-          {{/* Must Read widget */}}
-          <div class="rail-block">
-            <h3 class="rail-title">Must Read</h3>
-            <ul class="rail-list">
-              {{ range first 2 $features }}
-              <li class="mini-item">
-                <a href="{{ .RelPermalink }}" class="mini-thumb">
-                  <img src="{{ .Params.cover }}" alt="" loading="lazy" width="100" height="75">
-                </a>
-                <div class="mini-text">
-                  <span class="mini-date">{{ .Date.Format "Jan 2" }}</span>
-                  <h4><a href="{{ .RelPermalink }}">{{ .Title | truncate 44 }}</a></h4>
-                </div>
-              </li>
-              {{ end }}
-              {{ range first 1 (after 1 $reviews) }}
-              <li class="mini-item">
-                <a href="{{ .RelPermalink }}" class="mini-thumb">
-                  <img src="{{ .Params.cover }}" alt="" loading="lazy" width="100" height="75">
-                </a>
-                <div class="mini-text">
-                  {{ with .Params.rating }}<span class="mini-score">{{ printf "%.1f" . }}/10</span>{{ end }}
-                  <h4><a href="{{ .RelPermalink }}">{{ .Title | truncate 44 }}</a></h4>
-                </div>
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-
-          {{/* Trending widget (kept) */}}
-          <div class="rail-block">
-            <h3 class="rail-title">Trending</h3>
-            <div class="mini-rail">
-              {{- range $i, $p := first 5 $all -}}
-              <div class="mini-rank"><span class="num">{{ add $i 1 }}</span><div><div class="mt">{{ $p.Type | humanize }}</div><h4><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h4></div></div>
-              {{- end -}}
-            </div>
-          </div>
-
+          {{ partial "widgets/sidebar.html" . }}
         </div>
       </aside>
     </div>

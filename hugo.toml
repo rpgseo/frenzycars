@@ -17,6 +17,9 @@ buildFuture = true # DEV-ONLY: must be set to false (or removed) when params.noi
   accent = "#F7D720"
   dateformat = "Jan 2, 2006"
   mainSections = ["reviews", "news", "features", "advice"]
+  # Amazon Associates store ID (US accounts end in -20). Leave empty until the
+  # affiliate account is active; the template only injects ?tag= when set.
+  amazonAssocTag = ""
 
   [params.social]
     twitter = "https://twitter.com/frenzycars"

@@ -1,4 +1,4 @@
-{{- $cover := .Params.cover | default "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80" -}}
+{{- $cover := .Params.cover | default "/images/default-cover.jpg" -}}
 <a class="lead-card" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">
   <img src="{{ $cover }}" alt="{{ .Title }}" loading="eager" width="1200" height="800">
   <div class="lead-card-overlay"></div>

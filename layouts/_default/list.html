@@ -10,24 +10,18 @@
 <section class="container band">
   <div class="has-rail">
     <div class="main-col">
-      {{ partial "ads/slot.html" (dict "slot" "top" "format" "leaderboard") }}
       {{ if gt (len .Pages) 0 }}
       <div class="grid grid-3">
-        {{- range $i, $p := .Pages -}}
+        {{- range .Pages -}}
           {{ partial "article-card.html" . }}
-          {{- if eq (mod (add $i 1) 9) 0 -}}
-            {{ partial "ads/slot.html" (dict "slot" "infeed" "format" "infeed") }}
-          {{- end -}}
         {{- end -}}
       </div>
       {{ else }}
       <p class="empty">No articles yet. Check back soon.</p>
       {{ end }}
-      {{ template "_internal/pagination.html" . }}
     </div>
     <aside class="rail">
       <div class="rail-sticky">
-        {{ partial "ads/slot.html" (dict "slot" "rail" "format" "rail") }}
         {{- $trend := where .Site.RegularPages "Type" "in" .Site.Params.mainSections | first 5 -}}
         {{ if $trend }}
         <div class="rail-block">

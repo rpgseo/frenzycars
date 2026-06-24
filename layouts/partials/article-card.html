@@ -1,4 +1,4 @@
-{{- $cover := .Params.cover | default "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" -}}
+{{- $cover := .Params.cover | default "/images/default-cover.jpg" -}}
 {{- $section := .Type | humanize -}}
 <article class="card">
   <a class="card-media" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">

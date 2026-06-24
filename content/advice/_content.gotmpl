@@ -1,3 +1,4 @@
+{{- $prodData := (hugo.Data.evergreen.products | default dict) -}}
 {{- range $row := hugo.Data.evergreen.troubleshooting -}}
 {{- /* Anti-thin gate: count real differentiators */ -}}
 {{- $causes := $row.causes | default slice -}}
@@ -15,6 +16,18 @@
 {{- else -}}
   {{- $content := dict "mediaType" "text/markdown" "value" ($row.short_answer | default "") -}}
   {{- $dates := dict "date" (time.AsTime ($row.publish_date | default "2026-06-22")) "publishDate" (time.AsTime ($row.publish_date | default "2026-06-22")) -}}
+  {{- /* Merge enriched product data from products.yaml into the product slots */ -}}
+  {{- $products := slice -}}
+  {{- range $prod := ($row.products | default slice) -}}
+    {{- $pid := $prod.id | default "" -}}
+    {{- $enriched := dict -}}
+    {{- with $pageProds := index $prodData $row.id -}}
+      {{- with $found := index $pageProds $pid -}}
+        {{- $enriched = $found -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $products = $products | append (merge $enriched $prod) -}}
+  {{- end -}}
   {{- $params := dict
       "question" $row.question
       "cluster_id" ($row.cluster_id | default "")
@@ -29,6 +42,23 @@
       "typical_cost" ($row.typical_cost | default dict)
       "related_queries" ($row.related_queries | default slice)
       "sources" ($row.sources | default slice)
+      "cover" ($row.cover | default "")
+      "section_labels" ($row.section_labels | default dict)
+      "faq" ($row.faq | default slice)
+      "page_type" ($row.page_type | default "troubleshooting")
+      "cost_table" ($row.cost_table | default slice)
+      "finish_costs" ($row.finish_costs | default slice)
+      "additional_costs" ($row.additional_costs | default slice)
+      "maintenance_tips" ($row.maintenance_tips | default slice)
+      "case_studies" ($row.case_studies | default slice)
+      "cost_analysis" ($row.cost_analysis | default dict)
+      "alternatives_comparison" ($row.alternatives_comparison | default dict)
+      "regional_pricing" ($row.regional_pricing | default slice)
+      "red_flags" ($row.red_flags | default slice)
+      "products" $products
+      "how_we_chose" ($row.how_we_chose | default dict)
+      "buying_tips" ($row.buying_tips | default slice)
+      "gift_intro" ($row.gift_intro | default "")
   -}}
   {{- $page := dict
       "content" $content

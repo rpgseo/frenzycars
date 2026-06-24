@@ -20,8 +20,8 @@
   <meta name="twitter:image" content="{{ with .Params.cover }}{{ . | absURL }}{{ else }}{{ ("/img/logo-1200x630.png") | absURL }}{{ end }}">
   <link rel="preconnect" href="https://images.unsplash.com">
   {{ $css := resources.Get "css/style.css" | default (resources.Get "css/style.css") }}
-  {{ with $css }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
-  {{ if not $css }}<link rel="stylesheet" href="/css/style.css">{{ end }}
+  {{ with $css }}<link rel="stylesheet" href="{{ .RelPermalink }}?v=2">{{ end }}
+  {{ if not $css }}<link rel="stylesheet" href="/css/style.css?v=2">{{ end }}
   {{ partial "ads/head.html" . }}
   {{ block "head" . }}{{ end }}
 </head>
