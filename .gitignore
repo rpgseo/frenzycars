@@ -8,6 +8,11 @@
 Thumbs.db
 *.swp
 
+# Secrets / environment files (NUNCA subir al repo)
+.env
+.env.*
+!.env.example
+
 # Sveltia CMS local cache
 .sveltia/
 
