@@ -166,6 +166,14 @@ a.brand:hover{color:inherit}
 .article-foot{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .tags{display:flex;flex-wrap:wrap;gap:.5rem}
 .tag{background:var(--bg-elev);color:var(--accent);padding:.3rem .7rem;border-radius:999px;font-size:.75rem;font-weight:600}
+.article-content details summary{cursor:pointer;list-style:none}
+.article-content details summary::-webkit-details-marker{display:none}
+.faq{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.3rem}
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem}
+.faq-item summary{font-weight:700;color:#fff;font-size:1.05rem}
+.faq-item summary::before{content:"+ ";color:var(--accent);font-weight:900}
+.faq-item[open] summary::before{content:"\2212  "}
+.faq-item p{margin:.7rem 0 0;color:#ededed}
 
 /* ---------- Footer ---------- */
 .site-footer{background:#050505;border-top:3px solid var(--accent);margin-top:2rem}

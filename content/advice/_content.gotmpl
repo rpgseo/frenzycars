@@ -29,6 +29,9 @@
       "typical_cost" ($row.typical_cost | default dict)
       "related_queries" ($row.related_queries | default slice)
       "sources" ($row.sources | default slice)
+      "cover" ($row.cover | default "")
+      "section_labels" ($row.section_labels | default dict)
+      "faq" ($row.faq | default slice)
   -}}
   {{- $page := dict
       "content" $content

@@ -1,13 +1,18 @@
 {{ define "head" }}
 {{- $p := .Params -}}
 
-{{/* FAQPage: main question + short_answer only */ -}}
+{{/* FAQPage: main question + short_answer, plus any FAQ pairs */ -}}
+{{- $faqEntities := slice -}}
 {{- $faqAnswer := dict "@type" "Answer" "text" ($p.short_answer | plainify) -}}
-{{- $faqQ := dict "@type" "Question" "name" ($p.question | plainify) "acceptedAnswer" $faqAnswer -}}
+{{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" ($p.question | plainify) "acceptedAnswer" $faqAnswer) -}}
+{{- range $p.faq -}}
+  {{- $a := dict "@type" "Answer" "text" (.a | plainify) -}}
+  {{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" (.q | plainify) "acceptedAnswer" $a) -}}
+{{- end -}}
 {{- $faq := dict
       "@context" "https://schema.org"
       "@type" "FAQPage"
-      "mainEntity" (slice $faqQ)
+      "mainEntity" $faqEntities
 -}}
 
 {{/* HowTo: steps + estimated cost */ -}}
@@ -37,7 +42,22 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
 {{- $p := .Params -}}
+{{- $sl := $p.section_labels -}}
+{{- $hCauses := "Common causes" -}}
+{{- $hSteps := "How to diagnose it" -}}
+{{- $hMechanic := "When to see a mechanic" -}}
+{{- with $sl -}}
+  {{- with .causes }}{{- $hCauses = . -}}{{- end }}
+  {{- with .steps }}{{- $hSteps = . -}}{{- end }}
+  {{- with .when_to_see_mechanic }}{{- $hMechanic = . -}}{{- end }}
+{{- end -}}
 <article class="article">
+  {{- with $p.cover -}}
+  <div class="article-hero">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+    <div class="article-hero-overlay"></div>
+  </div>
+  {{- end -}}
   <div class="container">
     <div class="has-rail">
       <div class="main-col">
@@ -65,14 +85,14 @@
           {{- end -}}
 
           {{- with $p.causes -}}
-          <h2>Common causes</h2>
+          <h2>{{ $hCauses }}</h2>
           <ul>
             {{- range . -}}<li>{{ . }}</li>{{- end -}}
           </ul>
           {{- end -}}
 
           {{- with $p.steps -}}
-          <h2>How to diagnose it</h2>
+          <h2>{{ $hSteps }}</h2>
           <ol class="howto-steps">
             {{- range . -}}
             <li>
@@ -84,10 +104,22 @@
           {{- end -}}
 
           {{- with $p.when_to_see_mechanic -}}
-          <h2>When to see a mechanic</h2>
+          <h2>{{ $hMechanic }}</h2>
           <ul>
             {{- range . -}}<li>{{ . }}</li>{{- end -}}
           </ul>
+          {{- end -}}
+
+          {{- with $p.faq -}}
+          <h2>Frequently asked questions</h2>
+          <div class="faq">
+            {{- range . -}}
+            <details class="faq-item">
+              <summary>{{ .q }}</summary>
+              <p>{{ .a }}</p>
+            </details>
+            {{- end -}}
+          </div>
           {{- end -}}
 
           {{- with $p.related_queries -}}
