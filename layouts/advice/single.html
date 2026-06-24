@@ -120,13 +120,15 @@
             {{- range $i, $prod := . -}}
             {{- if $prod.title -}}
             <div class="product-card">
-              {{- with .image_url -}}<img src="{{ . }}" alt="{{ $prod.title | default "" }}" loading="lazy">{{- end -}}
+              {{- with .image_url -}}<img src="{{ . }}" alt="{{ $prod.title | default "" }}" loading="lazy" onerror="this.classList.add('img-failed');this.removeAttribute('src');">{{- end -}}
               <div class="product-body">
+                {{- range $prod.badges -}}<span class="product-badge">{{ . }}</span>{{- end -}}
                 <h3>{{ $prod.title | default (printf "Product %d" (add $i 1)) }}</h3>
-                {{- with $prod.price_from -}}<p class="product-price">${{ printf "%.0f" . }}{{- with $prod.currency -}} {{ . }}{{- end -}}</p>{{- end -}}
+                {{- with $prod.price_from -}}<p class="product-price">{{ printf "$%.0f" . }}</p>{{- end -}}
                 {{- with $prod.rating -}}
-                <p class="product-rating">{{ printf "%.1f" . }} stars{{- with $prod.reviews -}} ({{ . }} reviews){{- end -}}</p>
+                <p class="product-rating">{{ printf "%.1f" . }} stars{{ with $prod.reviews }} ({{ . }} reviews){{ end }}</p>
                 {{- end -}}
+                {{- with $prod.bought_past_month -}}<p class="product-bought">{{ printf "%d+" (int .) }} bought in past month</p>{{- end -}}
                 {{- with $prod.gift_reason -}}<p class="gift-reason">{{ . }}</p>{{- end -}}
                 {{- with $prod.url -}}<a href="{{ partial "advice/product-url.html" (dict "product" $prod "tag" $.Site.Params.amazonAssocTag) }}" target="_blank" rel="nofollow sponsored noopener" class="btn btn-primary btn-sm">Check price</a>{{- end -}}
               </div>
@@ -254,24 +256,6 @@
           </div>
           {{- end -}}
 
-          {{- with $p.related_queries -}}
-          <h2>Related questions</h2>
-          <details>
-            <summary>Expand related questions</summary>
-            <ul>
-              {{- range . -}}<li>{{ . }}</li>{{- end -}}
-            </ul>
-          </details>
-          {{- end -}}
-
-          {{- with $p.sources -}}
-          <footer class="article-foot">
-            <p><strong>Sources:</strong></p>
-            <ul>
-              {{- range . -}}<li>{{ . }}</li>{{- end -}}
-            </ul>
-          </footer>
-          {{- end -}}
         </div>
         <footer class="article-foot">
           <a class="btn btn-ghost" href="{{ "/advice/" | relURL }}">&larr; Back to Advice</a>

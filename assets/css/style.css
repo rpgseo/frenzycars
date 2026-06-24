@@ -325,7 +325,69 @@ a.brand:hover{color:inherit}
 .mini-rank .mt{font-size:.78rem;color:var(--fg-dim);text-transform:uppercase;letter-spacing:.06em}
 .mini-rank h4{font-size:.95rem;margin:.15rem 0 0;line-height:1.25}
 
-/* ---------- Responsive collapse for rail layout ---------- */
+/* ============================================================
+   ADVICE / GIFT-GUIDE ARTICLE — article body elements
+   (product grid, FAQ accordion, gift intro, criteria, etc.)
+   ============================================================ */
+.article .article-head{position:relative}
+.article-head .card-tag{position:static;display:inline-block;margin-bottom:.9rem}
+.article-content .gift-intro{font-size:1.12rem;line-height:1.7;color:var(--fg);margin:0 0 1.6rem;border-left:4px solid var(--accent);padding:.2rem 0 .2rem 1.25rem}
+
+/* Buttons variants used in article */
+.btn-primary{background:var(--accent);color:#000}
+.btn-primary:hover{background:var(--accent-hover);color:#000;box-shadow:var(--accent-shadow)}
+.btn-sm{padding:.6rem 1.1rem;font-size:.76rem}
+
+/* ---------- Product grid ---------- */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:1.5rem 0 2rem}
+.product-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.product-card:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.product-card>img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--surface-2);border-bottom:1px solid var(--border);padding:1rem}
+.product-card>img.img-failed{padding:0;visibility:hidden}
+.product-body{padding:1rem 1.15rem 1.25rem;display:flex;flex-direction:column;flex:1}
+.product-badge{display:inline-block;align-self:flex-start;background:var(--accent);color:#000;font-size:.62rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:3px;margin-bottom:.55rem}
+.product-body h3{font-size:.95rem;line-height:1.35;margin:0 0 .55rem;color:var(--fg);font-weight:700;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.product-card:hover .product-body h3{color:var(--accent)}
+.product-price{font-size:1.25rem;font-weight:900;color:var(--accent);margin:0}
+.product-rating{font-size:.8rem;color:var(--fg-dim);margin:.2rem 0 .7rem;letter-spacing:.02em}
+.product-rating::before{content:"\2605";color:var(--accent);margin-right:.25rem}
+.product-bought{font-size:.74rem;color:var(--fg-dim);margin:0 0 .7rem;letter-spacing:.01em}
+.gift-reason{font-size:.88rem;line-height:1.5;color:var(--fg-muted);margin:0 0 1rem;flex:1}
+.product-body .btn{margin-top:auto;align-self:flex-start}
+
+/* ---------- Criteria list ---------- */
+.criteria-list{list-style:none;margin:0 0 1.5rem;padding:0;display:grid;gap:.6rem}
+.criteria-list li{position:relative;padding:.65rem .9rem .65rem 2.3rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;font-size:.95rem;color:var(--fg-muted)}
+.criteria-list li::before{content:"\2713";position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:900}
+
+/* ---------- Buying tips / generic article lists ---------- */
+.article-content ul:not(.howto-steps):not(.criteria-list):not(.red-flags) li{padding-left:.2rem}
+
+/* ---------- Red flags ---------- */
+.red-flags li{position:relative;padding-left:0;color:var(--fg-muted)}
+.red-flags li::marker{content:"\26A0  ";color:#ff6b6b}
+
+/* ---------- Case studies ---------- */
+.case-studies{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin:1.5rem 0}
+.case-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.25rem}
+.case-card h3{font-size:1.1rem;margin:0 0 .3rem}
+.case-meta{font-size:.8rem;color:var(--fg-dim);margin:0 0 .5rem;text-transform:uppercase;letter-spacing:.06em}
+.case-cost{font-size:.95rem;color:var(--fg-muted);margin:0 0 .5rem}
+.case-detail{font-size:.9rem;color:var(--fg-muted);margin:0}
+
+/* ---------- FAQ accordion ---------- */
+.faq{display:flex;flex-direction:column;gap:.6rem;margin:1.25rem 0 1.5rem}
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .2s ease,background .2s ease}
+.faq-item:hover{border-color:var(--border-strong)}
+.faq-item[open]{border-color:var(--accent-dim);background:var(--bg-elev)}
+.faq-item>summary{list-style:none;cursor:pointer;padding:1rem 3rem 1rem 1.15rem;font-weight:700;font-size:1rem;color:var(--fg);position:relative;font-family:var(--font-display);line-height:1.35;transition:color .2s ease}
+.faq-item>summary::-webkit-details-marker{display:none}
+.faq-item>summary:hover{color:var(--accent)}
+.faq-item>summary::after{content:"";position:absolute;right:1.1rem;top:50%;width:12px;height:12px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:translateY(-65%) rotate(45deg);transition:transform .25s ease}
+.faq-item[open]>summary::after{transform:translateY(-35%) rotate(-135deg)}
+.faq-item>p{margin:0;padding:0 1.15rem 1.15rem;color:var(--fg-muted);font-size:.96rem;line-height:1.65}
+
+/* ---------- Responsive ---------- */
 @media (max-width:980px){
   .has-rail>.rail{position:static}
   .rail-sticky{position:static;transform:none!important;will-change:auto;transition:none}
@@ -335,9 +397,12 @@ a.brand:hover{color:inherit}
   .lead-sec{flex:1}
   .z-grid.z-4{grid-template-columns:repeat(2,1fr)}
   .z-grid.z-21{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .case-studies{grid-template-columns:1fr}
 }
 @media (max-width:720px){
   .lead-secondary{flex-direction:column}
   .proscons{grid-template-columns:1fr}
   .z-grid.z-4{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:1fr}
 }
