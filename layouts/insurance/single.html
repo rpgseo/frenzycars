@@ -1,0 +1,173 @@
+{{ define "head" }}
+{{- $p := .Params -}}
+
+{{/* Article schema (author / date / cover) */ -}}
+{{- $isoDate := "2006-01-02T15:04:05Z07:00" -}}
+{{- $author := ($p.author | default .Site.Title) | plainify -}}
+{{- $art := dict
+      "@context" "https://schema.org"
+      "@type" "Article"
+      "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+      "headline" (.Title | plainify)
+      "description" ((.Description | default (.Summary | plainify)) | truncate 300)
+      "datePublished" (.Date.Format $isoDate)
+      "dateModified" ((.Lastmod | default .Date).Format $isoDate)
+      "author" (dict "@type" "Person" "name" $author)
+      "publisher" (dict "@type" "Organization" "name" (.Site.Title | plainify) "logo" (dict "@type" "ImageObject" "url" ((("/img/logo-1200x630.png") | absURL))))
+-}}
+{{- with $p.cover -}}{{- $art = merge $art (dict "image" (dict "@type" "ImageObject" "url" (. | absURL))) -}}{{- end -}}
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $art | safeJS }}</script>
+
+{{/* FAQPage: main question + short_answer, plus any FAQ pairs */ -}}
+{{- $faqEntities := slice -}}
+{{- with $p.short_answer -}}
+{{- $faqAnswer := dict "@type" "Answer" "text" ($p.short_answer | plainify) -}}
+{{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" (($p.question | default $.Title) | plainify) "acceptedAnswer" $faqAnswer) -}}
+{{- end -}}
+{{- range $p.faq -}}
+  {{- $a := dict "@type" "Answer" "text" (.a | plainify) -}}
+  {{- $faqEntities = $faqEntities | append (dict "@type" "Question" "name" (.q | plainify) "acceptedAnswer" $a) -}}
+{{- end -}}
+{{- with $faqEntities -}}
+{{- $faq := dict
+      "@context" "https://schema.org"
+      "@type" "FAQPage"
+      "mainEntity" .
+-}}
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $faq | safeJS }}</script>
+{{- end -}}
+
+{{/* HowTo: steps */ -}}
+{{- $howtoSteps := slice -}}
+{{- range $p.steps -}}
+  {{- $howtoSteps = $howtoSteps | append (dict "@type" "HowToStep" "name" (.title | plainify) "text" (.detail | plainify)) -}}
+{{- end -}}
+{{- with $howtoSteps -}}
+{{- $howto := dict
+      "@context" "https://schema.org"
+      "@type" "HowTo"
+      "name" (($p.question | default $.Title) | plainify)
+      "description" (($p.short_answer | default ($.Description | default "")) | plainify | truncate 200)
+      "step" .
+-}}
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $howto | safeJS }}</script>
+{{- end -}}
+{{ end }}
+
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+{{- $p := .Params -}}
+{{- $sl := $p.section_labels -}}
+{{- $hCauses := "Common causes" -}}
+{{- $hSteps := "How to diagnose it" -}}
+{{- $hMechanic := "When to see a mechanic" -}}
+{{- with $sl -}}
+  {{- with .causes }}{{- $hCauses = . -}}{{- end }}
+  {{- with .steps }}{{- $hSteps = . -}}{{- end }}
+  {{- with .when_to_see_mechanic }}{{- $hMechanic = . -}}{{- end }}
+{{- end -}}
+<article class="article">
+  {{- with $p.cover -}}
+  <div class="article-hero">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+    <div class="article-hero-overlay"></div>
+  </div>
+  {{- end -}}
+  <div class="container">
+    <div class="has-rail">
+      <div class="main-col">
+        <header class="article-head">
+          <span class="card-tag">{{ .Type | humanize }}</span>
+          <h1 class="article-title">{{ .Title }}</h1>
+          {{- with $p.author -}}<div class="article-meta"><span>By {{ . }}</span></div>{{- end -}}
+        </header>
+        <div class="article-content">
+          <h2>Quick answer</h2>
+          <p>{{ $p.short_answer }}</p>
+
+          {{- with $p.causes -}}
+          <h2>{{ $hCauses }}</h2>
+          <ul>
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.steps -}}
+          <h2>{{ $hSteps }}</h2>
+          <ol class="howto-steps">
+            {{- range . -}}
+            <li>
+              <strong>{{ .title }}</strong>
+              <p>{{ .detail }}</p>
+            </li>
+            {{- end -}}
+          </ol>
+          {{- end -}}
+
+          {{/* Generic data tables (each: title / note / headers / rows / verdict) */ -}}
+          {{- range $p.tables -}}
+          <h2>{{ .title }}</h2>
+          {{- with .note -}}<p class="table-note">{{ . }}</p>{{- end -}}
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>{{ range .headers }}<th>{{ . }}</th>{{ end }}</tr></thead>
+              <tbody>
+                {{- range .rows -}}<tr>{{ range . }}<td>{{ . }}</td>{{ end }}</tr>{{- end -}}
+              </tbody>
+            </table>
+          </div>
+          {{- with .verdict -}}<p class="table-verdict">{{ . }}</p>{{- end -}}
+          {{- end -}}
+
+          {{- with $p.when_to_see_mechanic -}}
+          <h2>{{ $hMechanic }}</h2>
+          <ul class="red-flags">
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.buying_tips -}}
+          <h2>Buying tips</h2>
+          <ul>
+            {{- range . -}}<li>{{ . }}</li>{{- end -}}
+          </ul>
+          {{- end -}}
+
+          {{- with $p.faq -}}
+          <h2>Frequently asked questions</h2>
+          <div class="faq">
+            {{- range . -}}
+            <details class="faq-item">
+              <summary>{{ .q }}</summary>
+              <p>{{ .a }}</p>
+            </details>
+            {{- end -}}
+          </div>
+          {{- end -}}
+
+        </div>
+        <footer class="article-foot">
+          {{ with $p.tags }}<div class="tags">{{ range . }}<span class="tag">#{{ . }}</span>{{ end }}</div>{{ end }}
+          <a class="btn btn-ghost" href="{{ "/insurance/" | relURL }}">&larr; Back to Insurance</a>
+        </footer>
+      </div>
+      {{- $rel := where (where .Site.RegularPages "Type" .Type) "Permalink" "!=" .Permalink | first 4 -}}
+      {{- if $rel -}}
+      <aside class="rail">
+        <div class="rail-sticky">
+          <div class="rail-block">
+            <h3 class="rail-title">More in {{ .Type | humanize }}</h3>
+            <div class="mini-rail">
+              {{- range $rel -}}
+              <div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">{{ $.Type | humanize }}</div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4></div></div>
+              {{- end -}}
+            </div>
+          </div>
+        </div>
+      </aside>
+      {{- end -}}
+    </div>
+  </div>
+</article>
+{{ end }}
