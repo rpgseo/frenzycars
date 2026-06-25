@@ -6,6 +6,7 @@
   {{- $ogImage := (("/img/logo-1200x630.png") | absURL) -}}
   {{- with $coverRes -}}{{- $ogImage = (.Resize "1200x q82 jpg").Permalink -}}{{- else -}}{{- with .Params.cover -}}{{- $ogImage = (. | absURL) -}}{{- end -}}{{- end -}}
   <meta charset="utf-8">
+  <meta name="google-site-verification" content="oLjBHbQDjKuJIZd24EbRtrXCHTc0x0bNLwvsJO1D-5g">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">

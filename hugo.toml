@@ -4,14 +4,13 @@ title = "FrenzyCars"
 defaultContentLanguage = "en"
 summaryLength = 25
 enableRobotsTXT = true
-buildFuture = true # DEV-ONLY: must be set to false (or removed) when params.noindex flips to false at launch, so publish_date staggering takes effect
 
 [pagination]
   pagerSize = 9
 
 
 [params]
-  noindex = true
+  noindex = false
   description = "FrenzyCars — The pulse of performance. Expert car reviews, breaking auto news, and deep-dive features."
   tagline = "The pulse of performance"
   accent = "#F7D720"
