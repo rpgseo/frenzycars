@@ -110,11 +110,9 @@
                 </div>
                 {{- with .blurb -}}<p class="pick-blurb">{{ . }}</p>{{- end -}}
                 {{- with .specs -}}
-                <div class="table-wrap">
                 <table class="pick-specs">
                   <tbody>{{- range . -}}<tr><td>{{ .label }}</td><td>{{ .value }}</td></tr>{{- end -}}</tbody>
                 </table>
-                </div>
                 {{- end -}}
                 <div class="pick-proscons">
                   {{- with .pros -}}<div class="pros"><span class="pc-label">Pros</span><ul>{{- range . -}}<li>{{ . }}</li>{{- end -}}</ul></div>{{- end -}}

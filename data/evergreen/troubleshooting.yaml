@@ -104,16 +104,16 @@
     currency: USD
     note: Full vehicle re-wrap, professional installation, depending on vehicle size.
   faq:
-  - question: How long does a car wrap last?
-    answer: A professionally installed wrap using premium cast vinyl typically lasts 5 to 7 years, and can stretch to about 8 years on a well-cared-for vehicle. Cheaper film, or a car parked outdoors in a hot climate, usually lasts only 3 to 5 years.
-  - question: Does a car wrap last longer than paint?
-    answer: No. A quality paint job can last 10 to 15 years or more, while a wrap is a shorter-term finish of roughly 5 to 7 years. Wraps are chosen for color change, advertising, or paint protection, not for maximum longevity.
-  - question: How can I make my car wrap last longer?
-    answer: Keep the car garaged or shaded, hand-wash with wrap-safe products, avoid brush car washes and high-pressure spraying near edges, and apply a wrap-safe sealant. Good care can add 1 to 2 years to the wrap's life.
-  - question: Does a car wrap damage the paint?
-    answer: A wrap applied over factory paint in good condition and removed within its service life generally does not damage the paint. Problems arise with fresh repainting, low-quality film left on too long, or aggressive removal.
-  - question: How much does it cost to re-wrap a car?
-    answer: Removing an old wrap and applying a new one typically runs about $2,000 to $5,000 for a full vehicle, with removal adding roughly $500 to $1,000 depending on the condition of the old film and adhesive.
+  - q: How long does a car wrap last?
+    a: A professionally installed wrap using premium cast vinyl typically lasts 5 to 7 years, and can stretch to about 8 years on a well-cared-for vehicle. Cheaper film, or a car parked outdoors in a hot climate, usually lasts only 3 to 5 years.
+  - q: Does a car wrap last longer than paint?
+    a: No. A quality paint job can last 10 to 15 years or more, while a wrap is a shorter-term finish of roughly 5 to 7 years. Wraps are chosen for color change, advertising, or paint protection, not for maximum longevity.
+  - q: How can I make my car wrap last longer?
+    a: Keep the car garaged or shaded, hand-wash with wrap-safe products, avoid brush car washes and high-pressure spraying near edges, and apply a wrap-safe sealant. Good care can add 1 to 2 years to the wrap's life.
+  - q: Does a car wrap damage the paint?
+    a: A wrap applied over factory paint in good condition and removed within its service life generally does not damage the paint. Problems arise with fresh repainting, low-quality film left on too long, or aggressive removal.
+  - q: How much does it cost to re-wrap a car?
+    a: Removing an old wrap and applying a new one typically runs about $2,000 to $5,000 for a full vehicle, with removal adding roughly $500 to $1,000 depending on the condition of the old film and adhesive.
   related_queries:
   - how long does a vinyl wrap last on a car
   - does car wrap damage paint
@@ -784,16 +784,16 @@
     currency: USD
     note: Full vehicle wrap, professional installation, design and materials included.
   faq:
-  - question: How long does it take to wrap a car?
-    answer: A full professional wrap takes about 2 to 5 days. A simple color change on a small sedan can be done in 2 to 3 days, while large vehicles, complex designs, or wraps needing disassembly can take up to a week or more.
-  - question: How long does a partial car wrap take?
-    answer: A partial wrap — such as the roof, hood, or mirrors — usually takes 1 to 2 days, since it covers fewer panels and needs less disassembly and material than a full wrap.
-  - question: Can you wrap a car in one day?
-    answer: Only for very small jobs like a racing stripe, a roof, or a few panels. A proper full-vehicle wrap that is cleaned, disassembled, applied, and inspected realistically needs 2 to 5 days to be done correctly.
-  - question: Why does wrapping a car take so long?
-    answer: 'Most of the time goes to preparation and detail work: cleaning and decontaminating the paint, removing trim and handles so edges can be tucked, applying film panel by panel around curves, and a final inspection for lifted edges.'
-  - question: Should I leave my car at the shop during a wrap?
-    answer: Yes. The car needs to stay clean, dry, and at a stable temperature during the job, and the installer works panel by panel over several days, so plan to leave it for the full estimated timeframe.
+  - q: How long does it take to wrap a car?
+    a: A full professional wrap takes about 2 to 5 days. A simple color change on a small sedan can be done in 2 to 3 days, while large vehicles, complex designs, or wraps needing disassembly can take up to a week or more.
+  - q: How long does a partial car wrap take?
+    a: A partial wrap — such as the roof, hood, or mirrors — usually takes 1 to 2 days, since it covers fewer panels and needs less disassembly and material than a full wrap.
+  - q: Can you wrap a car in one day?
+    a: Only for very small jobs like a racing stripe, a roof, or a few panels. A proper full-vehicle wrap that is cleaned, disassembled, applied, and inspected realistically needs 2 to 5 days to be done correctly.
+  - q: Why does wrapping a car take so long?
+    a: 'Most of the time goes to preparation and detail work: cleaning and decontaminating the paint, removing trim and handles so edges can be tucked, applying film panel by panel around curves, and a final inspection for lifted edges.'
+  - q: Should I leave my car at the shop during a wrap?
+    a: Yes. The car needs to stay clean, dry, and at a stable temperature during the job, and the installer works panel by panel over several days, so plan to leave it for the full estimated timeframe.
   related_queries:
   - how long does a partial car wrap take
   - can you wrap a car yourself
@@ -902,16 +902,16 @@
     currency: USD
     note: Pre-purchase inspection by an independent mechanic.
   faq:
-  - question: Which is more reliable, the Toyota RAV4 or Honda CR-V?
-    answer: Both are among the most reliable compact SUVs and can exceed 200,000 miles with care. The RAV4 generally edges out the CR-V slightly on long-term reliability and lower repair costs, but reliability varies more by generation and maintenance than by brand.
-  - question: What are the most common problems with the Toyota RAV4?
-    answer: Common complaints vary by year and include infotainment and minor interior issues; certain models were part of a fuel-pump recall. Older 2.4L engines had some oil-consumption reports. Verify recalls and service history on any used unit.
-  - question: What are the most common problems with the Honda CR-V?
-    answer: The 1.5L turbo engine has had cold-climate oil-dilution reports on some models, and there have been occasional A/C compressor and infotainment complaints. Regular oil changes and a clean service history reduce most risks.
-  - question: Which lasts longer, the RAV4 or CR-V?
-    answer: Either can reach well past 200,000 miles with regular maintenance. The deciding factor is almost always how well the specific vehicle was serviced rather than which badge is on the hood.
-  - question: Is the RAV4 Hybrid more reliable than the CR-V Hybrid?
-    answer: Toyota's hybrid system has a very strong long-term reliability reputation, and the RAV4 Hybrid is widely rated among the most dependable in its class. The CR-V Hybrid is also rated well, so a clean service history matters more than the hybrid badge.
+  - q: Which is more reliable, the Toyota RAV4 or Honda CR-V?
+    a: Both are among the most reliable compact SUVs and can exceed 200,000 miles with care. The RAV4 generally edges out the CR-V slightly on long-term reliability and lower repair costs, but reliability varies more by generation and maintenance than by brand.
+  - q: What are the most common problems with the Toyota RAV4?
+    a: Common complaints vary by year and include infotainment and minor interior issues; certain models were part of a fuel-pump recall. Older 2.4L engines had some oil-consumption reports. Verify recalls and service history on any used unit.
+  - q: What are the most common problems with the Honda CR-V?
+    a: The 1.5L turbo engine has had cold-climate oil-dilution reports on some models, and there have been occasional A/C compressor and infotainment complaints. Regular oil changes and a clean service history reduce most risks.
+  - q: Which lasts longer, the RAV4 or CR-V?
+    a: Either can reach well past 200,000 miles with regular maintenance. The deciding factor is almost always how well the specific vehicle was serviced rather than which badge is on the hood.
+  - q: Is the RAV4 Hybrid more reliable than the CR-V Hybrid?
+    a: Toyota's hybrid system has a very strong long-term reliability reputation, and the RAV4 Hybrid is widely rated among the most dependable in its class. The CR-V Hybrid is also rated well, so a clean service history matters more than the hybrid badge.
   related_queries:
   - rav4 vs cr-v which lasts longer
   - toyota rav4 common problems

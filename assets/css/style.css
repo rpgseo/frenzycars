@@ -419,9 +419,9 @@ a.brand:hover{color:inherit}
 .pick-proscons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:.7rem}
 .pick-proscons .pros,.pick-proscons .cons{}
 .pick-proscons ul{list-style:none;margin:.3rem 0 0;padding:0}
-.pick-proscons li{position:relative;padding:.2rem 0 .2rem 1.15rem;font-size:.86rem;color:var(--fg-muted);line-height:1.4}
-.pick-proscons .pros li::before{content:"\2713";position:absolute;left:0;color:var(--success);font-weight:900}
-.pick-proscons .cons li::before{content:"\2715";position:absolute;left:0;color:var(--danger);font-weight:900}
+.pick-proscons li{display:flex;align-items:baseline;gap:.45rem;padding:.25rem 0;font-size:.86rem;color:var(--fg-muted);line-height:1.45}
+.pick-proscons .pros li::before{content:"\2713";flex-shrink:0;color:var(--success);font-weight:900;font-size:.82rem}
+.pick-proscons .cons li::before{content:"\2715";flex-shrink:0;color:var(--danger);font-weight:900;font-size:.82rem}
 .pc-label{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-dim)}
 .pick-bestfor{margin:.2rem 0 0;font-size:.9rem;color:var(--fg)}
 .pick-bestfor strong{color:var(--accent)}
