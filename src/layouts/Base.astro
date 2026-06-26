@@ -44,10 +44,13 @@ const img = ogImage ?? new URL('/img/logo-1200x630.png', siteConfig.baseURL).hre
   <meta property="og:description" content={desc} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={img} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title ?? siteConfig.title} />
   <meta name="twitter:description" content={desc} />
   <meta name="twitter:image" content={img} />
+  <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="preconnect" href="https://images.unsplash.com" />
   <slot name="head" />
   <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaId}`} is:inline></script>
