@@ -44,6 +44,5 @@ RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
 if [ "$RESPONSE" = "200" ] || [ "$RESPONSE" = "202" ]; then
   echo "OK — IndexNow respondió $RESPONSE"
 else
-  echo "Error — IndexNow respondió $RESPONSE"
-  exit 1
+  echo "Aviso — IndexNow respondió $RESPONSE (no bloquea el deploy)"
 fi
