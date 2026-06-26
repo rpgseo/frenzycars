@@ -1,4 +1,7 @@
 baseURL = "https://frenzycars.com/"
+
+[markup.goldmark.renderer]
+  unsafe = true
 locale = "en-us"
 title = "FrenzyCars"
 defaultContentLanguage = "en"

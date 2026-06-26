@@ -45,7 +45,6 @@ export default {
       `title: ${JSON.stringify(title)}`,
       `date: "${date}"`,
       `description: ${JSON.stringify(metaDescription || "")}`,
-      `markup: "html"`,
     ];
     if (heroImageUrl) lines.push(`cover: ${JSON.stringify(heroImageUrl)}`);
     if (faqJson) lines.push(`faq_json_ld: ${JSON.stringify(faqJson)}`);
