@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import { humanize } from '../lib/section';
+const sections = ['reviews','news','culture','electric','guides','insurance','blog','gear'];
+let all = (await Promise.all(sections.map(s => getCollection(s as any)))).flat()
+  .filter((e:any) => !e.data.draft)
+  .map((e:any) => ({ ...e, _section: e.collection }));
+all.sort((a:any,b:any) => (+new Date(b.data.date||0)) - (+new Date(a.data.date||0)));
+const reviews = all.filter((e:any)=>e.collection==='reviews');
+const culture = all.filter((e:any)=>e.collection==='culture');
+const url = (e:any) => `/${e.collection}/${e.slug}/`;
+---
+<div class="rail-block newsletter-widget">
+  <h3 class="rail-title">Newsletter</h3>
+  <p class="nw-pitch">Reviews, news &amp; features &mdash; weekly, in your inbox.</p>
+  <form method="post" action="https://sendfox.com/form/3e768w/10jj8x" class="newsletter-form sendfox-form" id="10jj8x-sidebar" data-async="true" data-recaptcha="true">
+    <label class="sr-only" for="nw-email">Email address</label>
+    <input id="nw-email" type="email" placeholder="you@email.com" name="email" required />
+    <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+    <button type="submit">Join</button>
+  </form>
+  <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8" is:inline></script>
+</div>
+<div class="rail-block">
+  <h3 class="rail-title">Car Reviews</h3>
+  <ul class="rail-list">
+    {reviews.slice(0,3).map((e:any)=>(
+      <li class="mini-item">
+        <a href={url(e)} class="mini-thumb"><img src={e.data.cover} alt="" loading="lazy" width="100" height="75" /></a>
+        <div class="mini-text">
+          {e.data.rating && <span class="mini-score">{e.data.rating.toFixed(1)}/10</span>}
+          <h4><a href={url(e)}>{e.data.title.slice(0,44)}</a></h4>
+        </div>
+      </li>
+    ))}
+  </ul>
+</div>
+<div class="rail-block">
+  <h3 class="rail-title">Must Read</h3>
+  <ul class="rail-list">
+    {culture.slice(0,2).map((e:any)=>(
+      <li class="mini-item">
+        <a href={url(e)} class="mini-thumb"><img src={e.data.cover} alt="" loading="lazy" width="100" height="75" /></a>
+        <div class="mini-text">
+          <span class="mini-date">{e.data.date ? new Date(e.data.date).toLocaleDateString('en-US',{month:'short',day:'numeric'}) : ''}</span>
+          <h4><a href={url(e)}>{e.data.title.slice(0,44)}</a></h4>
+        </div>
+      </li>
+    ))}
+    {reviews.slice(1,2).map((e:any)=>(
+      <li class="mini-item">
+        <a href={url(e)} class="mini-thumb"><img src={e.data.cover} alt="" loading="lazy" width="100" height="75" /></a>
+        <div class="mini-text">
+          {e.data.rating && <span class="mini-score">{e.data.rating.toFixed(1)}/10</span>}
+          <h4><a href={url(e)}>{e.data.title.slice(0,44)}</a></h4>
+        </div>
+      </li>
+    ))}
+  </ul>
+</div>
+<div class="rail-block">
+  <h3 class="rail-title">Trending</h3>
+  <div class="mini-rail">
+    {all.slice(0,5).map((e:any,i:number)=>(
+      <div class="mini-rank"><span class="num">{i+1}</span><div><div class="mt">{humanize(e.collection)}</div><h4><a href={url(e)}>{e.data.title}</a></h4></div></div>
+    ))}
+  </div>
+</div>
