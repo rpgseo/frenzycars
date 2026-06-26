@@ -15,14 +15,14 @@ const rest = all.filter((e:any)=>e !== featured);
 const reviews = all.filter((e:any)=>e.collection==='reviews');
 const news = all.filter((e:any)=>e.collection==='news');
 const culture = all.filter((e:any)=>e.collection==='culture');
-const url=(e:any)=>`/${e.collection}/${e.id}/`;
+const url=(e:any)=>`/${e.collection}/${e.id.replace(/\.mdx?$/,'')}/`;
 ---
 <Base title={undefined} description="Expert car reviews, breaking auto news, and in-depth features on performance cars, EVs, and car culture. FrenzyCars — driven by obsession.">
   <div class="container">
     <h1 class="sr-only">FrenzyCars — Car Reviews, News &amp; Automotive Features</h1>
     <section class="zone">
       <div class="lead-grid">
-        {featured && <LeadCard entry={featured} />}
+        {featured && <LeadCard entry={featured as any} />}
         <div class="lead-secondary">
           {rest.slice(0,2).map((e:any)=>(
             <a class="lead-sec" href={url(e)}>

@@ -38,7 +38,7 @@ const { label, entries } = Astro.props;
     <ul style="list-style: none; padding: 0;">
       {entries.map((e: any) => (
         <li style="margin-bottom: 1rem;">
-          <a href={`/${e.collection}/${e.id}/`}>{e.data.title}</a>
+          <a href={`/${e.collection}/${e.id.replace(/\.mdx?$/,'')}/`}>{e.data.title}</a>
           <span style="color: var(--color-muted, #888); font-size: 0.85em; margin-left: 0.5rem;">{e.collection}</span>
         </li>
       ))}

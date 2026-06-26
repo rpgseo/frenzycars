@@ -62,7 +62,7 @@ const trend = (
                   <span class="num">{i + 1}</span>
                   <div>
                     <div class="mt">{humanize(e.collection)}</div>
-                    <h4><a href={`/${e.collection}/${e.id}/`}>{e.data.title}</a></h4>
+                    <h4><a href={`/${e.collection}/${e.id.replace(/\.mdx?$/,'')}/`}>{e.data.title}</a></h4>
                   </div>
                 </div>
               ))}

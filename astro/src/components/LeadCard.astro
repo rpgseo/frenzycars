@@ -9,8 +9,9 @@ interface Props {
 
 const { entry } = Astro.props;
 const d = entry.data;
+const slug = entry.id.replace(/\.mdx?$/, '');
 ---
-<a class="lead-card" href={`/${entry.collection}/${entry.id}/`} aria-label={d.title}>
+<a class="lead-card" href={`/${entry.collection}/${slug}/`} aria-label={d.title}>
   <Cover entry={entry} width={1200} eager={true} class="lead-img" />
   <div class="lead-card-overlay"></div>
   <div class="lead-card-body">
