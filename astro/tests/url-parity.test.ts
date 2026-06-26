@@ -21,11 +21,8 @@ import { listUrls } from './lib/list-urls';
 // the "must exist as dist/…/index.html" check.
 const REDIRECTS_AS_301 = new Set<string>([
   '/buyers-guide/best-car-loans-for-students/',
-  // /admin/ was a Hugo admin panel — not migrated to Astro
+  // /admin/ was a Hugo admin panel — not migrated to Astro (Decap CMS excluded by design)
   '/admin/',
-  // Hugo slugified Nürburgring as nãrburgring; Astro normalises to n-rburgring
-  // A _redirects rule handles the legacy URL
-  '/tags/nãrburgring/',
 ]);
 
 describe('URL parity Hugo → Astro', () => {

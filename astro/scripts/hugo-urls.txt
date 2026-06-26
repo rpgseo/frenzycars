@@ -102,7 +102,7 @@
 /tags/mercedes-amg/
 /tags/mustang/
 /tags/n/
-/tags/nãrburgring/
+/tags/nurburgring/
 /tags/performance/
 /tags/porsche/
 /tags/range/
