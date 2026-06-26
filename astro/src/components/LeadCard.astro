@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Cover from './Cover.astro';
+import { humanize, summarize } from '../lib/section';
+
+interface Props {
+  entry: CollectionEntry<'reviews'> | CollectionEntry<'news'> | CollectionEntry<'culture'> | CollectionEntry<'electric'> | CollectionEntry<'guides'> | CollectionEntry<'blog'> | CollectionEntry<'gear'>;
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+---
+<a class="lead-card" href={`/${entry.collection}/${entry.id}/`} aria-label={d.title}>
+  <Cover entry={entry} width={1200} eager={true} class="lead-img" />
+  <div class="lead-card-overlay"></div>
+  <div class="lead-card-body">
+    <span class="eyebrow">
+      <span class="dot"></span>
+      {humanize(entry.collection)}{d.rating ? ` · ${d.rating.toFixed(1)}/10` : ''}
+    </span>
+    <h2>{d.title}</h2>
+    <p>{summarize(entry.body ?? '', 25)}</p>
+    <span class="btn btn-accent">Read story</span>
+  </div>
+</a>

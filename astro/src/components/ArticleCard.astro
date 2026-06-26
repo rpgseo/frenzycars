@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Cover from './Cover.astro';
+import { humanize, summarize } from '../lib/section';
+
+interface Props {
+  entry: CollectionEntry<'reviews'> | CollectionEntry<'news'> | CollectionEntry<'culture'> | CollectionEntry<'electric'> | CollectionEntry<'guides'> | CollectionEntry<'blog'> | CollectionEntry<'gear'>;
+}
+
+const { entry } = Astro.props;
+const section = humanize(entry.collection);
+const d = entry.data;
+const dateStr = d.date
+  ? new Date(d.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+  : '';
+const iso = d.date ? new Date(d.date).toISOString().slice(0, 10) : '';
+---
+<article class="card">
+  <a class="card-media" href={`/${entry.collection}/${entry.id}/`} aria-label={d.title}>
+    <Cover entry={entry} width={600} class="card-img" />
+    <span class="card-tag">{section}</span>
+    {d.rating && <span class="card-rating">{d.rating.toFixed(1)}<small>/10</small></span>}
+  </a>
+  <div class="card-body">
+    <h3 class="card-title"><a href={`/${entry.collection}/${entry.id}/`}>{d.title}</a></h3>
+    <p class="card-excerpt">{summarize(entry.body ?? '', 18)}</p>
+    <div class="card-meta">
+      <span class="meta-author">{d.author ?? 'FrenzyCars'}</span>
+      <span class="meta-dot">&bull;</span>
+      <time datetime={iso}>{dateStr}</time>
+    </div>
+  </div>
+</article>

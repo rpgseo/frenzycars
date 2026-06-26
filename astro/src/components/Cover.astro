@@ -1,0 +1,6 @@
+---
+const { entry, width = 1200, eager = false, class: cls = '' } = Astro.props;
+const src = entry.data.cover || '/images/default-cover.jpg';
+const loading = eager ? 'eager' : 'lazy';
+---
+<img class={cls} src={src} alt={entry.data.title} loading={loading} width={width} />

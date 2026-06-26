@@ -1,6 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+
+const reviews = await getCollection('reviews');
+const latest = reviews.slice(0, 3);
 ---
 <Base title="Home">
   <h1>FrenzyCars — Coming Soon</h1>
+  <div class="cards-grid">
+    {latest.map(entry => <ArticleCard entry={entry} />)}
+  </div>
 </Base>
