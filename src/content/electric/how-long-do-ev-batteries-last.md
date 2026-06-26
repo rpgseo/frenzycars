@@ -66,20 +66,3 @@ Replacement cost varies sharply by model and chemistry:
 
 Most owners never pay this. If degradation below the warranty threshold occurs within the 8-year window, the repair or pack is covered.
 
-## Frequently asked questions
-
-### What happens to EV batteries after 8 years?
-
-After the warranty period, a healthy battery typically retains **75–85%** of its original capacity and continues to be fully usable. The warranty's 8-year mark is a guaranteed minimum, not an expiry date — most packs keep 70%+ capacity for several more years.
-
-### What happens to electric cars after 10 years?
-
-At 10 years, an EV usually still has **70–80%** battery capacity, meaning modest range loss rather than failure. The rest of the car — motor, electronics, brakes — generally has plenty of life left. The most common 10-year expense is not the battery but normal wear items like tires and suspension.
-
-### How long do Tesla batteries last?
-
-Tesla estimates its packs survive **1,500 charge cycles**, translating to roughly **300,000–500,000 miles** before dropping to ~80% capacity. Real-world high-mileage Model 3 and Model S data broadly supports 200,000+ miles with manageable degradation.
-
-### Is it worth replacing an EV battery?
-
-Usually yes if the car is otherwise sound. A $5,000–$8,000 pack on a well-maintained vehicle essentially gives it a second life at near-new range, which is far cheaper than buying a new car. If the vehicle has other major faults, a replacement battery may not make economic sense.
