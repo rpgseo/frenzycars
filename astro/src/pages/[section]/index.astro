@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { sectionMeta } from '../../lib/section-meta';
+import { humanize } from '../../lib/section';
+
+export async function getStaticPaths() {
+  return Object.keys(sectionMeta).map(section => ({ params: { section } }));
+}
+
+const { section } = Astro.params;
+const meta = sectionMeta[section!];
+
+// Load articles for this section (gear may be empty, which is fine)
+let pages: any[] = [];
+try {
+  pages = (await getCollection(section as any)).filter((e: any) => !e.data.draft);
+  pages.sort((a: any, b: any) => (+new Date(b.data.date ?? 0)) - (+new Date(a.data.date ?? 0)));
+} catch {
+  // collection doesn't exist yet — render empty state
+}
+
+// Trending rail: latest across all editorial sections
+const trendSections = ['reviews', 'news', 'culture', 'electric', 'guides', 'insurance', 'blog', 'gear'];
+const trend = (
+  await Promise.all(
+    trendSections.map(async s => {
+      try { return await getCollection(s as any); } catch { return []; }
+    })
+  )
+)
+  .flat()
+  .filter((e: any) => !e.data.draft)
+  .sort((a: any, b: any) => (+new Date(b.data.date ?? 0)) - (+new Date(a.data.date ?? 0)));
+---
+<Base title={meta.title} description={meta.description}>
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-eyebrow"><span class="dot"></span> {meta.title}</span>
+      <h1 class="page-title">{meta.title}</h1>
+      {meta.description && <p class="page-lead">{meta.description}</p>}
+    </div>
+  </section>
+
+  <section class="container band">
+    <div class="has-rail">
+      <div class="main-col">
+        {pages.length
+          ? <div class="grid grid-3">{pages.map((e: any) => <ArticleCard entry={e} />)}</div>
+          : <p class="empty">No articles yet. Check back soon.</p>
+        }
+      </div>
+
+      <aside class="rail">
+        <div class="rail-sticky">
+          <div class="rail-block">
+            <h3 class="rail-title">Trending</h3>
+            <div class="mini-rail">
+              {trend.slice(0, 5).map((e: any, i: number) => (
+                <div class="mini-rank">
+                  <span class="num">{i + 1}</span>
+                  <div>
+                    <div class="mt">{humanize(e.collection)}</div>
+                    <h4><a href={`/${e.collection}/${e.id}/`}>{e.data.title}</a></h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Base>

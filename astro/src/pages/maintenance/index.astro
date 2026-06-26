@@ -1,0 +1,23 @@
+---
+// Task 12 will populate this page from the maintenance YAML data source.
+// For now we render the section shell with an empty state.
+import Base from '../../layouts/Base.astro';
+
+const title = 'Maintenance';
+const description = 'Practical car troubleshooting, how-to guides, and repair advice from FrenzyCars.';
+---
+<Base title={title} description={description}>
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-eyebrow"><span class="dot"></span> {title}</span>
+      <h1 class="page-title">{title}</h1>
+      <p class="page-lead">{description}</p>
+    </div>
+  </section>
+
+  <section class="container band">
+    <div class="main-col">
+      <p class="empty">No articles yet. Check back soon.</p>
+    </div>
+  </section>
+</Base>
