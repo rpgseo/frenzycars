@@ -342,3 +342,14 @@ a.brand:hover{color:inherit}
   .proscons{grid-template-columns:1fr}
   .z-grid.z-4{grid-template-columns:1fr}
 }
+
+/* ---------- FAQ accordion ---------- */
+.faq{display:flex;flex-direction:column;gap:.5rem;margin-top:1rem}
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s}
+.faq-item[open]{border-color:var(--border-strong)}
+.faq-item summary{list-style:none;cursor:pointer;padding:1rem 1.25rem;font-weight:700;font-size:1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.4rem;font-weight:300;color:var(--fg-dim);flex-shrink:0;transition:transform .2s}
+.faq-item[open] summary::after{content:'−'}
+.faq-item summary:hover{color:var(--accent)}
+.faq-item>p{margin:0;padding:.25rem 1.25rem 1.25rem;color:var(--fg-muted);line-height:1.7;font-size:.95rem}
