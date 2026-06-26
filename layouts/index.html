@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Site.Title }} - The pulse of performance{{ end }}
+{{ define "title" }}The Pulse of Performance | Frenzy Cars{{ end }}
 {{ define "main" }}
 {{- $all := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
 {{- $featured := first 1 (where $all ".Params.featured" true) -}}

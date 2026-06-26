@@ -1,0 +1,65 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "head" }}
+{{- $isoDate := "2006-01-02T15:04:05Z07:00" -}}
+{{- $ld := dict
+      "@context" "https://schema.org"
+      "@type" "Article"
+      "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+      "headline" (.Title | plainify)
+      "description" ((.Description | default (.Summary | plainify)) | truncate 300)
+      "datePublished" (.Date.Format $isoDate)
+      "dateModified" ((.Lastmod | default .Date).Format $isoDate)
+      "author" (dict "@type" "Organization" "name" (.Site.Title | plainify))
+      "publisher" (dict "@type" "Organization" "name" (.Site.Title | plainify) "logo" (dict "@type" "ImageObject" "url" ((("/img/logo-1200x630.png") | absURL))))
+-}}
+{{- with .Params.cover -}}{{- $ld = merge $ld (dict "image" (dict "@type" "ImageObject" "url" (. | absURL))) -}}{{- end -}}
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") $ld | safeJS }}</script>
+{{- with .Params.faq_json_ld }}
+<script type="application/ld+json">{{ . | safeJS }}</script>
+{{- end }}
+{{ end }}
+{{ define "main" }}
+{{- $rel := where (where .Site.RegularPages "Type" .Type) "Permalink" "!=" .Permalink | first 4 -}}
+<article class="article">
+  {{- with .Params.cover -}}
+  <div class="article-hero">
+    <img src="{{ . }}" alt="{{ $.Title }}" class="hero-img" loading="eager">
+    <div class="article-hero-overlay"></div>
+  </div>
+  {{- end -}}
+  <div class="container">
+    <header class="article-head">
+      <span class="card-tag">Blog</span>
+      <h1 class="article-title">{{ .Title }}</h1>
+      {{- with .Date -}}<time class="article-date" datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>{{- end -}}
+    </header>
+    <div class="has-rail">
+      <div class="main-col">
+        <div class="article-content">
+          {{- with .Params.content_html -}}
+            {{ . | safeHTML }}
+          {{- else -}}
+            {{ .Content }}
+          {{- end -}}
+        </div>
+        <footer class="article-foot">
+          <a class="btn btn-ghost" href="{{ "/blog/" | relURL }}">&larr; Back to Blog</a>
+        </footer>
+      </div>
+      <aside class="rail">
+        <div class="rail-sticky">
+          {{- if $rel -}}
+          <div class="rail-block">
+            <h3 class="rail-title">Related</h3>
+            <div class="mini-rail">
+              {{- range $rel -}}<div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">Blog</div><h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4></div></div>{{- end -}}
+            </div>
+          </div>
+          {{- end -}}
+          {{ partial "widgets/sidebar.html" . }}
+        </div>
+      </aside>
+    </div>
+  </div>
+</article>
+{{ end }}
