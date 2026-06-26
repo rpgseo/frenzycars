@@ -76,13 +76,49 @@ enableRobotsTXT = true
   url = "/gear/"
   weight = 80
 
-[[menu.main]]
+
+[[menu.footer_company]]
   name = "About"
   url = "/about/"
-  weight = 90
+  weight = 10
 
-[[menu.main]]
+[[menu.footer_company]]
+  name = "Our Mission"
+  url = "/mission/"
+  weight = 20
+
+[[menu.footer_company]]
+  name = "Company News"
+  url = "/company-news/"
+  weight = 30
+
+[[menu.footer_company]]
+  name = "Contact Us"
+  url = "/contact/"
+  weight = 40
+
+[[menu.footer_company]]
   name = "Blog"
   url = "/blog/"
-  weight = 95
+  weight = 50
+
+[[menu.footer_legal]]
+  name = "Legal Notice"
+  url = "/legal-notice/"
+  weight = 10
+
+[[menu.footer_legal]]
+  name = "Cookie Policy"
+  url = "/cookie-policy/"
+  weight = 20
+
+[[menu.footer_legal]]
+  name = "Privacy Policy"
+  url = "/privacy-policy/"
+  weight = 30
+
+[[menu.footer_legal]]
+  name = "Terms and Conditions"
+  url = "/terms-conditions/"
+  weight = 40
 

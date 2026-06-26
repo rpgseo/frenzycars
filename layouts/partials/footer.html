@@ -4,18 +4,14 @@
       <a class="brand" href="{{ .Site.BaseURL }}"><span class="brand-fz">FRENZY</span><span class="brand-accent">CARS</span></a>
       <p class="footer-tag">{{ .Site.Params.description }}</p>
     </div>
-    <nav class="footer-nav" aria-label="Footer">
-      <h2 class="footer-heading">Sections</h2>
-      <ul>{{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}</ul>
+    <nav class="footer-nav" aria-label="Company">
+      <h2 class="footer-heading">Company</h2>
+      <ul>{{ range .Site.Menus.footer_company }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}</ul>
     </nav>
-    <div class="footer-social">
-      <h2 class="footer-heading">Follow</h2>
-      <ul>
-        {{ with .Site.Params.social.twitter }}<li><a href="{{ . }}" rel="me noopener" target="_blank">Twitter / X</a></li>{{ end }}
-        {{ with .Site.Params.social.instagram }}<li><a href="{{ . }}" rel="me noopener" target="_blank">Instagram</a></li>{{ end }}
-        {{ with .Site.Params.social.youtube }}<li><a href="{{ . }}" rel="me noopener" target="_blank">YouTube</a></li>{{ end }}
-      </ul>
-    </div>
+    <nav class="footer-nav" aria-label="Legal">
+      <h2 class="footer-heading">Legal</h2>
+      <ul>{{ range .Site.Menus.footer_legal }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}</ul>
+    </nav>
     <div class="footer-newsletter">
       <h2 class="footer-heading">The Frenzy Bulletin</h2>
       <p>Weekly reviews &amp; news in your inbox.</p>
