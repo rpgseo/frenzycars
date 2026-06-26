@@ -1,14 +1,72 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import LeadCard from '../components/LeadCard.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+import Cover from '../components/Cover.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { getCollection } from 'astro:content';
+import { humanize } from '../lib/section';
 
-const reviews = await getCollection('reviews');
-const latest = reviews.slice(0, 3);
+const sections = ['reviews','news','culture','electric','guides','insurance','gear'];
+let all = (await Promise.all(sections.map(s => getCollection(s as any)))).flat().filter((e:any)=>!e.data.draft);
+all.sort((a:any,b:any)=>(+new Date(b.data.date||0))-(+new Date(a.data.date||0)));
+let featured = all.find((e:any)=>e.data.featured) || all[0];
+const rest = all.filter((e:any)=>e !== featured);
+const reviews = all.filter((e:any)=>e.collection==='reviews');
+const news = all.filter((e:any)=>e.collection==='news');
+const culture = all.filter((e:any)=>e.collection==='culture');
+const url=(e:any)=>`/${e.collection}/${e.id}/`;
 ---
-<Base title="Home">
-  <h1>FrenzyCars — Coming Soon</h1>
-  <div class="cards-grid">
-    {latest.map(entry => <ArticleCard entry={entry} />)}
+<Base title={undefined} description="Expert car reviews, breaking auto news, and in-depth features on performance cars, EVs, and car culture. FrenzyCars — driven by obsession.">
+  <div class="container">
+    <h1 class="sr-only">FrenzyCars — Car Reviews, News &amp; Automotive Features</h1>
+    <section class="zone">
+      <div class="lead-grid">
+        {featured && <LeadCard entry={featured} />}
+        <div class="lead-secondary">
+          {rest.slice(0,2).map((e:any)=>(
+            <a class="lead-sec" href={url(e)}>
+              <Cover entry={e} width={600} class="lead-sec-img" />
+              <div class="lead-sec-overlay"></div>
+              <div class="lead-sec-body"><span class="eyebrow">{humanize(e.collection)}</span><h3>{e.data.title}</h3></div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="zone">
+      <div class="zone-head"><h2 class="zone-title"><span class="title-marker">//</span> Latest</h2><a class="zone-link" href="/news/">All news &rarr;</a></div>
+      <div class="grid grid-3">{rest.slice(0,3).map((e:any)=><ArticleCard entry={e} />)}</div>
+    </section>
+    <section class="zone">
+      <div class="zone-head"><h2 class="zone-title"><span class="title-marker">//</span> Reviewed</h2><a class="zone-link" href="/reviews/">All reviews &rarr;</a></div>
+      <div class="grid grid-3">{reviews.slice(0,6).map((e:any)=><ArticleCard entry={e} />)}</div>
+    </section>
+    <section class="zone">
+      <div class="has-rail">
+        <div class="main-col">
+          <div class="zone-head"><h2 class="zone-title"><span class="title-marker">//</span> News</h2><a class="zone-link" href="/news/">All news &rarr;</a></div>
+          <div class="grid grid-2">{news.slice(0,8).map((e:any)=><ArticleCard entry={e} />)}</div>
+        </div>
+        <aside class="rail" aria-label="Sidebar"><div class="rail-sticky"><Sidebar /></div></aside>
+      </div>
+    </section>
+    <section class="zone">
+      <div class="zone-head"><h2 class="zone-title"><span class="title-marker">//</span> Culture</h2><a class="zone-link" href="/culture/">All culture &rarr;</a></div>
+      <div class="grid grid-2">{culture.slice(0,2).map((e:any)=><ArticleCard entry={e} />)}</div>
+    </section>
   </div>
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Fuel your obsession.</h2>
+      <p>Join 50,000 readers getting FrenzyCars in their inbox every week.</p>
+      <form method="post" action="https://sendfox.com/form/3e768w/10jj8x" class="newsletter-form cta-form sendfox-form" id="10jj8x-cta" data-async="true" data-recaptcha="true">
+        <label class="sr-only" for="cta-email">Email address</label>
+        <input id="cta-email" type="email" placeholder="you@email.com" name="email" required />
+        <div style="position:absolute;left:-5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+        <button type="submit">Subscribe</button>
+      </form>
+      <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8" is:inline></script>
+    </div>
+  </section>
 </Base>
