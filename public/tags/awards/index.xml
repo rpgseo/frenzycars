@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Awards on </title>
+		<link>https://frenzycars.com/tags/awards/</link>
+		<description>Recent content in Awards on </description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 19 Jun 2026 07:00:00 +0200</lastBuildDate>
+		
+			<atom:link href="https://frenzycars.com/tags/awards/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Kia EV9 Wins World Car of the Year as Three-Row EVs Dominate Shortlist</title>
+				<link>https://frenzycars.com/news/kia-ev9-world-car/</link>
+				<pubDate>Fri, 19 Jun 2026 07:00:00 +0200</pubDate>
+				<guid>https://frenzycars.com/news/kia-ev9-world-car/</guid>
+				<description>&lt;p&gt;The Kia EV9 has been crowned World Car of the Year, beating a shortlist dominated by large electric SUVs. The three-row EV impressed judges with its combination of space, technology, and value.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hyundai Ioniq 5 N Wins Performance EV of the Year</title>
+				<link>https://frenzycars.com/news/hyundai-ioniq-5n-award/</link>
+				<pubDate>Mon, 08 Jun 2026 10:00:00 +0200</pubDate>
+				<guid>https://frenzycars.com/news/hyundai-ioniq-5n-award/</guid>
+				<description>&lt;p&gt;The Hyundai Ioniq 5 N has been named Performance EV of the Year, beating finalists from Porsche, Kia, and BMW.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

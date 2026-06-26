@@ -1,0 +1,173 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# Sveltia CMS config (Decap-compatible).
+#
+# BACKEND: Sveltia uses a real Git backend (github/gitlab/gitea). It does NOT support
+# Decap's `git-gateway` or `local_backend` options — its local dev mode is built in:
+#   • Local dev:   run `hugo server`, open http://localhost:1313/admin/index.html in a
+#                  Chromium browser (Chrome/Edge/Brave), click "Work with Local Repository"
+#                  and select this project folder. No auth needed; commit later via Git.
+#                  The repo name below can be arbitrary until you create a remote.
+#   • Production:  Personal Access Token (PAT). Log in with the "Sign in with Token"
+#                 button on the login screen, pasting a GitHub PAT with the `repo` scope.
+#                 No OAuth App or Worker needed. (PKCE is not supported by Sveltia for GitHub.)
+backend:
+  name: github
+  repo: rpgseo/frenzycars
+  branch: main
+
+site_url: https://frenzycars.pages.dev
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # NOTE: section folder = category. The folder name is the single-word slug
+  # shown on cards and in URLs. Do not add a per-page "category" field.
+  # `maintenance` is intentionally absent: those pages are generated from
+  # data/evergreen/*.yaml via content/maintenance/_content.gotmpl.
+  - name: "reviews"
+    label: "Reviews"
+    label_singular: "Review"
+    folder: "content/reviews"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} — {{rating}}/10 ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text", hint: "Shown on cards & used as meta description." }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Rating", name: "rating", widget: "number", required: false, min: 0, max: 10, step: 0.1, value_type: "float" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "news"
+    label: "News"
+    label_singular: "News item"
+    folder: "content/news"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "guides"
+    label: "Buying Guides"
+    label_singular: "Buying guide"
+    folder: "content/guides"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "electric"
+    label: "Electric & New Tech"
+    label_singular: "Electric article"
+    folder: "content/electric"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "insurance"
+    label: "Insurance & Costs"
+    label_singular: "Insurance article"
+    folder: "content/insurance"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "culture"
+    label: "Culture & Road Trips"
+    label_singular: "Culture article"
+    folder: "content/culture"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "gear"
+    label: "Gear, Accessories & Tools"
+    label_singular: "Gear article"
+    folder: "content/gear"
+    create: true
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Author", name: "author", widget: "string", default: "FrenzyCars Editorial" }
+      - { label: "Summary", name: "description", widget: "text" }
+      - { label: "Cover image", name: "cover", widget: "image", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
