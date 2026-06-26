@@ -58,7 +58,11 @@
         {{ partial "verdict.html" . }}
         <footer class="article-foot">
           {{ with .Params.tags }}<div class="tags">{{ range . }}<span class="tag">#{{ . }}</span>{{ end }}</div>{{ end }}
-          <a class="btn btn-ghost" href="{{ .Section | printf "/%s/" | relURL }}">&larr; Back to {{ .Type | humanize }}</a>
+          {{ if .Parent }}
+          <a class="btn btn-ghost" href="{{ .Parent.RelPermalink }}">&larr; Back to {{ .Parent.Title }}</a>
+          {{ else }}
+          <a class="btn btn-ghost" href="{{ "/" | relURL }}">&larr; Back to Home</a>
+          {{ end }}
         </footer>
       </div>
       <aside class="rail">

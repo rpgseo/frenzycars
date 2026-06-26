@@ -169,6 +169,11 @@ a.brand:hover{color:inherit}
 .article-content strong{color:var(--fg)}
 .article-content ul,.article-content ol{margin:0 0 1.3rem 1.2rem}
 .article-content li{margin-bottom:.5rem}
+.article-content table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.93rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.article-content table th{background:var(--surface-2);text-align:left;padding:.75rem 1rem;color:var(--accent);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;border-bottom:2px solid var(--accent)}
+.article-content table td{padding:.75rem 1rem;border-top:1px solid var(--border);color:var(--fg);vertical-align:top}
+.article-content table tbody tr:nth-child(even){background:rgba(255,255,255,.018)}
+.article-content table tbody tr:hover{background:rgba(247,215,32,.06)}
 .article-foot{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .tags{display:flex;flex-wrap:wrap;gap:.5rem}
 .tag{background:var(--bg-elev);color:var(--accent);padding:.3rem .7rem;border-radius:999px;font-size:.75rem;font-weight:600}
