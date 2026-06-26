@@ -68,17 +68,17 @@ export default {
     //    Matches from the h2 containing "resources" down to the next h2 or end
     html = html.replace(/<h2[^>]*>[^<]*resources[^<]*<\/h2>[\s\S]*?(?=<h2|$)/gi, "");
 
-    // 5. Remove "Recommended" section (list of internal links BLG auto-generates)
-    html = html.replace(/<h2[^>]*>[^<]*recommended[^<]*<\/h2>[\s\S]*?(?=<h2|$)/gi, "");
-
-    // 6. Remove empty or author-only blockquotes (e.g. <blockquote><p><em>— Ramón</em></p></blockquote>)
+    // 5. Remove empty or author-only blockquotes (e.g. <blockquote><p><em>— Ramón</em></p></blockquote>)
     html = html.replace(/<blockquote>\s*<p>\s*<em>[^<]{0,40}<\/em>\s*<\/p>\s*<\/blockquote>/gi, "");
 
     // 7. Convert <table> to styled data-table wrapped in table-wrap
     html = html.replace(/<table>/gi, '<div class="table-wrap"><table class="data-table">');
     html = html.replace(/<\/table>/gi, "</table></div>");
 
-    // 8. Convert FAQ section (h2#faq + h3/p pairs) to frenzy faq-item <details> format
+    // 8. Convert Pro Tip paragraphs to blockquote
+    html = html.replace(/<p>\s*<strong>Pro Tip:<\/strong>([\s\S]*?)<\/p>/gi, "<blockquote><p><strong>Pro Tip:</strong>$1</p></blockquote>");
+
+    // 9. Convert FAQ section (h2#faq + h3/p pairs) to frenzy faq-item <details> format
     html = html.replace(
       /<h2[^>]*>\s*FAQ\s*<\/h2>([\s\S]*?)(?=<h2|$)/i,
       (_, faqBody) => {
