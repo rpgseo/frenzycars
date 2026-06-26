@@ -1,0 +1,610 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadMaintenancePages } from '../../lib/maintenance';
+import { siteConfig } from '../../config/site';
+
+function productUrl(prod: any, tag: string): string {
+  if (prod.asin) {
+    let u = `https://www.amazon.com/dp/${prod.asin}`;
+    if (tag) u += `?tag=${tag}`;
+    return u;
+  }
+  let u = prod.url || '';
+  if (tag && u) {
+    u += (u.includes('?') ? '&' : '?') + `tag=${tag}`;
+  }
+  return u;
+}
+
+export async function getStaticPaths() {
+  return loadMaintenancePages().map((p: any) => ({
+    params: { id: p.id },
+    props: { p },
+  }));
+}
+
+const { p } = Astro.props as { p: any };
+const tag = ''; // amazonAssocTag is empty in config
+const sl = p.section_labels || {};
+const hCauses = sl.causes || 'Common causes';
+const hSteps = sl.steps || 'How to diagnose it';
+const hMechanic = sl.when_to_see_mechanic || 'When to see a mechanic';
+const pageType = p.page_type || 'troubleshooting';
+const isTrouble = pageType === 'troubleshooting';
+const hasCost = !!(p.typical_cost?.low && p.typical_cost?.high);
+const related = loadMaintenancePages()
+  .filter((x: any) => x.id !== p.id)
+  .slice(0, 4);
+
+// JSON-LD: FAQPage
+const faqEntities: any[] = [];
+if (p.short_answer) {
+  faqEntities.push({
+    '@type': 'Question',
+    name: p.question || p.title,
+    acceptedAnswer: { '@type': 'Answer', text: p.short_answer },
+  });
+}
+for (const f of p.faq || []) {
+  faqEntities.push({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  });
+}
+const faqLd = faqEntities.length
+  ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqEntities }
+  : null;
+
+// JSON-LD: HowTo
+const steps = p.steps || [];
+const howtoBase: any = steps.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: p.question || p.title,
+      description: (p.short_answer || '').slice(0, 200),
+      step: steps.map((s: any) => ({ '@type': 'HowToStep', name: s.title, text: s.detail })),
+    }
+  : null;
+if (howtoBase && hasCost) {
+  howtoBase.estimatedCost = {
+    '@type': 'MonetaryAmount',
+    currency: p.typical_cost.currency || 'USD',
+    minValue: p.typical_cost.low,
+    maxValue: p.typical_cost.high,
+  };
+}
+const howtoLd = howtoBase;
+
+// JSON-LD: ItemList for picks
+const picksLd =
+  p.picks?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: p.picks.map((pk: any) => ({
+          '@type': 'ListItem',
+          position: pk.rank || 1,
+          name: pk.name,
+        })),
+      }
+    : null;
+---
+
+<Base title={p.title} description={(p.short_answer || '').slice(0, 160)}>
+  <Fragment slot="head">
+    {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
+    {howtoLd && <script type="application/ld+json" set:html={JSON.stringify(howtoLd)} />}
+    {picksLd && <script type="application/ld+json" set:html={JSON.stringify(picksLd)} />}
+  </Fragment>
+
+  <article class="article">
+    {p.cover && (
+      <div class="article-hero">
+        <img src={p.cover} alt={p.title} />
+        <div class="article-hero-overlay"></div>
+      </div>
+    )}
+    <div class="container">
+      <div class="has-rail">
+        <div class="main-col">
+          <header class="article-head">
+            <span class="card-tag">Maintenance</span>
+            <h1 class="article-title">{p.title}</h1>
+            {(isTrouble || hasCost) && (
+              <div class="article-meta">
+                {isTrouble && (
+                  <span>Difficulty: {(p.diy_difficulty || 'beginner').charAt(0).toUpperCase() + (p.diy_difficulty || 'beginner').slice(1)}</span>
+                )}
+                {isTrouble && hasCost && <span class="meta-dot">&bull;</span>}
+                {hasCost && (
+                  <span>
+                    Est. cost: ${p.typical_cost.low}–${p.typical_cost.high} {p.typical_cost.currency || 'USD'}
+                  </span>
+                )}
+              </div>
+            )}
+          </header>
+
+          <div class="article-content">
+            <h2>Quick answer</h2>
+            <p>{p.short_answer}</p>
+
+            {p.intro && <div class="article-intro" set:html={p.intro} />}
+
+            {/* ---------- Ranked "best of" picks ---------- */}
+            {p.picks?.length > 0 && (
+              <div>
+                <h2 class="picks-title">{p.picks_title || 'Top picks'}</h2>
+                <div class="picks">
+                  {p.picks.map((pick: any) => (
+                    <div class="pick-card" id={pick.name ? pick.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') : ''}>
+                      <div class="pick-rank">#{pick.rank || 1}</div>
+                      <div class="pick-main">
+                        <div class="pick-head">
+                          {pick.image && (
+                            <img
+                              class="pick-img"
+                              src={pick.image}
+                              alt={pick.name || ''}
+                              loading="lazy"
+                              onerror="this.classList.add('img-failed');this.removeAttribute('src');"
+                            />
+                          )}
+                          <div class="pick-titles">
+                            <h3>{pick.name}</h3>
+                            {pick.tagline && <p class="pick-tagline">{pick.tagline}</p>}
+                          </div>
+                          {pick.score != null && (
+                            <span class="score-badge">
+                              <b>{pick.score.toFixed(1)}</b><small>/10</small>
+                            </span>
+                          )}
+                        </div>
+                        {pick.blurb && <p class="pick-blurb">{pick.blurb}</p>}
+                        {pick.specs?.length > 0 && (
+                          <table class="pick-specs">
+                            <tbody>
+                              {pick.specs.map((sp: any) => (
+                                <tr><td>{sp.label}</td><td>{sp.value}</td></tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        )}
+                        <div class="pick-proscons">
+                          {pick.pros?.length > 0 && (
+                            <div class="pros">
+                              <span class="pc-label">Pros</span>
+                              <ul>{pick.pros.map((pro: string) => <li>{pro}</li>)}</ul>
+                            </div>
+                          )}
+                          {pick.cons?.length > 0 && (
+                            <div class="cons">
+                              <span class="pc-label">Cons</span>
+                              <ul>{pick.cons.map((con: string) => <li>{con}</li>)}</ul>
+                            </div>
+                          )}
+                        </div>
+                        {pick.best_for && (
+                          <p class="pick-bestfor"><strong>Best for:</strong> {pick.best_for}</p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* ---------- Head-to-head comparison (contenders) ---------- */}
+            {p.contenders && Object.keys(p.contenders).length > 0 && (
+              <div class="versus">
+                <div class="versus-cards">
+                  {p.contenders.a && (
+                    <div class="versus-card">
+                      {p.contenders.a.image ? (
+                        <img
+                          src={p.contenders.a.image}
+                          alt={p.contenders.a.name || ''}
+                          loading="lazy"
+                          onerror="this.classList.add('img-failed');this.removeAttribute('src');"
+                        />
+                      ) : (
+                        <div class="versus-card-ph"></div>
+                      )}
+                      <h3>{p.contenders.a.name}</h3>
+                      {p.contenders.a.score != null && (
+                        <span class="score-badge">
+                          <b>{p.contenders.a.score.toFixed(1)}</b><small>/10</small>
+                        </span>
+                      )}
+                      {p.contenders.a.blurb && <p>{p.contenders.a.blurb}</p>}
+                    </div>
+                  )}
+                  <div class="versus-vs">VS</div>
+                  {p.contenders.b && (
+                    <div class="versus-card">
+                      {p.contenders.b.image ? (
+                        <img
+                          src={p.contenders.b.image}
+                          alt={p.contenders.b.name || ''}
+                          loading="lazy"
+                          onerror="this.classList.add('img-failed');this.removeAttribute('src');"
+                        />
+                      ) : (
+                        <div class="versus-card-ph"></div>
+                      )}
+                      <h3>{p.contenders.b.name}</h3>
+                      {p.contenders.b.score != null && (
+                        <span class="score-badge">
+                          <b>{p.contenders.b.score.toFixed(1)}</b><small>/10</small>
+                        </span>
+                      )}
+                      {p.contenders.b.blurb && <p>{p.contenders.b.blurb}</p>}
+                    </div>
+                  )}
+                </div>
+                {p.contenders.table && (
+                  <div>
+                    <h2>{p.contenders.table.title || 'Head-to-head'}</h2>
+                    <div class="table-wrap">
+                      <table class="data-table versus-table">
+                        <thead>
+                          <tr>
+                            <th>Metric</th>
+                            <th>{p.contenders.table.rows?.[0]?.a_label || p.contenders.a?.name}</th>
+                            <th>{p.contenders.table.rows?.[0]?.b_label || p.contenders.b?.name}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {p.contenders.table.rows?.map((row: any) => (
+                            <tr>
+                              <td><strong>{row.metric}</strong></td>
+                              <td>{row.a}</td>
+                              <td>{row.b}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )}
+                {p.contenders.verdict && (
+                  <div class="verdict">
+                    <span class="verdict-label">Verdict</span>
+                    <p>{p.contenders.verdict}</p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* ---------- Emergency callout ---------- */}
+            {p.is_emergency && (
+              <div class="emergency-callout">
+                <strong>&#9888; Important:</strong> {p.emergency_note}
+              </div>
+            )}
+
+            {/* ---------- Causes ---------- */}
+            {p.causes?.length > 0 && (
+              <div>
+                <h2>{hCauses}</h2>
+                <ul>
+                  {p.causes.map((c: string) => <li>{c}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Steps ---------- */}
+            {steps.length > 0 && (
+              <div>
+                <h2>{hSteps}</h2>
+                <ol class="howto-steps">
+                  {steps.map((s: any) => (
+                    <li>
+                      <strong>{s.title}</strong>
+                      <p>{s.detail}</p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
+
+            {/* ---------- When to see mechanic ---------- */}
+            {p.when_to_see_mechanic?.length > 0 && (
+              <div>
+                <h2>{hMechanic}</h2>
+                <ul>
+                  {p.when_to_see_mechanic.map((item: string) => <li>{item}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Gift intro ---------- */}
+            {p.gift_intro && <p class="gift-intro">{p.gift_intro}</p>}
+
+            {/* ---------- Products grid ---------- */}
+            {p.products?.length > 0 && (
+              <div>
+                <h2>Top-rated picks</h2>
+                <div class="product-grid">
+                  {p.products.map((prod: any, i: number) => prod.title && (
+                    <div class="product-card">
+                      {prod.image_url && (
+                        <img
+                          src={prod.image_url}
+                          alt={prod.title || ''}
+                          loading="lazy"
+                          onerror="this.classList.add('img-failed');this.removeAttribute('src');"
+                        />
+                      )}
+                      <div class="product-body">
+                        {prod.badges?.map((b: string) => (
+                          <span class="product-badge">{b}</span>
+                        ))}
+                        <h3>{prod.title || `Product ${i + 1}`}</h3>
+                        {prod.price_from != null && (
+                          <p class="product-price">${Math.round(prod.price_from)}</p>
+                        )}
+                        {prod.rating != null && (
+                          <p class="product-rating">
+                            {prod.rating.toFixed(1)} stars{prod.reviews ? ` (${prod.reviews} reviews)` : ''}
+                          </p>
+                        )}
+                        {prod.bought_past_month != null && (
+                          <p class="product-bought">{Math.floor(prod.bought_past_month)}+ bought in past month</p>
+                        )}
+                        {prod.gift_reason && <p class="gift-reason">{prod.gift_reason}</p>}
+                        {(prod.url || prod.asin) && (
+                          <a
+                            href={productUrl(prod, tag)}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            class="btn btn-primary btn-sm"
+                          >
+                            Check price
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* ---------- How we chose ---------- */}
+            {p.how_we_chose && Object.keys(p.how_we_chose).length > 0 && (
+              <div>
+                <h2>{p.how_we_chose.title || 'How we chose'}</h2>
+                <ul class="criteria-list">
+                  {p.how_we_chose.criteria?.map((c: string) => <li>{c}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Cost table (by vehicle type) ---------- */}
+            {p.cost_table?.length > 0 && (
+              <div>
+                <h2>Cost by vehicle type</h2>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead>
+                      <tr><th>Vehicle type</th><th>Vinyl needed</th><th>Price range</th></tr>
+                    </thead>
+                    <tbody>
+                      {p.cost_table.map((row: any) => (
+                        <tr>
+                          <td>{row.vehicle}</td>
+                          <td>{row.vinyl_sqft} sq ft</td>
+                          <td>{row.price_range}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* ---------- Finish costs ---------- */}
+            {p.finish_costs?.length > 0 && (
+              <div>
+                <h2>How finish type affects price</h2>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead>
+                      <tr><th>Finish</th><th>Cost premium</th><th>Notes</th></tr>
+                    </thead>
+                    <tbody>
+                      {p.finish_costs.map((row: any) => (
+                        <tr>
+                          <td><strong>{row.finish}</strong></td>
+                          <td>{row.cost_premium}</td>
+                          <td>{row.notes}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* ---------- Additional costs ---------- */}
+            {p.additional_costs?.length > 0 && (
+              <div>
+                <h2>Additional costs to budget for</h2>
+                <ul>
+                  {p.additional_costs.map((item: any) => (
+                    <li><strong>{item.item}</strong> ({item.cost}) — {item.detail}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Case studies ---------- */}
+            {p.case_studies?.length > 0 && (
+              <div>
+                <h2>Real-world cost examples</h2>
+                <div class="case-studies">
+                  {p.case_studies.map((cs: any) => (
+                    <div class="case-card">
+                      <h3>{cs.vehicle}</h3>
+                      <p class="case-meta">{cs.vinyl}</p>
+                      <p class="case-cost">Estimated cost: <strong>{cs.estimated_cost}</strong></p>
+                      <p class="case-detail">{cs.rationale}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* ---------- Cost analysis ---------- */}
+            {p.cost_analysis && Object.keys(p.cost_analysis).length > 0 && (
+              <div>
+                <h2>{p.cost_analysis.title || 'Total cost comparison'}</h2>
+                {p.cost_analysis.methodology && (
+                  <p class="table-note">{p.cost_analysis.methodology}</p>
+                )}
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Option</th><th>Upfront</th><th>Lifespan</th>
+                        <th>Per year</th><th>Reversible</th><th>Verdict</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {p.cost_analysis.rows?.map((row: any) => (
+                        <tr>
+                          <td><strong>{row.option}</strong></td>
+                          <td>{row.upfront}</td>
+                          <td>{row.lifespan}</td>
+                          <td>{row.cost_per_year}</td>
+                          <td>{row.reversible}</td>
+                          <td>{row.verdict}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* ---------- Alternatives comparison ---------- */}
+            {p.alternatives_comparison && Object.keys(p.alternatives_comparison).length > 0 && (
+              <div>
+                <h2>{p.alternatives_comparison.title || 'Alternatives compared'}</h2>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Option</th><th>Best for</th><th>Cost</th>
+                        <th>Durability</th><th>Reversible</th><th>Finish</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {p.alternatives_comparison.rows?.map((row: any) => (
+                        <tr>
+                          <td><strong>{row.option}</strong></td>
+                          <td>{row.best_for}</td>
+                          <td>{row.cost}</td>
+                          <td>{row.durability}</td>
+                          <td>{row.reversible}</td>
+                          <td>{row.finish_quality}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {p.alternatives_comparison.verdict && (
+                  <p class="table-verdict">{p.alternatives_comparison.verdict}</p>
+                )}
+              </div>
+            )}
+
+            {/* ---------- Regional pricing ---------- */}
+            {p.regional_pricing?.length > 0 && (
+              <div>
+                <h2>How pricing varies by region</h2>
+                <ul>
+                  {p.regional_pricing.map((r: any) => (
+                    <li><strong>{r.tier}</strong> — {r.adjustment}. {r.context}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Red flags ---------- */}
+            {p.red_flags?.length > 0 && (
+              <div>
+                <h2>Red flags when choosing a wrap shop</h2>
+                <ul class="red-flags">
+                  {p.red_flags.map((flag: string) => <li>{flag}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Maintenance tips ---------- */}
+            {p.maintenance_tips?.length > 0 && (
+              <div>
+                <h2>Maintaining your car wrap</h2>
+                <ul>
+                  {p.maintenance_tips.map((tip: string) => <li>{tip}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- Buying tips ---------- */}
+            {p.buying_tips?.length > 0 && (
+              <div>
+                <h2>Buying tips</h2>
+                <ul>
+                  {p.buying_tips.map((tip: string) => <li>{tip}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {/* ---------- FAQ ---------- */}
+            {p.faq?.length > 0 && (
+              <div>
+                <h2>Frequently asked questions</h2>
+                <div class="faq">
+                  {p.faq.map((item: any) => (
+                    <details class="faq-item">
+                      <summary>{item.q}</summary>
+                      <p>{item.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          <footer class="article-foot">
+            <a class="btn btn-ghost" href="/maintenance/">&larr; Back to Maintenance</a>
+          </footer>
+        </div>
+
+        {related.length > 0 && (
+          <aside class="rail">
+            <div class="rail-sticky">
+              <div class="rail-block">
+                <h3 class="rail-title">More in Maintenance</h3>
+                <div class="mini-rail">
+                  {related.map((r: any) => (
+                    <div class="mini-rank">
+                      <span class="num">&rarr;</span>
+                      <div>
+                        <div class="mt">Maintenance</div>
+                        <h4><a href={`/maintenance/${r.id}/`}>{r.title}</a></h4>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </aside>
+        )}
+      </div>
+    </div>
+  </article>
+</Base>

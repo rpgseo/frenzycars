@@ -1,10 +1,10 @@
 ---
-// Task 12 will populate this page from the maintenance YAML data source.
-// For now we render the section shell with an empty state.
 import Base from '../../layouts/Base.astro';
+import { loadMaintenancePages } from '../../lib/maintenance';
 
 const title = 'Maintenance';
 const description = 'Practical car troubleshooting, how-to guides, and repair advice from FrenzyCars.';
+const pages = loadMaintenancePages();
 ---
 <Base title={title} description={description}>
   <section class="page-hero">
@@ -16,8 +16,25 @@ const description = 'Practical car troubleshooting, how-to guides, and repair ad
   </section>
 
   <section class="container band">
-    <div class="main-col">
-      <p class="empty">No articles yet. Check back soon.</p>
+    <div class="grid grid-3">
+      {pages.map((p: any) => (
+        <article class="card">
+          <a class="card-media" href={`/maintenance/${p.id}/`} aria-label={p.title}>
+            <img
+              class="card-img"
+              src={p.cover || '/images/default-cover.jpg'}
+              alt={p.title}
+              loading="lazy"
+              onerror="this.classList.add('img-failed');this.removeAttribute('src');"
+            />
+            <span class="card-tag">Maintenance</span>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title"><a href={`/maintenance/${p.id}/`}>{p.title}</a></h3>
+            <p class="card-excerpt">{(p.short_answer || '').slice(0, 110)}</p>
+          </div>
+        </article>
+      ))}
     </div>
   </section>
 </Base>
