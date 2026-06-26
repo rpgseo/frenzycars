@@ -1,5 +1,0 @@
-{{- $mod := "" -}}
-{{- if eq .format "leaderboard" }}{{- $mod = " leaderboard" -}}{{- else if eq .format "infeed" }}{{- $mod = " infeed" -}}{{- else if eq .format "inarticle" }}{{- $mod = " inarticle" -}}{{- else if eq .format "rail" }}{{- $mod = " rail-ad" -}}{{- end -}}
-<div class="ad-slot{{ $mod }}" data-ad-slot="{{ .slot }}" aria-hidden="true">
-  <span>{{ with .format }}{{ . }} · {{ end }}Advertisement</span>
-</div>

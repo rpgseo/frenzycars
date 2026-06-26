@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="FrenzyCars">
-  <rect width="512" height="512" fill="#000"/>
-  <rect x="0" y="0" width="512" height="14" fill="#F7D720"/>
-  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="300" fill="#F7D720">F</text>
-  <text x="50%" y="86%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="46" letter-spacing="6" fill="#fff">FRENZYCARS</text>
-</svg>

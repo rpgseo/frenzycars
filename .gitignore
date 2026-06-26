@@ -1,31 +1,32 @@
-# Hugo build output
-/public/
-/resources/_gen/
-.hugo_build.lock
+# build output
+dist/
+.output/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# Internal design/strategy docs — never commit
+docs/superpowers/
+.superpowers/
 
 # OS / editor noise
 .DS_Store
 Thumbs.db
 *.swp
-
-# Sveltia CMS local cache
-.sveltia/
-
-.superpowers/
-
-# Internal design/strategy docs
-docs/superpowers/
-
-# Secrets — never commit credentials
-.env
-.env.*
-
-# Python cache
-__pycache__/
-*.pyc
-
-# Node dependencies
-node_modules/
 
 # Kilo / Playwright temp files
 .kilo/
@@ -34,5 +35,5 @@ node_modules/
 # Temp scripts and screenshots
 download_images.js
 gift-guide-*.png
-
-!.env.example
+hero-check.png
+loans-full.png
