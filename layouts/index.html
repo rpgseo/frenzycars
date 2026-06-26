@@ -1,4 +1,5 @@
 {{ define "title" }}The Pulse of Performance | Frenzy Cars{{ end }}
+{{ define "description" }}Expert car reviews, breaking auto news, and in-depth features on performance cars, EVs, and car culture. FrenzyCars — driven by obsession.{{ end }}
 {{ define "main" }}
 {{- $all := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
 {{- $featured := first 1 (where $all ".Params.featured" true) -}}
@@ -10,6 +11,8 @@
 {{- $culture := where $all "Type" "culture" -}}
 
 <div class="container">
+
+  <h1 class="sr-only">FrenzyCars — Car Reviews, News &amp; Automotive Features</h1>
 
   {{/* ===== LEAD HERO ===== */}}
   <section class="zone">
