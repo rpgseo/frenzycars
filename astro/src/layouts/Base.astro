@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NavScript from '../components/NavScript.astro';
+import { siteConfig } from '../config/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
+  canonical?: string;
+}
+
+const {
+  title,
+  description,
+  ogImage,
+  ogType = 'website',
+  noindex = false,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, siteConfig.baseURL).href;
+const fullTitle = title ? `${title} | ${siteConfig.title}` : siteConfig.title;
+const desc = description ?? siteConfig.description;
+const img = ogImage ?? new URL('/img/logo-1200x630.png', siteConfig.baseURL).href;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="oLjBHbQDjKuJIZd24EbRtrXCHTc0x0bNLwvsJO1D-5g" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={desc} />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text y='82' x='12' font-size='90' font-family='Arial' font-weight='bold' fill='%23F7D720'>F</text></svg>" />
+  <link rel="canonical" href={canonical} />
+  <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+  <meta property="og:site_name" content={siteConfig.title} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={title ?? siteConfig.title} />
+  <meta property="og:description" content={desc} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={img} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title ?? siteConfig.title} />
+  <meta name="twitter:description" content={desc} />
+  <meta name="twitter:image" content={img} />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <slot name="head" />
+  <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaId}`} is:inline></script>
+  <script is:inline define:vars={{ gaId: siteConfig.gaId }}>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', gaId);
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <Header />
+  <main id="main" class="site-main"><slot /></main>
+  <Footer />
+  <NavScript />
+</body>
+</html>

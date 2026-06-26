@@ -1,0 +1,34 @@
+---
+import { siteConfig } from '../config/site';
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label={`${siteConfig.title} home`}>
+      <span class="brand-fz">FRENZY</span><span class="brand-accent">CARS</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+      <ul id="primaryMenu" class="menu">
+        {siteConfig.menuMain.map(item => (
+          <li>
+            <a
+              href={item.url}
+              {...(path.startsWith(item.url) ? { 'aria-current': 'page', class: 'is-active' } : {})}
+            >{item.name}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      {Array.from({ length: 6 }).map(() => <span>{siteConfig.tagline}</span>)}
+    </div>
+  </div>
+</header>

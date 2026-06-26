@@ -1,0 +1,6 @@
+<script is:inline>
+(function(){
+  var t=document.getElementById('navToggle'),m=document.getElementById('primaryMenu');
+  if(t&&m){t.addEventListener('click',function(){var open=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!open));m.classList.toggle('is-open',!open);});}
+})();
+</script>

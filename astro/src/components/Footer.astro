@@ -1,0 +1,54 @@
+---
+import { siteConfig } from '../config/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="/">
+        <span class="brand-fz">FRENZY</span><span class="brand-accent">CARS</span>
+      </a>
+      <p class="footer-tag">{siteConfig.description}</p>
+    </div>
+    <nav class="footer-nav" aria-label="Company">
+      <h2 class="footer-heading">Company</h2>
+      <ul>
+        {siteConfig.menuFooterCompany.map(i => (
+          <li><a href={i.url}>{i.name}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="Legal">
+      <h2 class="footer-heading">Legal</h2>
+      <ul>
+        {siteConfig.menuFooterLegal.map(i => (
+          <li><a href={i.url}>{i.name}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div class="footer-newsletter">
+      <h2 class="footer-heading">The Frenzy Bulletin</h2>
+      <p>Weekly reviews &amp; news in your inbox.</p>
+      <form
+        method="post"
+        action="https://sendfox.com/form/3e768w/10jj8x"
+        class="newsletter-form sendfox-form"
+        id="10jj8x-footer"
+        data-async="true"
+        data-recaptcha="true"
+      >
+        <label class="sr-only" for="nl">Email address</label>
+        <input id="nl" type="email" placeholder="you@email.com" name="email" required />
+        <div style="position:absolute;left:-5000px;" aria-hidden="true">
+          <input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" />
+        </div>
+        <button type="submit">Join</button>
+      </form>
+      <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8" is:inline></script>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {year} {siteConfig.title}. All rights reserved.</p>
+    <p>Drive fast, read slow.</p>
+  </div>
+</footer>

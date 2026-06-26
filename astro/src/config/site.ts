@@ -1,0 +1,37 @@
+export const siteConfig = {
+  title: 'FrenzyCars',
+  baseURL: 'https://frenzycars.com/',
+  description: 'Expert car reviews, breaking auto news, and in-depth features on performance cars, EVs, and car culture. FrenzyCars — driven by obsession.',
+  tagline: 'The pulse of performance',
+  accent: '#F7D720',
+  gaId: 'G-0C07DFRVVX',
+  mainSections: ['reviews','news','maintenance','guides','electric','insurance','culture','gear'],
+  social: {
+    twitter: 'https://twitter.com/frenzycars',
+    instagram: 'https://instagram.com/frenzycars',
+    youtube: 'https://youtube.com/@frenzycars',
+  },
+  menuMain: [
+    { name: 'Reviews', url: '/reviews/' },
+    { name: 'News', url: '/news/' },
+    { name: 'Maintenance', url: '/maintenance/' },
+    { name: 'Guides', url: '/guides/' },
+    { name: 'Electric', url: '/electric/' },
+    { name: 'Insurance', url: '/insurance/' },
+    { name: 'Culture', url: '/culture/' },
+    { name: 'Gear', url: '/gear/' },
+  ],
+  menuFooterCompany: [
+    { name: 'About', url: '/about/' },
+    { name: 'Our Mission', url: '/mission/' },
+    { name: 'Company News', url: '/company-news/' },
+    { name: 'Contact Us', url: '/contact/' },
+    { name: 'Blog', url: '/blog/' },
+  ],
+  menuFooterLegal: [
+    { name: 'Legal Notice', url: '/legal-notice/' },
+    { name: 'Cookie Policy', url: '/cookie-policy/' },
+    { name: 'Privacy Policy', url: '/privacy-policy/' },
+    { name: 'Terms and Conditions', url: '/terms-conditions/' },
+  ],
+};
