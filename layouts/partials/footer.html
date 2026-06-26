@@ -15,11 +15,13 @@
     <div class="footer-newsletter">
       <h2 class="footer-heading">The Frenzy Bulletin</h2>
       <p>Weekly reviews &amp; news in your inbox.</p>
-      <form class="newsletter-form" onsubmit="return false;">
+      <form method="post" action="https://sendfox.com/form/3e768w/10jj8x" class="newsletter-form sendfox-form" id="10jj8x-footer" data-async="true" data-recaptcha="true">
         <label class="sr-only" for="nl">Email address</label>
-        <input id="nl" type="email" placeholder="you@email.com" required>
+        <input id="nl" type="email" placeholder="you@email.com" name="email" required>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
         <button type="submit">Join</button>
       </form>
+      <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
       <p class="footer-editor"><a href="{{ "/admin/" | relURL }}">Editor (CMS) &rarr;</a></p>
     </div>
   </div>

@@ -8,11 +8,13 @@
 <div class="rail-block newsletter-widget">
   <h3 class="rail-title">Newsletter</h3>
   <p class="nw-pitch">Reviews, news &amp; features &mdash; weekly, in your inbox.</p>
-  <form class="newsletter-form" onsubmit="return false;">
+  <form method="post" action="https://sendfox.com/form/3e768w/10jj8x" class="newsletter-form sendfox-form" id="10jj8x-sidebar" data-async="true" data-recaptcha="true">
     <label class="sr-only" for="nw-email">Email address</label>
-    <input id="nw-email" type="email" placeholder="you@email.com" required>
+    <input id="nw-email" type="email" placeholder="you@email.com" name="email" required>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
     <button type="submit">Join</button>
   </form>
+  <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
 </div>
 
 {{/* Car Reviews widget */}}
