@@ -1,19 +1,19 @@
 ---
-title: Ford Mustang GTD Laps the NÃ¼rburgring, Targets Production-Car Record
+title: Ford Mustang GTD Laps the Nürburgring, Targets Production-Car Record
 date: 2026-06-16T10:30:00.000Z
 draft: false
 demo: true
 tags:
   - Ford
   - Mustang
-  - NÃ¼rburgring
+  - Nürburgring
   - Track
 author: News Desk
 description: Ford's supercharged, GT3-derived Mustang is on a record hunt at the Green Hell — and the early sector times look serious.
 cover: https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?auto=format&fit=crop&w=1600&q=80
 ---
 
-Ford has confirmed the Mustang GTD is undertaking an official NÃ¼rburgring lap programme, with the goal of setting a production-car record. Early sector times reported by trackside observers suggest the supercharged V8 muscle car is genuinely quick.
+Ford has confirmed the Mustang GTD is undertaking an official Nürburgring lap programme, with the goal of setting a production-car record. Early sector times reported by trackside observers suggest the supercharged V8 muscle car is genuinely quick.
 
 <!--more-->
 

@@ -22,6 +22,7 @@ const MOJIBAKE = [
   ['Ã­', 'í'],       // í
   ['Ãº', 'ú'],       // ú
   ['Ã±', 'ñ'],       // ñ
+  ['Ã¼', 'ü'],       // ü
 ];
 
 export function fixEncoding(text) {
