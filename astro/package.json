@@ -9,12 +9,13 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "astro": "^5.0.0",
-    "@astrojs/sitemap": "^3.2.0"
+    "@astrojs/sitemap": "^3.2.0",
+    "astro": "^5.0.0"
   },
   "devDependencies": {
-    "js-yaml": "^4.1.0",
+    "@iarna/toml": "^2.2.5",
     "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.0",
     "vitest": "^2.1.0"
   }
 }
