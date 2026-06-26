@@ -30,24 +30,43 @@ export default {
       return new Response("Invalid JSON", { status: 400 });
     }
 
-    const { title, slug, metaDescription, content_html, heroImageUrl, faqJsonLd, createdAt } = payload;
+    const { title, slug, metaDescription, content_html, heroImageUrl, faqJsonLd, createdAt, author, tags } = payload;
 
     if (!slug || !title) {
       return new Response("Missing slug or title", { status: 400 });
     }
 
-    // Build Hugo front matter + content
+    // Build Astro-compatible YAML front matter
     const date = createdAt ? createdAt.split("T")[0] : new Date().toISOString().split("T")[0];
-    const faqJson = faqJsonLd ? JSON.stringify(faqJsonLd) : "";
 
     const lines = [
       "---",
       `title: ${JSON.stringify(title)}`,
-      `date: "${date}"`,
+      `date: "${date}T00:00:00.000Z"`,
+      `draft: false`,
       `description: ${JSON.stringify(metaDescription || "")}`,
     ];
+
     if (heroImageUrl) lines.push(`cover: ${JSON.stringify(heroImageUrl)}`);
-    if (faqJson) lines.push(`faq_json_ld: ${JSON.stringify(faqJson)}`);
+    if (author) lines.push(`author: ${JSON.stringify(author)}`);
+
+    // Tags as YAML array
+    if (tags && Array.isArray(tags) && tags.length > 0) {
+      lines.push("tags:");
+      for (const t of tags) lines.push(`  - ${JSON.stringify(t)}`);
+    }
+
+    // FAQ as YAML array (not JSON string) — consumed by [slug].astro accordion + JSON-LD
+    if (faqJsonLd && Array.isArray(faqJsonLd.mainEntity) && faqJsonLd.mainEntity.length > 0) {
+      lines.push("faq:");
+      for (const entity of faqJsonLd.mainEntity) {
+        const q = (entity.name || "").replace(/"/g, '\\"');
+        const a = (entity.acceptedAnswer?.text || "").replace(/"/g, '\\"');
+        lines.push(`  - q: "${q}"`);
+        lines.push(`    a: "${a}"`);
+      }
+    }
+
     lines.push("---", "");
 
     let html = content_html || "";
@@ -64,41 +83,27 @@ export default {
     // 3. Remove BabyLoveGrowth attribution link
     html = html.replace(/<p>\s*<a[^>]*babylovegrowth[^>]*>.*?<\/a>\s*<\/p>/gi, "");
 
-    // 4. Remove entire BLG CTA section ("Frenzycars resources..." block with its image)
-    //    Matches from the h2 containing "resources" down to the next h2 or end
+    // 4. Remove BLG CTA section ("resources" block)
     html = html.replace(/<h2[^>]*>[^<]*resources[^<]*<\/h2>[\s\S]*?(?=<h2|$)/gi, "");
 
-    // 5. Remove empty or author-only blockquotes (e.g. <blockquote><p><em>— Ramón</em></p></blockquote>)
+    // 5. Remove empty author-only blockquotes (e.g. <blockquote><p><em>— Ramón</em></p></blockquote>)
     html = html.replace(/<blockquote>\s*<p>\s*<em>[^<]{0,40}<\/em>\s*<\/p>\s*<\/blockquote>/gi, "");
 
-    // 7. Convert <table> to styled data-table wrapped in table-wrap
+    // 6. Convert <table> to styled data-table
     html = html.replace(/<table>/gi, '<div class="table-wrap"><table class="data-table">');
     html = html.replace(/<\/table>/gi, "</table></div>");
 
-    // 8. Convert Pro Tip paragraphs to blockquote
+    // 7. Convert Pro Tip paragraphs to blockquote
     html = html.replace(/<p>\s*<strong>Pro Tip:<\/strong>([\s\S]*?)<\/p>/gi, "<blockquote><p><strong>Pro Tip:</strong>$1</p></blockquote>");
 
-    // 9. Convert FAQ section (h2#faq + h3/p pairs) to frenzy faq-item <details> format
-    html = html.replace(
-      /<h2[^>]*>\s*FAQ\s*<\/h2>([\s\S]*?)(?=<h2|$)/i,
-      (_, faqBody) => {
-        const items = [];
-        const re = /<h3[^>]*>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/gi;
-        let m;
-        while ((m = re.exec(faqBody)) !== null) {
-          const q = m[1].replace(/<[^>]*>/g, "").trim();
-          const a = m[2].trim();
-          items.push(`<details class="faq-item"><summary>${q}</summary><p>${a}</p></details>`);
-        }
-        if (!items.length) return "";
-        return `<h2>Frequently asked questions</h2><div class="faq">${items.join("")}</div>`;
-      }
-    );
+    // 8. Remove FAQ section from HTML body — it is now rendered via frontmatter faq[] accordion
+    html = html.replace(/<h2[^>]*>\s*(?:FAQ|Frequently asked questions)\s*<\/h2>[\s\S]*?(?=<h2|$)/i, "");
 
     lines.push(html);
 
     const fileText = lines.join("\n");
-    const filePath = `content/blog/${slug}.md`;
+    // Astro content path (not Hugo)
+    const filePath = `src/content/blog/${slug}.md`;
     const fileContent = btoa(unescape(encodeURIComponent(fileText)));
 
     // Check if file already exists (to get its SHA for update)
