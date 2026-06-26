@@ -67,7 +67,7 @@ cover: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-i
 </tr>
 </tbody>
 </table></div>
-<p><strong>Pro Tip:</strong> <em>Focus your prep budget on appearance and documentation first. Dealers price reconditioning into every offer, so a car that looks ready to sell cuts their assumed cost and raises your number.</em></p>
+<blockquote><p><strong>Pro Tip:</strong> <em>Focus your prep budget on appearance and documentation first. Dealers price reconditioning into every offer, so a car that looks ready to sell cuts their assumed cost and raises your number.</em></p></blockquote>
 <h2 id="when-is-the-best-time-to-trade-in-your-car" tabindex="-1">When is the best time to trade in your car?</h2>
 <p>Q1 and Q2 are prime trade-in windows because used car values trend higher in the early months of the year. Tax refund season drives retail demand, and dealers need inventory to meet that demand. Trading in during january through june puts you on the right side of that cycle.</p>
 <p>Mileage milestones create natural deadlines. Crossing 100,000 miles drops trade-in value sharply in most appraisal models. If your odometer is approaching a round number, trade before you hit it. The difference between 98,500 miles and 101,000 miles can be $1,000 or more on the same vehicle.</p>
@@ -90,7 +90,7 @@ cover: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-i
 <li><strong>Set a floor and be ready to walk.</strong> Know the minimum you will accept before you arrive. If the dealer cannot meet it, leave. Another offer is always available.</li>
 </ol>
 <p>Selling privately typically nets 15–25% more than a dealer trade-in. On a $20,000 vehicle, that gap runs $3,000–$5,000. Trade-ins win on convenience and sales tax benefits, but knowing the private-sale ceiling gives you a realistic upper limit for negotiations.</p>
-<p><strong>Pro Tip:</strong> <em>Print or screenshot your online written offers and bring them to the dealership. A physical document on the desk changes the conversation. Dealers respond to proof, not claims.</em></p>
+<blockquote><p><strong>Pro Tip:</strong> <em>Print or screenshot your online written offers and bring them to the dealership. A physical document on the desk changes the conversation. Dealers respond to proof, not claims.</em></p></blockquote>
 <h2 id="key-takeaways" tabindex="-1">Key Takeaways</h2>
 <p>Securing the highest trade-in value requires combining vehicle preparation, market timing, and disciplined negotiation before you set foot in a dealership.</p>
 <div class="table-wrap"><table class="data-table">
