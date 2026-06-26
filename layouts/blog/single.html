@@ -36,11 +36,7 @@
     <div class="has-rail">
       <div class="main-col">
         <div class="article-content">
-          {{- with .Params.content_html -}}
-            {{ . | safeHTML }}
-          {{- else -}}
-            {{ .Content }}
-          {{- end -}}
+          {{ .Content }}
         </div>
         <footer class="article-foot">
           <a class="btn btn-ghost" href="{{ "/blog/" | relURL }}">&larr; Back to Blog</a>
