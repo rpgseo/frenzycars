@@ -382,28 +382,38 @@ const picksLd =
               </div>
             )}
 
-            {/* ---------- Cost table (by vehicle type) ---------- */}
-            {p.cost_table?.length > 0 && (
-              <div>
-                <h2>Cost by vehicle type</h2>
-                <div class="table-wrap">
-                  <table class="data-table">
-                    <thead>
-                      <tr><th>Vehicle type</th><th>Vinyl needed</th><th>Price range</th></tr>
-                    </thead>
-                    <tbody>
-                      {p.cost_table.map((row: any) => (
-                        <tr>
-                          <td>{row.vehicle}</td>
-                          <td>{row.vinyl_sqft} sq ft</td>
-                          <td>{row.price_range}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+            {/* ---------- Cost table ---------- */}
+            {p.cost_table?.length > 0 && (() => {
+              const headers: string[] = p.cost_table_headers || (
+                p.cost_table[0]?.vehicle != null
+                  ? ['Vehicle type', 'Vinyl needed', 'Price range']
+                  : ['Type', 'Details', 'Cost']
+              );
+              return (
+                <div>
+                  <h2>{p.cost_table_title || 'Cost breakdown'}</h2>
+                  <div class="table-wrap">
+                    <table class="data-table">
+                      <thead>
+                        <tr>{headers.map((h: string) => <th>{h}</th>)}</tr>
+                      </thead>
+                      <tbody>
+                        {p.cost_table.map((row: any) => (
+                          <tr>
+                            {row.vehicle != null && <td>{row.vehicle}</td>}
+                            {row.vinyl_sqft != null && <td>{row.vinyl_sqft} sq ft</td>}
+                            {row.price_range != null && <td>{row.price_range}</td>}
+                            {row.type != null && <td>{row.type}</td>}
+                            {row.details != null && <td>{row.details}</td>}
+                            {row.cost != null && <td>{row.cost}</td>}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {/* ---------- Finish costs ---------- */}
             {p.finish_costs?.length > 0 && (
@@ -536,7 +546,7 @@ const picksLd =
             {/* ---------- Red flags ---------- */}
             {p.red_flags?.length > 0 && (
               <div>
-                <h2>Red flags when choosing a wrap shop</h2>
+                <h2>{p.red_flags_title || 'Red flags to watch for'}</h2>
                 <ul class="red-flags">
                   {p.red_flags.map((flag: string) => <li>{flag}</li>)}
                 </ul>
