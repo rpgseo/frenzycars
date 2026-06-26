@@ -40,28 +40,24 @@ export default {
     const date = createdAt ? createdAt.split("T")[0] : new Date().toISOString().split("T")[0];
     const faqJson = faqJsonLd ? JSON.stringify(faqJsonLd) : "";
 
-    const frontmatter = [
+    const lines = [
       "---",
       `title: ${JSON.stringify(title)}`,
       `date: "${date}"`,
       `description: ${JSON.stringify(metaDescription || "")}`,
-      heroImageUrl ? `cover: "${heroImageUrl}"` : "",
-      faqJson ? `faq_json_ld: ${JSON.stringify(faqJson)}` : "",
-      "---",
-      "",
-    ]
-      .filter((l) => l !== null && l !== "")
-      .join("\n");
+      `markup: "html"`,
+    ];
+    if (heroImageUrl) lines.push(`cover: ${JSON.stringify(heroImageUrl)}`);
+    if (faqJson) lines.push(`faq_json_ld: ${JSON.stringify(faqJson)}`);
+    lines.push("---", "");
 
-    // content_html goes into front matter so the layout can render it with safeHTML
-    // We store full HTML as a front matter param to avoid Hugo markdown processing
-    const fmWithHtml = frontmatter.replace(
-      "---\n\n",
-      `content_html: ${JSON.stringify(content_html || "")}\n---\n\n`
-    );
+    // HTML body goes after the front matter — Hugo renders it via safeHTML in the layout
+    const html = content_html || "";
+    lines.push(html);
 
+    const fileText = lines.join("\n");
     const filePath = `content/blog/${slug}.md`;
-    const fileContent = btoa(unescape(encodeURIComponent(fmWithHtml)));
+    const fileContent = btoa(unescape(encodeURIComponent(fileText)));
 
     // Check if file already exists (to get its SHA for update)
     const repo = env.GITHUB_REPO;
