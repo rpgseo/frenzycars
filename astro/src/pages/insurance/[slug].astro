@@ -1,0 +1,197 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { siteConfig } from '../../config/site';
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('insurance')).filter((e: any) => !e.data.draft);
+  return entries.map((entry: any) => ({
+    params: { slug: entry.id.replace(/\.mdx?$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const canonical = new URL(`/insurance/${entry.id}/`, siteConfig.baseURL).href;
+const ogImage = d.cover ?? undefined;
+
+// Related insurance articles
+let related: any[] = [];
+try {
+  related = (await getCollection('insurance'))
+    .filter((e: any) => e.id !== entry.id && !e.data.draft)
+    .slice(0, 4);
+} catch {}
+
+// JSON-LD Article
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  headline: d.title,
+  description: d.description ?? d.short_answer ?? '',
+  datePublished: d.date ? new Date(d.date).toISOString() : '',
+  dateModified: d.date ? new Date(d.date).toISOString() : '',
+  author: { '@type': 'Person', name: d.author ?? siteConfig.title },
+  publisher: { '@type': 'Organization', name: siteConfig.title, logo: { '@type': 'ImageObject', url: new URL('/img/logo-1200x630.png', siteConfig.baseURL).href } },
+  ...(d.cover ? { image: { '@type': 'ImageObject', url: d.cover } } : {}),
+};
+
+// JSON-LD FAQPage
+const faqEntities = [
+  ...(d.short_answer ? [{ '@type': 'Question', name: d.question ?? d.title, acceptedAnswer: { '@type': 'Answer', text: d.short_answer } }] : []),
+  ...((d.faq ?? []).map((f: any) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))),
+];
+const faqSchema = faqEntities.length > 0 ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqEntities } : null;
+
+// JSON-LD HowTo
+const howtoSteps = (d.steps ?? []).map((s: any) => ({ '@type': 'HowToStep', name: s.title, text: s.detail }));
+const howtoSchema = howtoSteps.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: d.question ?? d.title,
+  description: (d.short_answer ?? d.description ?? '').slice(0, 200),
+  step: howtoSteps,
+} : null;
+
+const sl = d.section_labels ?? {};
+const hCauses = sl.causes ?? 'Common causes';
+const hSteps = sl.steps ?? 'How to diagnose it';
+const hMechanic = sl.when_to_see_mechanic ?? 'When to see a mechanic';
+---
+<Base title={d.title} description={d.description} ogImage={ogImage} ogType="article" noindex={d.noindex}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema, null, 2)} />
+    {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema, null, 2)} />}
+    {howtoSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(howtoSchema, null, 2)} />}
+  </Fragment>
+  <article class="article">
+    {d.cover && (
+      <div class="article-hero">
+        <img src={d.cover} alt={d.title} />
+        <div class="article-hero-overlay"></div>
+      </div>
+    )}
+    <div class="container">
+      <div class="has-rail">
+        <div class="main-col">
+          <header class="article-head">
+            <span class="card-tag">Insurance</span>
+            <h1 class="article-title">{d.title}</h1>
+            {d.author && <div class="article-meta"><span>By {d.author}</span></div>}
+          </header>
+          <div class="article-content">
+            {d.short_answer && (
+              <>
+                <h2>Quick answer</h2>
+                <p>{d.short_answer}</p>
+              </>
+            )}
+
+            {d.causes && d.causes.length > 0 && (
+              <>
+                <h2>{hCauses}</h2>
+                <ul>
+                  {d.causes.map((c: string) => <li>{c}</li>)}
+                </ul>
+              </>
+            )}
+
+            {d.steps && d.steps.length > 0 && (
+              <>
+                <h2>{hSteps}</h2>
+                <ol class="howto-steps">
+                  {d.steps.map((s: any) => (
+                    <li>
+                      <strong>{s.title}</strong>
+                      <p>{s.detail}</p>
+                    </li>
+                  ))}
+                </ol>
+              </>
+            )}
+
+            {(d.tables ?? []).map((tbl: any) => (
+              <>
+                <h2>{tbl.title}</h2>
+                {tbl.note && <p class="table-note">{tbl.note}</p>}
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead>
+                      <tr>{tbl.headers.map((h: string) => <th>{h}</th>)}</tr>
+                    </thead>
+                    <tbody>
+                      {tbl.rows.map((row: string[]) => (
+                        <tr>{row.map((cell: string) => <td>{cell}</td>)}</tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {tbl.verdict && <p class="table-verdict">{tbl.verdict}</p>}
+              </>
+            ))}
+
+            {d.when_to_see_mechanic && d.when_to_see_mechanic.length > 0 && (
+              <>
+                <h2>{hMechanic}</h2>
+                <ul class="red-flags">
+                  {d.when_to_see_mechanic.map((item: string) => <li>{item}</li>)}
+                </ul>
+              </>
+            )}
+
+            {d.buying_tips && d.buying_tips.length > 0 && (
+              <>
+                <h2>Buying tips</h2>
+                <ul>
+                  {d.buying_tips.map((tip: string) => <li>{tip}</li>)}
+                </ul>
+              </>
+            )}
+
+            {d.faq && d.faq.length > 0 && (
+              <>
+                <h2>Frequently asked questions</h2>
+                <div class="faq">
+                  {d.faq.map((f: any) => (
+                    <details class="faq-item">
+                      <summary>{f.q}</summary>
+                      <p>{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+          <footer class="article-foot">
+            {d.tags?.length > 0 && (
+              <div class="tags">{d.tags.map((t: string) => <span class="tag">#{t}</span>)}</div>
+            )}
+            <a class="btn btn-ghost" href="/insurance/">&larr; Back to Insurance</a>
+          </footer>
+        </div>
+        {related.length > 0 && (
+          <aside class="rail">
+            <div class="rail-sticky">
+              <div class="rail-block">
+                <h3 class="rail-title">More in Insurance</h3>
+                <div class="mini-rail">
+                  {related.map((r: any) => (
+                    <div class="mini-rank">
+                      <span class="num">&rarr;</span>
+                      <div>
+                        <div class="mt">Insurance</div>
+                        <h4><a href={`/insurance/${r.id}/`}>{r.data.title}</a></h4>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </aside>
+        )}
+      </div>
+    </div>
+  </article>
+</Base>

@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { slugifyTag } from '../../lib/slugify';
+
+const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
+const allEntries = (
+  await Promise.all([
+    ...EDITORIAL.map(s => getCollection(s as any).catch(() => [])),
+    getCollection('insurance').catch(() => []),
+  ])
+).flat().filter((e: any) => !e.data.draft);
+
+const tagMap = new Map<string, string>(); // slug -> display label
+for (const entry of allEntries) {
+  for (const tag of (entry.data.tags ?? [])) {
+    const slug = slugifyTag(tag);
+    if (!tagMap.has(slug)) tagMap.set(slug, tag);
+  }
+}
+
+const tags = [...tagMap.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+---
+<Base title="Tags" description="Browse all tags on FrenzyCars.">
+  <div class="container" style="padding: 2rem 1rem;">
+    <h1>Tags</h1>
+    <ul style="display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0;">
+      {tags.map(([slug, label]) => (
+        <li>
+          <a href={`/tags/${slug}/`} class="tag">#{label}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>

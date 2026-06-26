@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { slugifyTag } from '../../lib/slugify';
+
+const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
+
+export async function getStaticPaths() {
+  const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
+  const allEntries = (
+    await Promise.all([
+      ...EDITORIAL.map(s => getCollection(s as any).catch(() => [])),
+      getCollection('insurance').catch(() => []),
+    ])
+  ).flat().filter((e: any) => !e.data.draft);
+
+  // Build map: slug -> { label, entries[] }
+  const tagMap = new Map<string, { label: string; entries: any[] }>();
+  for (const entry of allEntries) {
+    for (const tag of (entry.data.tags ?? [])) {
+      const slug = slugifyTag(tag);
+      if (!tagMap.has(slug)) tagMap.set(slug, { label: tag, entries: [] });
+      tagMap.get(slug)!.entries.push(entry);
+    }
+  }
+
+  return [...tagMap.entries()].map(([slug, { label, entries }]) => ({
+    params: { tag: slug },
+    props: { label, entries },
+  }));
+}
+
+const { label, entries } = Astro.props;
+---
+<Base title={`#${label} — FrenzyCars`} description={`Articles tagged with ${label} on FrenzyCars.`}>
+  <div class="container" style="padding: 2rem 1rem;">
+    <h1>#{label}</h1>
+    <ul style="list-style: none; padding: 0;">
+      {entries.map((e: any) => (
+        <li style="margin-bottom: 1rem;">
+          <a href={`/${e.collection}/${e.id}/`}>{e.data.title}</a>
+          <span style="color: var(--color-muted, #888); font-size: 0.85em; margin-left: 0.5rem;">{e.collection}</span>
+        </li>
+      ))}
+    </ul>
+    <a class="btn btn-ghost" href="/tags/">&larr; All tags</a>
+  </div>
+</Base>

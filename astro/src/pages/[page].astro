@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('pages')).filter(
+    (e: any) => !e.data.draft && e.id.replace(/\.mdx?$/, '') !== 'thanks'
+  );
+  return entries.map((entry: any) => ({
+    params: { page: entry.id.replace(/\.mdx?$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+<Base title={d.title} description={d.description} noindex={d.noindex}>
+  <div class="container" style="padding: 2rem 1rem;">
+    <article class="article-content">
+      <h1>{d.title}</h1>
+      <Content />
+    </article>
+  </div>
+</Base>
