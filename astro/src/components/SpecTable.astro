@@ -1,0 +1,9 @@
+---
+const { specs } = Astro.props;
+---
+{specs && specs.length > 0 && (
+  <table class="spec-table">
+    <thead><tr><th>Spec</th><th>Value</th></tr></thead>
+    <tbody>{specs.map((s:any)=><tr><td>{s.label}</td><td>{s.value}</td></tr>)}</tbody>
+  </table>
+)}

@@ -1,0 +1,106 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cover from '../../components/Cover.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import SpecTable from '../../components/SpecTable.astro';
+import Verdict from '../../components/Verdict.astro';
+import ArticleSchema from '../../components/ArticleSchema.astro';
+import RelatedRail from '../../components/RelatedRail.astro';
+import { getCollection, render } from 'astro:content';
+import { siteConfig } from '../../config/site';
+import { humanize } from '../../lib/section';
+
+const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
+
+export async function getStaticPaths() {
+  const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
+  const all = (
+    await Promise.all(
+      EDITORIAL.map(async s => {
+        try { return await getCollection(s as any); } catch { return []; }
+      })
+    )
+  ).flat().filter((e: any) => !e.data.draft);
+  return all.map((entry: any) => ({
+    params: { section: entry.collection, slug: entry.id.replace(/\.mdx?$/, '') },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const cleanSlug = entry.id.replace(/\.mdx?$/, '');
+const canonical = new URL(`/${entry.collection}/${cleanSlug}/`, siteConfig.baseURL).href;
+const ogImage = d.cover ? new URL(d.cover, siteConfig.baseURL).href : undefined;
+
+let siblings: any[] = [];
+try {
+  siblings = (await getCollection(entry.collection as any))
+    .filter((e: any) => e.id !== entry.id && !e.data.draft)
+    .slice(0, 4);
+} catch {}
+
+const sectionLabel = entry.collection === 'blog' ? 'Blog' : humanize(entry.collection);
+---
+<Base title={d.title} description={d.description} ogImage={ogImage} ogType="article" noindex={d.noindex}>
+  <ArticleSchema slot="head" entry={entry} canonical={canonical} />
+  <article class="article">
+    {d.cover && (
+      <div class="article-hero">
+        <Cover entry={entry} width={1600} eager={true} class="hero-img" />
+        <div class="article-hero-overlay"></div>
+      </div>
+    )}
+    <div class="container">
+      <header class="article-head">
+        <a class="card-tag" href={`/${entry.collection}/`}>{sectionLabel}</a>
+        <h1 class="article-title">{d.title}</h1>
+        <div class="article-meta">
+          {d.date && (
+            <time class="article-date" datetime={new Date(d.date).toISOString().slice(0,10)}>
+              {new Date(d.date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}
+            </time>
+          )}
+          {d.author && <span class="article-author">by {d.author}</span>}
+          {d.rating && <span class="score-badge">{d.rating}<span class="score-denom">/10</span></span>}
+        </div>
+      </header>
+      <div class="has-rail">
+        <div class="main-col">
+          <div class="article-content"><Content /></div>
+          <SpecTable specs={d.specs} />
+          {(d.pros || d.cons) && (
+            <div class="proscons">
+              {d.pros && (
+                <div class="pc pros">
+                  <h4>Pros</h4>
+                  <ul>{d.pros.map((p: string) => <li>{p}</li>)}</ul>
+                </div>
+              )}
+              {d.cons && (
+                <div class="pc cons">
+                  <h4>Cons</h4>
+                  <ul>{d.cons.map((c: string) => <li>{c}</li>)}</ul>
+                </div>
+              )}
+            </div>
+          )}
+          <Verdict verdict={d.verdict} />
+          <footer class="article-foot">
+            {d.tags?.length > 0 && (
+              <div class="tags">{d.tags.map((t: string) => <span class="tag">#{t}</span>)}</div>
+            )}
+            <a class="btn btn-ghost" href={`/${entry.collection}/`}>&larr; Back to {sectionLabel}</a>
+          </footer>
+        </div>
+        <aside class="rail">
+          <div class="rail-sticky">
+            <RelatedRail related={siblings} sectionLabel={sectionLabel} />
+            <Sidebar />
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</Base>

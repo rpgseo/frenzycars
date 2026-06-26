@@ -1,0 +1,6 @@
+---
+const { verdict } = Astro.props;
+---
+{verdict && (
+  <div class="verdict"><span class="verdict-label">Verdict</span><p>{verdict}</p></div>
+)}

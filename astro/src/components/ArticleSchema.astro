@@ -1,0 +1,22 @@
+---
+import { siteConfig } from '../config/site';
+const { entry, canonical } = Astro.props;
+const d = entry.data;
+const type = d.rating ? 'Review' : 'Article';
+const img = d.cover ? new URL(d.cover, siteConfig.baseURL).href : undefined;
+const date = d.date ? new Date(d.date).toISOString() : undefined;
+const ld:any = {
+  '@context':'https://schema.org','@type':type,
+  mainEntityOfPage:{'@type':'WebPage','@id':canonical},
+  headline:d.title, description:(d.description||'').slice(0,300),
+  datePublished:date, dateModified:date,
+  author:{'@type': entry.collection==='blog'?'Organization':'Person', name:d.author||siteConfig.title},
+  publisher:{'@type':'Organization',name:siteConfig.title,logo:{'@type':'ImageObject',url:new URL('/img/logo-1200x630.png',siteConfig.baseURL).href}},
+};
+if (img) ld.image={'@type':'ImageObject',url:img};
+if (d.rating){ ld.reviewRating={'@type':'Rating',ratingValue:d.rating,bestRating:10,worstRating:0}; ld.itemReviewed={'@type':'Product',name:d.title}; }
+if (d.tags?.length) ld.keywords=d.tags.join(', ');
+const faq = d.faq?.length ? {'@context':'https://schema.org','@type':'FAQPage',mainEntity:d.faq.map((f:any)=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))} : null;
+---
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+{faq && <script type="application/ld+json" set:html={JSON.stringify(faq)} />}

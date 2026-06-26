@@ -1,0 +1,14 @@
+---
+import { humanize } from '../lib/section';
+const { related, sectionLabel } = Astro.props;
+---
+{related.length > 0 && (
+  <div class="rail-block">
+    <h3 class="rail-title">Related</h3>
+    <div class="mini-rail">
+      {related.map((e:any)=>(
+        <div class="mini-rank"><span class="num">&rarr;</span><div><div class="mt">{sectionLabel ?? humanize(e.collection)}</div><h4><a href={`/${e.collection}/${e.id.replace(/\.mdx?$/, '')}/`}>{e.data.title}</a></h4></div></div>
+      ))}
+    </div>
+  </div>
+)}
