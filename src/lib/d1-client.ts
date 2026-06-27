@@ -1,3 +1,10 @@
+/// <reference types="@cloudflare/workers-types" />
+
+// Access D1 binding from Astro locals at build time
+export function getD1(locals: Record<string, any>): D1Database | null {
+  return locals?.runtime?.env?.DB ?? null;
+}
+
 export interface CarRow {
   id: number;
   make: string;
