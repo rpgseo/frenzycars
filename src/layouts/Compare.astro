@@ -1,0 +1,18 @@
+---
+import Base from './Base.astro';
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogImage?: string;
+}
+const { title, description, canonical, ogImage } = Astro.props;
+---
+<Base title={title} description={description} ogImage={ogImage} canonical={canonical}>
+  <slot name="head" slot="head">
+    <ClientRouter />
+  </slot>
+  <slot />
+</Base>

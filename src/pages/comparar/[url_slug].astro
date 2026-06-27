@@ -1,0 +1,118 @@
+---
+import type { GetStaticPaths } from 'astro';
+import CompareLayout from '../../layouts/Compare.astro';
+import CompareHero from '../../components/compare/CompareHero.astro';
+import SpecsTableSideBySide from '../../components/compare/SpecsTableSideBySide.astro';
+import AutoPhrases from '../../components/compare/AutoPhrases.astro';
+import EditorialBlock from '../../components/compare/EditorialBlock.astro';
+import FullSpecsTable from '../../components/compare/FullSpecsTable.astro';
+import VerdictBlock from '../../components/compare/VerdictBlock.astro';
+import RelatedComparisons from '../../components/compare/RelatedComparisons.astro';
+import RadarChart from '../../components/compare/RadarChart.tsx';
+import StatBars from '../../components/compare/StatBars.tsx';
+import type { CarRow, ComparisonRow } from '../../lib/d1-client.js';
+import { parseSpecs } from '../../lib/d1-client.js';
+import { generatePhrases } from '../../lib/compare-phrases.js';
+import { scoreSpecs, overallScore } from '../../lib/compare-score.js';
+import type { RadarData } from '../../lib/compare-score.js';
+import { siteConfig } from '../../config/site.js';
+
+export interface ComparisonPageProps {
+  rowA: CarRow;
+  rowB: CarRow;
+  comparison: ComparisonRow;
+  phrasesA: string[];  // phrases where A wins
+  phrasesB: string[];  // phrases where B wins (same array, different filter)
+  allPhrases: string[];
+  radarA: RadarData;
+  radarB: RadarData;
+  scoreA: number;
+  scoreB: number;
+}
+
+export const getStaticPaths: GetStaticPaths = async ({ locals }) => {
+  const db = (locals as any).runtime?.env?.DB;
+  if (!db) return []; // dev without D1 binding
+
+  const { results: comparisons } = await db.prepare(
+    'SELECT * FROM comparisons WHERE published=1'
+  ).all<ComparisonRow>();
+
+  const paths = await Promise.all(comparisons.map(async (comp) => {
+    const [rowA, rowB] = await Promise.all([
+      db.prepare('SELECT * FROM cars WHERE slug=?').bind(comp.slug_a).first<CarRow>(),
+      db.prepare('SELECT * FROM cars WHERE slug=?').bind(comp.slug_b).first<CarRow>(),
+    ]);
+    if (!rowA || !rowB) return null;
+
+    const specsA = parseSpecs(rowA.specs_json);
+    const specsB = parseSpecs(rowB.specs_json);
+    const allPhrases = generatePhrases(rowA, rowB);
+    const radarA = scoreSpecs(specsA, specsB);
+    const radarB = scoreSpecs(specsB, specsA);
+
+    return {
+      params: { url_slug: comp.url_slug },
+      props: {
+        rowA, rowB, comparison: comp,
+        allPhrases,
+        radarA, radarB,
+        scoreA: overallScore(radarA),
+        scoreB: overallScore(radarB),
+      },
+    };
+  }));
+
+  return paths.filter(Boolean) as any[];
+};
+
+const { rowA, rowB, comparison, allPhrases, radarA, radarB, scoreA, scoreB } = Astro.props;
+const specsA = parseSpecs(rowA.specs_json);
+const specsB = parseSpecs(rowB.specs_json);
+
+const title = `${rowA.make} ${rowA.model} ${rowA.trim} ${rowA.year} vs ${rowB.make} ${rowB.model} ${rowB.trim} ${rowB.year}`;
+const description = allPhrases.slice(0, 2).join(' ');
+const canonical = new URL(`/comparar/${comparison.url_slug}/`, siteConfig.baseURL).href;
+
+// JSON-LD schema
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description,
+  url: canonical,
+  numberOfItems: 2,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: `${rowA.make} ${rowA.model} ${rowA.trim} ${rowA.year}` },
+    { '@type': 'ListItem', position: 2, name: `${rowB.make} ${rowB.model} ${rowB.trim} ${rowB.year}` },
+  ],
+};
+---
+
+<CompareLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
+
+  <article class="compare-page">
+    <CompareHero rowA={rowA} rowB={rowB} scoreA={scoreA} scoreB={scoreB} />
+    <SpecsTableSideBySide rowA={rowA} rowB={rowB} specsA={specsA} specsB={specsB} />
+    <AutoPhrases phrases={allPhrases} />
+    <RadarChart
+      client:visible
+      labelA={`${rowA.make} ${rowA.model}`}
+      labelB={`${rowB.make} ${rowB.model}`}
+      dataA={radarA}
+      dataB={radarB}
+    />
+    <StatBars client:visible specsA={specsA} specsB={specsB} labelA={`${rowA.make} ${rowA.model}`} labelB={`${rowB.make} ${rowB.model}`} />
+    {comparison.editorial && <EditorialBlock html={comparison.editorial} />}
+    <FullSpecsTable specsA={specsA} specsB={specsB} labelA={`${rowA.make} ${rowA.model}`} labelB={`${rowB.make} ${rowB.model}`} />
+    <VerdictBlock rowA={rowA} rowB={rowB} radarA={radarA} radarB={radarB} scoreA={scoreA} scoreB={scoreB} />
+    <RelatedComparisons currentSlug={comparison.url_slug} slugA={comparison.slug_a} slugB={comparison.slug_b} />
+  </article>
+</CompareLayout>
+
+<style>
+.compare-page { max-width: 1100px; margin: 0 auto; padding: 0 1rem 4rem; }
+</style>
