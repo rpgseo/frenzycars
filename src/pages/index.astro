@@ -9,7 +9,10 @@ import { humanize } from '../lib/section';
 
 // ── Cargar todas las colecciones editoriales ──────────────────────────────────
 const sections = ['reviews','news','culture','electric','guides','insurance','gear','blog'];
-let all: any[] = (await Promise.all(sections.map(s => getCollection(s as any)))).flat().filter((e: any) => !e.data.draft);
+const safeGet = async (s: string): Promise<any[]> => {
+  try { return await getCollection(s as any); } catch { return []; }
+};
+let all: any[] = (await Promise.all(sections.map(safeGet))).flat().filter((e: any) => !e.data.draft);
 all.sort((a: any, b: any) => (+new Date(b.data.date || 0)) - (+new Date(a.data.date || 0)));
 
 // ── De-duplicación: Set global de slugs ya usados ────────────────────────────
