@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "test": "vitest run",
     "seed:d1": "npx tsx scripts/seed-d1.ts",
-    "seed:d1:remote": "DB_REMOTE=1 npx tsx scripts/seed-d1.ts"
+    "seed:d1:remote": "DB_REMOTE=1 npx tsx scripts/seed-d1.ts",
+    "prioritize": "npx tsx scripts/prioritize-comparisons.ts"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.13",
