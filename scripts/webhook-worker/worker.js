@@ -99,6 +99,9 @@ export default {
     // 8. Remove FAQ section from HTML body — it is now rendered via frontmatter faq[] accordion
     html = html.replace(/<h2[^>]*>\s*(?:FAQ|Frequently asked questions)\s*<\/h2>[\s\S]*?(?=<h2|$)/i, "");
 
+    // 9. Remove any JSON-LD <script> blocks embedded in HTML body (BLG sometimes injects them)
+    html = html.replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
+
     lines.push(html);
 
     const fileText = lines.join("\n");

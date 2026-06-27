@@ -7,6 +7,7 @@ export function humanize(s: string): string {
 export function summarize(body: string, words = 25): string {
   const text = body
     .replace(/<!--more-->[\s\S]*/, '')
+    .replace(/<[^>]+>/g, ' ')
     .replace(/[#>*_`\[\]()!]/g, '')
     .replace(/\s+/g, ' ')
     .trim();

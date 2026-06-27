@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar.astro';
 import { getCollection } from 'astro:content';
 import { humanize } from '../lib/section';
 
-const sections = ['reviews','news','culture','electric','guides','insurance','gear'];
+const sections = ['reviews','news','culture','electric','guides','insurance','gear','blog'];
 let all = (await Promise.all(sections.map(s => getCollection(s as any)))).flat().filter((e:any)=>!e.data.draft);
 all.sort((a:any,b:any)=>(+new Date(b.data.date||0))-(+new Date(a.data.date||0)));
 let featured = all.find((e:any)=>e.data.featured) || all[0];
