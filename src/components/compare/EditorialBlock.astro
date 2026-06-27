@@ -1,5 +1,15 @@
 ---
-// Stub — full implementation in Task 5
+interface Props { html: string }
 const { html } = Astro.props;
 ---
-<div class="editorial-block" set:html={html ?? ''} />
+<section class="editorial-block">
+  <h2>Expert Analysis</h2>
+  <div class="editorial-content" set:html={html} />
+</section>
+
+<style>
+.editorial-block { margin: 3rem 0; }
+.editorial-block h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; }
+.editorial-content { line-height: 1.75; color: #ccc; }
+.editorial-content p { margin-bottom: 1.2rem; }
+</style>

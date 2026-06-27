@@ -1,5 +1,42 @@
 ---
-// Stub — full implementation in Task 5
+interface Props {
+  currentSlug: string;
+  slugA: string;
+  slugB: string;
+}
 const { currentSlug, slugA, slugB } = Astro.props;
+
+// At build time, query D1 for related comparisons sharing either slug
+let related: Array<{ url_slug: string; slug_a: string; slug_b: string }> = [];
+try {
+  const db = (Astro.locals as any).runtime?.env?.DB;
+  if (db) {
+    const { results } = await db.prepare(`
+      SELECT url_slug, slug_a, slug_b FROM comparisons
+      WHERE published=1
+        AND url_slug != ?
+        AND (slug_a=? OR slug_b=? OR slug_a=? OR slug_b=?)
+      LIMIT 6
+    `).bind(currentSlug, slugA, slugA, slugB, slugB).all();
+    related = results ?? [];
+  }
+} catch {}
 ---
-<div class="related-comparisons"></div>
+{related.length > 0 && (
+  <section class="related">
+    <h2>Related Comparisons</h2>
+    <ul>
+      {related.map(r => (
+        <li><a href={`/comparar/${r.url_slug}/`}>{r.slug_a} vs {r.slug_b}</a></li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<style>
+.related { margin: 3rem 0; }
+.related h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 1rem; }
+.related ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.related a { background: #111; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.85rem; color: #ccc; text-decoration: none; }
+.related a:hover { color: #F7D720; }
+</style>

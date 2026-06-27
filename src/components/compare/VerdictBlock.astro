@@ -1,5 +1,40 @@
 ---
-// Stub — full implementation in Task 5
+import type { CarRow } from '../../lib/d1-client.js';
+import type { RadarData } from '../../lib/compare-score.js';
+
+interface Props {
+  rowA: CarRow; rowB: CarRow;
+  radarA: RadarData; radarB: RadarData;
+  scoreA: number; scoreB: number;
+}
 const { rowA, rowB, radarA, radarB, scoreA, scoreB } = Astro.props;
+const winner = scoreA > scoreB ? rowA : scoreB > scoreA ? rowB : null;
+const winnerScore = scoreA > scoreB ? scoreA : scoreB;
+const loserScore = scoreA > scoreB ? scoreB : scoreA;
+
+const catWinnersA = Object.entries(radarA).filter(([k, v]) => v > (radarB as any)[k]).map(([k]) => k);
+const catWinnersB = Object.entries(radarB).filter(([k, v]) => v > (radarA as any)[k]).map(([k]) => k);
 ---
-<div class="verdict-block"></div>
+<section class="verdict">
+  <h2>Verdict</h2>
+  {winner ? (
+    <div class="winner-summary">
+      <p class="winner-name">🏆 {winner.make} {winner.model} {winner.trim} {winner.year}</p>
+      <p class="winner-score">{winnerScore} vs {loserScore} points</p>
+      <p>
+        The {winner.make} {winner.model} edges ahead on overall specs.
+        {catWinnersA.length > 0 && ` The ${rowA.make} wins on: ${catWinnersA.join(', ')}.`}
+        {catWinnersB.length > 0 && ` The ${rowB.make} wins on: ${catWinnersB.join(', ')}.`}
+      </p>
+    </div>
+  ) : (
+    <p>These two cars are evenly matched across the key metrics.</p>
+  )}
+</section>
+
+<style>
+.verdict { margin: 3rem 0; background: #111; border-radius: 12px; padding: 2rem; }
+.verdict h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; }
+.winner-name { font-size: 1.3rem; font-weight: 900; color: #F7D720; margin-bottom: 0.25rem; }
+.winner-score { font-size: 0.9rem; color: #888; margin-bottom: 1rem; }
+</style>

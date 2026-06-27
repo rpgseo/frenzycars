@@ -1,5 +1,17 @@
 ---
-// Stub — full implementation in Task 5
+interface Props { phrases: string[] }
 const { phrases } = Astro.props;
 ---
-<div class="auto-phrases"></div>
+<section class="auto-phrases">
+  <h2>How They Compare</h2>
+  <ul>
+    {phrases.map(p => <li>{p}</li>)}
+  </ul>
+</section>
+
+<style>
+.auto-phrases { margin: 2rem 0; background: #111; border-left: 4px solid #F7D720; padding: 1.5rem 2rem; border-radius: 8px; }
+.auto-phrases h2 { font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem; }
+.auto-phrases ul { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.auto-phrases li { font-size: 0.95rem; color: #ccc; }
+</style>

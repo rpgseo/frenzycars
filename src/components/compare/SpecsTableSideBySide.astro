@@ -1,5 +1,74 @@
 ---
-// Stub — full implementation in Task 5
+import type { CarRow, CarSpecs } from '../../lib/d1-client.js';
+
+interface Props {
+  rowA: CarRow;
+  rowB: CarRow;
+  specsA: CarSpecs;
+  specsB: CarSpecs;
+}
 const { rowA, rowB, specsA, specsB } = Astro.props;
+
+type SpecDef = { label: string; key: keyof CarSpecs; unit: string; lowerIsBetter?: boolean };
+const KEY_SPECS: SpecDef[] = [
+  { label: 'Horsepower', key: 'powerHp', unit: 'hp' },
+  { label: 'Torque', key: 'torqueNm', unit: 'Nm' },
+  { label: '0–100 km/h', key: 'acceleration0100', unit: 's', lowerIsBetter: true },
+  { label: 'Top Speed', key: 'topSpeedKmh', unit: 'km/h' },
+  { label: 'Weight', key: 'weightKg', unit: 'kg', lowerIsBetter: true },
+  { label: 'Trunk', key: 'trunkLiters', unit: 'L' },
+  { label: 'Fuel (combined)', key: 'fuelConsumptionCombined', unit: 'L/100km', lowerIsBetter: true },
+  { label: 'EV Range', key: 'electricRangeKm', unit: 'km' },
+];
+
+function winner(va: number | null, vb: number | null, lowerIsBetter = false) {
+  if (!va || !vb) return null;
+  if (va === vb) return 'tie';
+  const aWins = lowerIsBetter ? va < vb : va > vb;
+  return aWins ? 'a' : 'b';
+}
 ---
-<div class="specs-table-side-by-side"></div>
+<section class="specs-table-section">
+  <h2>Key Specs Comparison</h2>
+  <table class="specs-table">
+    <thead>
+      <tr>
+        <th class="spec-label">Spec</th>
+        <th>{rowA.make} {rowA.model}</th>
+        <th>{rowB.make} {rowB.model}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {KEY_SPECS.map(({ label, key, unit, lowerIsBetter }) => {
+        const va = specsA[key] as number | null;
+        const vb = specsB[key] as number | null;
+        if (!va && !vb) return null;
+        const w = winner(va, vb, lowerIsBetter);
+        return (
+          <tr>
+            <td class="spec-label">{label}</td>
+            <td class:list={[{ 'cell-winner': w === 'a' }]}>
+              {va != null ? `${va} ${unit}` : '—'}
+              {w === 'a' && <span class="check" aria-label="winner">✓</span>}
+            </td>
+            <td class:list={[{ 'cell-winner': w === 'b' }]}>
+              {vb != null ? `${vb} ${unit}` : '—'}
+              {w === 'b' && <span class="check" aria-label="winner">✓</span>}
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</section>
+
+<style>
+.specs-table-section { margin: 3rem 0; }
+.specs-table-section h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; }
+.specs-table { width: 100%; border-collapse: collapse; }
+.specs-table th { background: #111; padding: 0.75rem 1rem; text-align: left; font-size: 0.85rem; color: #aaa; border-bottom: 2px solid #222; }
+.specs-table td { padding: 0.65rem 1rem; border-bottom: 1px solid #1a1a1a; font-size: 0.95rem; }
+.specs-table td.spec-label { color: #888; font-size: 0.85rem; }
+.cell-winner { font-weight: 700; color: #F7D720; }
+.check { margin-left: 0.4em; color: #F7D720; }
+</style>

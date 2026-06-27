@@ -1,5 +1,90 @@
 ---
-// Stub — full implementation in Task 5
+import type { CarSpecs } from '../../lib/d1-client.js';
+
+interface Props {
+  specsA: CarSpecs;
+  specsB: CarSpecs;
+  labelA: string;
+  labelB: string;
+}
 const { specsA, specsB, labelA, labelB } = Astro.props;
+
+const GROUPS = [
+  {
+    name: 'Engine',
+    rows: [
+      { label: 'Power', keyA: specsA.powerHp, keyB: specsB.powerHp, unit: 'hp' },
+      { label: 'Torque', keyA: specsA.torqueNm, keyB: specsB.torqueNm, unit: 'Nm' },
+      { label: 'Displacement', keyA: specsA.displacementCc, keyB: specsB.displacementCc, unit: 'cc' },
+    ],
+  },
+  {
+    name: 'Performance',
+    rows: [
+      { label: '0–100 km/h', keyA: specsA.acceleration0100, keyB: specsB.acceleration0100, unit: 's' },
+      { label: 'Top Speed', keyA: specsA.topSpeedKmh, keyB: specsB.topSpeedKmh, unit: 'km/h' },
+    ],
+  },
+  {
+    name: 'Efficiency',
+    rows: [
+      { label: 'Fuel (combined)', keyA: specsA.fuelConsumptionCombined, keyB: specsB.fuelConsumptionCombined, unit: 'L/100km' },
+      { label: 'CO₂', keyA: specsA.co2, keyB: specsB.co2, unit: 'g/km' },
+      { label: 'Battery', keyA: specsA.batteryKwh, keyB: specsB.batteryKwh, unit: 'kWh' },
+      { label: 'EV Range', keyA: specsA.electricRangeKm, keyB: specsB.electricRangeKm, unit: 'km' },
+    ],
+  },
+  {
+    name: 'Dimensions & Weight',
+    rows: [
+      { label: 'Length', keyA: specsA.lengthMm, keyB: specsB.lengthMm, unit: 'mm' },
+      { label: 'Width', keyA: specsA.widthMm, keyB: specsB.widthMm, unit: 'mm' },
+      { label: 'Height', keyA: specsA.heightMm, keyB: specsB.heightMm, unit: 'mm' },
+      { label: 'Wheelbase', keyA: specsA.wheelbaseMm, keyB: specsB.wheelbaseMm, unit: 'mm' },
+      { label: 'Trunk', keyA: specsA.trunkLiters, keyB: specsB.trunkLiters, unit: 'L' },
+      { label: 'Curb Weight', keyA: specsA.weightKg, keyB: specsB.weightKg, unit: 'kg' },
+    ],
+  },
+  {
+    name: 'Drivetrain',
+    rows: [
+      { label: 'Drive Type', keyA: specsA.driveType, keyB: specsB.driveType, unit: '' },
+      { label: 'Transmission', keyA: specsA.transmission, keyB: specsB.transmission, unit: '' },
+      { label: 'Body Type', keyA: specsA.bodyType, keyB: specsB.bodyType, unit: '' },
+    ],
+  },
+];
 ---
-<div class="full-specs-table"></div>
+<section class="full-specs">
+  <h2>Full Specifications</h2>
+  {GROUPS.map(group => (
+    <div class="spec-group">
+      <h3>{group.name}</h3>
+      <table>
+        <thead>
+          <tr><th>Spec</th><th>{labelA}</th><th>{labelB}</th></tr>
+        </thead>
+        <tbody>
+          {group.rows.filter(r => r.keyA != null || r.keyB != null).map(r => (
+            <tr>
+              <td class="label">{r.label}</td>
+              <td>{r.keyA != null ? `${r.keyA}${r.unit ? ' ' + r.unit : ''}` : '—'}</td>
+              <td>{r.keyB != null ? `${r.keyB}${r.unit ? ' ' + r.unit : ''}` : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  ))}
+</section>
+
+<style>
+.full-specs { margin: 3rem 0; }
+.full-specs h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem; }
+.spec-group { margin-bottom: 2rem; }
+.spec-group h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; color: #F7D720; margin-bottom: 0.5rem; }
+.spec-group table { width: 100%; border-collapse: collapse; }
+.spec-group th { background: #111; padding: 0.5rem 0.75rem; text-align: left; font-size: 0.8rem; color: #888; }
+.spec-group td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #1a1a1a; font-size: 0.9rem; }
+.spec-group td.label { color: #888; }
+</style>
