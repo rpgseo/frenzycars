@@ -1,4 +1,6 @@
 ---
+import { execSync } from 'child_process';
+
 interface Props {
   currentSlug: string;
   slugA: string;
@@ -6,21 +8,20 @@ interface Props {
 }
 const { currentSlug, slugA, slugB } = Astro.props;
 
-// At build time, query D1 for related comparisons sharing either slug
+// At build time, query D1 for related comparisons via wrangler CLI
 let related: Array<{ url_slug: string; slug_a: string; slug_b: string }> = [];
 try {
-  const db = (Astro.locals as any).runtime?.env?.DB;
-  if (db) {
-    const { results } = await db.prepare(`
-      SELECT url_slug, slug_a, slug_b FROM comparisons
-      WHERE published=1
-        AND url_slug != ?
-        AND (slug_a=? OR slug_b=? OR slug_a=? OR slug_b=?)
-      LIMIT 6
-    `).bind(currentSlug, slugA, slugA, slugB, slugB).all();
-    related = results ?? [];
+  if (!process.env.WRANGLER_D1_SKIP) {
+    const out = execSync(
+      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT url_slug, slug_a, slug_b FROM comparisons WHERE published=1 AND url_slug != '${currentSlug}' AND (slug_a IN ('${slugA}','${slugB}') OR slug_b IN ('${slugA}','${slugB}')) LIMIT 6"`,
+      { encoding: 'utf8', cwd: process.cwd() }
+    );
+    const parsed = JSON.parse(out);
+    related = parsed[0]?.results ?? [];
   }
-} catch {}
+} catch {
+  // D1 unavailable
+}
 ---
 {related.length > 0 && (
   <section class="related">

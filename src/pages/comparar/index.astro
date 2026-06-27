@@ -1,18 +1,21 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { execSync } from 'child_process';
 
-// At build time, read published comparisons from D1
-// During local dev without D1, show empty state
+// At build time, read published comparisons from D1 via wrangler CLI
 let comparisons: Array<{ url_slug: string; slug_a: string; slug_b: string }> = [];
 try {
-  const db = (Astro.locals as any).runtime?.env?.DB;
-  if (db) {
-    const result = await db.prepare(
-      'SELECT url_slug, slug_a, slug_b FROM comparisons WHERE published=1 ORDER BY monthly_searches DESC LIMIT 100'
-    ).all();
-    comparisons = result.results ?? [];
+  if (!process.env.WRANGLER_D1_SKIP) {
+    const out = execSync(
+      'npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT url_slug, slug_a, slug_b, kd, monthly_searches FROM comparisons WHERE published=1 ORDER BY kd ASC LIMIT 100"',
+      { encoding: 'utf8', cwd: process.cwd() }
+    );
+    const parsed = JSON.parse(out);
+    comparisons = parsed[0]?.results ?? [];
   }
-} catch {}
+} catch {
+  // D1 unavailable in CI — render empty hub
+}
 ---
 <Base title="Car Comparisons — FrenzyCars" description="Side-by-side car comparisons with full specs, performance data, and expert analysis.">
   <section class="compare-hub">
