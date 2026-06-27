@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const base = z.object({
   title: z.string(),
@@ -14,7 +15,7 @@ const base = z.object({
 });
 
 const reviews = defineCollection({
-  type: 'content',
+  loader: glob({ base: './src/content/reviews', pattern: '**/*.{md,mdx}' }),
   schema: base.extend({
     rating: z.number().optional(),
     specs: z.array(z.object({ label: z.string(), value: z.string() })).optional(),
@@ -24,10 +25,13 @@ const reviews = defineCollection({
   }),
 });
 
-const editorial = defineCollection({ type: 'content', schema: base });
+const editorial = (name: string) => defineCollection({
+  loader: glob({ base: `./src/content/${name}`, pattern: '**/*.{md,mdx}' }),
+  schema: base,
+});
 
 const insurance = defineCollection({
-  type: 'content',
+  loader: glob({ base: './src/content/insurance', pattern: '**/*.{md,mdx}' }),
   schema: base.extend({
     question: z.string().optional(),
     short_answer: z.string().optional(),
@@ -52,7 +56,7 @@ const insurance = defineCollection({
 });
 
 const pages = defineCollection({
-  type: 'content',
+  loader: glob({ base: './src/content/pages', pattern: '**/*.{md,mdx}' }),
   schema: base.extend({
     layout: z.string().optional(),
   }),
@@ -62,10 +66,10 @@ export const collections = {
   reviews,
   insurance,
   pages,
-  news: editorial,
-  culture: editorial,
-  electric: editorial,
-  guides: editorial,
-  blog: editorial,
-  gear: editorial,
+  news: editorial('news'),
+  culture: editorial('culture'),
+  electric: editorial('electric'),
+  guides: editorial('guides'),
+  blog: editorial('blog'),
+  gear: editorial('gear'),
 };

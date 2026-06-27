@@ -26,9 +26,4 @@ const path = Astro.url.pathname;
       </ul>
     </nav>
   </div>
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      {Array.from({ length: 6 }).map(() => <span>{siteConfig.tagline}</span>)}
-    </div>
-  </div>
 </header>

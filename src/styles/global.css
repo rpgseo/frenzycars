@@ -49,10 +49,6 @@ a.brand:hover{color:inherit}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:.5rem}
 .nav-toggle-bar{width:26px;height:2px;background:var(--fg);display:block}
 
-/* Ticker */
-.ticker{background:var(--accent);color:#000;overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-flex;gap:2rem;padding:.4rem 0;animation:ticker 22s linear infinite;font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
-.ticker-track span{padding-right:2rem}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:clamp(440px,80vh,760px);display:flex;align-items:flex-end;overflow:hidden;border-bottom:3px solid var(--accent)}
@@ -85,6 +81,7 @@ a.brand:hover{color:inherit}
 
 /* ---------- Grids & Card ---------- */
 .grid{display:grid;gap:1.75rem}
+.grid-4{grid-template-columns:repeat(4,1fr)}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 .grid-2{grid-template-columns:repeat(2,1fr)}
 .grid-1{grid-template-columns:1fr}
@@ -326,6 +323,36 @@ a.brand:hover{color:inherit}
 .mini-rank .mt{font-size:.78rem;color:var(--fg-dim);text-transform:uppercase;letter-spacing:.06em}
 .mini-rank h4{font-size:.95rem;margin:.15rem 0 0;line-height:1.25}
 
+/* ---------- News Ticker (Bloque 0) — barra amarilla animada sticky ---------- */
+.news-ticker{position:sticky;top:68px;z-index:90;background:var(--accent);color:#000;overflow:hidden;white-space:nowrap}
+.news-ticker-track{display:inline-flex;gap:0;padding:.45rem 0;animation:ticker 32s linear infinite;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.news-ticker-item{display:inline-flex;align-items:center;gap:.6rem;padding-right:2.5rem}
+.news-ticker-tag{background:#000;color:var(--accent);font-size:.6rem;font-weight:900;letter-spacing:.12em;padding:.15rem .45rem;border-radius:1px;flex-shrink:0}
+.news-ticker-link{color:#000;text-decoration:none;font-weight:700;letter-spacing:.04em;text-transform:none;font-size:.78rem}
+.news-ticker-link:hover{text-decoration:underline}
+.news-ticker-sep{color:rgba(0,0,0,.35);font-size:.55rem;padding-left:2rem}
+
+/* ---------- Lead-sec title (hero secundarias) ---------- */
+.lead-sec-title{font-size:1.05rem;margin:.3rem 0 0;line-height:1.3;color:#fff}
+
+/* ---------- sub-zone (dentro de bloque 6) ---------- */
+.sub-zone{margin-bottom:2.5rem}
+.sub-zone:last-child{margin-bottom:0}
+
+/* ---------- Zone split (Bloque 5) ---------- */
+.zone-split{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.split-col .zone-head{margin-bottom:1.25rem}
+
+/* ---------- Tools (Bloque 4) ---------- */
+.zone-tools{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.zone-tools .zone-title{margin-bottom:1.25rem}
+.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.tool-card{display:flex;align-items:flex-start;gap:1.25rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem 2rem;text-decoration:none;color:inherit;transition:border-color .25s,box-shadow .25s,transform .25s}
+.tool-card:hover{border-color:var(--accent);box-shadow:0 12px 40px rgba(0,0,0,.45);transform:translateY(-4px)}
+.tool-icon{font-size:2.2rem;flex-shrink:0;line-height:1}
+.tool-title{font-size:1.2rem;font-weight:800;margin:0 0 .5rem;color:var(--fg)}
+.tool-desc{font-size:.9rem;color:var(--fg-muted);margin:0 0 1.25rem;line-height:1.55}
+
 /* ---------- Responsive collapse for rail layout ---------- */
 @media (max-width:980px){
   .has-rail>.rail{position:static}
@@ -336,11 +363,15 @@ a.brand:hover{color:inherit}
   .lead-sec{flex:1}
   .z-grid.z-4{grid-template-columns:repeat(2,1fr)}
   .z-grid.z-21{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .tools-grid{grid-template-columns:1fr}
+  .zone-split{grid-template-columns:1fr;gap:0}
 }
 @media (max-width:720px){
   .lead-secondary{flex-direction:column}
   .proscons{grid-template-columns:1fr}
   .z-grid.z-4{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:1fr}
 }
 
 /* ---------- FAQ accordion ---------- */

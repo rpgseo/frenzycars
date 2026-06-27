@@ -10,7 +10,7 @@ tags:
   - Data
 author: Priya Nair
 description: How long do EV batteries last? Real-world degradation rates, warranty coverage, replacement costs, and what actually kills a battery — backed by 2026 data.
-cover: https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1600&q=80
+cover: https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80
 faq:
   - q: What happens to EV batteries after 8 years?
     a: After the warranty period, a healthy battery typically retains 75-85% of its original capacity and continues to be fully usable. The 8-year mark is a guaranteed minimum, not an expiry date — most packs keep 70%+ capacity for several more years.
