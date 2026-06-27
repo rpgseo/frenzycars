@@ -30,8 +30,8 @@ export interface ComparisonPageProps {
   scoreB: number;
 }
 
-export const getStaticPaths: GetStaticPaths = async ({ locals }) => {
-  const db = (locals as any).runtime?.env?.DB;
+export const getStaticPaths: GetStaticPaths = async ({ locals }: any) => {
+  const db = locals?.runtime?.env?.DB;
   if (!db) return []; // dev without D1 binding
 
   const { results: comparisons } = await db.prepare(
