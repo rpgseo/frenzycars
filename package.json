@@ -6,16 +6,20 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "seed:d1": "npx tsx scripts/seed-d1.ts",
+    "seed:d1:remote": "DB_REMOTE=1 npx tsx scripts/seed-d1.ts"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.13",
     "@astrojs/sitemap": "^3.2.0",
-    "astro": "^5.0.0"
+    "astro": "^5.0.0",
+    "papaparse": "^5.5.4"
   },
   "devDependencies": {
     "@iarna/toml": "^2.2.5",
     "@types/js-yaml": "^4.0.9",
+    "@types/papaparse": "^5.5.2",
     "js-yaml": "^4.1.0",
     "vitest": "^2.1.0",
     "wrangler": "^4.105.0"
