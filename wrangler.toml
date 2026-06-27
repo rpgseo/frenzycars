@@ -1,0 +1,8 @@
+name = "frenzycars"
+compatibility_date = "2024-09-23"
+main = "workers/cron-sync-cars.ts"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "frenzycars-cars"
+database_id = "b9d5f455-8e9e-439c-9283-ef1b19addf4b"
