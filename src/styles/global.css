@@ -44,7 +44,7 @@ a.brand:hover{color:inherit}
 .menu{display:flex;gap:1.75rem;list-style:none;margin:0;padding:0}
 .menu a{font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;position:relative;padding:.4rem 0}
 .menu a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--accent);transition:width .25s ease}
-.menu a:hover::after,.menu a.is-active::after{width:100%}
+.menu a:hover{color:var(--accent)}.menu a:hover::after,.menu a.is-active::after{width:100%}
 .menu a.is-active{color:var(--accent)}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:.5rem}
 .nav-toggle-bar{width:26px;height:2px;background:var(--fg);display:block}
@@ -329,7 +329,7 @@ a.brand:hover{color:inherit}
 .news-ticker-item{display:inline-flex;align-items:center;gap:.6rem;padding-right:2.5rem}
 .news-ticker-tag{background:#000;color:var(--accent);font-size:.6rem;font-weight:900;letter-spacing:.12em;padding:.15rem .45rem;border-radius:1px;flex-shrink:0}
 .news-ticker-link{color:#000;text-decoration:none;font-weight:700;letter-spacing:.04em;text-transform:none;font-size:.78rem}
-.news-ticker-link:hover{text-decoration:underline}
+.news-ticker-link:hover{text-decoration:underline;color:#000;opacity:.65}
 .news-ticker-sep{color:rgba(0,0,0,.35);font-size:.55rem;padding-left:2rem}
 
 /* ---------- Lead-sec title (hero secundarias) ---------- */
