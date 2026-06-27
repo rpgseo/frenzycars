@@ -30,40 +30,62 @@ export interface ComparisonPageProps {
   scoreB: number;
 }
 
-export const getStaticPaths: GetStaticPaths = async ({ locals }: any) => {
-  const db = locals?.runtime?.env?.DB;
-  if (!db) return []; // dev without D1 binding
+export const getStaticPaths: GetStaticPaths = async () => {
+  // In CI/production, WRANGLER_D1_SKIP=1 env var can skip this
+  if (process.env.WRANGLER_D1_SKIP) return [];
 
-  const { results: comparisons } = await db.prepare(
-    'SELECT * FROM comparisons WHERE published=1'
-  ).all<ComparisonRow>();
+  try {
+    const { execSync } = await import('child_process');
 
-  const paths = await Promise.all(comparisons.map(async (comp) => {
-    const [rowA, rowB] = await Promise.all([
-      db.prepare('SELECT * FROM cars WHERE slug=?').bind(comp.slug_a).first<CarRow>(),
-      db.prepare('SELECT * FROM cars WHERE slug=?').bind(comp.slug_b).first<CarRow>(),
-    ]);
-    if (!rowA || !rowB) return null;
+    // Query published comparisons
+    const compResult = execSync(
+      'npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT id, slug_a, slug_b, url_slug, editorial, kd, monthly_searches, published, created_at, updated_at FROM comparisons WHERE published=1"',
+      { encoding: 'utf8', cwd: process.cwd() }
+    );
+    const compJson = JSON.parse(compResult);
+    const comparisons: ComparisonRow[] = compJson[0]?.results ?? [];
 
-    const specsA = parseSpecs(rowA.specs_json);
-    const specsB = parseSpecs(rowB.specs_json);
-    const allPhrases = generatePhrases(rowA, rowB);
-    const radarA = scoreSpecs(specsA, specsB);
-    const radarB = scoreSpecs(specsB, specsA);
+    if (comparisons.length === 0) return [];
 
-    return {
-      params: { url_slug: comp.url_slug },
-      props: {
-        rowA, rowB, comparison: comp,
-        allPhrases,
-        radarA, radarB,
-        scoreA: overallScore(radarA),
-        scoreB: overallScore(radarB),
-      },
-    };
-  }));
+    // Query all cars needed
+    const allSlugs = [...new Set(comparisons.flatMap(c => [c.slug_a, c.slug_b]))];
+    const slugList = allSlugs.map(s => `'${s}'`).join(',');
+    const carsResult = execSync(
+      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT id, make, model, generation, trim, year, slug, specs_json, updated_at FROM cars WHERE slug IN (${slugList})"`,
+      { encoding: 'utf8', cwd: process.cwd() }
+    );
+    const carsJson = JSON.parse(carsResult);
+    const carsArr: CarRow[] = carsJson[0]?.results ?? [];
+    const carMap = new Map(carsArr.map(c => [c.slug, c]));
 
-  return paths.filter(Boolean) as any[];
+    const paths = comparisons.map((comp) => {
+      const rowA = carMap.get(comp.slug_a);
+      const rowB = carMap.get(comp.slug_b);
+      if (!rowA || !rowB) return null;
+
+      const specsA = parseSpecs(rowA.specs_json);
+      const specsB = parseSpecs(rowB.specs_json);
+      const allPhrases = generatePhrases(rowA, rowB);
+      const radarA = scoreSpecs(specsA, specsB);
+      const radarB = scoreSpecs(specsB, specsA);
+
+      return {
+        params: { url_slug: comp.url_slug },
+        props: {
+          rowA, rowB, comparison: comp,
+          allPhrases,
+          radarA, radarB,
+          scoreA: overallScore(radarA),
+          scoreB: overallScore(radarB),
+        },
+      };
+    }).filter(Boolean);
+
+    return paths as any[];
+  } catch (e) {
+    console.warn('[comparar] getStaticPaths: D1 unavailable, skipping comparison pages.', e);
+    return [];
+  }
 };
 
 const { rowA, rowB, comparison, allPhrases, radarA, radarB, scoreA, scoreB } = Astro.props;

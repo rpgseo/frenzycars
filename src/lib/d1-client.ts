@@ -53,15 +53,30 @@ export interface CarSpecs {
 
 export function parseSpecs(specsJson: string): CarSpecs {
   try {
+    // First try standard JSON parse
     return JSON.parse(specsJson) as CarSpecs;
   } catch {
-    return {
-      powerHp: null, torqueNm: null, displacementCc: null,
-      acceleration0100: null, topSpeedKmh: null, fuelConsumptionCombined: null,
-      co2: null, lengthMm: null, widthMm: null, heightMm: null,
-      wheelbaseMm: null, trunkLiters: null, weightKg: null,
-      bodyType: null, driveType: null, transmission: null,
-      batteryKwh: null, electricRangeKm: null,
-    };
+    // Fallback: handle JS object literal syntax with unquoted keys
+    // e.g. {powerHp:200,bodyType:Sedan} → {"powerHp":200,"bodyType":"Sedan"}
+    try {
+      const fixed = specsJson
+        // Quote unquoted keys
+        .replace(/([{,]\s*)([a-zA-Z_][a-zA-Z0-9_]*)(\s*:)/g, '$1"$2"$3')
+        // Quote unquoted string values (not numbers, null, true, false)
+        .replace(/:\s*([A-Za-z][A-Za-z0-9]*)\s*([,}])/g, (_m, val, end) => {
+          if (val === 'null' || val === 'true' || val === 'false') return `: ${val}${end}`;
+          return `: "${val}"${end}`;
+        });
+      return JSON.parse(fixed) as CarSpecs;
+    } catch {
+      return {
+        powerHp: null, torqueNm: null, displacementCc: null,
+        acceleration0100: null, topSpeedKmh: null, fuelConsumptionCombined: null,
+        co2: null, lengthMm: null, widthMm: null, heightMm: null,
+        wheelbaseMm: null, trunkLiters: null, weightKg: null,
+        bodyType: null, driveType: null, transmission: null,
+        batteryKwh: null, electricRangeKm: null,
+      };
+    }
   }
 }
