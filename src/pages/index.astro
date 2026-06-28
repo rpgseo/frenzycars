@@ -64,9 +64,12 @@ const insurancePosts = pick(all.filter((e: any) => e.collection === 'insurance')
 ---
 
 <Base
-  title={undefined}
+  title="Car Reviews, Auto News & Performance Car Features"
   description="Expert car reviews, breaking auto news, and in-depth features on performance cars, EVs, and car culture. FrenzyCars — driven by obsession."
 >
+  {/* H1 para SEO/accesibilidad — oculto visualmente, patrón habitual en medios de noticias */}
+  <h1 class="sr-only">FrenzyCars — Expert Car Reviews, Auto News &amp; Performance Car Features</h1>
+
   {/* ── Bloque 0 — Ticker de frescura ────────────────────────────────────── */}
   {tickerItems.length > 0 && (
     <div class="news-ticker" aria-label="Últimas publicaciones">
