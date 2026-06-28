@@ -434,21 +434,23 @@ a.brand:hover{color:inherit}
 .compare-selector--compact{
   display:flex;
   align-items:center;
-  gap:.75rem;
+  justify-content:center;
+  gap:1rem;
   padding:.75rem 1rem;
 }
 .compare-selector--compact .compare-arena{
   display:flex;
   align-items:center;
-  gap:.6rem;
-  flex:1 1 auto;
+  justify-content:center;
+  gap:.75rem;
+  flex:0 1 auto;
   min-width:0;
 }
 .compare-selector--compact .compare-panel{
   display:flex;
   align-items:center;
-  gap:.4rem;
-  flex:1 1 0;
+  gap:.5rem;
+  flex:0 1 auto;
   min-width:0;
   padding:0;
   background:transparent;
@@ -466,10 +468,13 @@ a.brand:hover{color:inherit}
   min-width:0;
 }
 .compare-selector--compact .car-picker select{
-  flex:1 1 0;
+  flex:0 0 auto;
+  width:115px;
   min-width:0;
   height:38px;
 }
+/* Year algo más estrecho (solo 4 dígitos) */
+.compare-selector--compact .car-picker select:nth-of-type(3){width:95px}
 .compare-selector--compact .vs-badge{min-width:34px;height:34px;font-size:.78rem;box-shadow:none}
 .compare-selector--compact>button{height:38px;min-width:0;flex:0 0 auto}
 @media(max-width:900px){
