@@ -437,6 +437,7 @@ a.brand:hover{color:inherit}
   gap:.75rem;
   padding:.75rem 1rem;
 }
+/* la arena ocupa todo el ancho hasta el botón */
 .compare-selector--compact .compare-arena{
   display:flex;
   align-items:center;
@@ -444,10 +445,8 @@ a.brand:hover{color:inherit}
   flex:1 1 auto;
   min-width:0;
 }
+/* cada panel reparte 1/2 de la arena */
 .compare-selector--compact .compare-panel{
-  display:flex;
-  align-items:center;
-  gap:.5rem;
   flex:1 1 0;
   min-width:0;
   padding:0;
@@ -457,19 +456,17 @@ a.brand:hover{color:inherit}
 }
 /* en compacto ocultamos la label // CAR A/B: el contexto ya es obvio */
 .compare-selector--compact .picker-label{display:none}
+/* selects de un panel en grid de columnas iguales → mismo ancho garantizado */
 .compare-selector--compact .car-picker{
-  display:flex;
-  flex-wrap:nowrap;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
   align-items:center;
   gap:.5rem;
-  flex:1 1 0;
-  min-width:0;
-}
-/* todos los selects se reparten el ancho por igual hasta llenar la barra */
-.compare-selector--compact .car-picker select{
-  flex:1 1 0;
-  min-width:0;
   width:100%;
+}
+.compare-selector--compact .car-picker select{
+  width:100%;
+  min-width:0;
   height:38px;
 }
 .compare-selector--compact .vs-badge{min-width:34px;height:34px;font-size:.78rem;box-shadow:none}
