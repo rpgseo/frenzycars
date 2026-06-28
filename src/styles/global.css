@@ -384,3 +384,77 @@ a.brand:hover{color:inherit}
 .faq-item[open] summary::after{content:'−'}
 .faq-item summary:hover{color:var(--accent)}
 .faq-item>p{margin:0;padding:.25rem 1.25rem 1.25rem;color:var(--fg-muted);line-height:1.7;font-size:.95rem}
+
+/* ---------- Compare selector ---------- */
+.compare-selector-wrap{
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+  padding-top:1.5rem;
+}
+.compare-selector{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  gap:1rem 1.5rem;
+  padding:1.25rem 1.5rem;
+  background:var(--bg-card);
+  border:1px solid var(--border-strong);
+  border-radius:8px;
+  margin-bottom:1.5rem;
+}
+.car-picker{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  gap:.5rem;
+}
+.picker-label{
+  width:100%;
+  font-size:.7rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  color:var(--fg-dim);
+  margin-bottom:.1rem;
+}
+.car-picker select{
+  padding:.45rem .65rem;
+  background:var(--bg-elev);
+  color:var(--fg);
+  border:1px solid var(--border-strong);
+  border-radius:var(--radius);
+  min-width:130px;
+  font-size:.88rem;
+  font-family:var(--font-body);
+  cursor:pointer;
+  transition:border-color .15s;
+}
+.car-picker select:hover:not(:disabled){border-color:var(--accent)}
+.car-picker select:disabled{opacity:.35;cursor:not-allowed}
+.compare-selector .vs{
+  font-weight:800;
+  font-size:1rem;
+  color:var(--accent);
+  padding-bottom:.45rem;
+  letter-spacing:.04em;
+}
+.compare-selector>button{
+  padding:.5rem 1.4rem;
+  background:var(--accent);
+  color:#000;
+  font-weight:800;
+  font-size:.9rem;
+  border:0;
+  border-radius:var(--radius);
+  cursor:pointer;
+  transition:background .15s,transform .1s;
+}
+.compare-selector>button:hover:not(:disabled){background:var(--accent-hover);transform:translateY(-1px)}
+.compare-selector>button:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.selector-empty{color:var(--fg-dim);margin:1rem 0;font-style:italic}
+@media(max-width:640px){
+  .compare-selector{flex-direction:column;align-items:stretch}
+  .car-picker select{min-width:0;width:100%}
+  .compare-selector>button{width:100%;text-align:center}
+}

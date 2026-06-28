@@ -88,7 +88,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 };
 
-const { rowA, rowB, comparison, allPhrases, radarA, radarB, scoreA, scoreB } = Astro.props as ComparisonPageProps;
+const { rowA, rowB, comparison, allPhrases, radarA, radarB, scoreA, scoreB } = Astro.props as unknown as ComparisonPageProps;
 const compareIndex = await loadCompareIndex();
 const specsA = parseSpecs(rowA.specs_json);
 const specsB = parseSpecs(rowB.specs_json);
@@ -117,7 +117,7 @@ const schema = {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </Fragment>
 
-  <div class="compare-page-selector">
+  <div class="compare-selector-wrap">
     <CompareSelector client:visible cars={compareIndex.cars} pairs={compareIndex.pairs} metas={compareIndex.metas} />
   </div>
   <article class="compare-page">

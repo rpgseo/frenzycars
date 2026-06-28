@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { execSync } from 'child_process';
 import CompareSelector from '../../components/compare/CompareSelector.tsx';
-import { loadCompareIndex, carLabel } from '../../lib/compare-index.js';
+import { loadCompareIndex } from '../../lib/compare-index.js';
 
 interface CompRow {
   url_slug: string;
@@ -53,65 +53,9 @@ function rowLabel(r: CompRow, side: 'a' | 'b'): string {
   </section>
 </Base>
 
-<style is:global>
+<style>
 .compare-hub { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
 .comparison-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; margin-top: 2rem; }
 .comparison-list a { color: var(--accent, #F7D720); text-decoration: none; font-weight: 600; }
 .comparison-list a:hover { text-decoration: underline; }
-
-/* Selector */
-.compare-selector {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 1.25rem;
-  margin: 1.5rem 0 2rem;
-  padding: 1.25rem;
-  background: #0d0d0d;
-  border: 1px solid #222;
-  border-radius: 10px;
-}
-.car-picker {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-.picker-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #888;
-  width: 100%;
-}
-.car-picker select {
-  padding: 0.45rem 0.6rem;
-  background: #111;
-  color: #fff;
-  border: 1px solid #333;
-  border-radius: 6px;
-  min-width: 140px;
-  font-size: 0.9rem;
-}
-.car-picker select:disabled { opacity: 0.4; cursor: not-allowed; }
-.vs {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--accent, #F7D720);
-  align-self: flex-end;
-  padding-bottom: 0.45rem;
-}
-.compare-selector > button {
-  padding: 0.55rem 1.4rem;
-  background: var(--accent, #F7D720);
-  color: #000;
-  font-weight: 700;
-  border: 0;
-  border-radius: 6px;
-  cursor: pointer;
-  align-self: flex-end;
-}
-.compare-selector > button:disabled { opacity: 0.4; cursor: not-allowed; }
-.selector-empty { color: #888; margin: 1.5rem 0; }
 </style>
