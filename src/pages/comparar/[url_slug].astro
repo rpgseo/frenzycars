@@ -10,12 +10,14 @@ import VerdictBlock from '../../components/compare/VerdictBlock.astro';
 import RelatedComparisons from '../../components/compare/RelatedComparisons.astro';
 import RadarChart from '../../components/compare/RadarChart.tsx';
 import StatBars from '../../components/compare/StatBars.tsx';
+import CompareSelector from '../../components/compare/CompareSelector.tsx';
 import type { CarRow, ComparisonRow } from '../../lib/d1-client.js';
 import { parseSpecs } from '../../lib/d1-client.js';
 import { generatePhrases } from '../../lib/compare-phrases.js';
 import { scoreSpecs, overallScore } from '../../lib/compare-score.js';
 import type { RadarData } from '../../lib/compare-score.js';
 import { siteConfig } from '../../config/site.js';
+import { loadCompareIndex } from '../../lib/compare-index.js';
 
 export interface ComparisonPageProps {
   rowA: CarRow;
@@ -86,7 +88,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 };
 
-const { rowA, rowB, comparison, allPhrases, radarA, radarB, scoreA, scoreB } = Astro.props;
+const { rowA, rowB, comparison, allPhrases, radarA, radarB, scoreA, scoreB } = Astro.props as ComparisonPageProps;
+const compareIndex = await loadCompareIndex();
 const specsA = parseSpecs(rowA.specs_json);
 const specsB = parseSpecs(rowB.specs_json);
 
@@ -114,6 +117,9 @@ const schema = {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </Fragment>
 
+  <div class="compare-page-selector">
+    <CompareSelector client:visible cars={compareIndex.cars} pairs={compareIndex.pairs} metas={compareIndex.metas} />
+  </div>
   <article class="compare-page">
     <CompareHero rowA={rowA} rowB={rowB} scoreA={scoreA} scoreB={scoreB} />
     <SpecsTableSideBySide rowA={rowA} rowB={rowB} specsA={specsA} specsB={specsB} />
@@ -135,4 +141,5 @@ const schema = {
 
 <style>
 .compare-page { max-width: 1100px; margin: 0 auto; padding: 0 1rem 4rem; }
+.compare-page-selector { max-width: 1100px; margin: 1.5rem auto 0; padding: 0 1rem; }
 </style>

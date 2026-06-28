@@ -22,6 +22,7 @@ export interface CarOption {
 export interface CompareIndex {
   cars: CarOption[];
   pairs: Record<string, string[]>;
+  metas: CarMeta[];
 }
 
 export function carLabel(c: CarMeta): string {
@@ -50,12 +51,13 @@ export function buildCompareIndex(rows: PublishedPair[], cars: CarMeta[]): Compa
     pairs[slug] = [...new Set(pairs[slug])].sort();
   }
 
-  const carOptions: CarOption[] = cars
-    .filter(c => usedSlugs.has(c.slug))
+  const usedMetas = cars.filter(c => usedSlugs.has(c.slug));
+
+  const carOptions: CarOption[] = usedMetas
     .map(c => ({ slug: c.slug, label: carLabel(c), make: c.make }))
     .sort((a, b) => a.label.localeCompare(b.label));
 
-  return { cars: carOptions, pairs };
+  return { cars: carOptions, pairs, metas: usedMetas };
 }
 
 function runD1(command: string): any[] {
@@ -68,12 +70,12 @@ function runD1(command: string): any[] {
 }
 
 export async function loadCompareIndex(): Promise<CompareIndex> {
-  if (process.env.WRANGLER_D1_SKIP) return { cars: [], pairs: {} };
+  if (process.env.WRANGLER_D1_SKIP) return { cars: [], pairs: {}, metas: [] };
   try {
     const pairRows = runD1(
       'SELECT slug_a, slug_b FROM comparisons WHERE published=1'
     ) as PublishedPair[];
-    if (pairRows.length === 0) return { cars: [], pairs: {} };
+    if (pairRows.length === 0) return { cars: [], pairs: {}, metas: [] };
 
     const slugs = [...new Set(pairRows.flatMap(r => [r.slug_a, r.slug_b]))];
     const inList = slugs.map(s => `'${s}'`).join(',');
@@ -84,6 +86,6 @@ export async function loadCompareIndex(): Promise<CompareIndex> {
     return buildCompareIndex(pairRows, carRows);
   } catch (e) {
     console.warn('[compare-index] D1 unavailable, returning empty index.', e);
-    return { cars: [], pairs: {} };
+    return { cars: [], pairs: {}, metas: [] };
   }
 }

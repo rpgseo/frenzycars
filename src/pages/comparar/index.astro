@@ -2,14 +2,19 @@
 import Base from '../../layouts/Base.astro';
 import { execSync } from 'child_process';
 import CompareSelector from '../../components/compare/CompareSelector.tsx';
-import { loadCompareIndex } from '../../lib/compare-index.js';
+import { loadCompareIndex, carLabel } from '../../lib/compare-index.js';
 
-// At build time, read published comparisons from D1 via wrangler CLI
-let comparisons: Array<{ url_slug: string; slug_a: string; slug_b: string }> = [];
+interface CompRow {
+  url_slug: string;
+  make_a: string; model_a: string; trim_a: string; year_a: number | null;
+  make_b: string; model_b: string; trim_b: string; year_b: number | null;
+}
+
+let comparisons: CompRow[] = [];
 try {
   if (!process.env.WRANGLER_D1_SKIP) {
     const out = execSync(
-      'npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT url_slug, slug_a, slug_b, kd, monthly_searches FROM comparisons WHERE published=1 ORDER BY kd ASC LIMIT 100"',
+      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT c.url_slug, a.make AS make_a, a.model AS model_a, a.trim AS trim_a, a.year AS year_a, b.make AS make_b, b.model AS model_b, b.trim AS trim_b, b.year AS year_b FROM comparisons c JOIN cars a ON a.slug=c.slug_a JOIN cars b ON b.slug=c.slug_b WHERE c.published=1 ORDER BY c.kd ASC LIMIT 100"`,
       { encoding: 'utf8', cwd: process.cwd() }
     );
     const parsed = JSON.parse(out);
@@ -20,12 +25,18 @@ try {
 }
 
 const compareIndex = await loadCompareIndex();
+
+function rowLabel(r: CompRow, side: 'a' | 'b'): string {
+  const year = side === 'a' ? r.year_a : r.year_b;
+  const base = `${side === 'a' ? r.make_a : r.make_b} ${side === 'a' ? r.model_a : r.model_b} ${side === 'a' ? r.trim_a : r.trim_b}`.trim();
+  return year ? `${base} (${year})` : base;
+}
 ---
 <Base title="Car Comparisons — FrenzyCars" description="Side-by-side car comparisons with full specs, performance data, and expert analysis.">
   <section class="compare-hub">
     <h1>Car Comparisons</h1>
     <p class="lead">In-depth side-by-side comparisons with specs, charts, and expert verdicts.</p>
-    <CompareSelector client:visible cars={compareIndex.cars} pairs={compareIndex.pairs} />
+    <CompareSelector client:visible cars={compareIndex.cars} pairs={compareIndex.pairs} metas={compareIndex.metas} />
     {comparisons.length === 0 ? (
       <p>Comparisons coming soon.</p>
     ) : (
@@ -33,7 +44,7 @@ const compareIndex = await loadCompareIndex();
         {comparisons.map(c => (
           <li>
             <a href={`/comparar/${c.url_slug}/`}>
-              {c.slug_a} vs {c.slug_b}
+              {rowLabel(c, 'a')} vs {rowLabel(c, 'b')}
             </a>
           </li>
         ))}
@@ -43,15 +54,64 @@ const compareIndex = await loadCompareIndex();
 </Base>
 
 <style is:global>
-.compare-hub { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-.comparison-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; }
+.compare-hub { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+.comparison-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; margin-top: 2rem; }
 .comparison-list a { color: var(--accent, #F7D720); text-decoration: none; font-weight: 600; }
 .comparison-list a:hover { text-decoration: underline; }
-.compare-selector { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin: 1.5rem 0 2rem; }
-.compare-selector label { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.85rem; }
-.compare-selector select { padding: 0.5rem; background: #111; color: #fff; border: 1px solid #333; border-radius: 6px; min-width: 220px; }
-.compare-selector .vs { font-weight: 700; color: var(--accent, #F7D720); padding-bottom: 0.6rem; }
-.compare-selector button { padding: 0.55rem 1.2rem; background: var(--accent, #F7D720); color: #000; font-weight: 700; border: 0; border-radius: 6px; cursor: pointer; }
-.compare-selector button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Selector */
+.compare-selector {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem;
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+.car-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.picker-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  width: 100%;
+}
+.car-picker select {
+  padding: 0.45rem 0.6rem;
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  min-width: 140px;
+  font-size: 0.9rem;
+}
+.car-picker select:disabled { opacity: 0.4; cursor: not-allowed; }
+.vs {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent, #F7D720);
+  align-self: flex-end;
+  padding-bottom: 0.45rem;
+}
+.compare-selector > button {
+  padding: 0.55rem 1.4rem;
+  background: var(--accent, #F7D720);
+  color: #000;
+  font-weight: 700;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.compare-selector > button:disabled { opacity: 0.4; cursor: not-allowed; }
 .selector-empty { color: #888; margin: 1.5rem 0; }
 </style>
