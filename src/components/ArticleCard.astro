@@ -24,7 +24,7 @@ const iso = d.date ? new Date(d.date).toISOString().slice(0, 10) : '';
   </a>
   <div class="card-body">
     <h3 class="card-title"><a href={`/${entry.collection}/${slug}/`}>{d.title}</a></h3>
-    <p class="card-excerpt">{summarize(entry.body ?? '', 18)}</p>
+    <p class="card-excerpt">{d.description ? d.description.split(' ').slice(0, 18).join(' ') : summarize(entry.body ?? '', 18)}</p>
     <div class="card-meta">
       <span class="meta-author">{d.author ?? 'FrenzyCars'}</span>
       <span class="meta-dot">&bull;</span>
