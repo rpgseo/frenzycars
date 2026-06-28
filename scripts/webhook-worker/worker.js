@@ -100,7 +100,8 @@ export default {
     html = html.replace(/<h2[^>]*>\s*(?:FAQ|Frequently asked questions)\s*<\/h2>[\s\S]*?(?=<h2|$)/i, "");
 
     // 9. Remove any JSON-LD <script> blocks embedded in HTML body (BLG sometimes injects them)
-    html = html.replace(/<script[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi, "");
+    // Handles HTML-encoded quotes (&quot;), plain quotes, and multiple blocks
+    html = html.replace(/<script[^>]*type=(?:["']|&quot;)application\/ld\+json(?:["']|&quot;)[^>]*>[\s\S]*?<\/script>/gi, "");
 
     lines.push(html);
 
