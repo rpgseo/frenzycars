@@ -14,6 +14,7 @@ export interface CarRow {
   year: number | null;
   slug: string;
   specs_json: string;
+  hero_url: string | null;
   updated_at: string;
 }
 

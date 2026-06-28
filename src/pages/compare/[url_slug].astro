@@ -31,31 +31,39 @@ export interface ComparisonPageProps {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // In CI/production, WRANGLER_D1_SKIP=1 env var can skip this
   if (process.env.WRANGLER_D1_SKIP) return [];
 
-  try {
-    const { execSync } = await import('child_process');
+  const CF_ACCOUNT_ID = import.meta.env.CF_ACCOUNT_ID;
+  const CF_API_TOKEN = import.meta.env.CF_API_TOKEN;
+  const D1_DATABASE_ID = 'b9d5f455-8e9e-439c-9283-ef1b19addf4b';
 
-    // Query published comparisons
-    const compResult = execSync(
-      'npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT id, slug_a, slug_b, url_slug, editorial, kd, monthly_searches, published, created_at, updated_at FROM comparisons WHERE published=1"',
-      { encoding: 'utf8', cwd: process.cwd() }
+  async function d1Query(sql: string, params: any[] = []): Promise<any[]> {
+    const res = await fetch(
+      `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/d1/database/${D1_DATABASE_ID}/query`,
+      {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${CF_API_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sql, params }),
+      }
     );
-    const compJson = JSON.parse(compResult);
-    const comparisons: ComparisonRow[] = compJson[0]?.results ?? [];
+    const data = await res.json() as any;
+    if (!data.success) throw new Error(`D1: ${JSON.stringify(data.errors)}`);
+    return data.result?.[0]?.results ?? [];
+  }
+
+  try {
+    const comparisons: ComparisonRow[] = await d1Query(
+      'SELECT id, slug_a, slug_b, url_slug, editorial, kd, monthly_searches, published, created_at, updated_at FROM comparisons WHERE published=1'
+    );
 
     if (comparisons.length === 0) return [];
 
-    // Query all cars needed
     const allSlugs = [...new Set(comparisons.flatMap(c => [c.slug_a, c.slug_b]))];
-    const slugList = allSlugs.map(s => `'${s}'`).join(',');
-    const carsResult = execSync(
-      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT id, make, model, generation, trim, year, slug, specs_json, updated_at FROM cars WHERE slug IN (${slugList})"`,
-      { encoding: 'utf8', cwd: process.cwd() }
+    const placeholders = allSlugs.map(() => '?').join(',');
+    const carsArr: CarRow[] = await d1Query(
+      `SELECT id, make, model, generation, trim, year, slug, specs_json, hero_url, updated_at FROM cars WHERE slug IN (${placeholders})`,
+      allSlugs
     );
-    const carsJson = JSON.parse(carsResult);
-    const carsArr: CarRow[] = carsJson[0]?.results ?? [];
     const carMap = new Map(carsArr.map(c => [c.slug, c]));
 
     const paths = comparisons.map((comp) => {

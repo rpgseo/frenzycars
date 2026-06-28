@@ -13,6 +13,11 @@ const D1_DATABASE_ID = 'b9d5f455-8e9e-439c-9283-ef1b19addf4b';
 // Limit makes for free/dev use. Set SEED_MAX_MAKES=0 for all (paid plan).
 const MAX_MAKES = Number(process.env.SEED_MAX_MAKES ?? 3);
 
+// Filter to specific makes: SEED_MAKES="Toyota,Honda,BMW"
+const SEED_MAKES = process.env.SEED_MAKES
+  ? new Set(process.env.SEED_MAKES.split(',').map(s => s.trim()))
+  : null;
+
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
 // ── CarSpecsAPI ──────────────────────────────────────────────────────────────
@@ -107,7 +112,9 @@ async function seed() {
 
   console.log('Fetching makes from CarSpecsAPI...');
   const makes: any[] = await apiGet('/v2/cars/makes');
-  const slice = MAX_MAKES > 0 ? makes.slice(0, MAX_MAKES) : makes;
+  let slice = SEED_MAKES
+    ? makes.filter(m => SEED_MAKES.has(m.name))
+    : MAX_MAKES > 0 ? makes.slice(0, MAX_MAKES) : makes;
   console.log(`Processing ${slice.length} of ${makes.length} makes`);
 
   let totalInserted = 0;

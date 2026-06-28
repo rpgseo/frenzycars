@@ -10,10 +10,14 @@ interface Props {
 const { rowA, rowB, scoreA, scoreB } = Astro.props;
 const winner = scoreA > scoreB ? rowA : scoreB > scoreA ? rowB : null;
 
-function pressImage(row: CarRow) {
-  return `/press/${row.make.toLowerCase()}/${row.slug}/hero.jpg`;
+function heroImage(row: CarRow) {
+  return row.hero_url ?? `/press/${row.make.toLowerCase()}/${row.slug}/hero.webp`;
 }
-function fallback(row: CarRow) {
+function altText(row: CarRow) {
+  const year = row.year ? ` ${row.year}` : '';
+  return `${row.make} ${row.model} ${row.trim}${year} — imagen exterior`;
+}
+function fallback() {
   return `https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80`;
 }
 ---
@@ -37,12 +41,12 @@ function fallback(row: CarRow) {
         <div class:list={['car-card', { winner: isWinner }]}>
           {isWinner && <div class="winner-badge">Comparison Winner</div>}
           <img
-            src={pressImage(row)}
-            alt={`${row.make} ${row.model} ${row.trim}`}
+            src={heroImage(row)}
+            alt={altText(row)}
             width="480" height="300"
             loading="eager"
             fetchpriority={i === 0 ? 'high' : 'auto'}
-            onerror={`this.src='${fallback(row)}'`}
+            onerror={`this.src='${fallback()}'`}
             transition:name={`car-hero-${row.slug}`}
           />
           <div class="car-meta">

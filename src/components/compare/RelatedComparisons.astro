@@ -1,6 +1,4 @@
 ---
-import { execSync } from 'child_process';
-
 interface Props {
   currentSlug: string;
   slugA: string;
@@ -8,19 +6,27 @@ interface Props {
 }
 const { currentSlug, slugA, slugB } = Astro.props;
 
-// At build time, query D1 for related comparisons via wrangler CLI
+const CF_ACCOUNT_ID = import.meta.env.CF_ACCOUNT_ID ?? process.env.CF_ACCOUNT_ID;
+const CF_API_TOKEN = import.meta.env.CF_API_TOKEN ?? process.env.CF_API_TOKEN;
+const D1_DATABASE_ID = 'b9d5f455-8e9e-439c-9283-ef1b19addf4b';
+
 let related: Array<{ url_slug: string; slug_a: string; slug_b: string }> = [];
 try {
-  if (!process.env.WRANGLER_D1_SKIP) {
-    const out = execSync(
-      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT url_slug, slug_a, slug_b FROM comparisons WHERE published=1 AND url_slug != '${currentSlug}' AND (slug_a IN ('${slugA}','${slugB}') OR slug_b IN ('${slugA}','${slugB}')) LIMIT 6"`,
-      { encoding: 'utf8', cwd: process.cwd() }
-    );
-    const parsed = JSON.parse(out);
-    related = parsed[0]?.results ?? [];
-  }
+  const res = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/d1/database/${D1_DATABASE_ID}/query`,
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${CF_API_TOKEN}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        sql: "SELECT url_slug, slug_a, slug_b FROM comparisons WHERE published=1 AND url_slug != ? AND (slug_a IN (?,?) OR slug_b IN (?,?)) LIMIT 6",
+        params: [currentSlug, slugA, slugB, slugA, slugB],
+      }),
+    }
+  );
+  const data = await res.json() as any;
+  if (data.success) related = data.result?.[0]?.results ?? [];
 } catch {
-  // D1 unavailable
+  // D1 unavailable — silently skip related comparisons
 }
 ---
 {related.length > 0 && (

@@ -1,5 +1,3 @@
-import { execSync } from 'child_process';
-
 export interface CarMeta {
   slug: string;
   make: string;
@@ -60,27 +58,37 @@ export function buildCompareIndex(rows: PublishedPair[], cars: CarMeta[]): Compa
   return { cars: carOptions, pairs, metas: usedMetas };
 }
 
-function runD1(command: string): any[] {
-  const out = execSync(
-    `npx wrangler d1 execute frenzycars-cars --local --json --command="${command}"`,
-    { encoding: 'utf8', cwd: process.cwd() }
+const CF_ACCOUNT_ID = (typeof import.meta !== 'undefined' ? import.meta.env?.CF_ACCOUNT_ID : undefined) ?? process.env.CF_ACCOUNT_ID;
+const CF_API_TOKEN = (typeof import.meta !== 'undefined' ? import.meta.env?.CF_API_TOKEN : undefined) ?? process.env.CF_API_TOKEN;
+const D1_DATABASE_ID = 'b9d5f455-8e9e-439c-9283-ef1b19addf4b';
+
+async function d1Query(sql: string, params: any[] = []): Promise<any[]> {
+  const res = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/d1/database/${D1_DATABASE_ID}/query`,
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${CF_API_TOKEN}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sql, params }),
+    }
   );
-  const parsed = JSON.parse(out);
-  return parsed[0]?.results ?? [];
+  const data = await res.json() as any;
+  if (!data.success) throw new Error(`D1: ${JSON.stringify(data.errors)}`);
+  return data.result?.[0]?.results ?? [];
 }
 
 export async function loadCompareIndex(): Promise<CompareIndex> {
   if (process.env.WRANGLER_D1_SKIP) return { cars: [], pairs: {}, metas: [] };
   try {
-    const pairRows = runD1(
+    const pairRows = await d1Query(
       'SELECT slug_a, slug_b FROM comparisons WHERE published=1'
     ) as PublishedPair[];
     if (pairRows.length === 0) return { cars: [], pairs: {}, metas: [] };
 
     const slugs = [...new Set(pairRows.flatMap(r => [r.slug_a, r.slug_b]))];
-    const inList = slugs.map(s => `'${s}'`).join(',');
-    const carRows = runD1(
-      `SELECT slug, make, model, trim, year FROM cars WHERE slug IN (${inList})`
+    const placeholders = slugs.map(() => '?').join(',');
+    const carRows = await d1Query(
+      `SELECT slug, make, model, trim, year FROM cars WHERE slug IN (${placeholders})`,
+      slugs
     ) as CarMeta[];
 
     return buildCompareIndex(pairRows, carRows);
