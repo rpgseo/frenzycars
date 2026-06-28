@@ -44,7 +44,6 @@ const year = new Date().getFullYear();
         </div>
         <button type="submit">Join</button>
       </form>
-      <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8" is:inline></script>
     </div>
   </div>
   <div class="container footer-bottom">
@@ -52,3 +51,28 @@ const year = new Date().getFullYear();
     <p>Drive fast, read slow.</p>
   </div>
 </footer>
+
+{/* Carga diferida del script de SendFox: solo al interactuar con un formulario de newsletter.
+   Evita ~500 ms de ruta crítica en cada carga de página. Cubre todos los .sendfox-form del sitio. */}
+<script is:inline>
+  (function () {
+    var loaded = false;
+    function loadSendfox() {
+      if (loaded) return;
+      loaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://cdn.sendfox.com/js/form.js';
+      s.charset = 'utf-8';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+    var forms = document.querySelectorAll('.sendfox-form');
+    if (!forms.length) return;
+    forms.forEach(function (form) {
+      // focusin: cubre foco con teclado y clic en cualquier campo
+      form.addEventListener('focusin', loadSendfox, { once: true });
+      // submit como red de seguridad si el JS aún no se ha cargado
+      form.addEventListener('submit', loadSendfox, { once: true });
+    });
+  })();
+</script>
