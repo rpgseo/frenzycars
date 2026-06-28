@@ -97,7 +97,7 @@ function CarPicker({ label, metas, allowedSlugs, value, onChange, disabled }: Ca
 
   return (
     <div className="car-picker">
-      <span className="picker-label">{label}</span>
+      <span className="picker-label"><span className="picker-label-marker">//</span> {label}</span>
 
       <select value={make} onChange={e => onChangeMake(e.target.value)} disabled={disabled || pool.length === 0}>
         <option value="">Make…</option>
@@ -148,27 +148,33 @@ export default function CompareSelector({ cars, pairs, metas }: Props) {
 
   return (
     <div className="compare-selector">
-      <CarPicker
-        label="Car A"
-        metas={metas}
-        allowedSlugs={null}
-        value={slugA}
-        onChange={v => { setSlugA(v); setSlugB(''); }}
-      />
+      <div className="compare-arena">
+        <div className="compare-panel">
+          <CarPicker
+            label="Car A"
+            metas={metas}
+            allowedSlugs={null}
+            value={slugA}
+            onChange={v => { setSlugA(v); setSlugB(''); }}
+          />
+        </div>
 
-      <span className="vs">vs</span>
+        <span className="vs"><span className="vs-badge">VS</span></span>
 
-      <CarPicker
-        label="Car B"
-        metas={metas}
-        allowedSlugs={allowedForB}
-        value={slugB}
-        onChange={setSlugB}
-        disabled={!slugA}
-      />
+        <div className="compare-panel">
+          <CarPicker
+            label="Car B"
+            metas={metas}
+            allowedSlugs={allowedForB}
+            value={slugB}
+            onChange={setSlugB}
+            disabled={!slugA}
+          />
+        </div>
+      </div>
 
       <button type="button" onClick={go} disabled={!canCompare}>
-        Compare
+        Compare <span className="btn-arrow" aria-hidden="true">→</span>
       </button>
     </div>
   );
