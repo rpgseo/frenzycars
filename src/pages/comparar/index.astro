@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { execSync } from 'child_process';
+import CompareSelector from '../../components/compare/CompareSelector.tsx';
+import { loadCompareIndex } from '../../lib/compare-index.js';
 
 // At build time, read published comparisons from D1 via wrangler CLI
 let comparisons: Array<{ url_slug: string; slug_a: string; slug_b: string }> = [];
@@ -16,11 +18,14 @@ try {
 } catch {
   // D1 unavailable in CI — render empty hub
 }
+
+const compareIndex = await loadCompareIndex();
 ---
 <Base title="Car Comparisons — FrenzyCars" description="Side-by-side car comparisons with full specs, performance data, and expert analysis.">
   <section class="compare-hub">
     <h1>Car Comparisons</h1>
     <p class="lead">In-depth side-by-side comparisons with specs, charts, and expert verdicts.</p>
+    <CompareSelector client:visible cars={compareIndex.cars} pairs={compareIndex.pairs} />
     {comparisons.length === 0 ? (
       <p>Comparisons coming soon.</p>
     ) : (
@@ -42,4 +47,11 @@ try {
 .comparison-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; }
 .comparison-list a { color: var(--accent, #F7D720); text-decoration: none; font-weight: 600; }
 .comparison-list a:hover { text-decoration: underline; }
+.compare-selector { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin: 1.5rem 0 2rem; }
+.compare-selector label { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.85rem; }
+.compare-selector select { padding: 0.5rem; background: #111; color: #fff; border: 1px solid #333; border-radius: 6px; min-width: 220px; }
+.compare-selector .vs { font-weight: 700; color: var(--accent, #F7D720); padding-bottom: 0.6rem; }
+.compare-selector button { padding: 0.55rem 1.2rem; background: var(--accent, #F7D720); color: #000; font-weight: 700; border: 0; border-radius: 6px; cursor: pointer; }
+.compare-selector button:disabled { opacity: 0.5; cursor: not-allowed; }
+.selector-empty { color: #888; margin: 1.5rem 0; }
 </style>
