@@ -11,7 +11,7 @@ interface Props {
 // --- Pure helpers (exported for tests) ---
 
 export function targetHref(a: string, b: string): string {
-  return `/comparar/${makeComparisonSlug(a, b)}/`;
+  return `/compare/${makeComparisonSlug(a, b)}/`;
 }
 
 export function optionsForB(

@@ -83,7 +83,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
     return paths as any[];
   } catch (e) {
-    console.warn('[comparar] getStaticPaths: D1 unavailable, skipping comparison pages.', e);
+    console.warn('[compare] getStaticPaths: D1 unavailable, skipping comparison pages.', e);
     return [];
   }
 };
@@ -95,7 +95,7 @@ const specsB = parseSpecs(rowB.specs_json);
 
 const title = `${rowA.make} ${rowA.model} ${rowA.trim} ${rowA.year} vs ${rowB.make} ${rowB.model} ${rowB.trim} ${rowB.year}`;
 const description = allPhrases.slice(0, 2).join(' ');
-const canonical = new URL(`/comparar/${comparison.url_slug}/`, siteConfig.baseURL).href;
+const canonical = new URL(`/compare/${comparison.url_slug}/`, siteConfig.baseURL).href;
 
 // JSON-LD schema
 const schema = {

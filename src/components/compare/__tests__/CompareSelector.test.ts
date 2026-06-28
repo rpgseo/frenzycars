@@ -15,7 +15,7 @@ const pairs = {
 describe('targetHref', () => {
   it('builds an alphabetical comparison URL with trailing slash', () => {
     expect(targetHref('honda-civic-si-2023', 'volkswagen-golf-gti-base-2023'))
-      .toBe('/comparar/honda-civic-si-2023-vs-volkswagen-golf-gti-base-2023/');
+      .toBe('/compare/honda-civic-si-2023-vs-volkswagen-golf-gti-base-2023/');
   });
 
   it('is order-independent (same URL regardless of argument order)', () => {

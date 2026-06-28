@@ -43,7 +43,7 @@ function rowLabel(r: CompRow, side: 'a' | 'b'): string {
       <ul class="comparison-list">
         {comparisons.map(c => (
           <li>
-            <a href={`/comparar/${c.url_slug}/`}>
+            <a href={`/compare/${c.url_slug}/`}>
               {rowLabel(c, 'a')} vs {rowLabel(c, 'b')}
             </a>
           </li>
