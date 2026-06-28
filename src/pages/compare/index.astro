@@ -1,6 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { execSync } from 'child_process';
 import CompareSelector from '../../components/compare/CompareSelector.tsx';
 import { loadCompareIndex } from '../../lib/compare-index.js';
 
@@ -12,17 +11,26 @@ interface CompRow {
 }
 
 let comparisons: CompRow[] = [];
-try {
-  if (!process.env.WRANGLER_D1_SKIP) {
-    const out = execSync(
-      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT c.url_slug, c.monthly_searches, a.make AS make_a, a.model AS model_a, a.trim AS trim_a, a.year AS year_a, b.make AS make_b, b.model AS model_b, b.trim AS trim_b, b.year AS year_b FROM comparisons c JOIN cars a ON a.slug=c.slug_a JOIN cars b ON b.slug=c.slug_b WHERE c.published=1 ORDER BY c.monthly_searches DESC NULLS LAST, c.kd ASC LIMIT 24"`,
-      { encoding: 'utf8', cwd: process.cwd() }
+if (!process.env.WRANGLER_D1_SKIP) {
+  const CF_ACCOUNT_ID = import.meta.env.CF_ACCOUNT_ID;
+  const CF_API_TOKEN = import.meta.env.CF_API_TOKEN;
+  const D1_DATABASE_ID = 'b9d5f455-8e9e-439c-9283-ef1b19addf4b';
+  try {
+    const res = await fetch(
+      `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/d1/database/${D1_DATABASE_ID}/query`,
+      {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${CF_API_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sql: `SELECT c.url_slug, c.monthly_searches, a.make AS make_a, a.model AS model_a, a.trim AS trim_a, a.year AS year_a, b.make AS make_b, b.model AS model_b, b.trim AS trim_b, b.year AS year_b FROM comparisons c JOIN cars a ON a.slug=c.slug_a JOIN cars b ON b.slug=c.slug_b WHERE c.published=1 ORDER BY c.monthly_searches DESC NULLS LAST, c.kd ASC LIMIT 24`,
+        }),
+      }
     );
-    const parsed = JSON.parse(out);
-    comparisons = parsed[0]?.results ?? [];
+    const data = await res.json() as any;
+    if (data.success) comparisons = data.result?.[0]?.results ?? [];
+  } catch (e) {
+    console.warn('[compare] hub: D1 unavailable.', e);
   }
-} catch {
-  // D1 unavailable in CI
 }
 
 const compareIndex = await loadCompareIndex();
