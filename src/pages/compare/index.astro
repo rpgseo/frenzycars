@@ -44,12 +44,17 @@ function carName(make: string, model: string, trim: string, year: number | null)
         <div class="comparison-grid">
           {comparisons.map(c => (
             <a href={`/compare/${c.url_slug}/`} class="comparison-card">
-              <span class="car-a">{carName(c.make_a, c.model_a, c.trim_a, c.year_a)}</span>
-              <span class="vs-badge">vs</span>
-              <span class="car-b">{carName(c.make_b, c.model_b, c.trim_b, c.year_b)}</span>
-              {c.monthly_searches && (
-                <span class="searches">{c.monthly_searches.toLocaleString('en-US')} searches/mo</span>
-              )}
+              <div class="comparison-card__car">
+                <span class="comparison-card__make">{c.make_a}</span>
+                <span class="comparison-card__model">{c.model_a} {c.trim_a}</span>
+                {c.year_a && <span class="comparison-card__year">{c.year_a}</span>}
+              </div>
+              <div class="comparison-card__vs">VS</div>
+              <div class="comparison-card__car">
+                <span class="comparison-card__make">{c.make_b}</span>
+                <span class="comparison-card__model">{c.model_b} {c.trim_b}</span>
+                {c.year_b && <span class="comparison-card__year">{c.year_b}</span>}
+              </div>
             </a>
           ))}
         </div>
