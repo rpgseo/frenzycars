@@ -461,14 +461,15 @@ a.brand:hover{color:inherit}
   display:flex;
   flex-wrap:nowrap;
   align-items:center;
-  gap:.4rem;
-  flex:1 1 auto;
+  gap:.5rem;
+  flex:1 1 0;
   min-width:0;
 }
-/* todos los selects se reparten el ancho por igual, con mínimo legible */
+/* todos los selects se reparten el ancho por igual hasta llenar la barra */
 .compare-selector--compact .car-picker select{
   flex:1 1 0;
-  min-width:88px;
+  min-width:0;
+  width:100%;
   height:38px;
 }
 .compare-selector--compact .vs-badge{min-width:34px;height:34px;font-size:.78rem;box-shadow:none}
