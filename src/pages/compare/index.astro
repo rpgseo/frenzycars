@@ -8,54 +8,117 @@ interface CompRow {
   url_slug: string;
   make_a: string; model_a: string; trim_a: string; year_a: number | null;
   make_b: string; model_b: string; trim_b: string; year_b: number | null;
+  monthly_searches: number | null;
 }
 
 let comparisons: CompRow[] = [];
 try {
   if (!process.env.WRANGLER_D1_SKIP) {
     const out = execSync(
-      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT c.url_slug, a.make AS make_a, a.model AS model_a, a.trim AS trim_a, a.year AS year_a, b.make AS make_b, b.model AS model_b, b.trim AS trim_b, b.year AS year_b FROM comparisons c JOIN cars a ON a.slug=c.slug_a JOIN cars b ON b.slug=c.slug_b WHERE c.published=1 ORDER BY c.kd ASC LIMIT 100"`,
+      `npx wrangler d1 execute frenzycars-cars --local --json --command="SELECT c.url_slug, c.monthly_searches, a.make AS make_a, a.model AS model_a, a.trim AS trim_a, a.year AS year_a, b.make AS make_b, b.model AS model_b, b.trim AS trim_b, b.year AS year_b FROM comparisons c JOIN cars a ON a.slug=c.slug_a JOIN cars b ON b.slug=c.slug_b WHERE c.published=1 ORDER BY c.monthly_searches DESC NULLS LAST, c.kd ASC LIMIT 24"`,
       { encoding: 'utf8', cwd: process.cwd() }
     );
     const parsed = JSON.parse(out);
     comparisons = parsed[0]?.results ?? [];
   }
 } catch {
-  // D1 unavailable in CI — render empty hub
+  // D1 unavailable in CI
 }
 
 const compareIndex = await loadCompareIndex();
 
-function rowLabel(r: CompRow, side: 'a' | 'b'): string {
-  const year = side === 'a' ? r.year_a : r.year_b;
-  const base = `${side === 'a' ? r.make_a : r.make_b} ${side === 'a' ? r.model_a : r.model_b} ${side === 'a' ? r.trim_a : r.trim_b}`.trim();
+function carName(make: string, model: string, trim: string, year: number | null): string {
+  const base = `${make} ${model} ${trim}`.trim();
   return year ? `${base} (${year})` : base;
 }
 ---
 <Base title="Car Comparisons — FrenzyCars" description="Side-by-side car comparisons with full specs, performance data, and expert analysis." noindex={true}>
   <section class="compare-hub">
     <h1>Car Comparisons</h1>
-    <p class="lead">In-depth side-by-side comparisons with specs, charts, and expert verdicts.</p>
+    <p class="lead">Pick any two cars and get a full side-by-side breakdown — specs, performance, and a clear verdict.</p>
     <CompareSelector client:visible cars={compareIndex.cars} pairs={compareIndex.pairs} metas={compareIndex.metas} />
-    {comparisons.length === 0 ? (
-      <p>Comparisons coming soon.</p>
-    ) : (
-      <ul class="comparison-list">
-        {comparisons.map(c => (
-          <li>
-            <a href={`/compare/${c.url_slug}/`}>
-              {rowLabel(c, 'a')} vs {rowLabel(c, 'b')}
+
+    {comparisons.length > 0 && (
+      <div class="popular-section">
+        <h2>Most Searched Comparisons</h2>
+        <div class="comparison-grid">
+          {comparisons.map(c => (
+            <a href={`/compare/${c.url_slug}/`} class="comparison-card">
+              <span class="car-a">{carName(c.make_a, c.model_a, c.trim_a, c.year_a)}</span>
+              <span class="vs-badge">vs</span>
+              <span class="car-b">{carName(c.make_b, c.model_b, c.trim_b, c.year_b)}</span>
+              {c.monthly_searches && (
+                <span class="searches">{c.monthly_searches.toLocaleString('en-US')} searches/mo</span>
+              )}
             </a>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
     )}
   </section>
 </Base>
 
 <style>
-.compare-hub { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
-.comparison-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; margin-top: 2rem; }
-.comparison-list a { color: var(--accent, #F7D720); text-decoration: none; font-weight: 600; }
-.comparison-list a:hover { text-decoration: underline; }
+.compare-hub {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem 4rem;
+}
+
+.popular-section { margin-top: 3rem; }
+.popular-section h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  color: var(--fg);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.comparison-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.1s;
+}
+.comparison-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.car-a, .car-b {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--fg);
+  line-height: 1.3;
+}
+.vs-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  background: var(--accent);
+  color: #000;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+.searches {
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 540px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+}
 </style>
