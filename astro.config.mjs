@@ -10,4 +10,8 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   integrations: [sitemap(), react()],
+  vite: {
+    server: { watch: { ignored: ['**/workers/**'] } },
+    optimizeDeps: { exclude: ['workers'] },
+  },
 });

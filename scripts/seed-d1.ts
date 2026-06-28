@@ -1,111 +1,151 @@
-import Papa from 'papaparse';
-import { execSync } from 'child_process';
-import { writeFileSync, unlinkSync } from 'fs';
+import { existsSync } from 'fs';
 import { makeCarSlug } from '../src/lib/car-slug.js';
+import { config } from 'dotenv';
+if (existsSync('.env')) config();
 
 const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 if (!RAPIDAPI_KEY) throw new Error('RAPIDAPI_KEY env var required');
 
-interface CsvRow {
-  make?: string;
-  model?: string;
-  generation?: string;
-  trim?: string;
-  year?: string;
-  engineHp?: string;
-  maximumTorqueNM?: string;
-  capacityCm3?: string;
-  acceleration0To100KmPerHS?: string;
-  topSpeedKmH?: string;
-  fuelConsumptionCombinedL100Km?: string;
-  co2EmissionsGKm?: string;
-  lengthMm?: string;
-  widthMm?: string;
-  heightMm?: string;
-  wheelbaseMm?: string;
-  cargoVolumeM3?: string;
-  curbWeightKg?: string;
-  bodyType?: string;
-  driveWheels?: string;
-  transmission?: string;
-  batteryCapacityKwPerH?: string;
-  electricRangeKm?: string;
-  [key: string]: string | undefined;
+const CF_ACCOUNT_ID = process.env.CF_ACCOUNT_ID;
+const CF_API_TOKEN = process.env.CF_API_TOKEN;
+const D1_DATABASE_ID = 'b9d5f455-8e9e-439c-9283-ef1b19addf4b';
+
+// Limit makes for free/dev use. Set SEED_MAX_MAKES=0 for all (paid plan).
+const MAX_MAKES = Number(process.env.SEED_MAX_MAKES ?? 3);
+
+const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
+
+// ── CarSpecsAPI ──────────────────────────────────────────────────────────────
+
+const RAPID_HEADERS = {
+  'x-rapidapi-host': 'car-specs.p.rapidapi.com',
+  'x-rapidapi-key': RAPIDAPI_KEY!,
+};
+
+async function apiGet(path: string, retries = 3): Promise<any> {
+  for (let i = 0; i < retries; i++) {
+    const res = await fetch(`https://car-specs.p.rapidapi.com${path}`, { headers: RAPID_HEADERS });
+    if (res.status === 429) {
+      const wait = 3000 * (i + 1);
+      console.log(`  429 rate limit, waiting ${wait}ms...`);
+      await sleep(wait);
+      continue;
+    }
+    if (!res.ok) throw new Error(`CarSpecsAPI ${path} → ${res.status} ${res.statusText}`);
+    await sleep(250);
+    return res.json();
+  }
+  throw new Error(`CarSpecsAPI → 429 after ${retries} retries`);
 }
 
-async function downloadCsv(): Promise<string> {
-  console.log('Downloading CSV from CarSpecsAPI...');
-  const res = await fetch('https://car-specs.p.rapidapi.com/v2/cars/download-database', {
-    headers: {
-      'x-rapidapi-host': 'car-specs.p.rapidapi.com',
-      'x-rapidapi-key': RAPIDAPI_KEY!,
-    },
-  });
-  if (!res.ok) throw new Error(`CarSpecsAPI error: ${res.status} ${res.statusText}`);
-  return res.text();
-}
-
-function rowToSpecs(row: CsvRow) {
+function specsFromTrim(t: any) {
   return {
-    powerHp: row.engineHp ? Number(row.engineHp) : null,
-    torqueNm: row.maximumTorqueNM ? Number(row.maximumTorqueNM) : null,
-    displacementCc: row.capacityCm3 ? Number(row.capacityCm3) : null,
-    acceleration0100: row.acceleration0To100KmPerHS ? Number(row.acceleration0To100KmPerHS) : null,
-    topSpeedKmh: row.topSpeedKmH ? Number(row.topSpeedKmH) : null,
-    fuelConsumptionCombined: row.fuelConsumptionCombinedL100Km ? Number(row.fuelConsumptionCombinedL100Km) : null,
-    co2: row.co2EmissionsGKm ? Number(row.co2EmissionsGKm) : null,
-    lengthMm: row.lengthMm ? Number(row.lengthMm) : null,
-    widthMm: row.widthMm ? Number(row.widthMm) : null,
-    heightMm: row.heightMm ? Number(row.heightMm) : null,
-    wheelbaseMm: row.wheelbaseMm ? Number(row.wheelbaseMm) : null,
-    trunkLiters: row.cargoVolumeM3 ? Math.round(Number(row.cargoVolumeM3) * 1000) : null,
-    weightKg: row.curbWeightKg ? Number(row.curbWeightKg) : null,
-    bodyType: row.bodyType ?? null,
-    driveType: row.driveWheels ?? null,
-    transmission: row.transmission ?? null,
-    batteryKwh: row.batteryCapacityKwPerH ? Number(row.batteryCapacityKwPerH) : null,
-    electricRangeKm: row.electricRangeKm ? Number(row.electricRangeKm) : null,
+    powerHp: t.engineHp ?? null,
+    torqueNm: t.maximumTorqueNM ?? null,
+    displacementCc: t.capacityCm3 ?? null,
+    acceleration0100: t.acceleration0To100KmPerHS ?? null,
+    topSpeedKmh: t.topSpeedKmH ?? null,
+    fuelConsumptionCombined: t.fuelConsumptionCombinedL100Km ?? null,
+    co2: t.co2EmissionsGKm ?? null,
+    lengthMm: t.lengthMm ?? null,
+    widthMm: t.widthMm ?? null,
+    heightMm: t.heightMm ?? null,
+    wheelbaseMm: t.wheelbaseMm ?? null,
+    trunkLiters: t.cargoVolumeM3 ? Math.round(Number(t.cargoVolumeM3) * 1000) : null,
+    weightKg: t.curbWeightKg ?? null,
+    bodyType: t.bodyType ?? null,
+    driveType: t.driveWheels ?? null,
+    transmission: t.transmission ?? null,
+    batteryKwh: t.batteryCapacityKwPerH ?? null,
+    electricRangeKm: t.electricRangeKm ?? null,
   };
 }
 
-async function seed() {
-  const csv = await downloadCsv();
-  const { data } = Papa.parse<CsvRow>(csv, { header: true, skipEmptyLines: true });
-  console.log(`Parsed ${data.length} rows`);
+// ── Cloudflare D1 REST API ───────────────────────────────────────────────────
 
-  const now = new Date().toISOString();
-  let inserted = 0;
-  const BATCH = 100;
-
-  for (let i = 0; i < data.length; i += BATCH) {
-    const chunk = data.slice(i, i + BATCH);
-    const values = chunk
-      .filter(r => r.make && r.model && r.trim)
-      .map(r => {
-        const slug = makeCarSlug(r.make!, r.model!, r.trim!, r.year ? Number(r.year) : null);
-        const specs = JSON.stringify(rowToSpecs(r));
-        const year = r.year ? Number(r.year) : 'NULL';
-        const gen = r.generation ? `'${r.generation.replace(/'/g, "''")}'` : 'NULL';
-        return `('${r.make!.replace(/'/g, "''")}','${r.model!.replace(/'/g, "''")}',${gen},'${r.trim!.replace(/'/g, "''")}',${year},'${slug}','${specs.replace(/'/g, "''")}','${now}')`;
-      })
-      .join(',\n');
-
-    if (!values) continue;
-
-    const sql = `INSERT OR REPLACE INTO cars (make,model,generation,trim,year,slug,specs_json,updated_at) VALUES\n${values};`;
-    const sqlFile = `seed_batch_${i}.sql`;
-    writeFileSync(sqlFile, sql, 'utf8');
-
-    try {
-      execSync(`npx wrangler d1 execute frenzycars-cars --local --file=${sqlFile}`, { stdio: 'inherit' });
-    } finally {
-      unlinkSync(sqlFile);
-    }
-
-    inserted += chunk.length;
-    if (i % 5000 === 0) console.log(`Progress: ${inserted}/${data.length}`);
+async function d1Query(sql: string, params: any[] = []) {
+  if (!CF_ACCOUNT_ID || !CF_API_TOKEN) {
+    throw new Error('CF_ACCOUNT_ID and CF_API_TOKEN env vars required for D1 REST API');
   }
-  console.log(`Done. Inserted/replaced ${inserted} cars.`);
+  const res = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/d1/database/${D1_DATABASE_ID}/query`,
+    {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${CF_API_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ sql, params }),
+    }
+  );
+  const json: any = await res.json();
+  if (!json.success) throw new Error(`D1 API error: ${JSON.stringify(json.errors)}`);
+  return json.result;
+}
+
+async function upsertRow(make: string, model: string, generation: string | null, trim: string, year: number | null, specs: any) {
+  const slug = makeCarSlug(make, model, trim, year);
+  const specsJson = JSON.stringify(specs);
+  const now = new Date().toISOString();
+  await d1Query(
+    `INSERT OR REPLACE INTO cars (make,model,generation,trim,year,slug,specs_json,updated_at) VALUES (?,?,?,?,?,?,?,?)`,
+    [make, model, generation, trim, year, slug, specsJson, now]
+  );
+}
+
+// ── Main ─────────────────────────────────────────────────────────────────────
+
+async function seed() {
+  // Verify D1 credentials
+  if (!CF_ACCOUNT_ID || !CF_API_TOKEN) {
+    console.error('Missing CF_ACCOUNT_ID or CF_API_TOKEN in .env');
+    console.error('Add them to .env:');
+    console.error('  CF_ACCOUNT_ID=your-account-id');
+    console.error('  CF_API_TOKEN=your-api-token');
+    process.exit(1);
+  }
+
+  console.log('Fetching makes from CarSpecsAPI...');
+  const makes: any[] = await apiGet('/v2/cars/makes');
+  const slice = MAX_MAKES > 0 ? makes.slice(0, MAX_MAKES) : makes;
+  console.log(`Processing ${slice.length} of ${makes.length} makes`);
+
+  let totalInserted = 0;
+  let reqCount = 1;
+
+  for (const make of slice) {
+    console.log(`\n→ ${make.name}`);
+    const models: any[] = await apiGet(`/v2/cars/makes/${make.id}/models`);
+    reqCount++;
+
+    for (const model of models) {
+      const generations: any[] = await apiGet(`/v2/cars/models/${model.id}/generations`);
+      reqCount++;
+
+      let modelCount = 0;
+      for (const gen of generations) {
+        const trims: any[] = await apiGet(`/v2/cars/generations/${gen.id}/trims`);
+        reqCount++;
+
+        for (const trim of trims) {
+          if (!trim.trim) continue;
+          // Fetch full specs for this trim
+          const detail = await apiGet(`/v2/cars/trims/${trim.id}`);
+          reqCount++;
+          const specs = specsFromTrim(detail);
+          const year = detail.startProductionYear ?? null;
+          await upsertRow(make.name, model.name, gen.name ?? null, trim.trim, year, specs);
+          modelCount++;
+          totalInserted++;
+        }
+      }
+      console.log(`  ${model.name}: ${modelCount} trims (${reqCount} API reqs)`);
+    }
+  }
+
+  // Verify
+  const result = await d1Query('SELECT count(*) as total FROM cars');
+  console.log(`\nDone. ${totalInserted} trims upserted. D1 total: ${result[0]?.results[0]?.total}`);
 }
 
 seed().catch(console.error);

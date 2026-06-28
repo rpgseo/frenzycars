@@ -14,4 +14,4 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: https://frenzycars.com/sitemap.xml

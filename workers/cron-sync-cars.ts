@@ -21,6 +21,9 @@ async function apiGet(path: string, key: string) {
 }
 
 export default {
+  async fetch() {
+    return new Response('Cron worker — no HTTP interface.', { status: 200 });
+  },
   async scheduled(_event: ScheduledEvent, env: Env, _ctx: ExecutionContext) {
     const makes = await apiGet('/makes', env.RAPIDAPI_KEY);
     const now = new Date().toISOString();
