@@ -433,37 +433,49 @@ a.brand:hover{color:inherit}
 /* ----- Variant: compact (individual comparison pages) ----- */
 .compare-selector--compact{
   display:flex;
-  flex-wrap:wrap;
-  align-items:flex-end;
-  gap:.75rem 1rem;
-  padding:1rem 1.25rem;
+  align-items:center;
+  gap:.75rem;
+  padding:.75rem 1rem;
 }
 .compare-selector--compact .compare-arena{
   display:flex;
-  flex-wrap:wrap;
-  align-items:flex-end;
-  gap:.75rem 1rem;
+  align-items:center;
+  gap:.6rem;
   flex:1 1 auto;
+  min-width:0;
 }
 .compare-selector--compact .compare-panel{
-  flex:1 1 auto;
+  display:flex;
+  align-items:center;
+  gap:.4rem;
+  flex:1 1 0;
+  min-width:0;
   padding:0;
   background:transparent;
   border:0;
   border-radius:0;
 }
-.compare-selector--compact .car-picker{align-items:flex-end}
-.compare-selector--compact .car-picker select{
+/* en compacto ocultamos la label // CAR A/B: el contexto ya es obvio */
+.compare-selector--compact .picker-label{display:none}
+.compare-selector--compact .car-picker{
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  gap:.4rem;
   flex:1 1 auto;
-  min-width:120px;
+  min-width:0;
 }
-.compare-selector--compact .car-picker select:nth-of-type(3),
-.compare-selector--compact .car-picker select:nth-of-type(4){flex:1 1 auto}
+.compare-selector--compact .car-picker select{
+  flex:1 1 0;
+  min-width:0;
+  height:38px;
+}
 .compare-selector--compact .vs-badge{min-width:34px;height:34px;font-size:.78rem;box-shadow:none}
-.compare-selector--compact>button{height:38px;min-width:0}
-@media(max-width:760px){
+.compare-selector--compact>button{height:38px;min-width:0;flex:0 0 auto}
+@media(max-width:900px){
   .compare-selector--compact{flex-direction:column;align-items:stretch}
   .compare-selector--compact .compare-arena{flex-direction:column;align-items:stretch}
+  .compare-selector--compact .vs{justify-content:center}
   .compare-selector--compact>button{width:100%}
 }
 
