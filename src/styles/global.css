@@ -469,14 +469,14 @@ a.brand:hover{color:inherit}
 }
 .compare-selector--compact .car-picker select{
   flex:0 0 auto;
-  width:115px;
+  width:140px;
   min-width:0;
   height:38px;
 }
 /* Year algo más estrecho (solo 4 dígitos) */
-.compare-selector--compact .car-picker select:nth-of-type(3){width:95px}
+.compare-selector--compact .car-picker select:nth-of-type(3){width:105px}
 .compare-selector--compact .vs-badge{min-width:34px;height:34px;font-size:.78rem;box-shadow:none}
-.compare-selector--compact>button{height:38px;min-width:0;flex:0 0 auto}
+.compare-selector--compact>button{height:38px;min-width:0;flex:0 0 auto;padding:0 1rem;font-size:.82rem;letter-spacing:.02em}
 @media(max-width:900px){
   .compare-selector--compact{flex-direction:column;align-items:stretch}
   .compare-selector--compact .compare-arena{flex-direction:column;align-items:stretch}
