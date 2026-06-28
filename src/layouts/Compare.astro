@@ -7,10 +7,11 @@ interface Props {
   description: string;
   canonical: string;
   ogImage?: string;
+  noindex?: boolean;
 }
-const { title, description, canonical, ogImage } = Astro.props;
+const { title, description, canonical, ogImage, noindex = true } = Astro.props;
 ---
-<Base title={title} description={description} ogImage={ogImage} canonical={canonical}>
+<Base title={title} description={description} ogImage={ogImage} canonical={canonical} noindex={noindex}>
   <slot name="head" slot="head">
     <ClientRouter />
   </slot>
