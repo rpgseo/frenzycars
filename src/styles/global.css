@@ -393,11 +393,6 @@ a.brand:hover{color:inherit}
   padding-top:1.5rem;
 }
 .compare-selector{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:1.5rem;
-  padding:1.5rem;
   background:var(--bg-card);
   border:1px solid var(--border-strong);
   border-radius:10px;
@@ -408,7 +403,16 @@ a.brand:hover{color:inherit}
   border-color:rgba(247,215,32,.45);
   box-shadow:0 0 0 1px rgba(247,215,32,.25),0 8px 30px rgba(0,0,0,.35);
 }
-.compare-arena{
+
+/* ----- Variant: panels (compare hub) ----- */
+.compare-selector--panels{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1.5rem;
+  padding:1.5rem;
+}
+.compare-selector--panels .compare-arena{
   display:flex;
   align-items:center;
   justify-content:center;
@@ -425,6 +429,44 @@ a.brand:hover{color:inherit}
   transition:border-color .2s;
 }
 .compare-panel:focus-within{border-color:rgba(247,215,32,.5)}
+
+/* ----- Variant: compact (individual comparison pages) ----- */
+.compare-selector--compact{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  gap:.75rem 1rem;
+  padding:1rem 1.25rem;
+}
+.compare-selector--compact .compare-arena{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  gap:.75rem 1rem;
+  flex:1 1 auto;
+}
+.compare-selector--compact .compare-panel{
+  flex:1 1 auto;
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+}
+.compare-selector--compact .car-picker{align-items:flex-end}
+.compare-selector--compact .car-picker select{
+  flex:1 1 auto;
+  min-width:120px;
+}
+.compare-selector--compact .car-picker select:nth-of-type(3),
+.compare-selector--compact .car-picker select:nth-of-type(4){flex:1 1 auto}
+.compare-selector--compact .vs-badge{min-width:34px;height:34px;font-size:.78rem;box-shadow:none}
+.compare-selector--compact>button{height:38px;min-width:0}
+@media(max-width:760px){
+  .compare-selector--compact{flex-direction:column;align-items:stretch}
+  .compare-selector--compact .compare-arena{flex-direction:column;align-items:stretch}
+  .compare-selector--compact>button{width:100%}
+}
+
 .car-picker{
   display:flex;
   flex-wrap:wrap;
@@ -521,9 +563,9 @@ a.brand:hover{color:inherit}
 .compare-selector>button:hover:not(:disabled) .btn-arrow{transform:translateX(3px)}
 .selector-empty{color:var(--fg-dim);margin:1rem 0;font-style:italic}
 @media(max-width:640px){
-  .compare-arena{flex-direction:column;gap:1rem}
-  .compare-panel{max-width:none;width:100%}
-  .compare-selector>button{width:100%;min-width:0}
+  .compare-selector--panels .compare-arena{flex-direction:column;gap:1rem}
+  .compare-selector--panels .compare-panel{max-width:none;width:100%}
+  .compare-selector--panels>button{width:100%;min-width:0}
 }
 
 /* ---------- Compare hub grid ---------- */

@@ -6,6 +6,7 @@ interface Props {
   cars: CarOption[];
   pairs: Record<string, string[]>;
   metas: CarMeta[];
+  variant?: 'panels' | 'compact';
 }
 
 // --- Pure helpers (exported for tests) ---
@@ -128,7 +129,7 @@ function CarPicker({ label, metas, allowedSlugs, value, onChange, disabled }: Ca
 
 // --- Main island ---
 
-export default function CompareSelector({ cars, pairs, metas }: Props) {
+export default function CompareSelector({ cars, pairs, metas, variant = 'panels' }: Props) {
   const [slugA, setSlugA] = useState('');
   const [slugB, setSlugB] = useState('');
 
@@ -147,7 +148,7 @@ export default function CompareSelector({ cars, pairs, metas }: Props) {
   };
 
   return (
-    <div className="compare-selector">
+    <div className={`compare-selector compare-selector--${variant}`}>
       <div className="compare-arena">
         <div className="compare-panel">
           <CarPicker
