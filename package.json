@@ -9,7 +9,9 @@
     "test": "vitest run",
     "seed:d1": "npx tsx scripts/seed-d1.ts",
     "seed:d1:remote": "DB_REMOTE=1 npx tsx scripts/seed-d1.ts",
-    "prioritize": "npx tsx scripts/prioritize-comparisons.ts"
+    "prioritize": "npx tsx scripts/prioritize-comparisons.ts",
+    "seed:candidates": "npx tsx scripts/reviews/seed-candidates.ts",
+    "seed:candidates:remote": "npx tsx scripts/reviews/seed-candidates.ts --remote"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.0.1",

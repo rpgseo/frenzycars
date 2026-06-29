@@ -1,0 +1,125 @@
+---
+export const prerender = false;
+
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import { getD1 } from '../../lib/d1-client.js';
+import { listCandidates } from '../../lib/reviews-d1.js';
+import type { CandidateStatus } from '../../lib/reviews-d1.js';
+import { ALLOWED_STATUSES } from '../../lib/content-status.js';
+
+const STATUS_LABELS: Record<CandidateStatus, string> = {
+  suggested: 'Suggested',
+  approved: 'Approved',
+  rejected: 'Rejected',
+  published: 'Published',
+};
+
+const STATUS_COLORS: Record<CandidateStatus, string> = {
+  suggested: '#888',
+  approved: '#22c55e',
+  rejected: '#ef4444',
+  published: '#3b82f6',
+};
+
+const rawStatus = Astro.url.searchParams.get('status');
+const statusFilter = rawStatus && ALLOWED_STATUSES.includes(rawStatus as CandidateStatus)
+  ? (rawStatus as CandidateStatus)
+  : undefined;
+
+const db = getD1(Astro.locals);
+let candidates = [];
+let error: string | null = null;
+
+if (!db) {
+  error = 'D1 database not available. Run with wrangler or deploy to Cloudflare.';
+} else {
+  try {
+    candidates = await listCandidates(db, statusFilter);
+  } catch (e) {
+    error = `Failed to load candidates: ${e instanceof Error ? e.message : String(e)}`;
+  }
+}
+---
+<ContentLayout title="Reviews Pipeline">
+  <style>
+    .filters { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .filter-link {
+      padding: 0.35rem 0.9rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
+      text-decoration: none; background: #1a1a1a; color: #aaa; border: 1px solid #2a2a2a;
+      transition: border-color 0.15s;
+    }
+    .filter-link:hover { border-color: #F7D720; color: #F7D720; }
+    .filter-link.active { background: #F7D720; color: #000; border-color: #F7D720; }
+    .error { background: #2a0a0a; border: 1px solid #7f1d1d; color: #fca5a5;
+      padding: 1rem 1.25rem; border-radius: 8px; margin-bottom: 1.5rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { text-align: left; padding: 0.6rem 1rem; color: #666; font-weight: 600;
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
+      border-bottom: 1px solid #1a1a1a; }
+    td { padding: 0.8rem 1rem; border-bottom: 1px solid #141414; vertical-align: middle; }
+    tr:hover td { background: #111; }
+    .car-name { font-weight: 700; color: #fff; }
+    .car-year { color: #666; font-size: 0.8rem; }
+    .badge { display: inline-block; padding: 0.2rem 0.7rem; border-radius: 999px;
+      font-size: 0.75rem; font-weight: 700; }
+    .view-link { color: #F7D720; text-decoration: none; font-weight: 600; font-size: 0.85rem; }
+    .view-link:hover { text-decoration: underline; }
+    .empty { text-align: center; color: #555; padding: 3rem; font-size: 0.95rem; }
+    .count { color: #555; font-size: 0.85rem; margin-bottom: 1rem; }
+  </style>
+
+  <h1>Reviews Pipeline</h1>
+
+  <nav class="filters">
+    <a href="/content/" class:list={['filter-link', { active: !statusFilter }]}>All</a>
+    {ALLOWED_STATUSES.map(s => (
+      <a
+        href={`/content/?status=${s}`}
+        class:list={['filter-link', { active: statusFilter === s }]}
+      >{STATUS_LABELS[s]}</a>
+    ))}
+  </nav>
+
+  {error && <div class="error">{error}</div>}
+
+  {!error && (
+    <>
+      <p class="count">{candidates.length} candidate{candidates.length !== 1 ? 's' : ''}{statusFilter ? ` · ${STATUS_LABELS[statusFilter]}` : ''}</p>
+      {candidates.length === 0 ? (
+        <div class="empty">No candidates yet. Run the seed script to add some.</div>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>Car</th>
+              <th>Keyword</th>
+              <th>Volume</th>
+              <th>KD</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {candidates.map(c => (
+              <tr>
+                <td>
+                  <span class="car-name">{c.make} {c.model}</span>
+                  {c.year && <span class="car-year"> · {c.year}</span>}
+                </td>
+                <td>{c.keyword ?? <span style="color:#444">—</span>}</td>
+                <td>{c.search_volume?.toLocaleString() ?? <span style="color:#444">—</span>}</td>
+                <td>{c.keyword_difficulty ?? <span style="color:#444">—</span>}</td>
+                <td>
+                  <span class="badge" style={`background:${STATUS_COLORS[c.status]}22; color:${STATUS_COLORS[c.status]}; border:1px solid ${STATUS_COLORS[c.status]}44`}>
+                    {STATUS_LABELS[c.status]}
+                  </span>
+                </td>
+                <td><a href={`/content/${c.id}/`} class="view-link">Ver →</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </>
+  )}
+</ContentLayout>
