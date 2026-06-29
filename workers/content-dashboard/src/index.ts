@@ -3,7 +3,7 @@ export interface Env {
 }
 
 const CF_ACCESS_AUD = '4793ec5ef933b3a861171fc79cc9b20a443da006ceb175736c025eda321b7f5a';
-const CF_ACCESS_CERTS_URL = 'https://frenzycars.cloudflareaccess.com/cdn-cgi/access/certs';
+const CF_ACCESS_CERTS_URL = 'https://gentle-fog-af89.cloudflareaccess.com/cdn-cgi/access/certs';
 
 async function getPublicKeys(): Promise<JsonWebKey[]> {
   const res = await fetch(CF_ACCESS_CERTS_URL);
@@ -35,7 +35,7 @@ async function verifyAccessJWT(token: string): Promise<boolean> {
 }
 
 function loginRedirect(requestUrl: string): Response {
-  const loginUrl = `https://frenzycars.cloudflareaccess.com/cdn-cgi/access/login/content.frenzycars.com?redirect_url=${encodeURIComponent(new URL(requestUrl).pathname)}`;
+  const loginUrl = `https://gentle-fog-af89.cloudflareaccess.com/cdn-cgi/access/login/content.frenzycars.com?redirect_url=${encodeURIComponent(new URL(requestUrl).pathname)}`;
   return Response.redirect(loginUrl, 302);
 }
 
