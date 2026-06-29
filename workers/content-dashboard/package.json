@@ -1,0 +1,14 @@
+{
+  "name": "frenzycars-content-dashboard",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0"
+  }
+}

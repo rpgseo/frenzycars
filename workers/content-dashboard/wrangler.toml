@@ -1,0 +1,12 @@
+name = "frenzycars-content-dashboard"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "frenzycars-cars"
+database_id = "b9d5f455-8e9e-439c-9283-ef1b19addf4b"
+
+[[routes]]
+pattern = "content.frenzycars.com/*"
+zone_name = "frenzycars.com"
