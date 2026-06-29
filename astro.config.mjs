@@ -6,13 +6,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   output: 'static',
   site: 'https://frenzycars.com',
-  adapter: cloudflare({
-    prerenderEnvironment: 'node',
-    routes: {
-      strategy: 'include',
-      include: ['/content/*', '/api/content/*'],
-    },
-  }),
+  adapter: cloudflare({ prerenderEnvironment: 'node' }),
   trailingSlash: 'always',
   build: { format: 'directory' },
   integrations: [sitemap(), react()],
