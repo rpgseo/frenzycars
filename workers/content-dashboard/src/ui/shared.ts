@@ -100,8 +100,9 @@ tr:hover td{background:#111}
 .image-preview:hover{opacity:.85}
 .ref-image-row{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;padding:.75rem 1rem;background:#0d0d0d;border:1px solid #1e1e1e;border-radius:8px}
 .ref-label{font-size:.75rem;color:#555;font-weight:600;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
-.ref-thumb{width:160px;height:90px;object-fit:cover;border-radius:6px;cursor:pointer;transition:opacity .15s}
+.ref-thumb{width:160px;height:90px;object-fit:cover;border-radius:6px;cursor:pointer;transition:opacity .15s;flex-shrink:0}
 .ref-thumb:hover{opacity:.85}
+.ref-thumb-placeholder{width:160px;height:90px;border-radius:6px;background:#1a1a1a;border:1px dashed #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#444;text-align:center;flex-shrink:0}
 .optional-badge{font-size:.65rem;font-weight:600;color:#555;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:4px;padding:.1rem .35rem;vertical-align:middle;text-transform:uppercase;letter-spacing:.04em}
 .raw-data{background:#0a0a0a;border-radius:6px;padding:1rem;font-size:.8rem;color:#666;font-family:monospace;overflow-x:auto;white-space:pre-wrap}
 .prompt-text{font-size:.85rem;color:#888;font-style:italic;line-height:1.5}

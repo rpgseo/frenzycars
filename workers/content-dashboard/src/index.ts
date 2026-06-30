@@ -7,6 +7,7 @@ import { handleJobPoll } from './api/job-poll.js';
 import { handlePromptSave } from './api/prompt.js';
 import { handleCommit } from './api/commit.js';
 import { handleClearLogs } from './api/logs.js';
+import { handleFetchReference } from './api/fetch-reference.js';
 
 export interface Env {
   DB: D1Database;
@@ -15,6 +16,8 @@ export interface Env {
   GITHUB_TOKEN: string;
   GITHUB_REPO: string;
   CF_IMAGES_BASE_URL: string;
+  CARIMAGES_API_KEY: string;
+  CARIMAGES_API_SECRET: string;
 }
 
 const CF_ACCESS_AUD = '4793ec5ef933b3a861171fc79cc9b20a443da006ceb175736c025eda321b7f5a';
@@ -83,6 +86,7 @@ export default {
     if (path === '/api/content/generate-video') return handleGenerateVideo(request, env);
     if (path === '/api/content/prompt') return handlePromptSave(request, env.DB);
     if (path === '/api/content/commit') return handleCommit(request, env);
+    if (path === '/api/content/fetch-reference') return handleFetchReference(request, env);
 
     const jobMatch = path.match(/^\/api\/content\/job\/([^/]+)$/);
     if (jobMatch) {

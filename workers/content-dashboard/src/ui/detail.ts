@@ -340,6 +340,46 @@ async function commitToRepo(id) {
   }
 }
 
+async function fetchReference(id) {
+  const btn = document.getElementById('btn-ref');
+  const msg = document.getElementById('msg-ref');
+  btn.disabled = true;
+  btn.textContent = 'Buscando...';
+  msg.style.display = 'none';
+  try {
+    const r = await fetch('/api/content/fetch-reference', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
+    });
+    const data = await r.json();
+    if (data.ok) {
+      const container = document.getElementById('ref-thumb');
+      const img = document.createElement('img');
+      img.id = 'ref-thumb';
+      img.className = 'ref-thumb';
+      img.src = data.url;
+      img.title = 'Click para ampliar';
+      img.onclick = () => openLightbox(data.url);
+      container.replaceWith(img);
+      btn.textContent = '\\uD83D\\uDD0D Buscar en CarImages';
+      btn.disabled = false;
+    } else {
+      msg.className = 'status-msg error';
+      msg.textContent = data.error || 'Error buscando imagen';
+      msg.style.display = 'block';
+      btn.textContent = '\\uD83D\\uDD0D Buscar en CarImages';
+      btn.disabled = false;
+    }
+  } catch (e) {
+    msg.className = 'status-msg error';
+    msg.textContent = 'Error de red';
+    msg.style.display = 'block';
+    btn.textContent = '\\uD83D\\uDD0D Buscar en CarImages';
+    btn.disabled = false;
+  }
+}
+
 async function clearLogs(id) {
   await fetch('/api/content/logs/' + id, { method: 'DELETE' });
   location.reload();
@@ -428,7 +468,15 @@ export async function handleDetail(id: number, env: Env): Promise<Response> {
   </div>
   <div class="section">
     <div class="section-title">Imágenes (Steps 2–3)</div>
-    ${candidate.reference_image_url ? `<div class="ref-image-row"><span class="ref-label">Imagen de referencia</span><img class="ref-thumb" src="${escHtml(candidate.reference_image_url)}" onclick="openLightbox('${escHtml(candidate.reference_image_url)}')" title="Click para ampliar"></div>` : ''}
+    <div class="ref-image-row">
+      <span class="ref-label">Referencia</span>
+      ${candidate.reference_image_url
+        ? `<img id="ref-thumb" class="ref-thumb" src="${escHtml(candidate.reference_image_url)}" onclick="openLightbox('${escHtml(candidate.reference_image_url)}')" title="Click para ampliar">`
+        : `<div id="ref-thumb" class="ref-thumb-placeholder">Sin imagen de referencia</div>`
+      }
+      <button id="btn-ref" class="btn btn-redo" onclick="fetchReference(${candidate.id})" style="margin-left:auto">🔍 Buscar en CarImages</button>
+      <div id="msg-ref" class="status-msg" style="display:none"></div>
+    </div>
     <div class="image-slots">
       ${imageSlot(candidate, 'hero', 'Cover del post (hero)', 'editorial_hero_url', 'hero_prompt', false)}
       ${imageSlot(candidate, 'mid1', 'Mid image 1 (galería)', 'editorial_mid1_url', 'mid1_prompt', true)}
