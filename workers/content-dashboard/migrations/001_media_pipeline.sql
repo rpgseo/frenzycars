@@ -1,31 +1,10 @@
--- Create or update review_candidates table with media pipeline columns
-CREATE TABLE IF NOT EXISTS review_candidates (
-  id                   INTEGER PRIMARY KEY AUTOINCREMENT,
-  make                 TEXT NOT NULL,
-  model                TEXT NOT NULL,
-  year                 INTEGER,
-  slug                 TEXT UNIQUE,
-  keyword              TEXT,
-  search_volume        INTEGER,
-  keyword_difficulty   INTEGER,
-  trend_score          REAL,
-  reference_image_url  TEXT,
-  editorial_hero_url   TEXT,
-  editorial_mid1_url   TEXT,
-  editorial_mid2_url   TEXT,
-  video_url            TEXT,
-  hero_prompt          TEXT,
-  mid1_prompt          TEXT,
-  mid2_prompt          TEXT,
-  video_prompt         TEXT,
-  status               TEXT,
-  raw_data             TEXT,
-  video_job_id         TEXT,
-  video_status         TEXT DEFAULT 'idle',
-  last_commit_sha      TEXT,
-  created_at           TEXT DEFAULT CURRENT_TIMESTAMP,
-  updated_at           TEXT DEFAULT CURRENT_TIMESTAMP
-);
+-- Nuevas columnas en review_candidates (tabla ya existe en producción)
+ALTER TABLE review_candidates ADD COLUMN mid1_prompt    TEXT;
+ALTER TABLE review_candidates ADD COLUMN mid2_prompt    TEXT;
+ALTER TABLE review_candidates ADD COLUMN video_prompt   TEXT;
+ALTER TABLE review_candidates ADD COLUMN video_job_id   TEXT;
+ALTER TABLE review_candidates ADD COLUMN video_status   TEXT DEFAULT 'idle';
+ALTER TABLE review_candidates ADD COLUMN last_commit_sha TEXT;
 
 -- Tabla de logs
 CREATE TABLE IF NOT EXISTS candidate_logs (
