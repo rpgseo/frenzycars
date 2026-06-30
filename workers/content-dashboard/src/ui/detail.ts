@@ -1,7 +1,6 @@
 import type { Env } from '../index.js';
 import {
   ReviewCandidate,
-  CandidateStatus,
   escHtml,
   html,
   STATUS_LABELS,
@@ -9,9 +8,6 @@ import {
   ALLOWED_STATUSES,
 } from './shared.js';
 import { getCandidate, getLogs, CandidateLog } from '../lib/db.js';
-
-// Silence unused-import lint for badge/CandidateStatus (used via type)
-type _CandidateStatusAlias = CandidateStatus;
 
 function carLabel(c: ReviewCandidate): string {
   return `${c.year ? c.year + ' ' : ''}${c.make} ${c.model}`;
@@ -75,9 +71,8 @@ function videoSection(c: ReviewCandidate): string {
   const isDone = c.video_status === 'done' && !!c.video_url;
   const btnText = isPending ? '<span class="spinner"></span>Generando...' : (isDone ? '↺ Rehacer vídeo' : 'Generar vídeo');
 
-  const safeJobId = c.video_job_id ? c.video_job_id.replace(/\\/g, '\\\\').replace(/'/g, "\\'") : '';
   const pollingScript = isPending && c.video_job_id
-    ? `<script>startVideoPolling('${safeJobId}');</script>`
+    ? `<script>startVideoPolling(${JSON.stringify(c.video_job_id)});</script>`
     : '';
 
   return `

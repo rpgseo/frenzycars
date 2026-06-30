@@ -13,7 +13,11 @@ export async function handleJobPoll(request: Request, jobId: string, env: Env): 
 
   if (!candidate) return Response.json({ ok: false, error: 'Job not found' }, { status: 404 });
 
-  if (candidate.video_status === 'done') return Response.json({ status: 'done' });
+  if (candidate.video_status === 'done') {
+    const row = await env.DB.prepare('SELECT video_url FROM review_candidates WHERE video_job_id = ?')
+      .bind(jobId).first<{ video_url: string | null }>();
+    return Response.json({ status: 'done', url: row?.video_url ?? '' });
+  }
   if (candidate.video_status === 'error') return Response.json({ status: 'error' });
 
   try {

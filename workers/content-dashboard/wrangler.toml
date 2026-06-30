@@ -15,6 +15,7 @@ zone_name = "frenzycars.com"
 binding = "IMAGES"
 bucket_name = "frenzycars-images"
 
+# Required secrets (set via: npx wrangler secret put KIE_AI_API_KEY && npx wrangler secret put GITHUB_TOKEN)
 [vars]
 GITHUB_REPO = "antigravityclub/frenzycars"
 CF_IMAGES_BASE_URL = "https://images.frenzycars.com"

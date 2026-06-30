@@ -24,6 +24,9 @@ function buildFrontmatter(candidate: ReviewCandidate, existingFrontmatter: Recor
     else if (Array.isArray(v)) {
       lines.push(`${k}:`);
       for (const item of v) lines.push(`  - ${typeof item === 'string' ? `'${(item as string).replace(/'/g, "''")}'` : item}`);
+    } else {
+      // nested object — serialise as JSON inline (valid YAML)
+      lines.push(`${k}: ${JSON.stringify(v)}`);
     }
   }
 
