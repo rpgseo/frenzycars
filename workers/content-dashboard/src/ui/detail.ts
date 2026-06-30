@@ -111,10 +111,6 @@ function commitSection(c: ReviewCandidate, githubRepo: string): string {
 
   const canCommit = !!c.editorial_hero_url;
 
-  const commitResult = c.last_commit_sha
-    ? `<div class="commit-result">Último commit: <a href="https://github.com/${escHtml(githubRepo)}/commit/${escHtml(c.last_commit_sha)}" target="_blank" style="color:#4ade80">${escHtml(c.last_commit_sha.slice(0, 7))}</a></div>`
-    : '';
-
   return `
 <div class="section">
   <div class="section-title">Publicar en repositorio</div>
@@ -124,7 +120,6 @@ function commitSection(c: ReviewCandidate, githubRepo: string): string {
     <button class="btn btn-commit" onclick="commitToRepo(${c.id})"${canCommit ? '' : ' disabled'}>Insertar en post →</button>
   </div>
   <div id="msg-commit" class="status-msg" style="display:none"></div>
-  ${commitResult}
 </div>`;
 }
 
@@ -346,7 +341,7 @@ async function commitToRepo(id) {
     const data = await r.json();
     if (data.ok) {
       msg.className = 'status-msg';
-      msg.innerHTML = 'Post actualizado \\u2014 <a href="' + data.github_url + '" target="_blank" style="color:#4ade80">ver commit ' + data.commit_sha.slice(0,7) + '</a>';
+      msg.textContent = 'Post actualizado correctamente';
       msg.style.display = 'block';
       btn.textContent = 'Insertar en post \\u2192';
       btn.disabled = false;
