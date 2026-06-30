@@ -1,16 +1,19 @@
 const GH_API = 'https://api.github.com';
 
+const GH_HEADERS = (token: string) => ({
+  'Authorization': `Bearer ${token}`,
+  'Accept': 'application/vnd.github+json',
+  'X-GitHub-Api-Version': '2022-11-28',
+  'User-Agent': 'frenzycars-content-dashboard/1.0',
+});
+
 export async function readGithubFile(
   token: string,
   repo: string,
   path: string
 ): Promise<{ content: string; sha: string } | null> {
   const res = await fetch(`${GH_API}/repos/${repo}/contents/${path}`, {
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Accept': 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-    },
+    headers: GH_HEADERS(token),
   });
 
   if (res.status === 404) return null;
@@ -42,12 +45,7 @@ export async function writeGithubFile(
 
   const res = await fetch(`${GH_API}/repos/${repo}/contents/${path}`, {
     method: 'PUT',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Accept': 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      'Content-Type': 'application/json',
-    },
+    headers: { ...GH_HEADERS(token), 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
 
