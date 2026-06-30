@@ -282,8 +282,13 @@ function startVideoPolling(jobId) {
       if (data.status === 'done') {
         clearInterval(pollInterval);
         const btn = document.getElementById('btn-video');
-        document.getElementById('video-container').innerHTML =
-          '<video src="' + data.url + '" controls style="width:100%;max-width:640px;border-radius:8px"></video>';
+        const vid = document.createElement('video');
+        vid.src = data.url;
+        vid.controls = true;
+        vid.style.cssText = 'width:100%;max-width:640px;border-radius:8px';
+        const vc = document.getElementById('video-container');
+        vc.innerHTML = '';
+        vc.appendChild(vid);
         btn.disabled = false;
         btn.className = 'btn btn-redo';
         btn.innerHTML = '\\u21ba Rehacer v\\u00EDdeo';
