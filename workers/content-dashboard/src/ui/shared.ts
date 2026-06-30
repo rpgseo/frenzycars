@@ -126,6 +126,7 @@ tr:hover td{background:#111}
 .btn-redo{background:#1a1a1a;color:#888;padding:.35rem .8rem;border-radius:6px;font-size:.8rem;font-weight:700;border:1px solid #2a2a2a;cursor:pointer;transition:opacity .15s}
 .btn-redo:hover{opacity:.85}
 .btn-commit{background:#7c3aed;color:#fff}
+.btn:disabled,.btn-commit:disabled{opacity:.35;cursor:not-allowed;pointer-events:none}
 .btn-danger{background:#1a0505;color:#ef4444;border:1px solid #3f0e0e}
 .spinner{display:inline-block;width:14px;height:14px;border:2px solid #444;border-top-color:#F7D720;border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle}
 @keyframes spin{to{transform:rotate(360deg)}}
