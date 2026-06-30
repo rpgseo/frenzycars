@@ -75,8 +75,9 @@ function videoSection(c: ReviewCandidate): string {
   const isDone = c.video_status === 'done' && !!c.video_url;
   const btnText = isPending ? '<span class="spinner"></span>Generando...' : (isDone ? '↺ Rehacer vídeo' : 'Generar vídeo');
 
+  const safeJobId = c.video_job_id ? c.video_job_id.replace(/\\/g, '\\\\').replace(/'/g, "\\'") : '';
   const pollingScript = isPending && c.video_job_id
-    ? `<script>startVideoPolling('${escHtml(c.video_job_id)}');</script>`
+    ? `<script>startVideoPolling('${safeJobId}');</script>`
     : '';
 
   return `
@@ -209,7 +210,13 @@ async function generateImage(id, slot) {
     const data = await r.json();
     if (data.ok) {
       const preview = document.querySelector('#slot-' + slot + ' .image-slot-preview');
-      preview.innerHTML = '<img src="' + data.url + '" class="image-preview" onclick="openLightbox(\\'' + data.url + '\\')" title="Click para ampliar">';
+      const img = document.createElement('img');
+      img.src = data.url;
+      img.className = 'image-preview';
+      img.title = 'Click para ampliar';
+      img.onclick = () => openLightbox(data.url);
+      preview.innerHTML = '';
+      preview.appendChild(img);
       btn.className = 'btn btn-redo';
       btn.innerHTML = '\\u21ba Rehacer';
       btn.disabled = false;
@@ -387,9 +394,14 @@ export async function handleDetail(id: number, env: Env): Promise<Response> {
     .map(s => `<button class="btn btn-${s}" onclick="setStatus(${candidate.id},'${s}')">${STATUS_LABELS[s]}</button>`)
     .join('');
 
-  const rawData = candidate.raw_data
-    ? `<pre class="raw-data">${escHtml(JSON.stringify(JSON.parse(candidate.raw_data), null, 2))}</pre>`
-    : `<p class="stat-value empty">Data not collected yet</p>`;
+  let rawData: string;
+  try {
+    rawData = candidate.raw_data
+      ? `<pre class="raw-data">${escHtml(JSON.stringify(JSON.parse(candidate.raw_data), null, 2))}</pre>`
+      : `<p class="stat-value empty">Data not collected yet</p>`;
+  } catch {
+    rawData = `<p class="stat-value empty">Data not collected yet</p>`;
+  }
 
   const body = `
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
