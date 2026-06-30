@@ -10,3 +10,11 @@ database_id = "b9d5f455-8e9e-439c-9283-ef1b19addf4b"
 [[routes]]
 pattern = "content.frenzycars.com/*"
 zone_name = "frenzycars.com"
+
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "frenzycars-images"
+
+[vars]
+GITHUB_REPO = "antigravityclub/frenzycars"
+CF_IMAGES_BASE_URL = "https://images.frenzycars.com"
