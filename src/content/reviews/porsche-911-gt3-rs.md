@@ -26,7 +26,7 @@ The active aerodynamics generate up to 900 kg of downforce at 285 km/h. On the c
 
 > "It does not so much turn into a corner as teleport to the apex."
 
-The DRS-style adjustable rear wing is more than a gimmick Ã¢ÂÂ it genuinely changes the car's character from lap to lap.
+The DRS-style adjustable rear wing is more than a gimmick ÃÂ¢ÃÂÃÂ it genuinely changes the car's character from lap to lap.
 
 ## Verdict
 
