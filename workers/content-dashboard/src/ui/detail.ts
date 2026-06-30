@@ -33,6 +33,7 @@ function imageSlot(
   label: string,
   urlField: keyof ReviewCandidate,
   promptField: keyof ReviewCandidate,
+  optional = false,
 ): string {
   const url = c[urlField] as string | null;
   const promptValue = (c[promptField] as string | null) ?? defaultPrompt(slot, c);
@@ -43,16 +44,19 @@ function imageSlot(
 
   const btnClass = url ? 'btn btn-redo' : 'btn btn-generate';
   const btnText = url ? '↺ Rehacer' : 'Generar imagen';
+  const optBadge = optional ? ` <span class="optional-badge">opcional</span>` : '';
 
   return `
-<div class="image-slot" id="slot-${slot}">
-  <div class="image-slot-label">${escHtml(label)}</div>
-  <div class="image-slot-preview">${previewHtml}</div>
-  <textarea class="prompt-area" id="prompt-${slot}" data-id="${c.id}">${escHtml(promptValue)}</textarea>
-  <div class="slot-actions">
-    <button id="btn-${slot}" class="${btnClass}" onclick="generateImage(${c.id},'${slot}')">${btnText}</button>
+<div class="image-row" id="slot-${slot}">
+  <div class="image-row-preview">${previewHtml}</div>
+  <div class="image-row-body">
+    <div class="image-slot-label">${escHtml(label)}${optBadge}</div>
+    <textarea class="prompt-area" id="prompt-${slot}" data-id="${c.id}">${escHtml(promptValue)}</textarea>
+    <div class="slot-actions">
+      <button id="btn-${slot}" class="${btnClass}" onclick="generateImage(${c.id},'${slot}')">${btnText}</button>
+    </div>
+    <div id="msg-${slot}" class="status-msg" style="display:none"></div>
   </div>
-  <div id="msg-${slot}" class="status-msg" style="display:none"></div>
 </div>`;
 }
 
@@ -89,18 +93,18 @@ function videoSection(c: ReviewCandidate): string {
 }
 
 function commitSection(c: ReviewCandidate, githubRepo: string): string {
-  const checks: Array<{ label: string; ok: boolean; optional?: boolean }> = [
-    { label: 'cover ← editorial_hero_url', ok: !!c.editorial_hero_url },
-    { label: 'gallery[0] ← editorial_mid1_url', ok: !!c.editorial_mid1_url },
-    { label: 'gallery[1] ← editorial_mid2_url', ok: !!c.editorial_mid2_url },
-    { label: 'video ← video_url', ok: !!c.video_url, optional: true },
+  const checks: Array<{ label: string; ok: boolean; required?: boolean }> = [
+    { label: 'cover (hero)', ok: !!c.editorial_hero_url, required: true },
+    { label: 'gallery[0] (mid1)', ok: !!c.editorial_mid1_url },
+    { label: 'gallery[1] (mid2)', ok: !!c.editorial_mid2_url },
+    { label: 'video', ok: !!c.video_url },
   ];
 
   const checkItems = checks
     .map(ch => {
-      const icon = ch.ok ? '✓' : '✗';
-      const cls = ch.ok ? 'check-ok' : 'check-no';
-      const optNote = ch.optional && !ch.ok ? ' (opcional)' : '';
+      const icon = ch.ok ? '✓' : (ch.required ? '✗' : '–');
+      const cls = ch.ok ? 'check-ok' : (ch.required ? 'check-no' : 'check-opt');
+      const optNote = !ch.required && !ch.ok ? ' (opcional)' : '';
       return `<li class="${cls}">${icon} ${escHtml(ch.label)}${optNote}</li>`;
     })
     .join('');
@@ -423,11 +427,12 @@ export async function handleDetail(id: number, env: Env): Promise<Response> {
     </div>
   </div>
   <div class="section">
-    <div class="section-title">Images (Steps 2–3)</div>
-    <div class="image-grid">
-      ${imageSlot(candidate, 'hero', 'Editorial hero', 'editorial_hero_url', 'hero_prompt')}
-      ${imageSlot(candidate, 'mid1', 'Mid image 1', 'editorial_mid1_url', 'mid1_prompt')}
-      ${imageSlot(candidate, 'mid2', 'Mid image 2', 'editorial_mid2_url', 'mid2_prompt')}
+    <div class="section-title">Imágenes (Steps 2–3)</div>
+    ${candidate.reference_image_url ? `<div class="ref-image-row"><span class="ref-label">Imagen de referencia</span><img class="ref-thumb" src="${escHtml(candidate.reference_image_url)}" onclick="openLightbox('${escHtml(candidate.reference_image_url)}')" title="Click para ampliar"></div>` : ''}
+    <div class="image-slots">
+      ${imageSlot(candidate, 'hero', 'Cover del post (hero)', 'editorial_hero_url', 'hero_prompt', false)}
+      ${imageSlot(candidate, 'mid1', 'Mid image 1 (galería)', 'editorial_mid1_url', 'mid1_prompt', true)}
+      ${imageSlot(candidate, 'mid2', 'Mid image 2 (galería)', 'editorial_mid2_url', 'mid2_prompt', true)}
     </div>
   </div>
   ${videoSection(candidate)}
