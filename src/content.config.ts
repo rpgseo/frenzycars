@@ -22,6 +22,8 @@ const reviews = defineCollection({
     pros: z.array(z.string()).optional(),
     cons: z.array(z.string()).optional(),
     verdict: z.string().optional(),
+    gallery: z.array(z.string()).optional(),
+    video: z.string().optional(),
   }),
 });
 
