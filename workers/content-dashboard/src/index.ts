@@ -8,6 +8,7 @@ import { handlePromptSave } from './api/prompt.js';
 import { handleCommit } from './api/commit.js';
 import { handleClearLogs } from './api/logs.js';
 import { handleFetchReference } from './api/fetch-reference.js';
+import { handleImagePoll } from './api/image-poll.js';
 
 export interface Env {
   DB: D1Database;
@@ -87,6 +88,9 @@ export default {
     if (path === '/api/content/prompt') return handlePromptSave(request, env.DB);
     if (path === '/api/content/commit') return handleCommit(request, env);
     if (path === '/api/content/fetch-reference') return handleFetchReference(request, env);
+
+    const imagePollMatch = path.match(/^\/api\/content\/image-poll\/([^/]+)\/([^/]+)$/);
+    if (imagePollMatch) return handleImagePoll(request, imagePollMatch[1], imagePollMatch[2], env);
 
     const jobMatch = path.match(/^\/api\/content\/job\/([^/]+)$/);
     if (jobMatch) {

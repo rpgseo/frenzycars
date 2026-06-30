@@ -1,7 +1,9 @@
 const KIE_AI_BASE = 'https://api.kie.ai';
 
-export async function generateImage(apiKey: string, prompt: string): Promise<ArrayBuffer> {
-  const res = await fetch(`${KIE_AI_BASE}/api/v1/images/generations`, {
+// --- Image generation (async, two-step) ---
+
+export async function submitImageJob(apiKey: string, prompt: string): Promise<string> {
+  const res = await fetch(`${KIE_AI_BASE}/api/v1/jobs/createTask`, {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${apiKey}`,
@@ -9,51 +11,84 @@ export async function generateImage(apiKey: string, prompt: string): Promise<Arr
     },
     body: JSON.stringify({
       model: 'nano-banana-2',
-      prompt,
-      width: 1792,
-      height: 1008,
-      num_images: 1,
+      input: {
+        prompt,
+        aspect_ratio: '16:9',
+        resolution: '1K',
+        output_format: 'jpg',
+      },
     }),
   });
 
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`kie.ai image error ${res.status}: ${text}`);
+    throw new Error(`kie.ai image submit error ${res.status}: ${text}`);
   }
 
-  const data = await res.json() as { data?: Array<{ url?: string; b64_json?: string }> };
-  const item = data.data?.[0];
-
-  if (!item) throw new Error('kie.ai: no image in response');
-
-  if (item.url) {
-    const imgRes = await fetch(item.url);
-    if (!imgRes.ok) throw new Error(`Failed to download image from kie.ai CDN: ${imgRes.status}`);
-    return imgRes.arrayBuffer();
-  }
-
-  if (item.b64_json) {
-    const binary = atob(item.b64_json);
-    const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-    return bytes.buffer;
-  }
-
-  throw new Error('kie.ai: response has neither url nor b64_json');
+  const data = await res.json() as { code: number; data?: { taskId?: string } };
+  const taskId = data.data?.taskId;
+  if (!taskId) throw new Error(`kie.ai: no taskId in response: ${JSON.stringify(data)}`);
+  return taskId;
 }
 
-export async function submitVideoJob(apiKey: string, prompt: string): Promise<string> {
-  const res = await fetch(`${KIE_AI_BASE}/api/v1/videos/generations`, {
+export async function pollImageJob(
+  apiKey: string,
+  taskId: string,
+): Promise<{ status: 'pending' | 'done' | 'error'; imageUrl?: string }> {
+  const res = await fetch(`${KIE_AI_BASE}/api/v1/jobs/recordInfo?taskId=${encodeURIComponent(taskId)}`, {
+    headers: { 'Authorization': `Bearer ${apiKey}` },
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`kie.ai image poll error ${res.status}: ${text}`);
+  }
+
+  const data = await res.json() as {
+    code: number;
+    data?: {
+      state?: string;
+      resultJson?: string;
+      failMsg?: string;
+    };
+  };
+
+  const state = data.data?.state ?? '';
+
+  if (state === 'success') {
+    let imageUrl: string | undefined;
+    try {
+      const result = JSON.parse(data.data?.resultJson ?? '{}') as { resultUrls?: string[] };
+      imageUrl = result.resultUrls?.[0];
+    } catch { /* ignore */ }
+    if (!imageUrl) throw new Error('kie.ai: job success but no image URL in resultJson');
+    return { status: 'done', imageUrl };
+  }
+
+  if (state === 'fail') {
+    return { status: 'error' };
+  }
+
+  return { status: 'pending' };
+}
+
+// --- Video generation (async, two-step) ---
+
+export async function submitVideoJob(apiKey: string, prompt: string, imageUrl: string): Promise<string> {
+  const res = await fetch(`${KIE_AI_BASE}/api/v1/jobs/createTask`, {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'kling-3.0-turbo',
-      prompt,
-      duration: 5,
-      aspect_ratio: '16:9',
+      model: 'kling/v3-turbo-image-to-video',
+      input: {
+        prompt,
+        image_urls: [imageUrl],
+        duration: 5,
+        resolution: '720p',
+      },
     }),
   });
 
@@ -62,41 +97,46 @@ export async function submitVideoJob(apiKey: string, prompt: string): Promise<st
     throw new Error(`kie.ai video submit error ${res.status}: ${text}`);
   }
 
-  const data = await res.json() as { id?: string; task_id?: string };
-  const jobId = data.id ?? data.task_id;
-  if (!jobId) throw new Error('kie.ai: no job id in video submit response');
-  return jobId;
+  const data = await res.json() as { code: number; data?: { taskId?: string } };
+  const taskId = data.data?.taskId;
+  if (!taskId) throw new Error(`kie.ai: no taskId in video response: ${JSON.stringify(data)}`);
+  return taskId;
 }
 
 export async function pollVideoJob(
   apiKey: string,
-  jobId: string
+  taskId: string,
 ): Promise<{ status: 'pending' | 'done' | 'error'; videoUrl?: string }> {
-  const res = await fetch(`${KIE_AI_BASE}/api/v1/videos/generations/${jobId}`, {
+  const res = await fetch(`${KIE_AI_BASE}/api/v1/jobs/recordInfo?taskId=${encodeURIComponent(taskId)}`, {
     headers: { 'Authorization': `Bearer ${apiKey}` },
   });
 
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`kie.ai poll error ${res.status}: ${text}`);
+    throw new Error(`kie.ai video poll error ${res.status}: ${text}`);
   }
 
   const data = await res.json() as {
-    status?: string;
-    task_status?: string;
-    output?: { url?: string };
-    video_url?: string;
+    code: number;
+    data?: {
+      state?: string;
+      resultJson?: string;
+    };
   };
 
-  const status = data.status ?? data.task_status ?? '';
+  const state = data.data?.state ?? '';
 
-  if (status === 'succeeded' || status === 'completed' || status === 'done') {
-    const videoUrl = data.output?.url ?? data.video_url;
-    if (!videoUrl) throw new Error('kie.ai: job done but no video URL in response');
+  if (state === 'success') {
+    let videoUrl: string | undefined;
+    try {
+      const result = JSON.parse(data.data?.resultJson ?? '{}') as { resultUrls?: string[] };
+      videoUrl = result.resultUrls?.[0];
+    } catch { /* ignore */ }
+    if (!videoUrl) throw new Error('kie.ai: job success but no video URL in resultJson');
     return { status: 'done', videoUrl };
   }
 
-  if (status === 'failed' || status === 'error') {
+  if (state === 'fail') {
     return { status: 'error' };
   }
 

@@ -192,6 +192,42 @@ function savePrompt(id, field, value) {
   }, 800);
 }
 
+const IMAGE_POLL_INTERVALS = {};
+
+function startImagePolling(taskId, slot) {
+  if (IMAGE_POLL_INTERVALS[slot]) clearInterval(IMAGE_POLL_INTERVALS[slot]);
+  IMAGE_POLL_INTERVALS[slot] = setInterval(async () => {
+    try {
+      const r = await fetch('/api/content/image-poll/' + taskId + '/' + slot);
+      const data = await r.json();
+      if (data.status === 'done') {
+        clearInterval(IMAGE_POLL_INTERVALS[slot]);
+        const preview = document.querySelector('#slot-' + slot + ' .image-row-preview');
+        const img = document.createElement('img');
+        img.src = data.url;
+        img.className = 'image-preview';
+        img.title = 'Click para ampliar';
+        img.onclick = () => openLightbox(data.url);
+        preview.innerHTML = '';
+        preview.appendChild(img);
+        const btn = document.getElementById('btn-' + slot);
+        btn.className = 'btn btn-redo';
+        btn.innerHTML = '\\u21ba Rehacer';
+        btn.disabled = false;
+      } else if (data.status === 'error') {
+        clearInterval(IMAGE_POLL_INTERVALS[slot]);
+        const btn = document.getElementById('btn-' + slot);
+        btn.disabled = false;
+        btn.innerHTML = 'Generar imagen';
+        const msg = document.getElementById('msg-' + slot);
+        msg.className = 'status-msg error';
+        msg.textContent = 'Error generando imagen. Revisa los logs.';
+        msg.style.display = 'block';
+      }
+    } catch (_) {}
+  }, 4000);
+}
+
 async function generateImage(id, slot) {
   const prompt = document.getElementById('prompt-' + slot).value.trim();
   if (!prompt) return;
@@ -208,17 +244,7 @@ async function generateImage(id, slot) {
     });
     const data = await r.json();
     if (data.ok) {
-      const preview = document.querySelector('#slot-' + slot + ' .image-slot-preview');
-      const img = document.createElement('img');
-      img.src = data.url;
-      img.className = 'image-preview';
-      img.title = 'Click para ampliar';
-      img.onclick = () => openLightbox(data.url);
-      preview.innerHTML = '';
-      preview.appendChild(img);
-      btn.className = 'btn btn-redo';
-      btn.innerHTML = '\\u21ba Rehacer';
-      btn.disabled = false;
+      startImagePolling(data.task_id, slot);
     } else {
       msg.className = 'status-msg error';
       msg.textContent = data.error || 'Error generando imagen';

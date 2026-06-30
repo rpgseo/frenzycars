@@ -19,11 +19,13 @@ export async function handleGenerateVideo(request: Request, env: Env): Promise<R
 
   const candidate = await getCandidate(env.DB, parsedId);
   if (!candidate) return Response.json({ ok: false, error: 'Candidate not found' }, { status: 404 });
+  if (!candidate.editorial_hero_url)
+    return Response.json({ ok: false, error: 'Genera primero la imagen hero antes de generar el vídeo' }, { status: 400 });
 
   await writeLog(env.DB, parsedId, 'generate-video', 'pending', 'Enviando job a kie.ai...');
 
   try {
-    const jobId = await submitVideoJob(env.KIE_AI_API_KEY, prompt.trim());
+    const jobId = await submitVideoJob(env.KIE_AI_API_KEY, prompt.trim(), candidate.editorial_hero_url);
     await env.DB.prepare(
       'UPDATE review_candidates SET video_job_id = ?, video_status = ?, updated_at = ? WHERE id = ?'
     ).bind(jobId, 'pending', new Date().toISOString(), parsedId).run();

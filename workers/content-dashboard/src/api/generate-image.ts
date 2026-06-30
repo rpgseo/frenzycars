@@ -1,13 +1,12 @@
 import type { Env } from '../index.js';
 import { writeLog, getCandidate } from '../lib/db.js';
-import { generateImage } from '../lib/kieai.js';
-import { uploadToR2, buildCfUrl } from '../lib/r2.js';
+import { submitImageJob } from '../lib/kieai.js';
 
 type ImageSlot = 'hero' | 'mid1' | 'mid2';
 const SLOT_FIELD: Record<ImageSlot, string> = {
-  hero: 'editorial_hero_url',
-  mid1: 'editorial_mid1_url',
-  mid2: 'editorial_mid2_url',
+  hero: 'hero_image_job_id',
+  mid1: 'mid1_image_job_id',
+  mid2: 'mid2_image_job_id',
 };
 const SLOT_OP: Record<ImageSlot, string> = {
   hero: 'generate-image-hero',
@@ -38,19 +37,18 @@ export async function handleGenerateImage(request: Request, env: Env): Promise<R
   const candidate = await getCandidate(env.DB, parsedId);
   if (!candidate) return Response.json({ ok: false, error: 'Candidate not found' }, { status: 404 });
 
-  await writeLog(env.DB, parsedId, operation, 'pending', 'Llamando a kie.ai...');
+  await writeLog(env.DB, parsedId, operation, 'pending', 'Enviando job a kie.ai…');
 
   try {
-    const imageBytes = await generateImage(env.KIE_AI_API_KEY, prompt.trim());
-    const key = `reviews/${candidate.slug}/${typedSlot}-original.jpg`;
-    await uploadToR2(env.IMAGES, key, imageBytes, 'image/jpeg');
-    const url = buildCfUrl(env.CF_IMAGES_BASE_URL, key);
+    const taskId = await submitImageJob(env.KIE_AI_API_KEY, prompt.trim());
 
-    await env.DB.prepare(`UPDATE review_candidates SET ${SLOT_FIELD[typedSlot]} = ?, updated_at = ? WHERE id = ?`)
-      .bind(url, new Date().toISOString(), parsedId).run();
+    // Save taskId to D1 so the poll endpoint can find it
+    await env.DB.prepare(
+      `UPDATE review_candidates SET ${SLOT_FIELD[typedSlot]} = ?, updated_at = ? WHERE id = ?`
+    ).bind(taskId, new Date().toISOString(), parsedId).run();
 
-    await writeLog(env.DB, parsedId, operation, 'ok', `${key} subido a R2`);
-    return Response.json({ ok: true, url });
+    await writeLog(env.DB, parsedId, operation, 'pending', `Job creado: ${taskId}`);
+    return Response.json({ ok: true, task_id: taskId });
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     await writeLog(env.DB, parsedId, operation, 'error', msg);
