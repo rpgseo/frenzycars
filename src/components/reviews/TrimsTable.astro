@@ -1,0 +1,47 @@
+---
+const { trims } = Astro.props;
+---
+{trims && trims.length > 0 && (
+  <table class="trims-table">
+    <thead>
+      <tr><th>Trim</th><th>Price</th><th>Power</th></tr>
+    </thead>
+    <tbody>
+      {trims.map((t: any) => (
+        <tr class={t.highlight ? 'trim-highlight' : ''}>
+          <td>{t.name}</td>
+          <td>{t.price}</td>
+          <td>{t.power}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+)}
+
+<style>
+  .trims-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+  }
+  .trims-table th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    color: #888;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .trims-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #1a1a1a;
+    color: #ccc;
+  }
+  .trims-table tr.trim-highlight td {
+    color: #F7D720;
+    font-weight: 700;
+  }
+</style>
