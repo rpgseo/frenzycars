@@ -5,6 +5,7 @@ import { handleGenerateImage } from './api/generate-image.js';
 import { handleGenerateVideo } from './api/generate-video.js';
 import { handleJobPoll } from './api/job-poll.js';
 import { handlePromptSave } from './api/prompt.js';
+import { handleEditorialDataPatch } from './api/editorial-data.js';
 import { handleCommit } from './api/commit.js';
 import { handleClearLogs } from './api/logs.js';
 import { handleFetchReference } from './api/fetch-reference.js';
@@ -86,6 +87,7 @@ export default {
     if (path === '/api/content/generate-image') return handleGenerateImage(request, env);
     if (path === '/api/content/generate-video') return handleGenerateVideo(request, env);
     if (path === '/api/content/prompt') return handlePromptSave(request, env.DB);
+    if (path === '/api/content/editorial-data') return handleEditorialDataPatch(request, env.DB);
     if (path === '/api/content/commit') return handleCommit(request, env);
     if (path === '/api/content/fetch-reference') return handleFetchReference(request, env);
 

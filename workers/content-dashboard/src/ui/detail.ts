@@ -123,6 +123,27 @@ function commitSection(c: ReviewCandidate, githubRepo: string): string {
 </div>`;
 }
 
+function editorialDataSection(c: ReviewCandidate): string {
+  const dimensionsValue = c.dimensions_json ?? '[]';
+  const trimsValue = c.trims_json ?? '[]';
+
+  return `
+<div class="section">
+  <div class="section-title">Dimensiones y Trims (opcional)</div>
+  <div style="display:flex;flex-direction:column;gap:1rem">
+    <div>
+      <div class="image-slot-label">Dimensions JSON</div>
+      <textarea class="prompt-area" id="dimensions-json" data-id="${c.id}" placeholder='[{"label":"Power","score":9.5}]'>${escHtml(dimensionsValue)}</textarea>
+    </div>
+    <div>
+      <div class="image-slot-label">Trims JSON</div>
+      <textarea class="prompt-area" id="trims-json" data-id="${c.id}" placeholder='[{"name":"Turbo S","price":"$196,270","power":"761 hp","highlight":true}]'>${escHtml(trimsValue)}</textarea>
+    </div>
+  </div>
+  <div id="msg-editorial" class="status-msg" style="display:none"></div>
+</div>`;
+}
+
 function logsSection(logs: CandidateLog[], candidateId: number): string {
   const count = logs.length;
 
@@ -445,6 +466,21 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 });
 const vp = document.getElementById('prompt-video');
 if (vp) vp.addEventListener('input', () => savePrompt(Number(vp.dataset.id), 'video_prompt', vp.value));
+
+function saveEditorialField(id, field, value) {
+  try { JSON.parse(value || '[]'); } catch { return; }
+  debounce('editorial-' + field, () => {
+    fetch('/api/content/editorial-data', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, field, value }),
+    });
+  }, 800);
+}
+const dimEl = document.getElementById('dimensions-json');
+if (dimEl) dimEl.addEventListener('input', () => saveEditorialField(Number(dimEl.dataset.id), 'dimensions_json', dimEl.value));
+const trimsEl = document.getElementById('trims-json');
+if (trimsEl) trimsEl.addEventListener('input', () => saveEditorialField(Number(trimsEl.dataset.id), 'trims_json', trimsEl.value));
 `;
 
 export async function handleDetail(id: number, env: Env): Promise<Response> {
@@ -515,6 +551,7 @@ export async function handleDetail(id: number, env: Env): Promise<Response> {
     <div id="action-msg" class="status-msg" style="display:none"></div>
   </div>
   ${commitSection(candidate, env.GITHUB_REPO)}
+  ${editorialDataSection(candidate)}
   <div class="section">
     ${logsSection(logs, candidate.id)}
   </div>
