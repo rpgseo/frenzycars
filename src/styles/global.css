@@ -152,6 +152,8 @@ a.brand:hover{color:inherit}
 .article-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.9))}
 .article-gallery-img{width:100%;border-radius:12px;margin:2rem 0;object-fit:cover;max-height:480px}
 .article-video{width:100%;border-radius:12px;margin:2rem 0;max-height:480px;background:#000}
+.article-video::-webkit-media-controls{display:none !important}
+.article-video-autoplay{pointer-events:none}
 .article-container{max-width:760px;padding-block:clamp(2rem,5vw,3.5rem);transform:translateY(-2rem)}
 .article-head{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .article-title{font-size:clamp(1.8rem,4.5vw,3rem)}
