@@ -160,7 +160,8 @@ details[open] summary::before{content:'▼ '}
   .filter-link{padding:.3rem .7rem;font-size:.75rem}
   .car-heading{gap:.6rem;margin-bottom:1.5rem}
 
-  table,thead{display:none}
+  table{display:block}
+  thead{display:none}
   tbody{display:flex;flex-direction:column;gap:.75rem}
   tr{display:flex;flex-direction:column;gap:.4rem;background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:1rem}
   tr:hover td{background:none}
