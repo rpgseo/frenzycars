@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { slugifyTag } from '../../lib/slugify';
+import { siteConfig } from '../../config/site';
 
 const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
 
@@ -31,8 +32,34 @@ export async function getStaticPaths() {
 }
 
 const { label, entries } = Astro.props;
+
+const tagUrl = (slug: string) => new URL(`/tags/${slug}/`, siteConfig.baseURL).href;
+const articleUrl = (e: any) => new URL(`/${e.collection}/${e.id.replace(/\.mdx?$/,'')}/`, siteConfig.baseURL).href;
+const pageDescription = `Browse ${entries.length} article${entries.length === 1 ? '' : 's'} tagged with ${label} on FrenzyCars, covering ${[...new Set(entries.map((e: any) => e.collection))].join(', ')}.`;
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  url: tagUrl(Astro.params.tag as string),
+  name: `#${label}`,
+  description: pageDescription,
+  hasPart: {
+    '@type': 'ItemList',
+    itemListOrder: 'Descend',
+    itemListElement: entries.map((e: any, i: number) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Article',
+        name: e.data.title,
+        url: articleUrl(e),
+      },
+    })),
+  },
+};
 ---
-<Base title={`#${label} — FrenzyCars`} description={`Articles tagged with ${label} on FrenzyCars.`}>
+<Base title={`#${label} — FrenzyCars`} description={pageDescription}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} />
   <div class="container" style="padding: 2rem 1rem;">
     <h1>#{label}</h1>
     <ul style="list-style: none; padding: 0;">

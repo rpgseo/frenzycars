@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { slugifyTag } from '../../lib/slugify';
+import { siteConfig } from '../../config/site';
 
 const EDITORIAL = ['reviews','news','culture','electric','guides','blog','gear'];
 const allEntries = (
@@ -20,8 +21,33 @@ for (const entry of allEntries) {
 }
 
 const tags = [...tagMap.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+const pageUrl = new URL('/tags/', siteConfig.baseURL).href;
+const pageDescription = `Browse all ${tags.length} article tags used across FrenzyCars, including ${tags.slice(0, 5).map(([, label]) => label).join(', ')}, and more.`;
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  url: pageUrl,
+  name: 'Tags',
+  description: pageDescription,
+  hasPart: {
+    '@type': 'ItemList',
+    itemListOrder: 'Ascend',
+    itemListElement: tags.map(([slug, label], i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Thing',
+        name: label,
+        url: new URL(`/tags/${slug}/`, siteConfig.baseURL).href,
+      },
+    })),
+  },
+};
 ---
-<Base title="Tags" description="Browse all tags on FrenzyCars.">
+<Base title="Tags" description={pageDescription}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} />
   <div class="container" style="padding: 2rem 1rem;">
     <h1>Tags</h1>
     <ul style="display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0;">
