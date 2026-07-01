@@ -26,7 +26,18 @@ function buildFrontmatter(candidate: ReviewCandidate, existingFrontmatter: Recor
     else if (typeof v === 'boolean' || typeof v === 'number') lines.push(`${k}: ${v}`);
     else if (Array.isArray(v)) {
       lines.push(`${k}:`);
-      for (const item of v) lines.push(`  - ${typeof item === 'string' ? `'${(item as string).replace(/'/g, "''")}'` : item}`);
+      for (const item of v) {
+        if (item !== null && typeof item === 'object') {
+          const entries = Object.entries(item as Record<string, unknown>);
+          entries.forEach(([ik, iv], idx) => {
+            const prefix = idx === 0 ? '  - ' : '    ';
+            const val = typeof iv === 'string' ? `'${iv.replace(/'/g, "''")}'` : iv;
+            lines.push(`${prefix}${ik}: ${val}`);
+          });
+        } else {
+          lines.push(`  - ${typeof item === 'string' ? `'${(item as string).replace(/'/g, "''")}'` : item}`);
+        }
+      }
     } else {
       // nested object — serialise as JSON inline (valid YAML)
       lines.push(`${k}: ${JSON.stringify(v)}`);
