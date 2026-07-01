@@ -81,9 +81,3 @@ At **3,268 lbs (1,483 kg)**, the GT3 RS is heavier than a standard GT3 thanks to
 ## GT3 RS vs. GT3 vs. GT2 RS
 
 Buyers cross-shopping the range should know where the GT3 RS sits: it trades the standard GT3's everyday usability for outright downforce and lap time, while the turbocharged GT2 RS out-powers it in a straight line but can't match its cornering precision. For anyone prioritizing track lap times over straight-line speed or comfort, the GT3 RS is the clear pick of the three.
-
-## Verdict
-
-If you want luxury, look elsewhere. If you want the purest naturally aspirated driving instrument short of a purpose-built racer, the GT3 RS is the benchmark other track-focused cars are measured against.
-
-**9.6 / 10**
