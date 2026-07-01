@@ -22,6 +22,8 @@ export interface ReviewCandidate {
   video_job_id: string | null;
   video_status: 'idle' | 'pending' | 'done' | 'error';
   last_commit_sha: string | null;
+  dimensions_json: string | null;
+  trims_json: string | null;
   status: CandidateStatus;
   raw_data: string | null;
   created_at: string;
