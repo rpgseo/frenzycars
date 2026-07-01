@@ -37,10 +37,15 @@ export async function handleGenerateImage(request: Request, env: Env): Promise<R
   const candidate = await getCandidate(env.DB, parsedId);
   if (!candidate) return Response.json({ ok: false, error: 'Candidate not found' }, { status: 404 });
 
+  const referenceImageUrl =
+    typedSlot === 'hero'
+      ? candidate.reference_image_url ?? undefined
+      : candidate.editorial_hero_url ?? undefined;
+
   await writeLog(env.DB, parsedId, operation, 'pending', 'Enviando job a kie.ai…');
 
   try {
-    const taskId = await submitImageJob(env.KIE_AI_API_KEY, prompt.trim());
+    const taskId = await submitImageJob(env.KIE_AI_API_KEY, prompt.trim(), referenceImageUrl);
 
     // Save taskId to D1 so the poll endpoint can find it
     await env.DB.prepare(

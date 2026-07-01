@@ -81,7 +81,7 @@ function videoSection(c: ReviewCandidate): string {
 
   return `
 <div class="section">
-  <div class="section-title">Video (Step 4)</div>
+  <div class="section-title">Video</div>
   <div id="video-container">${videoHtml}</div>
   <textarea class="prompt-area" id="prompt-video" data-id="${c.id}" style="margin-top:.75rem">${escHtml(promptValue)}</textarea>
   <div class="slot-actions" style="margin-top:.5rem">
@@ -515,16 +515,7 @@ export async function handleDetail(id: number, env: Env): Promise<Response> {
 </div>
 <div class="sections">
   <div class="section">
-    <div class="section-title">SEO Data (Step 1)</div>
-    <div class="grid-2">
-      <div class="stat"><div class="stat-label">Keyword</div><div class="stat-value${candidate.keyword ? '' : ' empty'}">${candidate.keyword ? escHtml(candidate.keyword) : 'Not set yet'}</div></div>
-      <div class="stat"><div class="stat-label">Monthly Volume</div><div class="stat-value${candidate.search_volume == null ? ' empty' : ''}">${candidate.search_volume != null ? candidate.search_volume.toLocaleString() : 'Not set yet'}</div></div>
-      <div class="stat"><div class="stat-label">Keyword Difficulty</div><div class="stat-value${candidate.keyword_difficulty == null ? ' empty' : ''}">${candidate.keyword_difficulty ?? 'Not set yet'}</div></div>
-      <div class="stat"><div class="stat-label">Trend Score</div><div class="stat-value${candidate.trend_score == null ? ' empty' : ''}">${candidate.trend_score ?? 'Not set yet'}</div></div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="section-title">Imágenes (Steps 2–3)</div>
+    <div class="section-title">Imágenes</div>
     <div class="ref-image-row">
       <span class="ref-label">Referencia</span>
       ${candidate.reference_image_url

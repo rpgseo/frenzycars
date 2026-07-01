@@ -47,16 +47,13 @@ export async function handleList(url: URL, db: D1Database): Promise<Response> {
       .map(
         c => `<tr>
 <td><span class="car-name">${escHtml(c.make)} ${escHtml(c.model)}</span>${c.year ? `<span class="car-year"> · ${c.year}</span>` : ''}</td>
-<td>${c.keyword ? escHtml(c.keyword) : '<span style="color:#444">—</span>'}</td>
-<td>${c.search_volume != null ? c.search_volume.toLocaleString() : '<span style="color:#444">—</span>'}</td>
-<td>${c.keyword_difficulty ?? '<span style="color:#444">—</span>'}</td>
 <td>${badge(c.status)}</td>
 <td><a href="/${c.id}/" class="view-link">Ver →</a></td>
 </tr>`,
       )
       .join('');
     tableHtml = `<p class="count">${candidates.length} candidate${candidates.length !== 1 ? 's' : ''}${statusFilter ? ` · ${STATUS_LABELS[statusFilter]}` : ''}</p>
-<table><thead><tr><th>Car</th><th>Keyword</th><th>Volume</th><th>KD</th><th>Status</th><th></th></tr></thead>
+<table><thead><tr><th>Car</th><th>Status</th><th></th></tr></thead>
 <tbody>${rows}</tbody></table>`;
   }
 

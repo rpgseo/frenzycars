@@ -7,7 +7,15 @@ const KIE_AI_BASE = 'https://api.kie.ai';
 const NO_TEXT_SUFFIX =
   ' No text, no words, no letters, no numbers, no captions, no watermark, no logo, no signature, no typography, no license plate text. Clean image with zero written characters.';
 
-export async function submitImageJob(apiKey: string, prompt: string): Promise<string> {
+export async function submitImageJob(apiKey: string, prompt: string, referenceImageUrl?: string): Promise<string> {
+  const input: Record<string, unknown> = {
+    prompt: `${prompt}${NO_TEXT_SUFFIX}`,
+    aspect_ratio: '16:9',
+    resolution: '1K',
+    output_format: 'jpg',
+  };
+  if (referenceImageUrl) input.image_urls = [referenceImageUrl];
+
   const res = await fetch(`${KIE_AI_BASE}/api/v1/jobs/createTask`, {
     method: 'POST',
     headers: {
@@ -16,12 +24,7 @@ export async function submitImageJob(apiKey: string, prompt: string): Promise<st
     },
     body: JSON.stringify({
       model: 'nano-banana-2',
-      input: {
-        prompt: `${prompt}${NO_TEXT_SUFFIX}`,
-        aspect_ratio: '16:9',
-        resolution: '1K',
-        output_format: 'jpg',
-      },
+      input,
     }),
   });
 

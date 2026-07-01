@@ -166,9 +166,6 @@ details[open] summary::before{content:'▼ '}
   tr{display:flex;flex-direction:column;gap:.4rem;background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:1rem}
   tr:hover td{background:none}
   td{border-bottom:none;padding:0}
-  td:nth-child(2)::before{content:'Keyword: ';color:#555}
-  td:nth-child(3)::before{content:'Volume: ';color:#555}
-  td:nth-child(4)::before{content:'KD: ';color:#555}
   td:last-child{margin-top:.4rem}
 
   .sections{gap:1rem}
