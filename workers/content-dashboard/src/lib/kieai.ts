@@ -2,6 +2,11 @@ const KIE_AI_BASE = 'https://api.kie.ai';
 
 // --- Image generation (async, two-step) ---
 
+// Appended to every image prompt so generated covers/gallery never contain
+// text, watermarks, logos, captions, or license plates with lettering.
+const NO_TEXT_SUFFIX =
+  ' No text, no words, no letters, no numbers, no captions, no watermark, no logo, no signature, no typography, no license plate text. Clean image with zero written characters.';
+
 export async function submitImageJob(apiKey: string, prompt: string): Promise<string> {
   const res = await fetch(`${KIE_AI_BASE}/api/v1/jobs/createTask`, {
     method: 'POST',
@@ -12,7 +17,7 @@ export async function submitImageJob(apiKey: string, prompt: string): Promise<st
     body: JSON.stringify({
       model: 'nano-banana-2',
       input: {
-        prompt,
+        prompt: `${prompt}${NO_TEXT_SUFFIX}`,
         aspect_ratio: '16:9',
         resolution: '1K',
         output_format: 'jpg',
