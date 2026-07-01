@@ -10,6 +10,8 @@ function buildFrontmatter(candidate: ReviewCandidate, existingFrontmatter: Recor
   delete preserved['cover'];
   delete preserved['gallery'];
   delete preserved['video'];
+  delete preserved['dimensions'];
+  delete preserved['trims'];
 
   if (!preserved['title']) {
     preserved['title'] = `${candidate.make} ${candidate.model}${candidate.year ? ` ${candidate.year}` : ''} Review`;
