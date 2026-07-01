@@ -44,6 +44,8 @@ CREATE TABLE IF NOT EXISTS review_candidates (
   editorial_mid1_url TEXT,
   editorial_mid2_url TEXT,
   video_url TEXT,
+  dimensions_json TEXT,
+  trims_json TEXT,
 
   hero_prompt TEXT,
   mid_prompt TEXT,
