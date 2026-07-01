@@ -301,15 +301,6 @@ a.brand:hover{color:inherit}
 .verdict .verdict-label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:.5rem;display:block}
 .verdict p{margin:0;font-size:1.1rem;line-height:1.6;color:var(--fg)}
 
-/* ---------- Pros / Cons ---------- */
-.proscons{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:1.75rem 0}
-.proscons .pc{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.2rem}
-.proscons .pc h4{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .6rem}
-.proscons .pros h4{color:var(--accent)}
-.proscons .cons h4{color:#ff6b6b}
-.proscons ul{margin:0;padding-left:1.1rem;color:#ddd}
-.proscons li{margin-bottom:.4rem;font-size:.92rem}
-
 /* ---------- Zone wrapper ---------- */
 .zone{padding-block:clamp(1.75rem,3.5vw,2.75rem)}
 .zone-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.5rem;padding-bottom:.7rem;border-bottom:1px solid var(--border)}
@@ -371,7 +362,6 @@ a.brand:hover{color:inherit}
 }
 @media (max-width:720px){
   .lead-secondary{flex-direction:column}
-  .proscons{grid-template-columns:1fr}
   .z-grid.z-4{grid-template-columns:1fr}
   .grid-4{grid-template-columns:1fr}
 }
