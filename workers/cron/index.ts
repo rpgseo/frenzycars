@@ -2,7 +2,7 @@
  * Cloudflare Worker that runs every Sunday at 03:00 UTC.
  * Fetches all makes from CarSpecsAPI, then fetches models updated
  * since the last sync, and upserts into D1.
- * Deploy with: npx wrangler deploy workers/cron-sync-cars.ts
+ * Deploy with: cd workers/cron && npx wrangler deploy
  */
 
 export interface Env {
