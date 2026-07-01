@@ -1,5 +1,5 @@
 ---
-title: 'Audi A4 2015 Review: Premium Refinement at a Reasonable Price'
+title: '2015 Audi A4 Review: Price, Reliability, and 0-60 Time'
 date: 2026-06-28T09:00:00.000Z
 draft: false
 demo: true
@@ -9,7 +9,7 @@ tags:
   - Diesel
   - Executive
 author: Marcus Webb
-description: The B8 facelift Audi A4 2.0 TDI remains one of the sharpest executive sedans you can buy used — composed, economical, and understatedly elegant.
+description: The 2015 Audi A4 2.0 TDI now sells for a fraction of its original price, hits 0-100 km/h in 9.3s, and remains one of the most reliable used executive sedans you can buy.
 cover: /press/audi/audi-a4-2015/front_left.webp
 coverAlt: Audi A4 2015 — vista frontal tres cuartos
 rating: 8.2
@@ -42,7 +42,15 @@ specs:
     value: 480 L
 ---
 
-The Audi A4 has always worn its excellence quietly. While rivals like the BMW 3 Series shout about their driving dynamics and Mercedes-Benz leans on prestige, the A4 simply gets on with being very, very good at almost everything — and the 2015 B8 facelift is the best expression of that philosophy in a generation most buyers can actually afford.
+The Audi A4 has always worn its excellence quietly. While rivals like the BMW 3 Series shout about their driving dynamics and Mercedes-Benz leans on prestige, the A4 simply gets on with being very, very good at almost everything — and the 2015 B8 facelift is the best expression of that philosophy in a generation most buyers can actually afford, with **used prices now starting around $9,000-$13,000** depending on trim and mileage.
+
+## Price and trims
+
+New in 2015, the A4 Base 2.0 TDI carried an MSRP in the low-to-mid $30,000s before options. Today, used examples in good condition trade for roughly **$9,000 to $13,000**, with the **S line** trim — featuring sport suspension, larger wheels, and upgraded interior trim — commanding a modest premium over Base and Premium Plus cars. Quattro all-wheel-drive variants also carry a small price bump but are worth seeking out for buyers in wet or snowy climates.
+
+## Reliability and common problems
+
+The 2015 A4 has a solid reliability reputation for the segment, though it isn't problem-free. The most commonly reported issues on 2.0 TDI and 2.0T models include timing chain tensioner wear (listen for a rattle on cold start), oil consumption on high-mileage examples, and occasional carbon buildup on the intake valves — typical of direct-injection engines and worth budgeting for a walnut-blast cleaning every 60,000-80,000 miles. Routine maintenance costs run slightly higher than mainstream brands but are manageable thanks to Audi's wide independent-specialist network.
 
 ## Design: Timeless Over Trendy
 
@@ -54,7 +62,7 @@ Inside, the story continues. High-gloss piano black trim, thick-rimmed steering 
 
 ## The 2.0 TDI Engine: Frugal Workhorse
 
-At 150 hp and 320 Nm of torque, the 2.0 TDI is not a headline grabber on paper. In reality, it is one of the most accomplished diesel units ever fitted to a family car. The torque arrives early and stays broad, making the A4 feel far more relaxed than its 9.3-second 0–100 time suggests.
+At 150 hp and 320 Nm of torque, the 2.0 TDI is not a headline grabber on paper. In reality, it is one of the most accomplished diesel units ever fitted to a family car. The torque arrives early and stays broad, making the A4 feel far more relaxed than its **0-60 mph time of roughly 8.7 seconds (9.3 seconds 0-100 km/h)** suggests.
 
 On a mixed route — motorway cruise, A-roads, a bit of town — 4.7 L/100 km is consistently achievable. On longer motorway legs, 4.2 L/100 km is not unusual with a light right foot. Running costs from fuel alone are substantially lower than any petrol equivalent in this segment.
 
@@ -64,10 +72,6 @@ On a mixed route — motorway cruise, A-roads, a bit of town — 4.7 L/100 km is
 
 This is where honesty matters. The A4's front-wheel-drive setup does not offer the rear-driven balance of the BMW 3 Series. In spirited driving, the front axle runs out of grip before the chassis does, and the steering — accurate but light — communicates less than a driver purist would want.
 
-For the other 95% of driving life, however, the A4 is exceptional. The ride quality on 17-inch wheels is supple without being wallowy. Motorway refinement is class-leading for the price. The 6-speed manual gearbox has a short, precise throw that remains satisfying to use.
-
-## Verdict
-
-The 2015 Audi A4 2.0 TDI in Base trim is one of the most sensible premium cars in today's used market. It asks you to accept modest outright performance in exchange for remarkable everyday competence — and most buyers will consider that an entirely fair trade. If you want sharper driving dynamics, the BMW 3 Series 320i is the answer. If you want an executive car that does everything with quiet precision and minimal running costs, the A4 is the one.
+For the other 95% of driving life, however, the A4 is exceptional. The ride quality on 17-inch wheels is supple without being wallowy. Motorway refinement is class-leading for the price. The 6-speed manual gearbox has a short, precise throw that remains satisfying to use. If you want sharper driving dynamics instead, the BMW 3 Series 320i is the answer — but it asks a premium in both purchase price and running costs.
 
 **Compare it:** [Audi A4 2015 vs BMW 3 Series 2015](/compare/audi-a4-base-2015-vs-bmw-3-series-base-2015/)

@@ -150,6 +150,43 @@ details[open] summary::before{content:'▼ '}
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center}
 .lightbox.open{display:flex}
 .lightbox img{max-width:90vw;max-height:90vh;border-radius:8px;object-fit:contain}
+
+@media (max-width: 720px) {
+  .shell{padding:1.25rem 1rem}
+  .header{gap:.6rem;margin-bottom:1.5rem;flex-wrap:wrap}
+  .header a{font-size:1rem}
+  h1{font-size:1.3rem;margin-bottom:1rem}
+  .filters{gap:.4rem;margin-bottom:1.25rem}
+  .filter-link{padding:.3rem .7rem;font-size:.75rem}
+  .car-heading{gap:.6rem;margin-bottom:1.5rem}
+
+  table,thead{display:none}
+  tbody{display:flex;flex-direction:column;gap:.75rem}
+  tr{display:flex;flex-direction:column;gap:.4rem;background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:1rem}
+  tr:hover td{background:none}
+  td{border-bottom:none;padding:0}
+  td:nth-child(2)::before{content:'Keyword: ';color:#555}
+  td:nth-child(3)::before{content:'Volume: ';color:#555}
+  td:nth-child(4)::before{content:'KD: ';color:#555}
+  td:last-child{margin-top:.4rem}
+
+  .sections{gap:1rem}
+  .section{padding:1.1rem}
+  .grid-2{grid-template-columns:1fr}
+
+  .image-row{grid-template-columns:1fr;padding:.85rem}
+  .image-row-preview{width:100%}
+  .ref-image-row{flex-wrap:wrap}
+  .ref-thumb,.ref-thumb-placeholder{width:100%;height:auto;aspect-ratio:16/9}
+
+  .actions{flex-direction:column}
+  .btn{width:100%;text-align:center}
+  .slot-actions{flex-direction:column}
+  .btn-generate,.btn-redo{width:100%;text-align:center}
+
+  .video-placeholder{max-width:100%}
+  .raw-data{font-size:.75rem}
+}
 `;
 
 export function html(title: string, body: string): Response {

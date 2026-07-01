@@ -10,6 +10,7 @@ import { handleCommit } from './api/commit.js';
 import { handleClearLogs } from './api/logs.js';
 import { handleFetchReference } from './api/fetch-reference.js';
 import { handleImagePoll } from './api/image-poll.js';
+import { handleSyncReviews } from './api/sync-reviews.js';
 
 export interface Env {
   DB: D1Database;
@@ -90,6 +91,7 @@ export default {
     if (path === '/api/content/editorial-data') return handleEditorialDataPatch(request, env.DB);
     if (path === '/api/content/commit') return handleCommit(request, env);
     if (path === '/api/content/fetch-reference') return handleFetchReference(request, env);
+    if (path === '/api/content/sync-reviews') return handleSyncReviews(request, env);
 
     const imagePollMatch = path.match(/^\/api\/content\/image-poll\/([^/]+)\/([^/]+)$/);
     if (imagePollMatch) return handleImagePoll(request, imagePollMatch[1], imagePollMatch[2], env);

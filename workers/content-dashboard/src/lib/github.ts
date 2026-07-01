@@ -7,6 +7,25 @@ const GH_HEADERS = (token: string) => ({
   'User-Agent': 'frenzycars-content-dashboard/1.0',
 });
 
+export async function listGithubDir(
+  token: string,
+  repo: string,
+  path: string
+): Promise<Array<{ name: string; path: string }>> {
+  const res = await fetch(`${GH_API}/repos/${repo}/contents/${path}`, {
+    headers: GH_HEADERS(token),
+  });
+
+  if (res.status === 404) return [];
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GitHub list error ${res.status}: ${text}`);
+  }
+
+  const data = await res.json() as Array<{ name: string; path: string; type: string }>;
+  return data.filter(item => item.type === 'file').map(({ name, path: itemPath }) => ({ name, path: itemPath }));
+}
+
 export async function readGithubFile(
   token: string,
   repo: string,

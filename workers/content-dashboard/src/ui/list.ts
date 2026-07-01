@@ -64,7 +64,35 @@ export async function handleList(url: URL, db: D1Database): Promise<Response> {
     'Reviews Pipeline',
     `
 <h1>Reviews Pipeline</h1>
+<div class="actions" style="margin-bottom:1.5rem">
+  <button id="sync-btn" class="btn btn-suggest">Sync from repo</button>
+</div>
+<div id="sync-msg"></div>
 <nav class="filters">${filters}</nav>
-${tableHtml}`,
+${tableHtml}
+<script>
+document.getElementById('sync-btn').addEventListener('click', async (e) => {
+  const btn = e.currentTarget;
+  const msg = document.getElementById('sync-msg');
+  btn.disabled = true;
+  btn.textContent = 'Syncing…';
+  msg.innerHTML = '';
+  try {
+    const res = await fetch('/api/content/sync-reviews', { method: 'POST' });
+    const data = await res.json();
+    if (!data.ok && data.error) throw new Error(data.error);
+    msg.innerHTML = '<p class="status-msg">Scanned ' + data.scanned + ' · created ' + data.created + ' · updated ' + data.updated +
+      (data.errors && data.errors.length ? ' · ' + data.errors.length + ' error(s)' : '') + '</p>';
+    if (data.errors && data.errors.length) {
+      msg.innerHTML += '<p class="status-msg error">' + data.errors.join('<br>') + '</p>';
+    }
+    setTimeout(() => location.reload(), 1200);
+  } catch (err) {
+    msg.innerHTML = '<p class="status-msg error">' + (err && err.message ? err.message : String(err)) + '</p>';
+    btn.disabled = false;
+    btn.textContent = 'Sync from repo';
+  }
+});
+</script>`,
   );
 }
