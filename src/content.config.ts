@@ -24,6 +24,16 @@ const reviews = defineCollection({
     verdict: z.string().optional(),
     gallery: z.array(z.string()).optional(),
     video: z.string().optional(),
+    dimensions: z.array(z.object({
+      label: z.string(),
+      score: z.number().min(0).max(10),
+    })).optional(),
+    trims: z.array(z.object({
+      name: z.string(),
+      price: z.string(),
+      power: z.string(),
+      highlight: z.boolean().optional(),
+    })).optional(),
   }),
 });
 

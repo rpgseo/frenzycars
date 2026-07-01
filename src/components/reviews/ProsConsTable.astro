@@ -1,0 +1,45 @@
+---
+const { pros, cons } = Astro.props;
+const rows = Math.max(pros?.length ?? 0, cons?.length ?? 0);
+---
+{(pros?.length > 0 || cons?.length > 0) && (
+  <table class="proscons-table">
+    <thead>
+      <tr><th>Pros</th><th>Cons</th></tr>
+    </thead>
+    <tbody>
+      {Array.from({ length: rows }).map((_, i) => (
+        <tr>
+          <td class="pc-pro">{pros?.[i] ?? ''}</td>
+          <td class="pc-con">{cons?.[i] ?? ''}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+)}
+
+<style>
+  .proscons-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+  }
+  .proscons-table th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .proscons-table th:first-child { color: #22c55e; }
+  .proscons-table th:last-child { color: #ef4444; }
+  .proscons-table td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #1a1a1a;
+    color: #ccc;
+    vertical-align: top;
+  }
+</style>

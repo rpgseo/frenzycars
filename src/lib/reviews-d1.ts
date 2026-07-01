@@ -15,6 +15,8 @@ export interface ReviewCandidate {
   editorial_mid1_url: string | null;
   editorial_mid2_url: string | null;
   video_url: string | null;
+  dimensions_json: string | null;
+  trims_json: string | null;
   hero_prompt: string | null;
   mid_prompt: string | null;
   video_prompt: string | null;

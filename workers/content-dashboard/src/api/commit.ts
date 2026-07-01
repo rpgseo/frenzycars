@@ -10,6 +10,8 @@ function buildFrontmatter(candidate: ReviewCandidate, existingFrontmatter: Recor
   delete preserved['cover'];
   delete preserved['gallery'];
   delete preserved['video'];
+  delete preserved['dimensions'];
+  delete preserved['trims'];
 
   if (!preserved['title']) {
     preserved['title'] = `${candidate.make} ${candidate.model}${candidate.year ? ` ${candidate.year}` : ''} Review`;
@@ -39,6 +41,34 @@ function buildFrontmatter(candidate: ReviewCandidate, existingFrontmatter: Recor
     for (const url of galleryItems) lines.push(`  - '${url}'`);
   }
   if (candidate.video_url) lines.push(`video: '${candidate.video_url}'`);
+
+  if (candidate.dimensions_json) {
+    try {
+      const dims = JSON.parse(candidate.dimensions_json) as Array<{ label: string; score: number }>;
+      if (Array.isArray(dims) && dims.length > 0) {
+        lines.push('dimensions:');
+        for (const d of dims) {
+          lines.push(`  - label: '${d.label.replace(/'/g, "''")}'`);
+          lines.push(`    score: ${d.score}`);
+        }
+      }
+    } catch { /* dimensions_json inválido — se omite del frontmatter */ }
+  }
+
+  if (candidate.trims_json) {
+    try {
+      const trims = JSON.parse(candidate.trims_json) as Array<{ name: string; price: string; power: string; highlight?: boolean }>;
+      if (Array.isArray(trims) && trims.length > 0) {
+        lines.push('trims:');
+        for (const t of trims) {
+          lines.push(`  - name: '${t.name.replace(/'/g, "''")}'`);
+          lines.push(`    price: '${t.price.replace(/'/g, "''")}'`);
+          lines.push(`    power: '${t.power.replace(/'/g, "''")}'`);
+          if (t.highlight) lines.push(`    highlight: true`);
+        }
+      }
+    } catch { /* trims_json inválido — se omite del frontmatter */ }
+  }
 
   lines.push('---');
   return lines.join('\n');
