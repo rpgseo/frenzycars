@@ -6,6 +6,7 @@ import Cover from '../components/Cover.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { getCollection } from 'astro:content';
 import { humanize } from '../lib/section';
+import { siteConfig } from '../config/site';
 
 // ── Cargar todas las colecciones editoriales ──────────────────────────────────
 // 'gear' se omite: la colección está declarada pero aún no tiene contenido.
@@ -67,6 +68,26 @@ const insurancePosts = pick(all.filter((e: any) => e.collection === 'insurance')
   title="Car Reviews, Auto News & Performance Car Features"
   description="Expert car reviews, breaking auto news, and in-depth features on performance cars, EVs, and car culture. FrenzyCars — driven by obsession."
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: siteConfig.title,
+    url: siteConfig.baseURL,
+    logo: new URL('/img/logo-1200x630.png', siteConfig.baseURL).href,
+    sameAs: Object.values(siteConfig.social),
+  })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteConfig.title,
+    url: siteConfig.baseURL,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${siteConfig.baseURL}search?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  })} />
+
   {/* H1 para SEO/accesibilidad — oculto visualmente, patrón habitual en medios de noticias */}
   <h1 class="sr-only">FrenzyCars — Expert Car Reviews, Auto News &amp; Performance Car Features</h1>
 
