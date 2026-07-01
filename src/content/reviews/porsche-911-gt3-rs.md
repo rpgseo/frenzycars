@@ -11,7 +11,7 @@ author: 'Marco Delgado'
 description: 'The GT3 RS redefines what a road-legal track weapon can be, with a naturally aspirated scream and aerodynamics that bite.'
 featured: true
 rating: 9.6
-cover: 'https://images.frenzycars.com/reviews/porsche-911-gt3-2024/hero-original.jpg?width=1200&format=webp&quality=85'
+cover: 'https://images.frenzycars.com/reviews/porsche-911-gt3-rs/197a3a44ea45b4be81237fdcd1a3b1b4-hero-original.jpg?width=1200&format=webp&quality=85'
 ---
 
 Some cars are fast. The 2025 Porsche 911 GT3 RS is *precise* in a way that makes "fast" feel like an afterthought.
@@ -26,7 +26,7 @@ The active aerodynamics generate up to 900 kg of downforce at 285 km/h. On the c
 
 > "It does not so much turn into a corner as teleport to the apex."
 
-The DRS-style adjustable rear wing is more than a gimmick ÃÂ¢ÃÂÃÂ it genuinely changes the car's character from lap to lap.
+The DRS-style adjustable rear wing is more than a gimmick ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ it genuinely changes the car's character from lap to lap.
 
 ## Verdict
 
