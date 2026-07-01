@@ -28,15 +28,10 @@ export async function handleImagePoll(request: Request, taskId: string, slot: st
   const typedSlot = slot as ImageSlot;
 
   const candidate = await env.DB.prepare(
-    `SELECT id, slug, ${SLOT_JOB_FIELD[typedSlot]} as job_id, ${SLOT_URL_FIELD[typedSlot]} as existing_url FROM review_candidates WHERE ${SLOT_JOB_FIELD[typedSlot]} = ?`
-  ).bind(taskId).first<{ id: number; slug: string; job_id: string; existing_url: string | null }>();
+    `SELECT id, slug, ${SLOT_JOB_FIELD[typedSlot]} as job_id FROM review_candidates WHERE ${SLOT_JOB_FIELD[typedSlot]} = ?`
+  ).bind(taskId).first<{ id: number; slug: string; job_id: string }>();
 
   if (!candidate) return Response.json({ ok: false, error: 'Task not found' }, { status: 404 });
-
-  // Already done (cached)
-  if (candidate.existing_url) {
-    return Response.json({ status: 'done', url: candidate.existing_url });
-  }
 
   try {
     const result = await pollImageJob(env.KIE_AI_API_KEY, taskId);
@@ -45,7 +40,9 @@ export async function handleImagePoll(request: Request, taskId: string, slot: st
       const imgRes = await fetch(result.imageUrl);
       if (!imgRes.ok) throw new Error(`Failed to download image: ${imgRes.status}`);
       const imgBytes = await imgRes.arrayBuffer();
-      const key = `reviews/${candidate.slug}/${SLOT_KEY_SUFFIX[typedSlot]}`;
+      // Unique key per job so a regenerated ("Rehacer") image gets a fresh URL
+      // instead of overwriting the previous file at a path the CDN has cached.
+      const key = `reviews/${candidate.slug}/${taskId}-${SLOT_KEY_SUFFIX[typedSlot]}`;
       await uploadToR2(env.IMAGES, key, imgBytes, 'image/jpeg');
       const finalUrl = buildCfUrl(env.CF_IMAGES_BASE_URL, key);
 
