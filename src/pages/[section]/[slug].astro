@@ -6,6 +6,9 @@ import SpecTable from '../../components/SpecTable.astro';
 import Verdict from '../../components/Verdict.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
 import RelatedRail from '../../components/RelatedRail.astro';
+import DimensionBars from '../../components/reviews/DimensionBars.tsx';
+import TrimsTable from '../../components/reviews/TrimsTable.astro';
+import ProsConsTable from '../../components/reviews/ProsConsTable.astro';
 import { getCollection, render } from 'astro:content';
 import { siteConfig } from '../../config/site';
 import { humanize } from '../../lib/section';
@@ -72,25 +75,22 @@ const galleryImages = (d as any).gallery ?? [];
       <div class="has-rail">
         <div class="main-col">
           <div class="article-content"><Content /></div>
+          {d.dimensions && d.dimensions.length > 0 && (
+            <DimensionBars dimensions={d.dimensions} client:visible />
+          )}
           {galleryImages[0] && (
             <img src={galleryImages[0]} alt={`${d.title} — gallery image`} class="article-gallery-img" loading="lazy" />
           )}
           <SpecTable specs={d.specs} />
-          {(d.pros || d.cons) && (
-            <div class="proscons">
-              {d.pros && (
-                <div class="pc pros">
-                  <h4>Pros</h4>
-                  <ul>{d.pros.map((p: string) => <li>{p}</li>)}</ul>
-                </div>
-              )}
-              {d.cons && (
-                <div class="pc cons">
-                  <h4>Cons</h4>
-                  <ul>{d.cons.map((c: string) => <li>{c}</li>)}</ul>
-                </div>
-              )}
-            </div>
+          {(d as any).trims && (
+            <TrimsTable trims={(d as any).trims} />
+          )}
+          {galleryImages[1] && (
+            <img src={galleryImages[1]} alt={`${d.title} — gallery image`} class="article-gallery-img" loading="lazy" />
+          )}
+          <ProsConsTable pros={d.pros} cons={d.cons} />
+          {d.video && (
+            <video src={d.video} controls class="article-video" />
           )}
           <Verdict verdict={d.verdict} />
           {(d as any).faq?.length > 0 && (
